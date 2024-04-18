@@ -1,0 +1,59 @@
+{
+	"Changes": [
+		{
+			"LogName": "Alex - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+                {
+			"LogName": "Alex - WinterP",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex_Winter",
+			"FromFile": "assets/Portraits/Alex/Alex_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+                {
+			"LogName": "Alex - WinterS",
+			"Action": "EditImage",
+			"Target": "Characters/Alex_Winter",
+			"FromFile": "assets/Characters/Alex/Alex_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+		{
+			"LogName": "Alex - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Alex - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex_Beach, Characters/Alex_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+
+
+	]
+}

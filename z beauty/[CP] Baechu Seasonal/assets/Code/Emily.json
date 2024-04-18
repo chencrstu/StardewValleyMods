@@ -1,0 +1,71 @@
+{
+	"Changes": [
+		{
+			"LogName": "Emily - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+                {
+			"LogName": "Emily - WinterP",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily_Winter",
+			"FromFile": "assets/Portraits/Emily/Emily_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+                {
+			"LogName": "Emily - WinterS",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_Winter",
+			"FromFile": "assets/Characters/Emily/Emily_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+		{
+			"LogName": "Emily - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily_Beach, Characters/Emily_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily - Aerobics",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AerobicsDay": "Regular, Harvey",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+
+
+	]
+}

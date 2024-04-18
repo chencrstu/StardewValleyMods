@@ -1,0 +1,71 @@
+{
+	"Changes": [
+		{
+			"LogName": "Leah - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+                {
+			"LogName": "Leah - WinterP",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah_Winter",
+			"FromFile": "assets/Portraits/Leah/Leah_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+                {
+			"LogName": "Leah - WinterS",
+			"Action": "EditImage",
+			"Target": "Characters/Leah_Winter",
+			"FromFile": "assets/Characters/Leah/Leah_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+		{
+			"LogName": "Leah - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Leah - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah_Beach, Characters/Leah_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Leah - Aerobics",
+			"Action": "EditImage",
+			"Target": "Characters/Leah",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AerobicsDay": "Harvey",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+
+
+	]
+}

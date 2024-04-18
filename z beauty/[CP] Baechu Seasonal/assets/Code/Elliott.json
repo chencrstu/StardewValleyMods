@@ -1,0 +1,59 @@
+{
+	"Changes": [
+		{
+			"LogName": "Elliott - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott, Characters/Elliott",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	        {
+			"LogName": "Elliott - WinterP",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott_Winter",
+			"FromFile": "assets/Portraits/Elliott/Elliott_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+                {
+			"LogName": "Elliott - WinterS",
+			"Action": "EditImage",
+			"Target": "Characters/Elliott_Winter",
+			"FromFile": "assets/Characters/Elliott/Elliott_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+		{
+			"LogName": "Elliott - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott, Characters/Elliott",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Elliott - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott_Beach, Characters/Elliott_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+
+
+	]
+}

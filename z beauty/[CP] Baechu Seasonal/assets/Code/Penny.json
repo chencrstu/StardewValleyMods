@@ -1,0 +1,59 @@
+{
+	"Changes": [
+		{
+			"LogName": "Penny - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+                {
+			"LogName": "Penny - WinterP",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny_Winter",
+			"FromFile": "assets/Portraits/Penny/Penny_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+                {
+			"LogName": "Penny - WinterS",
+			"Action": "EditImage",
+			"Target": "Characters/Penny_Winter",
+			"FromFile": "assets/Characters/Penny/Penny_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+		{
+			"LogName": "Penny - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Penny - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny_Beach, Characters/Penny_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+
+
+	]
+}

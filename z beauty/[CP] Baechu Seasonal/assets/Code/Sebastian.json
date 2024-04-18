@@ -1,0 +1,59 @@
+{
+	"Changes": [
+		{
+			"LogName": "Sebastian - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+                {
+			"LogName": "Sebastian - WinterP",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian_Winter",
+			"FromFile": "assets/Portraits/Sebastian/Sebastian_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+                {
+			"LogName": "Sebastian - WinterS",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian_Winter",
+			"FromFile": "assets/Characters/Sebastian/Sebastian_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+		{
+			"LogName": "Sebastian - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian_Beach, Characters/Sebastian_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+
+
+	]
+}

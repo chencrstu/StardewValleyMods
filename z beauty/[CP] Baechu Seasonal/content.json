@@ -1,0 +1,248 @@
+{
+    "Format": "2.0.0",
+    "DynamicTokens": [
+
+        // Standard Dynamic Tokens
+       
+        {
+            "Name": "Festival",
+            "Value": "",
+        },
+        {
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When":
+            {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "Luau",
+            "When":
+            {
+                "DayEvent": "luau",
+                "LocationName": "beach, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "IceF",
+            "When":
+            {
+                "DayEvent": "festival of ice",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+			"Name": "AerobicsDay",
+			"Value": "",
+		},
+        {
+			"Name": "AerobicsDay",
+			"Value": "Regular",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "Weather": "sun, wind, snow",
+			},
+		},
+        {
+			"Name": "AerobicsDay",
+			"Value": "Harvey",
+			"When":
+			{
+				"Time": "{{Range: 1100, 1500}}",
+				"Hearts:Harvey": "{{range: 6, 14}}",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "HasSeenEvent: currentPlayer |contains=58": false,
+			},
+		},
+        {
+			"Name": "SamWork",
+			"Value": "",
+		},
+        {
+			"Name": "SamWork",
+			"Value": "True",
+			"When":
+			{
+				"HasSeenEvent: currentPlayer |contains=191393": false,
+                "LocationName": "JojaMart",
+				"DayOfWeek": "Monday, Wednesday,"
+			},
+		},
+        {
+			"Name": "SamWork",
+			"Value": "True",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasSeenEvent: currentPlayer |contains=191393": true,
+                "LocationName": "ArchaeologyHouse",
+				"DayOfWeek": "Monday, Wednesday,"
+			},
+		},
+
+    ],
+
+    "ConfigSchema":
+    {   
+        "FestivalOutfits":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+     
+        "ExtraOutfits":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+																			
+    },
+
+    "Changes": [
+
+
+
+		
+// Seasonal Character Includes
+
+		{  
+			"LogName": "Abigail Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Abigail.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Alex Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Alex.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Elliott Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Elliott.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Emily Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Emily.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Haley Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Haley.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Harvey Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Harvey.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Leah Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Leah.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Maru Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Maru.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Penny Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Penny.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+		
+			}
+		},
+		{  
+			"LogName": "Sam Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Sam.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Sebastian Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Sebastian.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		{  
+			"LogName": "Shane Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Shane.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				
+			}
+		},
+		
+		
+    ]
+}

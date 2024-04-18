@@ -1,0 +1,13 @@
+{
+   "Name": "Seasonal Baechu",
+   "Author": "comfemshep with assets by various artists",
+   "Version": "2.1",
+   "Description": "Seasonal outfits for the Baechu portraits",
+   "UniqueID": "comfemshep.BaechuSeasonal",
+    "MinimumApiVersion": "3.10.0",
+"UpdateKeys": [ "Nexus:17406" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+   },
+
+}

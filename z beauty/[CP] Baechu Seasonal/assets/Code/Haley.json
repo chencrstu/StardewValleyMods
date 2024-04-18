@@ -1,0 +1,59 @@
+{
+	"Changes": [
+		{
+			"LogName": "Haley - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+                {
+			"LogName": "Haley - WinterP",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley_Winter",
+			"FromFile": "assets/Portraits/Haley/Haley_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+                {
+			"LogName": "Haley - WinterS",
+			"Action": "EditImage",
+			"Target": "Characters/Haley_Winter",
+			"FromFile": "assets/Characters/Haley/Haley_Winter.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+	        },
+		{
+			"LogName": "Haley - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Haley - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley_Beach, Characters/Haley_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+
+
+	]
+}
