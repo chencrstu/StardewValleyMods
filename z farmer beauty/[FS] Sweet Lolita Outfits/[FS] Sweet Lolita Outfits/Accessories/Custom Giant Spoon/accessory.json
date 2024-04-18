@@ -1,0 +1,93 @@
+{
+  "Name": "Custom Giant Spoon",
+  "FrontAccessory": {
+    "DrawBeforeHair": true,
+    "DrawBeforePlayer": false,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 24,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 64,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 125
+      }
+    ]
+  },
+  "BackAccessory": {
+    "DrawBeforeHair": true,
+    "DrawBeforePlayer": false,
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 24,
+      "Y": 0
+    },
+    "AccessorySize": {
+      "Width": 64,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 125
+      }
+    ]
+  },
+    "LeftAccessory": {
+    "DrawBeforeHair": true,
+    "DrawBeforePlayer": false,
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": -3,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 125
+      }
+    ]
+  },
+      "RightAccessory": {
+    "DrawBeforeHair": true,
+    "DrawBeforePlayer": false,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 19,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 125
+      }
+    ]
+  },
+}

@@ -1,0 +1,13 @@
+{
+   "Name": "Portraits by Mango",
+   "Author": "mango",
+   "Version": "1.6",
+   "Description": "Replaces the Vanilla Portraits with custom Portraits.",
+   "UniqueID": "mango.portraits",
+   "MinimumApiVersion": "3.9.0", // https://smapi.io/
+   "UpdateKeys": ["Nexus:???"], 
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher", // https://www.nexusmods.com/stardewvalley/mods/1915
+      "MinimumVersion": "1.20.0"
+   }
+}

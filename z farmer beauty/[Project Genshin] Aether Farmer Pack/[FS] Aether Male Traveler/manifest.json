@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Project Genshin FS",
+  "Author": "Arknir27",
+  "Version": "1.0.0",
+  "Description": "Genshin Impact pack for the Fashion Sense framework.",
+  "UniqueID": "Arknir27.ProjectGenshinFashion",
+  "UpdateKeys": [ "Nexus:12797" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.3.0"
+  }
+}

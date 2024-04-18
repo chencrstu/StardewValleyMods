@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Project Genshin FS - Wanderer",
+  "Author": "Arknir27",
+  "Version": "1.0.1",
+  "Description": "Genshin Impact Wanderer pack for the Fashion Sense framework.",
+  "UniqueID": "Arknir27.ProjectGenshinFashionWanderer",
+  "UpdateKeys": [ "Nexus:16417" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.3.0"
+  }
+}

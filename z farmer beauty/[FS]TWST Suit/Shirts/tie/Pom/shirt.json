@@ -1,0 +1,84 @@
+{
+  "Name": "Pom School Uniform",
+  "FrontShirt": {
+	"DisableGrayscale":true,
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  },
+  "RightShirt": {
+	"DisableGrayscale":true,
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  },
+  "LeftShirt": {
+	"DisableGrayscale":true,
+    "Flipped": true,
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale":true,
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 48
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  }
+}

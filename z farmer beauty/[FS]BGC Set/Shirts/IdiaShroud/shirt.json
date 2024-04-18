@@ -1,0 +1,84 @@
+{
+  "Name": "Idia School Uniform",
+  "FrontShirt": {
+	"DisableGrayscale":true,
+    "SleeveColors": [
+      [ 59,76,101 ],
+	  [ 66, 83,116 ],
+	  [ 77,102,127 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 10
+    }
+  },
+  "RightShirt": {
+	"DisableGrayscale":true,
+    "SleeveColors": [
+      [ 59,76,101 ],
+	  [ 66, 83,116 ],
+	  [ 77,102,127 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 10
+    }
+  },
+  "LeftShirt": {
+	"DisableGrayscale":true,
+    "Flipped": true,
+    "SleeveColors": [
+      [ 59,76,101 ],
+	  [ 66, 83,116 ],
+	  [ 77,102,127 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 10
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale":true,
+    "SleeveColors": [
+      [ 59,76,101 ],
+	  [ 66, 83,116 ],
+	  [ 77,102,127 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 48
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 10
+    }
+  }
+}

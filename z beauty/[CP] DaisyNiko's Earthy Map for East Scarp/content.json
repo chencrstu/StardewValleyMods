@@ -1,0 +1,17 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+//East Scarp Worldmap
+	{
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+			"FromFile": "assets/{{Season}}_ESmap_SVE.png",
+			"PatchMode": "Overlay",
+			"OnSeasonChange": true,
+			"When": {
+				"HasMod": "LemurKat.EastScarpe.CP",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+		},
+	],
+}

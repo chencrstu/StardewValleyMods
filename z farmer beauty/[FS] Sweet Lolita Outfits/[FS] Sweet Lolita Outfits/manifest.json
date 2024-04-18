@@ -1,0 +1,12 @@
+﻿{
+  "Name": "< Sweet Lolita <",
+  "Author": "otohimexoxo",
+  "Version": "1.4.0",
+  "Description": "adds multiple lolita dresses/hats/accessories to fashion sense",
+  "UniqueID": "otohime.lolitaoutfits",
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "UpdateKeys": ["Nexus:16449"],
+    "MinimumVersion": "3.0.1"
+  }
+}

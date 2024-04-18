@@ -1,0 +1,67 @@
+{
+  "Name": "Rino#Pinkglasses",
+  "FrontAccessory": {
+    "DisableGrayscale": true,
+    "DrawBeforePlayer": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": 4
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+  "RightAccessory": {
+    "DisableGrayscale": true,
+    "DrawBeforePlayer": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": 4
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 20
+    }
+  }, 
+    "LeftAccessory": {
+      "DisableGrayscale": true,
+    "DrawBeforePlayer": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": 4
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 20
+    }
+  },
+  "BackAccessory": {
+    "DisableGrayscale": true,
+  "DrawBeforePlayer": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 60
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": 4
+    },
+    "AccessorySize": {
+      "Width": 20,
+      "Length": 20
+    }
+  }
+}

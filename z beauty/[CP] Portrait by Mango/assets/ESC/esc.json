@@ -1,0 +1,14 @@
+{
+	"Changes": [
+		//aideen
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Aideen",
+			"FromFile": "assets/ESC/Aideen.png",
+			"When": {
+				"EnableMod": "true",
+				"ESC": "enabled"
+			}
+		},
+	]
+}

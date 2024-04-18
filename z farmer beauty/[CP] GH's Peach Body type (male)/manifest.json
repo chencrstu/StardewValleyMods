@@ -1,0 +1,11 @@
+﻿{
+   "Name": "[CP] GH's Peach Body type (male)",
+   "Author": "GH",
+   "Version": "3.2.1",
+   "Description": "This mode applies the male pitch body type.",
+   "UniqueID": "GH.Pitch.male",
+   "MinimumApiVersion": "3.16.2",
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    },
+}

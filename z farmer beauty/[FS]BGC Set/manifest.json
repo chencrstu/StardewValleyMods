@@ -1,0 +1,13 @@
+﻿{
+  "Name": "BGC Set",
+  "Author": "Sonkuki",
+  "Version": "1.0.1",
+  "Description": "",
+  "UniqueID": "Sonkuki.BGCSet",
+  "UpdateKeys": ["Nexus:15244"],
+  "MinimumApiVersion": "3.18.2",
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.11.3"
+  }
+}

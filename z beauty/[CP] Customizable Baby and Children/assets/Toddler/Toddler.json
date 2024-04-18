@@ -1,0 +1,106 @@
+{
+	"Changes": [
+        
+// Boy
+    
+    // Skin
+        
+	{
+		"LogName": "Boy Skin",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler, Characters/Toddler_dark",
+		"FromFile": "assets/Toddler/Skin/{{BoySkin}}.png",
+		"PatchMode": "Replace",
+	},	
+        
+    //Eyes
+        
+	{
+		"LogName": "Boy Eyes",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler, Characters/Toddler_dark",
+		"FromFile": "assets/Toddler/Eyes/{{BoyEyes}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+    //Hair
+        
+	{
+		"LogName": "Boy Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler, Characters/Toddler_dark",
+		"FromFile": "assets/Toddler/Hair/{{BoyHair}}/{{BoyHairColor}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+    //Clothing
+        
+	{
+		"LogName": "Boy Clothing",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler, Characters/Toddler_dark",
+		"FromFile": "assets/Toddler/Clothing/{{BoyClothing}}/{{BoyClothingColor}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+    //Shoes
+        
+	{
+		"LogName": "Boy Shoes",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler, Characters/Toddler_dark",
+		"FromFile": "assets/Toddler/Shoes/{{BoyShoes}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+// Girl
+        
+    //Skin
+        
+	{
+		"LogName": "Girl Skin",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+		"FromFile": "assets/Toddler/Skin/{{GirlSkin}}.png",
+		"PatchMode": "Replace",
+	},	
+    
+    //Eyes
+        
+	{
+		"LogName": "Girl Eyes",
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+		"FromFile": "assets/Toddler/Eyes/{{GirlEyes}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+    //Hair
+        
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+		"FromFile": "assets/Toddler/Hair/{{GirlHair}}/{{GirlHairColor}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+    //Clothing
+        
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+		"FromFile": "assets/Toddler/Clothing/{{GirlClothing}}/{{GirlClothingColor}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+    //Shoes
+        
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+		"FromFile": "assets/Toddler/Shoes/{{GirlShoes}}.png",
+		"PatchMode": "Overlay",
+	},
+        
+  ]
+}

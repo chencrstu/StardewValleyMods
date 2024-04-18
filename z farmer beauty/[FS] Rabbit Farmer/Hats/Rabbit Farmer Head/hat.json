@@ -1,0 +1,111 @@
+{
+  "Name": "Rabbit Farmer Head",
+  "FrontHat": {
+    "DisableGrayscale": true,
+    "HideHair": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 16,
+      "Length": 16
+    },
+
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 3000
+      },
+      {
+        "Frame": 1,
+        "Duration": 50
+      },
+      {
+        "Frame": 0,
+        "Duration": 7000
+      },
+      {
+        "Frame": 1,
+        "Duration": 50
+      },
+      {
+        "Frame": 0,
+        "Duration": 2000
+      },
+      {
+        "Frame": 1,
+        "Duration": 50
+      },
+      {
+        "Frame": 0,
+        "Duration": 8000
+      },
+      {
+        "Frame": 1,
+        "Duration": 50
+      }
+    ]
+    
+
+  },
+
+
+  "RightHat": {
+    "HideHair": true,
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 24,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 1,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 16
+    }
+
+  },
+  "LeftHat": {
+    "DisableGrayscale": true,
+    "HideHair": true,
+
+
+    "StartingPosition": {
+      "X": 40,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": -5
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 16
+    }
+
+  },
+  "BackHat": {
+    "DisableGrayscale": true,
+    "HideHair": true,
+
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 24,
+      "Length": 32
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"Name": "Rainmoon's Elf Ear",
+	"Author": "ItsRainmoon",
+	"Version": "1.0.0",
+	"Description": "Elf Ear as accesories for Fashion Sense.",
+	"UniqueID": "ItsRainmoon.RainmoonsElfEar",
+	"UpdateKeys": [ "Nexus:15730" ],	
+	"ContentPackFor": {
+		"UniqueID": "PeacefulEnd.FashionSense",
+		"MinimumVersion": "2.2.0"
+  }
+}

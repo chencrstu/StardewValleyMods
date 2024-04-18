@@ -1,0 +1,96 @@
+{
+  "Name": "Childe's Harbinger Uniform",
+  "FrontShirt": {
+    "DisableGrayscale": true,
+    "SleeveColors": [
+      [ 9, 9, 10 ],
+      [ 107, 84, 79 ],
+      [ 198, 157, 131 ]
+    ],
+    "ColorMasks": [
+      [ 93, 92, 83 ],
+      [ 68, 68, 62 ]
+    ],
+    "StartingPosition": {
+      "X": 1,
+      "Y": 2
+    },
+    "BodyPosition": {
+      "X": 3,
+      "Y": 2
+    },
+    "ShirtSize": {
+      "Width": 16,
+      "Length": 14
+    }
+  },
+  "RightShirt": {
+    "DisableGrayscale": true,
+    "SleeveColors": [
+      [ 9, 9, 10 ],
+      [ 107, 84, 79 ],
+      [ 198, 157, 131 ]
+    ],
+    "ColorMasks": [
+      [ 93, 92, 83 ],
+      [ 68, 68, 62 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "Flipped": true,
+    "DisableGrayscale": true,
+    "SleeveColors": [
+      [ 9, 9, 10 ],
+      [ 107, 84, 79 ],
+      [ 198, 157, 131 ]
+    ],
+    "ColorMasks": [
+      [ 93, 92, 83 ],
+      [ 68, 68, 62 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "DisableGrayscale": true,
+    "SleeveColors": [
+      [ 9, 9, 10 ],
+      [ 107, 84, 79 ],
+      [ 198, 157, 131 ]
+    ],
+    "StartingPosition": {
+      "X": 16,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  }
+}

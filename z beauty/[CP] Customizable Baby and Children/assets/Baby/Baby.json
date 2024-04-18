@@ -1,0 +1,40 @@
+{
+	"Changes": [
+        
+	{
+		"LogName": "Baby Clothing",
+		"Action": "EditImage",
+		"Target": "Characters/Baby, Characters/Baby_dark",
+		"FromFile": "assets/Baby/Clothing/{{BabyClothing}}.png",
+		"PatchMode": "Replace",
+	},
+	{
+		"LogName": "Baby Pacifier",
+		"Action": "EditImage",
+		"Target": "Characters/Baby, Characters/Baby_dark",
+		"FromFile": "assets/Baby/Pacifier/{{BabyPacifier}}.png",
+		"PatchMode": "Overlay",
+	},	
+	{
+		"LogName": "Baby Skin",
+		"Action": "EditImage",
+		"Target": "Characters/Baby, Characters/Baby_dark",
+		"FromFile": "assets/Baby/Skin/{{BabySkin}}.png",
+		"PatchMode": "Overlay",
+	},	
+	{
+		"LogName": "Baby Eyes",
+		"Action": "EditImage",
+		"Target": "Characters/Baby, Characters/Baby_dark",
+		"FromFile": "assets/Baby/Eyes/{{BabyEyes}}.png",
+		"PatchMode": "Overlay",
+	},
+	{
+		"LogName": "Baby Hair",
+		"Action": "EditImage",
+		"Target": "Characters/Baby, Characters/Baby_dark",
+		"FromFile": "assets/Baby/Hair/{{BabyHair}}.png",
+		"PatchMode": "Overlay",
+	},
+  ]
+}

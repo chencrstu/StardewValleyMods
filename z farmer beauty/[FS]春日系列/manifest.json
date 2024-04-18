@@ -1,0 +1,13 @@
+{
+  "Name": "[FS]衣服",
+  "Author": "mohan",
+  "Version": "1.0.0",
+  "Description": "",
+  "UniqueID": "mohan.wucang2",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.5.1"
+  }
+}

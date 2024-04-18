@@ -1,0 +1,11 @@
+{
+   "Name": "[CP] Customizable Baby and Children",
+   "Author": "nraittanna",
+   "Version": "1.2.1",
+   "Description": "Allows the player to customize their babies, toddlers and children.",
+   "UniqueID": "nraittanna.CustomizableBaby",
+	"UpdateKeys": [ "Nexus:9500" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

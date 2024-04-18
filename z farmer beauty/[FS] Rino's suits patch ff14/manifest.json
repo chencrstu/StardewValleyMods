@@ -1,0 +1,14 @@
+﻿
+{
+  "Name": "Rino's Suits patch ff14",
+  "Author": "Rino",
+  "Version": "1.0.0",
+  "Description": "Rino's Suits patch ff14",
+  "UniqueID": "Rino.Suitspatchff14",
+  "UpdateKeys": [],
+  "MinimumApiVersion": "3.14.0",
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.3.2"
+  }
+}

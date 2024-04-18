@@ -1,0 +1,64 @@
+{
+  "Name": "Number 37",
+  "FrontHair": {
+    "UseBaldHead": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "RightHair": {
+    "UseBaldHead": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "LeftHair": {
+    "UseBaldHead": true,
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "BackHair": {
+    "UseBaldHead": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  }
+}

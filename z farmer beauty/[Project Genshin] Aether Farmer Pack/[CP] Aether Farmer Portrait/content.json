@@ -1,0 +1,38 @@
+{
+	"Format": "1.21.0",
+
+	  "ConfigSchema": {
+
+    ///   Generates a config file upon starting up with SMAPI.
+
+      "AetherPortraitExpression": 
+      {
+        "AllowValues": "neutral, smile",
+        "Default": "smile",
+        "AllowBlank": false,
+        "Description": "Aether's Farmer portrait will feature a neutral or smiling expression."
+      }
+    },
+
+
+	"Changes": [
+    {
+      "Action": "Load",
+      "Target": "aedenthorn.FarmerPortraits/portrait",
+      "FromFile": "assets/AetherPortraitSmile.png",
+      "When": {
+        "AetherPortraitExpression": "smile"
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Target": "aedenthorn.FarmerPortraits/portrait",
+      "FromFile": "assets/AetherPortraitNeutral.png",
+      "When": {
+        "AetherPortraitExpression": "neutral"
+      }
+    }
+
+	]
+}

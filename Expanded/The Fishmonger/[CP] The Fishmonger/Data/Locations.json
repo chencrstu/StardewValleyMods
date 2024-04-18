@@ -1,0 +1,270 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Sewer",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BugLand",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "WitchSwamp",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Beach",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandNorth",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_bicolorpiranha"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_redfinhap": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_redfinhap",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_redfinhap"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouth",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_bigfinsquid"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_firemouth": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_firemouth",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_firemouth"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_garfish": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_garfish",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_garfish"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_matjes": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_matjes",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_matjes"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_moray": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_moray",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_moray"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_stripedtoby": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_stripedtoby",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_stripedtoby"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_scarletvampiresquid"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_viperfish": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_viperfish",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_viperfish"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEast",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta",
+          "Season": "Spring"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly",
+          "Season": "Fall"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_neontetra": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_neontetra",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_neontetra"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_sheephead": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_sheephead",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_sheephead"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEast",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_charcoalbetta"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_fairyflossbetta",
+          "Season": "Spring"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_golddustblackmolly",
+          "Season": "Fall"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_neontetra": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_neontetra",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_neontetra"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_sheephead": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_sheephead",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_sheephead"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_sunrisebetta"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_sunsetbetta"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEastCave",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEastCave",
+        "Fish"
+      ],
+      "Entries": {
+        "VoidWitchCult.CP.TheFishmongerNPC_wornouthat": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_wornouthat",
+          "Precedence": 1000
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_glasseyesnapper"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_kissingfish": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_kissingfish",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_kissingfish"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_queentriggerfish"
+        },
+        "VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish": {
+          "Id": "VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish",
+          "ItemId": "VoidWitchCult.CP.TheFishmongerNPC_stoplightparrotfish"
+        }
+      }
+    }
+  ]
+}

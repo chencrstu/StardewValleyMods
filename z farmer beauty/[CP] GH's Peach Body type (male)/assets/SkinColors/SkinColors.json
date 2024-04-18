@@ -1,0 +1,12 @@
+{
+	"Changes": [
+	{
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/skinColors",
+      "FromFile": "assets/SkinColors/skinColors.png",
+      "When": {
+        "skinColors": true
+      }
+    }
+  ]
+}

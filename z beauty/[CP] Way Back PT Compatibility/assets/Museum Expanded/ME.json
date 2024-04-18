@@ -1,0 +1,12 @@
+{
+	"Changes": [
+	
+		{
+		"LogName": "Museum retexture",
+		"Action": "EditImage",
+		"Target": "Maps/{{season}}_museum",
+		"FromFile": "assets/Museum Expanded/assets/{{recolor}}/{{season}}_museum.png",
+		},
+
+     ]
+}

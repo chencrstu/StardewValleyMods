@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Leech&Ortho Hairstyles",
+  "Author": "Sonkuki",
+  "Version": "1.0.0",
+  "Description": "",
+  "UniqueID": "Sonkuki.lohairstyles",
+  "UpdateKeys": ["Nexus:15328"],
+  "MinimumApiVersion": "3.18.2",
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.11.3"
+  }
+}

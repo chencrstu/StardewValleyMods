@@ -1,0 +1,38 @@
+{
+	"Format": "1.21.0",
+
+	  "ConfigSchema": {
+
+    ///   Generates a config file upon starting up with SMAPI.
+
+      "ChildePortraitExpression": 
+      {
+        "AllowValues": "neutral, smile",
+        "Default": "neutral",
+        "AllowBlank": false,
+        "Description": "Childe's Farmer portrait will feature a neutral or smiling expression."
+      }
+    },
+
+
+	"Changes": [
+    {
+      "Action": "Load",
+      "Target": "aedenthorn.FarmerPortraits/portrait",
+      "FromFile": "assets/ChildePortraitSmile.png",
+      "When": {
+        "ChildePortraitExpression": "smile"
+      }
+    },
+
+    {
+      "Action": "Load",
+      "Target": "aedenthorn.FarmerPortraits/portrait",
+      "FromFile": "assets/ChildePortraitNeutral.png",
+      "When": {
+        "ChildePortraitExpression": "neutral"
+      }
+    }
+
+	]
+}

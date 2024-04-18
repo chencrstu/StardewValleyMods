@@ -1,0 +1,56 @@
+{
+	"Changes": [
+		//Sophia
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sophia",
+			"FromFile": "assets/SVE/Sophia.png",
+			"When": {
+				"EnableMod": "true",
+				"Sophia": "enabled"
+			}
+		},
+		//Camilla
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Camilla",
+			"FromFile": "assets/SVE/Camilla.png",
+			"When": {
+				"EnableMod": "true",
+				"Camilla": "enabled"
+			}
+		},
+		//Magnus_m
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Magnus",
+			"FromFile": "assets/SVE/Magnus_m.png",
+			"When": {
+				"EnableMod": "true",
+				"Magnus": "enabled",
+				"Magnus_Style": "male"
+			}
+		},
+		//Magus_f
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Magnus",
+			"FromFile": "assets/SVE/Magnus_f.png",
+			"When": {
+				"EnableMod": "true",
+				"Magnus": "enabled",
+				"Magnus_Style": "female"
+			}
+		},
+		//Mermaid
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Mermaid",
+			"FromFile": "assets/SVE/Mermaid.png",
+			"When": {
+				"EnableMod": "true",
+				"Mermaid": "enabled"
+			}
+		},
+	]
+}

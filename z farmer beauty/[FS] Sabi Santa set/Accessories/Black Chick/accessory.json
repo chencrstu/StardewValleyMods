@@ -1,0 +1,268 @@
+{
+  "Name": "BlackChick friend",
+  "FrontAccessory": {
+    "DisableGrayscale": true,
+	"DrawAfterPlayer": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0,
+    },
+    "HeadPosition": {
+      "X": -15,
+      "Y": 20
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 8,
+        "Duration": 100
+      },
+      {
+        "Frame": 9,
+        "Duration": 100,
+		"OverrideStartingIndex": true
+      },
+	  {
+        "Frame": 8,
+        "Duration": 100
+      },
+	  {
+        "Frame": 9,
+        "Duration": 100
+      },
+      {
+        "Frame": 10,
+        "Duration": 100
+      },
+      {
+        "Frame": 11,
+        "Duration": 100
+      },
+    ],
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 1000
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000
+      },
+      {
+        "Frame": 1,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsElapsedTimeMultipleOf",
+            "Value": {
+              "RandomValue": [ 250, 5000 ]
+            }
+          },
+        ],
+      },
+	  {
+        "Frame": 0,
+        "Duration": 500,
+      },
+	  {
+        "Frame": 1,
+        "Duration": 5000,
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+      },
+      {
+        "Frame": 5,
+        "Duration": 10000,
+        "Conditions": [
+          {
+            "Name": "DidPreviousFrameDisplay",
+            "Value": true
+          }
+        ]
+      },
+	],
+  },
+  "BackAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -8,
+      "Y": -15
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 8,
+        "Duration": 100
+      },
+      {
+        "Frame": 9,
+        "Duration": 100,
+        "OverrideStartingIndex": true
+      },
+      {
+        "Frame": 8,
+        "Duration": 100
+      },
+      {
+        "Frame": 9,
+        "Duration": 100
+      },
+      {
+        "Frame": 10,
+        "Duration": 100
+      },
+      {
+        "Frame": 11,
+        "Duration": 100
+      }
+    ],
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 1000
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000
+      },
+      {
+        "Frame": 1,
+        "Duration": 100,
+        "Conditions": [
+          {
+            "Name": "IsElapsedTimeMultipleOf",
+            "Value": {
+              "RandomValue": [ 250, 5000 ]
+            }
+          },
+        ],
+      },
+	  {
+        "Frame": 0,
+        "Duration": 1000
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+      },
+	  {
+        "Frame": 3,
+        "Duration": 500,
+      },
+	  {
+        "Frame": 2,
+        "Duration": 1000,
+      },
+      {
+        "Frame": 3,
+        "Duration": 10000,
+        "Conditions": [
+          {
+            "Name": "DidPreviousFrameDisplay",
+            "Value": true
+          }
+        ]
+      },
+	],
+  },
+  "RightAccessory": {
+    "DisableGrayscale": true,
+    "DrawAfterPlayer": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 18,
+      "Y": -2
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+      {
+        "Frame": 3,
+        "Duration": 100
+      }
+    ],
+	"IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 500
+      },
+	  {
+        "Frame": 4,
+        "Duration": 5000
+      }
+	],
+  },
+  "LeftAccessory": {
+    "DisableGrayscale": true,
+    "DrawBeforeHair": true,
+    "StartingPosition": {
+      "X": 80,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": -18,
+      "Y": -2
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 32
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+      {
+        "Frame": 3,
+        "Duration": 100
+      }
+    ],
+	"IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 500
+      },
+	  {
+        "Frame": 4,
+        "Duration": 5000
+      },
+	]
+  }
+}

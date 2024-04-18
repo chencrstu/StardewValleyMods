@@ -1,0 +1,63 @@
+{
+  "Name": "Floyd's Hairstyle",
+  "FrontHair": {
+	"DisableGrayscale":true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 16
+    }
+  },
+  "BackHair": {
+	"DisableGrayscale":true,
+    "StartingPosition": {
+      "X": 16,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -1
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 16
+    }
+  },
+  "LeftHair": {
+	"DisableGrayscale":true,
+    "StartingPosition": {
+      "X": 32,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 16
+    }
+  },
+  "RightHair": {
+	"DisableGrayscale":true,
+    "StartingPosition": {
+      "X": 48,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 16
+    }
+  }
+}

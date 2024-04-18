@@ -1,0 +1,93 @@
+{
+  "Name": "School Uniform 2",
+  "FrontShirt": {
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],
+	"ColorMasks":[
+		[156,156,156],
+		[194,194,194]
+	],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  },
+  "RightShirt": {
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],
+	"ColorMasks":[
+		[156,156,156],
+		[194,194,194]
+	],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  },
+  "LeftShirt": {
+    "Flipped": true,
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],	
+	"ColorMasks":[
+		[156,156,156],
+		[194,194,194]
+	],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  },
+  "BackShirt": {
+	"DisableGrayscale":true,
+    "SleeveColors": [
+      [ 30,30,30 ],
+	  [ 37, 37,37 ],
+	  [ 50,50,50 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 48
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 9
+    }
+  }
+}

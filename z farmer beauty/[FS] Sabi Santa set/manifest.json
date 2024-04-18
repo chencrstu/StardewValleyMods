@@ -1,0 +1,13 @@
+﻿{
+  "Name": "[FS] Sabi's Santa Set",
+  "Author": "SabiMiyato",
+  "Version": "1.0.0",
+  "Description": "Santa Set by SabiMiyato",
+  "UniqueID": "SabiMiyato.SantaFS",
+  "UpdateKeys": [ "Nexus:14707" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.5.1"
+  }
+}

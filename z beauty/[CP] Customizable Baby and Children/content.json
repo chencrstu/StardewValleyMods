@@ -1,0 +1,104 @@
+{
+   "Format": "1.19.0",
+   "ConfigSchema": {
+       
+    // Baby Config
+      "BabyClothing": {
+         "AllowValues": "Blue, Green, Orange, Pink, Purple, White, Yellow",
+         "Default": "White",
+      },
+      "BabyPacifier": {
+         "AllowValues": "Blue, Green, Pink, Purple, White, Yellow",
+         "Default": "Blue",
+      },
+      "BabySkin": {
+         "AllowValues": "Abigail, Alex, Brown, Brown2, Brown3, Brown4, Brown5, Brown6, Dark, Dark2, Dark3, Dark4, Dark5, Elliott, Emily, Haley, Harvey, Leah, Light, Maru, Penny, Sam, Sebastian, Shane",
+         "Default": "Light",
+      },
+      "BabyEyes": {
+         "AllowValues": "Abigail, Alex, Black, Blue, Brown, DarkBlue, Elliott, Emily, Green, Grey, Haley, Harvey, IntenseRed, Leah, Maru, Orange, Penny, Pink, Purple, Red, Sam, Sebastian, Shane, Yellow",
+         "Default": "Brown",
+      },
+      "BabyHair": {
+         "AllowValues": "Abigail, Alex, Black, Blond, Blue, Brown, DarkBlue, DarkGreen, DarkPink, Elliott, Emily, Green, Haley, Harvey, Leah, Maru, Orange, Penny, Pink, Red, Sam, Sebastian, Shane, White",
+         "Default": "Brown",
+      },
+       
+    // Boy Config
+      "BoySkin": {
+         "AllowValues": "Abigail, Alex, Brown, Brown2, Brown3, Brown4, Brown5, Brown6, Dark, Dark2, Dark3, Dark4, Dark5, Elliott, Emily, Haley, Harvey, Leah, Light, Maru, Penny, Sam, Sebastian, Shane",
+         "Default": "Light",
+      },
+      "BoyEyes": {
+         "AllowValues": "Abigail, Alex, Black, Blue, Brown, DarkBlue, Elliott, Emily, Green, Grey, Haley, Harvey, IntenseRed, Leah, Maru, Orange, Penny, Pink, Purple, Red, Sam, Sebastian, Shane, Yellow",
+         "Default": "Brown",
+      },
+      "BoyClothing": {
+         "AllowValues": "Basic, Dress, OverallPants, OverallSkirt",
+         "Default": "Basic",
+      },
+      "BoyClothingColor": {
+         "AllowValues": "BlueWhite, PinkBlue, PinkWhite, RedBlue, RedWhite, WhiteBlue, YellowBlue, YellowWhite",
+         "Default": "RedBlue",
+      },
+      "BoyShoes": {
+         "AllowValues": "Black, Blue, Red, White, Yellow",
+         "Default": "White",
+      },
+      "BoyHair": {
+         "AllowValues": "BangsShort, Messy, Ponytails, Short, Straight",
+         "Default": "Short",
+      },
+      "BoyHairColor": {
+         "AllowValues": "Abigail, Alex, Black, Blond, Blue, Brown, DarkBlue, DarkGreen, DarkPink, Elliott, Emily, Green, Haley, Harvey, Leah, Maru, Orange, Penny, Pink, Red, Sam, Sebastian, Shane, White",
+         "Default": "Brown",
+      },
+       
+    // Girl Config
+      "GirlSkin": {
+         "AllowValues": "Abigail, Alex, Brown, Brown2, Brown3, Brown4, Brown5, Brown6, Dark, Dark2, Dark3, Dark4, Dark5, Elliott, Emily, Haley, Harvey, Leah, Light, Maru, Penny, Sam, Sebastian, Shane",
+         "Default": "Light",
+      },
+      "GirlEyes": {
+         "AllowValues": "Abigail, Alex, Black, Blue, Brown, DarkBlue, Elliott, Emily, Green, Grey, Haley, Harvey, IntenseRed, Leah, Maru, Orange, Penny, Pink, Purple, Red, Sam, Sebastian, Shane, Yellow",
+         "Default": "Brown",
+      },
+      "GirlClothing": {
+         "AllowValues": "Basic, Dress, OverallPants, OverallSkirt",
+         "Default": "Basic",
+      },
+      "GirlClothingColor": {
+         "AllowValues": "BlueWhite, PinkBlue, PinkWhite, RedBlue, RedWhite, WhiteBlue, YellowBlue, YellowWhite",
+         "Default": "YellowBlue",
+      },
+      "GirlShoes": {
+         "AllowValues": "Black, Blue, Red, White, Yellow",
+         "Default": "White",
+      },
+      "GirlHair": {
+         "AllowValues": "BangsShort, Messy, Ponytails, Short, Straight",
+         "Default": "BangsShort",
+      },
+      "GirlHairColor": {
+         "AllowValues": "Abigail, Alex, Black, Blond, Blue, Brown, DarkBlue, DarkGreen, DarkPink, Elliott, Emily, Green, Haley, Harvey, Leah, Maru, Orange, Penny, Pink, Red, Sam, Sebastian, Shane, White",
+         "Default": "Brown",
+      },
+},
+
+	"Changes": [
+        
+	// Baby
+	{
+		"Action": "Include",
+		"FromFile": "assets/Baby/Baby.json",
+	},
+        
+	// Toddler
+	{
+		"Action": "Include",
+		"FromFile": "assets/Toddler/Toddler.json",
+	},
+        
+        
+  ]
+}

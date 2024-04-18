@@ -1,0 +1,73 @@
+{
+  "Name": "Wanderer's Hat",
+  "FrontHat": {
+    "DisableGrayscale": true,
+    "HideHair": false,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 16
+    }
+
+  },
+  "RightHat": {
+    "HideHair": false,
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 24,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 1,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 16
+    }
+
+  },
+  "LeftHat": {
+    "DisableGrayscale": true,
+    "HideHair": false,
+
+
+    "StartingPosition": {
+      "X": 48,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 16
+    }
+
+  },
+  "BackHat": {
+    "DisableGrayscale": true,
+    "HideHair": false,
+
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 24,
+      "Length": 24
+    }
+  }
+}

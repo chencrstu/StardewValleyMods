@@ -1,0 +1,11 @@
+{
+  "Name": "(Gy)Hairstyles And Hats",
+  "Author": "Gwendoline",
+  "Version": "1.0.0",
+  "Description": " 发型 帽子",
+  "UniqueID": "Gwendoline.hairsandhats",
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.3"
+  }
+}

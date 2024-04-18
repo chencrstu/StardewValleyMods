@@ -1,0 +1,13 @@
+﻿{
+  "Name": "TWST Suit",
+  "Author": "Sonkuki",
+  "Version": "1.0.0",
+  "Description": "",
+  "UniqueID": "Sonkuki.twstsuit",
+  "UpdateKeys": ["Nexus:15330"],
+  "MinimumApiVersion": "3.18.2",
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.11.3"
+  }
+}

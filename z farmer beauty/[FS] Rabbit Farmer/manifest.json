@@ -1,0 +1,13 @@
+﻿{
+  "Name": "FS Anthro Rabbit Farmer Fashion Sense (FS)",
+  "Author": "Arknir27",
+  "Version": "1.0.0",
+  "Description": "Rabbit Farmer with droopy ears raises a mandrake.",
+  "UniqueID": "Arknir27.RabbitFarmerMandrake",
+  "UpdateKeys": [ "Nexus:17124" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.3.0"
+  }
+}
