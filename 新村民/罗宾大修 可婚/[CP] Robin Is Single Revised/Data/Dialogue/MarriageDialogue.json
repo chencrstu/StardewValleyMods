@@ -1,0 +1,229 @@
+{
+	"Changes": 
+	[
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"FromFile": "Data/blank.json"
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				//SPECIAL DIALOGUE
+				"spouseRoom_Robin": "{{i18n:MarriageRobin.RobinSpouseRoom.1}}",
+				"patio_Robin": "{{i18n:MarriageRobin.patioRobin}}",
+				//EVERYDAY DIALOGUE
+				"Rainy_Day_0": "{{i18n:MarriageRobin.RainyDay.0}}",
+				"Rainy_Day_1": "{{i18n:MarriageRobin.RainyDay.1}}",
+				"Rainy_Day_2": "{{i18n:MarriageRobin.RainyDay.2}}",
+				"Rainy_Day_3": "{{i18n:MarriageRobin.RainyDay.3}}",
+				"Rainy_Day_4": "{{i18n:MarriageRobin.RainyDay.4}}",
+				"Rainy_Day_5": "{{i18n:MarriageRobin.RainyDay.5}}",
+				"Rainy_Day_6": "{{i18n:MarriageRobin.RainyDay.6}}",
+				"Rainy_Night_0": "{{i18n:MarriageRobin.RainyNight.0}}",
+				"Rainy_Night_1": "{{i18n:MarriageRobin.RainyNight.1}}",
+				"Rainy_Night_2": "{{i18n:MarriageRobin.RainyNight.2}}",
+				"Rainy_Night_3": "{{i18n:MarriageRobin.RainyNight.3}}",
+				"Rainy_Night_4": "{{i18n:MarriageRobin.RainyNight.4}}",
+				"Rainy_Night_5": "{{i18n:MarriageRobin.RainyNight.5}}",
+				"Rainy_Night_6": "{{i18n:MarriageRobin.RainyNight.6}}",
+				"Indoor_Day_0": "{{i18n:MarriageRobin.Indoor_Day.0}}",
+				"Indoor_Day_1": "{{i18n:MarriageRobin.Indoor_Day.1}}",
+				"Indoor_Day_2": "{{i18n:MarriageRobin.Indoor_Day.2}}",
+				"Indoor_Day_3": "{{i18n:MarriageRobin.Indoor_Day.3}}",
+				"Indoor_Day_4": "{{i18n:MarriageRobin.Indoor_Day.4}}",
+				"Indoor_Day_5": "{{i18n:MarriageRobin.Indoor_Day.5}}",
+				"Indoor_Day_6": "{{i18n:MarriageRobin.Indoor_Day.6}}",
+				"Indoor_Night_0": "{{i18n:MarriageRobin.Indoor_Night.0}}",
+				"Indoor_Night_1": "{{i18n:MarriageRobin.Indoor_Night.1}}",
+				"Indoor_Night_2": "{{i18n:MarriageRobin.Indoor_Night.2}}",
+				"Indoor_Night_3": "{{i18n:MarriageRobin.Indoor_Night.3}}",
+				"Indoor_Night_4": "{{i18n:MarriageRobin.Indoor_Night.4}}",
+				"Indoor_Night_5": "{{i18n:MarriageRobin.Indoor_Night.5}}",
+				"Indoor_Night_6": "{{i18n:MarriageRobin.Indoor_Night.6}}",
+				"Outdoor_0": "{{i18n:MarriageRobin.Outdoor.0}}",
+				"Outdoor_1": "{{i18n:MarriageRobin.Outdoor.1}}",
+				"Outdoor_3": "{{i18n:MarriageRobin.Outdoor.3}}",
+				"Outdoor_4": "{{i18n:MarriageRobin.Outdoor.4}}",
+				"Outdoor_5": "{{i18n:MarriageRobin.Outdoor.5}}",
+				"Outdoor_6": "{{i18n:MarriageRobin.Outdoor.6}}",
+				"funLeave_Robin": "{{i18n:MarriageRobin.funLeave_Robin.1}}",
+				"funReturn_Robin": "{{i18n:MarriageRobin.funReturn_Robin.1}}",
+				"OneKid_0": "{{i18n:MarriageRobin.OneKid.0}}",
+				"OneKid_1": "{{i18n:MarriageRobin.OneKid.1}}",
+				"OneKid_2": "{{i18n:MarriageRobin.OneKid.2}}",
+				"OneKid_3": "{{i18n:MarriageRobin.OneKid.3}}",
+				"TwoKids_0": "{{i18n:MarriageRobin.TwoKids.0}}",
+				"TwoKids_1": "{{i18n:MarriageRobin.TwoKids.1}}",
+				"Good_0": "{{i18n:MarriageRobin.Good.0}}",
+				"Good_1": "{{i18n:MarriageRobin.Good.1}}",
+				"Good_2": "{{i18n:MarriageRobin.Good.2}}",
+				"Good_3": "{{i18n:MarriageRobin.Good.3}}",
+				"Good_4": "{{i18n:MarriageRobin.Good.4}}",
+				"Good_5": "{{i18n:MarriageRobin.Good.5}}",
+				"Good_6": "{{i18n:MarriageRobin.Good.6}}",
+				"Neutral_0": "{{i18n:MarriageRobin.Neutral.0}}",
+				"Neutral_1": "{{i18n:MarriageRobin.Neutral.1}}",
+				"Bad_0": "{{i18n:MarriageRobin.Bad.0}}",
+				"Bad_1": "{{i18n:MarriageRobin.Bad.1}}",
+				//SPECIAL DAY DIALOGUES
+				"spring_1": "{{i18n:MarriageRobin.spring_1}}",
+				"spring_2": "{{i18n:MarriageRobin.spring_2}}",
+				"spring_3": "{{i18n:MarriageRobin.spring_3}}",
+				"spring_12": "{{i18n:MarriageRobin.spring_12}}",
+				"spring_23": "{{i18n:MarriageRobin.spring_23}}",
+				"summer_1": "{{i18n:MarriageRobin.summer_1}}",
+				"summer_4": "{{i18n:MarriageRobin.summer_4}}",
+				"summer_18": "{{i18n:MarriageRobin.summer_18}}",
+				"summer_10": "{{i18n:MarriageRobin.summer_10}}",
+				"summer_27": "{{i18n:MarriageRobin.summer_27}}",
+				"fall_1": "{{i18n:MarriageRobin.fall_1}}",
+				"fall_15": "{{i18n:MarriageRobin.fall_15}}",
+				"fall_20": "{{i18n:MarriageRobin.fall_20}}",
+				"fall_26": "{{i18n:MarriageRobin.fall_26}}",
+				"winter_1": "{{i18n:MarriageRobin.winter_1}}",
+				"winter_7": "{{i18n:MarriageRobin.winter_7}}",
+				"winter_24": "{{i18n:MarriageRobin.winter_24}}",
+				"winter_28": "{{i18n:MarriageRobin.winter_28}}",
+			}
+		},
+
+		//CONDITIONAL DIALOGUE
+		//CYCLE ROBIN SPOUSE ROOM DIALOGUE
+		
+		//SPRING 1
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"spouseRoom_Robin": "{{i18n:MarriageRobin.spring_1}}"
+			},
+			"When": {
+				"Day": "1",
+				"Season": "Spring"
+			}
+		},
+
+		//SPRING 2
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"spouseRoom_Robin": "{{i18n:MarriageRobin.spring_2}}"
+			},
+			"When": {
+				"Day": "2",
+				"Season": "Spring"
+			}
+		},
+
+		//SPRING 3
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"spouseRoom_Robin": "{{i18n:MarriageRobin.spring_3}}"
+			},
+			"When": {
+				"Day": "3",
+				"Season": "Spring"
+			}
+		},
+
+		//SUMMER 1
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"spouseRoom_Robin": "{{i18n:MarriageRobin.summer_1}}"
+			},
+			"When": {
+				"Day": "1",
+				"Season": "Summer"
+			}
+		},
+
+		//SUMMER 4
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"spouseRoom_Robin": "{{i18n:MarriageRobin.summer_4}}"
+			},
+			"When": {
+				"Day": "4",
+				"Season": "Summer"
+			}
+		},
+
+		//FALL 1
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"spouseRoom_Robin": "{{i18n:MarriageRobin.fall_1}}"
+			},
+			"When": {
+				"Day": "1",
+				"Season": "Fall"
+			}
+		},
+
+		//CYCLE FUN LEAVE & FUN RETURN DIALOGUE
+		//SPAGHETTI GIFTS
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"funLeave_Robin": "{{i18n:MarriageRobin.funLeave_Robin.1}}",
+				"funReturn_Robin": "{{i18n:MarriageRobin.funReturn_Robin.2}}",
+			},
+			"When": {
+				"Day": "2,25"
+			}
+		},
+
+		//FIRST DAY OF SEASON FORAGING GIFTS
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"funLeave_Robin": "{{i18n:MarriageRobin.funLeave_Robin.1}}",
+				"funReturn_Robin": "{{i18n:MarriageRobin.funReturn_Robin.3}}[{{ForageHarvest}}]",
+			},
+			"When": {
+				"Day": "1",
+				"Season": "{{season}}"
+			}
+		},
+
+		//AEROBIC DAY
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"funLeave_Robin": "{{i18n:MarriageRobin.funLeave_Robin.Aerobic.1}}",
+				"funReturn_Robin": "{{i18n:MarriageRobin.funReturn_Robin.Aerobic.1}}",
+			},
+			"When": {
+				"DayOfWeek": "Tuesday",
+			}
+		},
+		
+		//COFFEE EVERY TUESDAY 9
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueRobin",
+			"Entries": {
+				"funLeave_Robin": "{{i18n:MarriageRobin.funLeave_Robin.Aerobic.2}}",
+				"funReturn_Robin": "{{i18n:MarriageRobin.funReturn_Robin.Aerobic.2}}",
+			},
+			"When": {
+				"DayOfWeek": "Tuesday",
+				"Day": "9"
+			}
+		},
+	]
+}

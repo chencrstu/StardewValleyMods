@@ -1,0 +1,12 @@
+{
+	"Name": "Childhood Sweetheart Caroline",
+	"Author": "Ghost3lboom",
+	"Description": "卡洛琳与你曾是你儿时最好的朋友",
+	"Version": "1.1.0",
+	"UniqueID": "Solariaze.ChildhoodSweetheartCarolineRussian",
+	"UpdateKeys": ["Nexus:17428"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.29.1"
+	}
+}

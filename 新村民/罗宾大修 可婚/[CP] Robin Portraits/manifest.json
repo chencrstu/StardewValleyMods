@@ -1,0 +1,11 @@
+{
+   "Name": "[CP] Robin Portraits",
+   "Author": "xiaoyi",
+   "Version": "5.0.1",
+   "Description": "Seasonal robin.",
+   "UniqueID": "SeasonalRobin",
+   "UpdateKeys": [ "Nexus:????" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+   }
+}

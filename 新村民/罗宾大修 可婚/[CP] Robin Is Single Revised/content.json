@@ -1,0 +1,661 @@
+{
+  "Format": "2.0.0",
+  //DYNAMIC TOKENS FOR FESTIVAL OUTFITS - CUTER PATCH
+  "DynamicTokens": [
+    {
+      "Name": "Festival",
+      "Value": "FlowerDance",
+      "When": {
+        "DayEvent": "flower dance",
+        "LocationName": "Forest, temp"
+      }
+    },
+    {
+      "Name": "Festival",
+      "Value": "SpiritsEve",
+      "When": {
+        "DayEvent": "spirit's eve",
+        "LocationName": "town,Custom_EastScarpeInn, Custom_EastScarpe, temp"
+      }
+    },
+
+    //ROBIN FORAGING GIFTS ITEM POOLS
+    {
+      "Name": "ForageHarvest",
+      "Value": "22 404 257",
+      "When": {
+        "Season": "Spring"
+      }
+    },
+
+    {
+      "Name": "ForageHarvest",
+      "Value": "259 420 396",
+      "When": {
+        "Season": "Summer"
+      }
+    },
+
+    {
+      "Name": "ForageHarvest",
+      "Value": "281 422 406",
+      "When": {
+        "Season": "Fall"
+      }
+    },
+
+    {
+      "Name": "ForageHarvest",
+      "Value": "412 416 414 418",
+      "When": {
+        "Season": "Winter"
+      }
+    }
+  ],
+
+  //CONFIG
+  "ConfigSchema": {
+    "RelationshipType": {
+      "Description": "The relationship switch for this mod. If relationship type is Friend or Daughter, pre-written versions of dialogue and events are loaded. If the relationship type is Custom, a generic version of dialogues and events will be loaded with their relationships are free for you to determine.",
+      "AllowValues": "Daughter, Friend, Custom",
+      "Default": "Daughter",
+      "Section": "Main"
+    },
+    "DemetriusRelationship": {
+      "LogName": "Demetrius Relationship",
+      "Description": "Only works if relationship type is Custom. How Demetrius will call Robin in-game, any value would do. In context, the dialogue would look like ' Robin is Demetrius's [your input]'. Demetrius will treat her as a 'platonic friend' of the family and call her with whatever name you chose, case-sensitive. Default to Daughter.",
+      "AllowBlank": true,
+      "Default": "Daughter",
+      "Section": "Relationships"
+    },
+
+    "MaruRelationship": {
+      "LogName": "Maru Relationship",
+      "Description": "Only works if relationship type is Custom. How Maru will call Robin in-game, any value would do. In context, the dialogue would look like 'Robin is Maru's [your input]'. Maru will treat her a 'platonic friend' of the family and call her with whatever name you chose, case-sensitive. Default is Sister.",
+      "AllowBlank": true,
+      "Default": "Sister",
+      "Section": "Relationships"
+    },
+
+    "SebastianRelationship": {
+      "LogName": "Sebastian Relationship",
+      "Description": "Only works if relationship type is Custom. How Sebastain will call Robin in-game, any value would do. In context, the dialogue would look like 'Robin is Sebastian's [your input]'. Sebastian will treat her as a 'platonic friend' of the family and call her with whatever name you chose, case-sensitive. Default is Sister.",
+      "AllowBlank": true,
+      "Default": "Sister",
+      "Section": "Relationships"
+    },
+
+    "RobinDemetriusRelationship": {
+      "LogName": "Demetrius Relationship",
+      "Description": "Only works if relationship type is Custom. How Demetrius would call Robin in-game, any value would do. In context, the dialogue would look like 'Demetrius is Robin's [your input] '. Demetrius will treat her a 'platonic friend' of the family and call her with whatever name you chose, case-sensitive. Default is Father.",
+      "AllowBlank": true,
+      "Default": "Father",
+      "Section": "Relationships"
+    },
+
+    "RobinMaruRelationship": {
+      "LogName": "Robin Maru Relationship",
+      "Description": "Only works if relationship type is Custom. How Robin would call Robin in-game, any value would do. In context, the dialogue would look like 'Maru is Robin's [your input]'. Maru will treat her as a 'platonic friend' of the family and call her with whatever name you chose, case-sensitive. Default to Sister",
+      "AllowBlank": true,
+      "Default": "Sister",
+      "Section": "Relationships"
+    },
+
+    "RobinSebastianRelationship": {
+      "LogName": "Sebastian Relationship",
+      "Description": "Only works if relationship type is Custom. How Sebastain would call Robin in-game, any value would do. In context, the dialogue would look like 'Sebastian is Robin's [your input]'. Sebastian will treat her as a 'platonic friend' of the family and call her with whatever name you chose, case-sensitive. Default to Brother.",
+      "AllowBlank": true,
+      "Default": "Brother",
+      "Section": "Relationships"
+    },
+
+    "SeperateRoom": {
+      "LogName": "Seperate a new room for Robin",
+      "Description": "Seperate a new room for Robin.",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Maps Edit"
+    }
+  },
+  //CHANGES
+  "Changes": [
+    //LOAD NEW MAPS
+    //SPOUSE ROOM & SPOUSE PATIO
+    {
+      "Action": "Include",
+      "FromFile": "Data/Strings/SpouseRoom.json"
+    },
+    //SPOUSE ROOM
+    {
+      "Action": "Load",
+      "Target": "Maps/Custom_Robin_SpouseRoom",
+      "FromFile": "Assets/Maps/RIS_Robin_SpouseRoom.tmx"
+    },
+    //SPOUSE AREA
+    {
+      "Action": "Load",
+      "Target": "Maps/Robin_Spouse_Area",
+      "FromFile": "Assets/Maps/RIS_Robin_SpouseArea.tmx"
+    },
+
+    //ROBIN ANIMATION
+    {
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "robin_exercise": "40/40 40 41 42 42 43/40/Strings\\animationDescriptions:robin_exercise"
+      }
+    },
+
+    //ADD TO CHARACTER DATA
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Fields": {
+        "Robin": {
+          "SpouseRoom": {
+            "MapAsset": "Custom_Robin_SpouseRoom",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            },
+          }
+        }
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Fields": {
+        "Robin": {
+          "SpousePatio": {
+            "MapAsset": "Robin_Spouse_Area",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            }, 
+          "SpriteAnimationFrames": [
+            [23, 100],
+            [24, 100],
+            [25, 100],
+            [26, 100],
+            [27, 300]
+          ],
+          "SpriteAnimationPixelOffset": {
+            "X": 0,
+            "Y": 0
+          }
+        }
+      }
+    }  
+  },
+
+
+    //PATCHING MAP
+    //ROBIN ROOM
+    {
+      "Action": "EditMap",
+      "Target": "Maps/ScienceHouse",
+      "FromFile": "Assets/Maps/RIS_ScienceHouseSVEPatch.tmx",
+      "ToArea": {
+        "X": 12,
+        "Y": 0,
+        "Width": 13,
+        "Height": 12
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "SeperateRoom": true,
+        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+
+    {
+      "Action": "EditMap",
+      "Target": "Maps/ScienceHouse",
+      "FromFile": "Assets/Maps/RIS_ScienceHouseVanillaPatch.tmx",
+      "ToArea": {
+        "X": 12,
+        "Y": 0,
+        "Width": 14,
+        "Height": 12
+      },
+	    "PatchMode": "Replace",
+      "When": {
+        "SeperateRoom": true,
+        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false,
+      }
+    },
+
+
+    {
+      "Action": "EditMap",
+      "Target": "Maps/ScienceHouse",
+      "MapProperties": {
+        "Doors": "7 10 1 120 13 10 1 120 22 10 1 120"
+      },
+      "When": {
+        "SeperateRoom": true
+      }
+    },
+
+    //CHANGE SCHEDULES
+    {
+      "Action": "EditData",
+      "Target": "Characters/Schedules/Robin",
+      "Entries": {
+        "rain": "800 ScienceHouse 8 18 2/1700 ScienceHouse 29 9 0/1930 ScienceHouse 15 5 0/2100 ScienceHouse 17 5 1 robin_sleep",
+        "Mon": "800 ScienceHouse 8 18 2/1700 CommunityCenter 9 19 3/1940 ScienceHouse 15 5 0/2200 ScienceHouse 17 5 1 robin_sleep",
+        "Tue": "930 SeedShop 27 18 0/1300 SeedShop 27 22 2 robin_exercise/1600 SeedShop 24 16 0 \"Strings\\schedules\\Robin:Tue.000\"/1800 ScienceHouse 15 5 0/2100 ScienceHouse 17 5 1 robin_sleep",
+        "summer_18": "700 ScienceHouse 8 18 2/800 Hospital 12 14 0 \"Strings\\schedules\\Robin:summer_18.000\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Robin:summer_18.001\"/1600 ScienceHouse 15 5 0/2100 ScienceHouse 17 5 1 robin_sleep",
+        "Fri": "800 ScienceHouse 8 18 2/1600 Saloon 22 22 1/1920 Saloon 23 22 1 robin_dance/2100 ScienceHouse 17 5 1 robin_sleep",
+        "winter_16": "800 ScienceHouse 8 18 2/1700 Beach 13 31 1 \"Strings\\schedules\\Robin:winter_16.000\"/2330 ScienceHouse 17 5 1 robin_sleep",
+        "spring": "800 ScienceHouse 8 18 2/1700 Mountain 29 36 2/1930 ScienceHouse 15 5 0/2100 ScienceHouse 17 5 1 robin_sleep"
+      },
+      "When": {
+        "SeperateRoom": true
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Schedules/Demetrius",
+      "Entries": {
+        "rain": "750 ScienceHouse 16 19 2 demetrius_read/1100 ScienceHouse 22 20 1 demetrius_notes/1500 ScienceHouse 7 18 1/1540 ScienceHouse 22 20 1/1800 ScienceHouse 27 9 0/1920 ScienceHouse 28 9 0/2000 ScienceHouse 23 4 0/2200 ScienceHouse 21 5 1 demetrius_sleep",
+        "summer_25": "820 Hospital 12 14 0 \"Strings\\schedules\\Demetrius:summer_25.000\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Demetrius:summer_25.001\"/1600 ScienceHouse 23 4 0/2200 ScienceHouse 19 4 1 demetrius_sleep",
+        "Fri": "750 ScienceHouse 22 20 1 demetrius_notes/1600 Saloon 23 22 3/1920 Saloon 24 22 3 demetrius_dance/2100 ScienceHouse 20 4 1 demetrius_sleep",
+        "winter_16": "750 ScienceHouse 16 19 2 demetrius_read/1100 ScienceHouse 22 20 1 demetrius_notes/1500 ScienceHouse 7 18 1/1540 Beach 11 32 3 \"Strings\\schedules\\Demetrius:winter_16.000\"/2330 ScienceHouse 21 5 1 demetrius_sleep",
+        "winter": "GOTO rain",
+        "fall": "750 ScienceHouse 29 9 0/1100 Mountain 45 8 demetrius_notes/1900 ScienceHouse 27 9 0/2040 ScienceHouse 28 9 0/2100 ScienceHouse 23 4 0/2230 ScienceHouse 21 5 1 demetrius_sleep",
+        "summer": "750 ScienceHouse 29 9 0/1100 Town 31 23 1 square_3_9/1900 ScienceHouse 27 9 0/2040 ScienceHouse 28 9 0/2100 ScienceHouse 23 4 0/2230 ScienceHouse 21 5 1 demetrius_sleep",
+        "spring": "750 ScienceHouse 29 9 0/1100 ScienceHouse 22 20 1 demetrius_notes/1430 Mountain 15 26 1/1530 Mountain 30 36 2/1900 ScienceHouse 27 9 0/2040 ScienceHouse 28 9 0/2100 ScienceHouse 23 4 0/2230 ScienceHouse 21 5 1 demetrius_sleep"
+      },
+      "When": {
+        "SeperateRoom": true
+      }
+    },
+
+    //ROBIN MARRIAGE SCHEDULE
+    {
+      "Action": "EditData",
+      "Target": "Characters/Schedules/Robin",
+      "Entries": {
+        "marriage_Mon": "700 ScienceHouse 8 18 2/1800 bed",
+        "marriage_Tue": "930 SeedShop 27 18 0/1300 SeedShop 27 22 2 robin_exercise/1600 SeedShop 24 16 0 \"Strings\\schedules\\Robin:Tue.000\"/1800 bed",
+        "marriage_Wed": "GOTO marriage_Mon",
+        "marriage_Thu": "GOTO marriage_Mon",
+        "marriage_Fri": "GOTO marriage_Mon",
+        "marriage_Sat": "GOTO marriage_Mon",
+        "marriage_summer18": "800 Hospital 12 14 0 \"Strings\\schedules\\Robin:summer_18.000\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Robin:summer_18.001\"/1800 bed",
+        "marriage_DesertFestival": "GOTO DesertFestival_2",
+      }
+    },
+
+    //SPECIFIED VERSION
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "LogName": "DaughterCharacterData",
+      "Fields": {
+        "Demetrius": {
+          "LoveInterest": "",
+          "FriendsAndFamily": {
+            "Robin": "{{i18n:Localization.EldestDaughter}}"
+          }
+        },
+
+        "Maru": {
+          "FriendsAndFamily": {
+            "Robin": "[LocalizedText Strings\\Characters:Relative_Sister]"
+          }
+        },
+
+        "Robin": {
+          "CanBeRomanced": true,
+          "LoveInterest": "",
+          "FriendsAndFamily": {
+            "Maru": "[LocalizedText Strings\\Characters:Relative_Sister]",
+            "Demetrius": "[LocalizedTextStrings\\Characters:Reletive_Dad]"
+          }
+        },
+
+        "Sebastian": {
+          "FriendsAndFamily": {
+            "Robin": "[LocalizedText Strings\\Characters:Relative_Sister]"
+          }
+        }
+      },
+      "When": {
+        "RelationshipType": "Daughter"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "LogName": "FriendCharacterData",
+      "Fields": {
+        "Demetrius": {
+          "LoveInterest": "",
+          "FriendsAndFamily": {
+            "Robin": "",
+          }
+        },
+
+        "Maru": {
+          "FriendsAndFamily": {
+            "Robin": ""
+          }
+        },
+
+        "Robin": {
+          "CanBeRomanced": true,
+          "LoveInterest": "",
+          "FriendsAndFamily": {
+            "Maru": "",
+            "Demetrius": ""
+          }
+        },
+
+        "Sebastian": {
+          "FriendsAndFamily": {
+            "Robin": ""
+          }
+        }
+      },
+      "When": {
+        "RelationshipType": "Friend"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "LogName": "GenericCharacterData",
+      "Fields": {
+        "Demetrius": {
+          "LoveInterest": "",
+          "FriendsAndFamily": {
+            "Robin": "{{DemetriusRelationship}}"
+          }
+        },
+        "Maru": {
+          "FriendsAndFamily": {
+            "Robin": "{{MaruRelationship}}"
+          }
+        },
+        "Robin": {
+          "CanBeRomanced": true,
+          "LoveInterest": "",
+          "FriendsAndFamily": {
+            "Maru": "{{RobinMaruRelationship}}",
+            "Demetrius": "{{RobinDemetriusRelationship}}",
+            "Sebastian": "{{RobinSebastianRelationship}}"
+          }
+        },
+        "Sebastian": {
+          "FriendsAndFamily": {
+            "Robin": "{{SebastianRelationship}}"
+          }
+        }
+      },
+      "When": {
+        "RelationshipType": "Custom"
+      }
+    },
+
+    //EDIT DEFAULT POSITION IF SEPERATED ROOM
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "LogName": "SeperatedRoom",
+      "Fields": {
+        "Robin": {
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "ScienceHouse",
+              "Tile": {
+                "X": 17,
+                "Y": 5
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+
+        "Demetrius": {
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "ScienceHouse",
+              "Tile": {
+                "X": 21,
+                "Y": 5
+              },
+              "Direction": "right"
+            }
+          ]
+        }
+      },
+      "When": {
+        "SeperateRoom": true
+      }
+    },
+
+    //ROBIN WEDDING & KISSING SPRITES
+    //LOAD ROBIN WEDDING SPRITES & DELETE DUPLICATE ROBIN
+
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "Assets/Sprites/Robin_Marriage.png",
+      "When": {
+        "DayEvent": "wedding",
+        "LocationName": "Town",
+        "Relationship:Robin": "Engaged, Married",
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": false
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+
+    //KISSING SPRITES
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Robin, Characters/Robin_Winter",
+      "FromFile": "Assets/Sprites/{{TargetWithoutPath}}_Kissing.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+      "ToArea": { "X": 0, "Y": 224, "Width": 16, "Height": 32 },
+      "PatchMode": "Replace",
+      "when": {
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": false
+      }
+    },
+
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Robin, Characters/Robin_Winter",
+      "FromFile": "Assets/Sprites/{{TargetWithoutPath}}_Aerobics.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+      "ToArea": { "X": 0, "Y": 320, "Width": 64, "Height": 32 },
+      "PatchMode": "Replace",
+      "when": {
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": false
+      }
+    },
+
+    //ADD ROBIN FLOWER DANCE - VANILLA
+
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Robin, Characters/Robin_Winter",
+      "FromFile": "Assets/Sprites/Robin_FlowerDance.png",
+      "ToArea": { "X": 0, "Y": 320, "Width": 64, "Height": 64 },
+      "PatchMode": "Replace",
+      "when": {
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": false,
+        "Festival": "FlowerDance"
+      },
+      "Update": "OnLocationChange"
+    },
+
+    //SEASONAL CUTER CHARACTERS COMPATIBILITY
+    {
+      "Action": "Include",
+      "FromFile": "Data/Compatibility/SeasonalCuterOutfits.json",
+      "When": {
+        "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true
+      }
+    },
+
+    //ENGAGEMENT DIALOGUE
+    {
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Robin0": "{{i18n:Robin.EngagementDialogue.01}}",
+        "Robin1": "{{i18n:Robin.EngagementDialogue.02}}"
+      }
+    },
+
+    //EVENTS
+    {
+      "Action": "Include",
+      "FromFile": "Data/Events/Events.json"
+    },
+
+    //DIALOGUE CHANGES
+    {
+      "Action": "Include",
+      "FromFile": "Data/Dialogue/Others.json"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Dialogue/Robin.json"
+    },
+
+    //MARRIAGE DIALOGUE
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/Dialogue/MarriageDialogue.json"
+    },
+    //FESTIVALS AND STRINGS CHANGES
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "Robin_spouse": "{{i18n:fall16.Robin_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Robin_spouse": "{{i18n:fall27.Robin_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "Robin_spouse": "{{i18n:spring13.Robin_spouse}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Robin": "{{i18n:summer11.{{RelationshipType}}.Robin}}",
+        "Demetrius": "{{i18n:summer11.{{RelationshipType}}.Demetrius}}",
+        "Robin_spouse": "{{i18n:summer11.{{RelationshipType}}.Robin_spouse}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Demetrius": "{{i18n:summer11.Married.Demetrius}}"
+      },
+      "When": { "Relationship:Robin": "Dating, Engaged, Married" },
+      "Update": "OnLocationChange"
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "Robin_spouse": "{{i18n:winter8.Robin_spouse}}",
+        "Demetrius": "{{i18n:winter8.Demetrius}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Robin_spouse": "{{i18n:winter25.Robin_spouse}}",
+        "Demetrius": "{{i18n:winter25.Demetrius}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/Characters",
+      "Entries": {
+        "Phone_Robin_Open_Rare": "{{i18n:{{RelationshipType}}.Phone_Robin_Open_Rare}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/SpeechBubbles",
+      "Entries": {
+        "ScienceHouse_Robin_RareGreeting": "{{i18n:ScienceHouse_Robin_RareGreeting}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/schedules/Robin",
+      "Entries": {
+        "summer_18.000": "{{i18n:summer_18.000}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/Characters",
+      "When": { "Relationship:Robin": "Dating, Engaged, Married" },
+      "Entries": {
+        "MovieInvite_Spouse_Robin": "{{i18n:MovieInvite_Spouse_Robin}}"
+      }
+    }
+    //TESTING REMOVE DEMETRIUS USING OPERATIONS
+    //FESTIVAL WARPOUT
+    /*{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up", 5],
+					"Value": "warp Demetrius -400 -400",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"Relationship:Robin": "Dating, Engaged, Married"
+			},
+		}*/
+  ]
+}

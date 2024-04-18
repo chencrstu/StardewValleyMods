@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="13" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="37">
+ <properties>
+  <property name="DayTiles" value="Front 4 1 256 Front 4 2 288 Front 15 1 256 Front 15 2 288 Front 28 5 256 Front 28 6 288 Front 17 14 256 Front 17 15 288 Front 3 14 225 Front 3 15 257 Front 7 14 225 Front 7 15 257 Front 20 1 256 Front 20 2 288 Back 4 4 228 Back 4 5 260 Back 3 17 228 Back 3 18 260 Back 7 17 228 Back 7 18 260 Back 15 4 507 Back 15 5 539 Back 17 18 1047 Back 17 19 1079 Back 28 9 228 Back 28 10 260"/>
+  <property name="Doors" value="7 10 1 120 13 10 1 120"/>
+  <property name="NightTiles" value="Front 4 1 1253 Front 4 2 1285 Front 15 1 1253 Front 15 2 1285 Front 28 5 1253 Front 28 6 1285 Front 17 14 1253 Front 17 15 1285 Front 3 14 1222 Front 3 15 1254 Front 7 14 1222 Front 7 15 1254 Front 20 1 1253 Front 20 2 1285 Back 4 4 199 Back 4 5 231 Back 15 4 603 Back 15 5 635 Back 3 17 199 Back 3 18 263 Back 7 17 199 Back 7 18 231 Back 17 18 1010 Back 17 19 1009 Back 28 9 199 Back 28 10 231"/>
+  <property name="Warp" value="6 25 Mountain 12 26 3 9 Mountain 8 21 12 23 SebastianRoom 1 1 13 23 SebastianRoom 1 1"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2241" name="zVanillaWallsAndFloors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="VanillaWallsAndFloors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="2801" name="zVanillaFurniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="VanillaFurniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="5777" name="zVanillaCraftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="VanillaCraftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="6353" name="zspring_z_extras" tilewidth="16" tileheight="16" tilecount="6400" columns="25">
+  <image source="spring_z_extras.png" width="400" height="4096"/>
+ </tileset>
+ <tileset firstgid="12753" name="2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="14065" name="z_SVEbuildingShadow" tilewidth="16" tileheight="16" tilecount="600" columns="24">
+  <image source="z_SVEbuildingShadow.png" width="384" height="400"/>
+ </tileset>
+ <layer id="1" name="Back" width="13" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxzZGBgcATidk4IfoeGHRmwYyYzBgZmIjCLGUKPEpCtTARWQdLjhMRejQe7IKmrYWJgmAvENkC8B4rnYsG1TAg9c6DqYpD0gPAcNP4eJD241OHTgy4H4jMgic/BYQ+ueMCm5pcRxBwQjQ/vQVIjZQzRA6Lx4T1IahYD7epkRHXHaixuQ1YDAB3jT2c=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back2" width="13" height="12">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYCAPHDUiTt0xJHVPcejpRsIg8IxIs0kBkiYMDFJALA3FMiaE9VgC1VgBsTUU2xChJxKoJgqKo4E4hgg9IwkAAJ49DDo=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Back2"/>
+ <layer id="5" name="Back3" width="13" height="12">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B+AAACcAAB
+  </data>
+ </layer>
+ <objectgroup id="6" name="Back3"/>
+ <layer id="7" name="Buildings" width="13" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAOHHGI4wO49MDEu4C4Gw2D5FoZGRjaGBFiPVBxEF4FxKuheClQzTJGiPhTIP2MESKuycTAsAZJzykgzmLC7zZPoHyFAEKPDpL6RqC5TVB7moF0CyNCbo8xQg+xYXCHCD1rgW5ZB8TrBSBiEUyoehwJYGQ1FVB+OQ77GLComQHEO4F4OgNmHMEwupodUL3bGRBxJM6IYMMwAxIbAGmrLRI=
+  </data>
+ </layer>
+ <objectgroup id="8" name="Buildings">
+  <object id="11" name="TileData" x="112" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ScienceHouseSVE.8&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="128" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ScienceHouseSVE.8&quot;"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="144" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ScienceHouseSVE.8&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="16" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door Robin Demetrius"/>
+   </properties>
+  </object>
+  <object id="36" name="TileData" x="160" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door Robin Demetrius"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="9" name="Front" width="13" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgcAJiZyju4kCw0cVcGCAgEYizgPiLEQODIyMDHByF0jCxb0CcA8SpQNwIlRMxBuoHyrcCcRsjQk8ikjkg0IqkBwYWAtUsgup5DqRfQPUoMjEwRAhg13MQqOYQVA87UB0HE0JujjF2Pej+QQerOFD1vDbCr8eCCdWeJ0DMDbS73pSBoQGInwL5z6D4MVTNcyB+AcTMQLdXAmkmRsx4gWF0NSAwE0oLAcU+AWkxIG0ODa/vSGpMmVHdKoEWD9QGAA/6Ki4=
+  </data>
+ </layer>
+ <objectgroup id="10" name="Front"/>
+ <layer id="11" name="Front2" width="13" height="12">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B+AAACcAAB
+  </data>
+ </layer>
+ <objectgroup id="12" name="Front2"/>
+ <layer id="13" name="AlwaysFront" width="13" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAPcJmh8vsZsavjRFKnZYZdDTrQJFLdUAbPoLiTY6BdQl8AAPxmBCw=
+  </data>
+ </layer>
+ <objectgroup id="14" name="AlwaysFront"/>
+ <layer id="15" name="Paths" width="13" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgagJNIsYEC6G6hptuIMYvaYcGJg00pAABI5ABJ
+  </data>
+ </layer>
+ <objectgroup id="16" name="Paths"/>
+</map>

@@ -1,0 +1,125 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "Load",
+            "FromFile": "Assets/AineFlower.png",
+            "Target": "Mods/ApryllForever.CPPolyamorySweet/AineFlower"
+        },
+        {
+            "Action": "Load",
+            "FromFile": "Assets/AineFlowerSeeds.png",
+            "Target": "Mods/ApryllForever.CPPolyamorySweet/AineFlowerSeeds"
+        },
+        {
+            "Action": "Load",
+            "FromFile": "Assets/AineFlowerCrop.png",
+            "Target": "Mods/ApryllForever.CPPolyamorySweet/AineFlowerCrop"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "ApryllForever.CPPolyamorySweet_AineFlowerSeeds": {
+                    "Seasons": [
+                        "spring",
+                        "summer",
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        1,
+                        2,
+                        2
+                    ],
+                    "HarvestItemId": "ApryllForever.CPPolyamorySweet_AineFlower",
+                    "Texture": "Mods/ApryllForever.CPPolyamorySweet/AineFlowerCrop",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "ApryllForever.CPPolyamorySweet_AineFlower": {
+                    "Name": "Áine Flower",
+                    "DisplayName": "艾娥尼花",
+                    "Description": "艾娥尼，是爱尔兰的夏季，爱与性之女神（发音为Anya或Awnya）。在爱尔兰，艾娥尼花最先在艾娥尼湖周围开花。把这个交给配偶，宣布他们是家庭的主要照顾者。或者把它作为礼物送给你的真爱！",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 400,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": {},
+                    "ContextTags": [
+                        "color_green",
+                        "fairy_item"
+                    ],
+                    "Miscellaneous": null,
+                    "Texture": "Mods/ApryllForever.CPPolyamorySweet/AineFlower",
+                    "SpriteIndex": 0
+                },
+                "ApryllForever.CPPolyamorySweet_AineFlowerSeeds": {
+                    "Name": "Áine Flower Seeds",
+                    "DisplayName": "艾娥尼花种子",
+                    "Description": "艾娥尼花从春季到秋天生长，不过，他们传统的开花日期恰逢花舞节！！",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 100,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": {},
+                    "ContextTags": [],
+                    "Miscellaneous": null,
+                    "Texture": "Mods/ApryllForever.CPPolyamorySweet/AineFlowerSeeds",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "ApryllForever.CPPolyamorySweet_AineFlower": {
+                    "Id": "ApryllForever.CPPolyamorySweet_AineFlower",
+                    "ItemId": "ApryllForever.CPPolyamorySweet_AineFlower",
+                    "Price": 400
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "ApryllForever.CPPolyamorySweet_AineFlowerSeeds": {
+                    "Id": "ApryllForever.CPPolyamorySweet_AineFlowerSeeds",
+                    "ItemId": "ApryllForever.CPPolyamorySweet_AineFlowerSeeds",
+                    "Price": 80
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "AineFlower_reject": "我。。。真的感觉跟你不够亲近，无法接受这个。。。。。。",
+                "AineFlower_accept": "噢，谢谢你！你对我也很特别！",
+                "AineFlower_spouse": "啊噢，谢谢你!!! 我也很爱你！我很高兴能尽力帮助！$h",
+                "NPC.cs.4434": "嗯啊 ...这是什么？我只想睡觉。$a",
+                "NPC.cs.4435": "我只是今天不想起床。$s",
+                "NPC.cs.4436": "*叹*...我只想躺在床上。$s",
+                "NPC.cs.4437": "嗯啊 ...这是什么？自己做早餐吧。$a",
+                "NPC.cs.4438": "...$a#$e#我做了一个噩梦，仅此而已。$s"
+            }
+        }
+    ]
+}

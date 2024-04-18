@@ -1,0 +1,63 @@
+{
+    "Changes": [
+        {
+            "LogName": "Nora Conversation Topics",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Nora",
+            "Entries": {
+                // Vanilla
+                "joja_Begin": "{{i18n:Core.Nora.JojaBegin}}",
+                "cc_Begin": "{{i18n:Core.Nora.CCBegin}}",
+                "cc_Bus": "{{i18n:Core.Nora.CCBus}}",
+                "cc_Complete": "{{i18n:Core.Nora.CCComplete}}",
+                "willyBoatRepaired": "{{i18n:CT.Nora.WillyBoatRepaired}}",
+                "islandResortUnlocked": "{{i18n:CT.Nora.ResortOpen}}",
+                "babyBoy": "{{i18n:CT.Nora.BabyBoy}}",
+                "babyGirl": "{{i18n:CT.Nora.BabyGirl}}",
+                "wedding": "{{i18n:CT.Nora.Wedding}}",
+                "leoValleyArrival": "{{i18n:CT.Nora.LeoArrival}}",
+                "MovieInvitation": "{{i18n:Nora.MovieInvitation}}",
+                "DumpsterDiveComment": "{{i18n:CT.Nora.DumpsterDiving}}",
+
+                // ARV
+                "SterlingDrugs": "{{i18n:CT.Nora.SterlingDrugs}}",
+                "SterlingRelapse": "{{i18n:CT.Nora.SterlingFight}}",
+
+                // Eli & Dylan
+                "EliIntro": "{{i18n:CT.Nora.EliIntro}}",
+                "DylanIntro": "{{i18n:CT.Nora.DylanIntro}}",
+                "DylanBeach": "{{i18n:CT.Nora.DylanBeach}}",
+
+                // Jean & Jorts
+                "MeetTheCats": "{{i18n:CT.Nora.Jean&Jorts}}",
+                "ButteredJorts": "{{i18n:CT.Nora.ButteredJorts}}",
+
+                // Professor Jasper Thomas + Juliet and Jessie
+                "JasperGone2": "{{i18n:CT.Nora.JasperMissing}}",
+                "JasperHomeA": "{{i18n:CT.Nora.JasperBack}}",
+                "JulietGremlin": "{{i18n:CT.Nora.JulietGremlin}}",
+
+                // Creative Differences
+                "TalkWithGunther": "{{i18n:CT.Nora.RodneyIntro}}",
+                "BookLaunchParty": "{{i18n:CT.Nora.BookLaunchParty}}",
+                "RodneyPoetryReading": "{{i18n:CT.Nora.RodneyPoetryReading}}",
+
+                // Cambria
+                "CamieIntro": "{{i18n:CT.Nora.CambriaIntro}}",
+
+                // Never Ending Adventure
+                "MateoConfrontation": "{{i18n:CT.Nora.MateoConfrontation}}",
+                "MateoPain": "{{i18n:CT.Nora.MateoInjured}}",
+                "GuildComplete": "{{i18n:CT.Nora.GuildComplete}}",
+                "GuildFinale": "{{i18n:CT.Nora.GuildFinale}}",
+
+                // Nora
+                "NoraChameleon": "{{i18n:CT.Nora.NoraChameleon}}",
+
+                // Diamond in the Rought
+                "DitR_CT_ShadowPlay": "{{i18n:CT.Nora.DitR_CT_ShadowPlay}}",
+                "DitR_CT_SensFlowers": "{{i18n:CT.Nora.DitR_CT_SensFlowers}}"
+            }
+        }
+    ]
+}

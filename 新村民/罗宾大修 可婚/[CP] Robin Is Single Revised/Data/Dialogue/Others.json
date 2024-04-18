@@ -1,0 +1,42 @@
+{"Changes": 
+[    
+		//DEMETRIUS	
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Demetrius",
+		"Entries": {
+			"Introduction": "{{i18n:Demetrius.{{RelationshipType}}.Introduction|DemetriusRelationship={{DemetriusRelationship}}}}",
+			"summer_Thu": "{{i18n:Demetrius.{{RelationshipType}}.summer_Thu|DemetriusRelationship={{DemetriusRelationship}}}}",
+			"Fri4": "{{i18n:Demetrius.{{RelationshipType}}.Fri4}}",
+			"Thu": "{{i18n:Demetrius.{{RelationshipType}}.Thu}}",
+			"winter_Tue": "{{i18n:Demetrius.{{RelationshipType}}.winter_Tue}}",
+			"Mon_inlaw_Robin": "{{i18n:Demetrius.{{RelationshipType}}.Mon_inlaw_Robin}}",
+			"summer_Wed_2": "{{i18n:Demetrius.{{RelationshipType}}.summer_Wed_2}}",
+			"winter_Thu_inlaw_Robin": "{{i18n:Demetrius.{{RelationshipType}}.winter_Thu_inlaw_Robin}}",
+            },
+	},
+
+		//MARU
+		{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Maru",
+		"Entries":{
+			"Tue": "{{i18n:Maru.{{RelationshipType}}.Tue|MaruRelationship={{MaruRelationship}}}}",
+			"Fri4": "{{i18n:Maru.{{RelationshipType}}.Fri4|MaruRelationship={{MaruRelationship}}}}",
+			"summer_Tue": "{{i18n:Maru.{{RelationshipType}}.summer_Tue}}",
+			"Wed_inlaw_Robin": "{{i18n:Maru.{{RelationshipType}}.Wed_inlaw_Robin}}",
+		},
+	},
+
+		//SEBASTION
+	{
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sebastian",
+		"Entries":{
+			"fall_Tue6": "{{i18n:Sebastian.fall_Tue6}}",
+			"winter_Tue6": "{{i18n:Sebastian.winter_Tue6}}",
+			"Fri_inlaw_Robin": "{{i18n:Sebastian.Fri_inlaw_Robin}}",
+		},
+	}		
+    ]
+}  

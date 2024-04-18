@@ -1,0 +1,136 @@
+{
+    "Changes": [
+
+    //KISSING FOR SEASONAL OUTFITS
+
+    //SPRING
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Kissing/Robin_Spring.png",
+        "When":
+        {
+            "Season": "Spring"
+        } 
+    },
+    //SUMMER
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Kissing/Robin_Summer.png",
+        "When":
+        {
+            "Season": "Summer"
+        }
+    },
+
+    //FALL
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Kissing/Robin_Fall.png",
+        "When":
+        {
+            "Season": "Fall"
+        }
+    },
+
+    //WINTER INDOOR
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin_Winter",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Kissing/Robin_Winter_Indoor.png",
+        "When":
+        {
+            "IsOutdoors": "false",
+            "Season": "Winter"
+        },
+        "Update": "OnLocationChange",
+        "Priority": "Late",
+    },
+
+    //WINTER OUTDOOR
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin_Winter",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Kissing/Robin_Winter_Outdoor.png",
+        "When":
+        {
+            "IsOutdoors": "true",
+            "Season": "Winter"
+        },
+        "Update": "OnLocationChange",
+        "Priority": "Late",
+    },
+
+    //FESTIVALS
+    {
+        "Action": "EditImage",
+        "Target": "Characters/Robin, Characters/Robin_Winter",
+        "FromFile": "Assets/Sprites/SeasonalCuterRobin/Robin_{{Festival}}.png",
+        "Update": "OnLocationChange",
+    },
+
+    //AEROBICS
+    //KISSING
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin, Characters/Robin_Winter",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Kissing/Robin_Aerobics.png",
+        "When":
+        {
+            "DayOfWeek": "Tuesday",
+            "LocationName": "SeedShop",
+            "Weather": "sun, wind, snow",
+        },
+        "Update": "OnLocationChange",
+    },
+
+    //CHANGES THE AEROBICS ANIMATION POSTIONS - CUTER PATCH
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Robin_Aerobics.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+		"ToArea": { "X": 0, "Y": 320, "Width": 64, "Height": 32 },
+        "When":
+        {
+            "DayOfWeek": "Tuesday",
+            "LocationName": "SeedShop",
+            "Weather": "sun, wind, snow",
+            "Season": "Spring, Summer, Fall",
+        },
+        "Update": "OnLocationChange",
+    },
+    
+    {
+        "Action": "EditImage",
+		"Target": "Characters/Robin_Winter",
+		"FromFile": "Assets/Sprites/SeasonalCuterRobin/Robin_Winter_Aerobics.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+		"ToArea": { "X": 0, "Y": 320, "Width": 64, "Height": 32 },
+        "When":
+        {
+            "DayOfWeek": "Tuesday",
+            "LocationName": "SeedShop",
+            "Weather": "sun, wind, snow",
+            "Season": "Winter",
+        },
+        "Update": "OnLocationChange",
+    },
+
+    //WEDDING SPRITES - CUTER PATCH
+    {
+        "Action": "EditImage",
+        "Target": "Characters/Robin",
+        "FromFile": "Assets/Sprites/SeasonalCuterRobin/Robin_Marriage.png",
+        "When": {
+            "DayEvent": "wedding",
+            "Time": "0600",
+            "LocationName": "Town",
+            "Hearts:Robin": "9, 10, 11",
+                },
+        "Update": "OnLocationChange, OnTimeChange"
+    },
+]
+}

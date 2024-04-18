@@ -1,0 +1,199 @@
+{
+	"Format": "2.0.0",
+
+"ConfigSchema": { 
+//Config Menu
+ "Build Cost":            {"AllowValues":  "150000, 50000, 0", "Default":  "150000"},
+ "Materials":             {"AllowValues":  "Normal, Cheap, Free", "Default": "Normal"},
+ "Build Time":            {"AllowValues":  "3 Days, 2 Days, 1 Day, Instant", "Default": "3 Days"},
+//Toggle off for instant access to greenhouse if you havent unlocked at pantry yet
+ "Build Requirements":    {"AllowValues":  "true, false", "Default": "true"}
+  },		
+
+
+   "Changes":[
+
+{
+    "Action": "EditMap",
+    "Target": "Maps/Greenhouse",
+    "MapProperties": { "IsGreenhouse": "T"}
+  },
+		
+
+	{
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+"Entries": 		{            
+           	  						
+
+
+  "NewGreenhouse": {
+    "Name": "[LocalizedText Strings\\Buildings:Greenhouse_Name]",
+    "Description": "[LocalizedText Strings\\Buildings:Greenhouse_Description]",
+    "Texture": "Buildings\\Greenhouse",
+    "Skins": [],
+    "DrawShadow": true,
+    "UpgradeSignTile": "3, 5",
+    "UpgradeSignHeight": 34.0,
+    "Size": {
+      "X": 7,
+      "Y": 6
+    },
+    "FadeWhenBehind": true,
+    "SourceRect": {
+      "X": 0,
+      "Y": 160,
+      "Width": 112,
+      "Height": 160
+    },
+
+    "SeasonOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "DrawOffset": "0, 0",
+    "SortTileOffset": 0.0,
+    "CollisionMap": null,
+    "AdditionalPlacementTiles": null,
+    "BuildingType": null,
+    "Builder": "Robin",
+    "BuildCondition": "PLAYER_HAS_MAIL Any ccPantry",
+    "BuildDays": 3,
+    "BuildCost": 150000,
+    "BuildMaterials": [
+      {
+        "ItemId": "(O)709",
+        "Amount": 100
+      },
+     {
+        "ItemId": "(O)338",
+        "Amount": 30
+      },
+     {
+        "ItemId": "(O)337",
+        "Amount": 5
+     }
+    ],
+    "BuildingToUpgrade": null,
+    "MagicalConstruction": false,
+    "BuildMenuDrawOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "HumanDoor": {
+      "X": 3,
+      "Y": 5
+    },
+    "AnimalDoor": {
+      "X": -1,
+      "Y": -1,
+      "Width": 0,
+      "Height": 0
+    },
+    "AnimalDoorOpenDuration": 0.0,
+    "AnimalDoorOpenSound": null,
+    "AnimalDoorCloseDuration": 0.0,
+    "AnimalDoorCloseSound": null,
+    "NonInstancedIndoorLocation": "Greenhouse",
+    "IndoorMap": "Greenhouse",
+    "IndoorMapType": null,
+    "MaxOccupants": 20,
+    "ValidOccupantTypes": [],
+    "AllowAnimalPregnancy": false,
+    "IndoorItemMoves": null,
+    "IndoorItems": null,
+    "AddMailOnBuild": null,
+    "Metadata": {},
+    "ModData": {},
+    "HayCapacity": 0,
+    "Chests": null,
+    "DefaultAction": null,
+    "AdditionalTilePropertyRadius": 2,
+    "AllowsFlooringUnderneath": true,
+    "ActionTiles": [],
+    "TileProperties": [],
+    "ItemConversions": null,
+    "DrawLayers": null,
+    "CustomFields": null
+  }
+ 
+
+
+}
+  },
+   {
+    "Action": "EditData",
+    "When": {"Build cost": "50000"},
+    "Target": "Data/Buildings",
+    "TargetField": ["NewGreenhouse"],
+    "Entries": { "BuildCost": 50000 }
+     },
+    {
+    "Action": "EditData",
+    "When": {"Build cost": "0"},
+    "Target": "Data/Buildings",
+    "TargetField": ["NewGreenhouse"],
+    "Entries": { "BuildCost": 0 }
+    },
+    
+    {
+    "Action": "EditData",
+    "When": {"Materials": "Cheap"},
+    "Target": "Data/Buildings",
+    "TargetField": ["NewGreenhouse"],
+    "Entries": { "BuildMaterials": [
+      {
+        "ItemId": "(O)709",
+        "Amount": 50
+      },
+     {
+        "ItemId": "(O)338",
+        "Amount": 10
+      },
+     {
+        "ItemId": "(O)337",
+        "Amount": 1
+     }
+    ] }
+     },
+     
+     
+     {
+      "Action": "EditData",
+      "When": {"Build Time": "2 Days"},
+      "Target": "Data/Buildings",
+      "TargetField": ["NewGreenhouse"],
+      "Entries": { "BuildDays": 2 }
+       },
+       {
+        "Action": "EditData",
+        "When": {"Build Time": "1 Day"},
+        "Target": "Data/Buildings",
+        "TargetField": ["NewGreenhouse"],
+        "Entries": { "BuildDays": 1 }
+         }, 
+         {
+          "Action": "EditData",
+          "When": {"Build Time": "Instant"},
+          "Target": "Data/Buildings",
+          "TargetField": ["NewGreenhouse"],
+          "Entries": { "BuildDays": 0 }
+           },     
+     
+      {
+      "Action": "EditData",
+      "When": {"Materials": "Free"},
+      "Target": "Data/Buildings",
+      "TargetField": ["NewGreenhouse"],
+      "Entries": { "BuildMaterials": null }
+       },
+       {
+        "Action": "EditData",
+        "When": {"Build Requirements": "false"},
+        "Target": "Data/Buildings",
+        "TargetField": ["NewGreenhouse"],
+        "Entries": { "BuildCondition": null }
+       }
+
+]	  			
+}

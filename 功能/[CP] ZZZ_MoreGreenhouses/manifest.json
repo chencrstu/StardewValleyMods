@@ -1,0 +1,17 @@
+{
+	"Name": "MoreGreenhouses",
+	"Author": "Celestia87",
+	"Version": "1.2.0",
+	"Description": "Build More Greenhouses",
+	"UniqueID": "Celestia87.MoreGreenhouses",
+	"UpdateKeys": [ "Nexus:21778" ],
+	"ContentPackFor": {
+	"UniqueID": "Pathoschild.ContentPatcher",
+	"MinimumVersion": "1.19.0"
+  },
+"Dependencies": [
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false
+		}]
+}

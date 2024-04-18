@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        
+        //ADD DETAILS
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Robin.SpouseRoom.1": "{{i18n:Robin.SpouseRoom.1}}",
+                "Robin.SpouseRoom.2": "{{i18n:Robin.SpouseRoom.2}}",
+                "Robin.SpouseRoom.3": "{{i18n:Robin.SpouseRoom.3}}",
+                "Robin.SpouseRoom.4": "{{i18n:Robin.SpouseRoom.4}}",
+                "Robin.SpouseRoom.5": "{{i18n:Robin.SpouseRoom.5}}",
+                "Robin.SpouseRoom.6": "{{i18n:Robin.SpouseRoom.6}}",
+                "Robin.SpouseArea.1": "{{i18n:Robin.SpouseArea.1}}",
+                "Robin.SpouseArea.2": "{{i18n:Robin.SpouseArea.2}}",
+            }          
+        },
+
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        //EVENT
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":{
+                "event_wood3": "{{i18n:Robin.event_wood3}}",
+                "event_wood4": "{{i18n:Robin.event_wood4}}",
+                "event_wood5": "{{i18n:Robin.event_wood5}}",
+                "event_confess1": "{{i18n:Robin.event_confess1}}",
+                "event_confess2": "{{i18n:Robin.event_confess2}}",                
+            },
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries":{
+                "Introduction": "{{i18n:Robin.{{RelationshipType}}.Introduction|RobinDemetriusRelationship={{RobinDemetriusRelationship}}|RobinMaruRelationship={{RobinMaruRelationship}}|RobinSebastianRelationship={{RobinSebastianRelationship}}}}",
+                "Mon": "{{i18n:Robin.{{RelationshipType}}.Mon}}",
+                "Fri": "{{i18n:Robin.{{RelationshipType}}.Fri}}",
+                "Fri_inlaw_Sebastian": "{{i18n:Robin.{{RelationshipType}}.Fri_inlaw_Sebastian}}",
+                "Fri4": "{{i18n:Robin.{{RelationshipType}}.Fri4}}",
+                "Sun2": "{{i18n:Robin.{{RelationshipType}}.Sun2}}",
+                "winter_Fri": "{{i18n:Robin.{{RelationshipType}}.winter_Fri}}",
+                "divorced": "{{i18n:Robin.{{RelationshipType}}.divorced}}",
+                "breakUp": "{{i18n:Robin.{{RelationshipType}}.breakUp}}",
+                "dumped_Girls": "{{i18n:Robin.{{RelationshipType}}.dumped_Girls}}",
+                "secondChance_Girls": "{{i18n:Robin.{{RelationshipType}}.secondChance_Girls}}",
+                "danceRejection": "{{i18n:Robin.{{RelationshipType}}.danceRejection}}",                
+                },
+            },
+    ]
+}    

@@ -1,0 +1,23 @@
+{
+   "Name": "RobinIsSingleRevised",
+   "Author": "Hitme",
+   "Version": "1.0.3", 
+   "Description": "Demetrius is Robin's dad or a friend.",
+   "UniqueID": "Hitme.RobinIsSingleRevised",
+   "MinimumApiVersion": "3.0",
+   "UpdateKeys": ["Nexus:20053"],
+   "Dependencies": [
+      {
+         "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+         "IsRequired": false,
+      },
+      {
+         "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+         "IsRequired": false, 
+      },
+   ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher", 
+      "MinimumVersion": "2.0.0" 
+   }
+}
