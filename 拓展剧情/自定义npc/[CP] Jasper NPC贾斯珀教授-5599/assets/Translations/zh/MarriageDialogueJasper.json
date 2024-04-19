@@ -1,0 +1,220 @@
+{
+	"Changes": [
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"Season": "summer"
+			},
+			"Entries": {
+				"spouseRoom_Jasper": "$c 0.5#我只是在读信，亲爱的。#早上好，亲爱的。我只是在润色最新的论文。",
+				"Rainy_Day_0": "噢，夏季的雨天真是炎热而潮湿。恐怕我今天都得呆在室内读书了。",
+				"Rainy_Day_2": "外面的天气真是太潮湿了，亲爱的。我知道最近温度很高，但还是要记得穿雨衣。",
+				"Rainy_Day_3": "你知道雨水落在干燥的土地上的气味叫作“petrichor”吗？也就是“潮土油”。#$b#这是微生物释放的一种有机化合物，节肢动物也很喜欢。$1#$b#噢，不好意思，我不是要故意给你上生物课的——不过大自然真是太美妙了，你不觉得吗？$4",
+				"Rainy_Day_4": "又有一所“高高在上”的大学退回了我的稿子，@。$2#$b#也许我是时候转行写小说了。",
+				"patio_Jasper": "今天真是美好的一天，对吧？虽然我觉得自己应该戴顶帽子……$1",
+				"Rainy_Night_0": "啊，亲爱的，你来的正是时候。我在看酱料女皇的节目，正好稍微做了点东西。[234]$4",
+				"Rainy_Night_1": "我正在写回忆录，亲爱的。$1#$b#你知道，我喜欢的回忆录是让读者分不清是真是假的那种类型。$3",
+				"Rainy_Night_2": "我觉得我的母亲从来没有从我父亲的死亡中恢复过来，亲爱的。#$b#他是个善良的人，有一副好心肠。而且他温柔而健谈。#$b#真希望你能见见他们，@。他们一定会很喜欢你。#$b#不好意思，下雨的夜晚总会让我多愁善感。",
+				"Rainy_Night_3": "要和我一起到床上去吗，亲爱的？我可以读我的回忆录给你听。$1#$b#还是做点其他事来享受彼此的陪伴？$4",
+				"Rainy_Night_4": "这儿，让我帮你把这些湿衣服脱掉吧。$3#$b#什么？不是，我不是那个意思！$4#$b#好吧，可能也有一点。$1",
+				"Indoor_Day_0": "早上好！我今天起了个大早，做了一些点心。[234]#$b#以前我和母亲经常在周日的早上一起烘焙。#$b#我得承认，我最喜欢的部分是“清理”那些边角料！$1",
+				"Indoor_Day_2": "感觉今天很适合来一场姗姗来迟的春季大扫除。#$b#去征服这个世界吧，我会做你忠诚的家庭主夫。",
+				"Indoor_Day_3": "噩梦依旧追逐着我，亲爱的。但有你在身边，一切都变得容易了很多。$3#$b#但我觉得自己永远都没法摆脱它。$1",
+				"Indoor_Day_4": "昨晚屋顶上似乎有什么抓挠声。恐怕有小鸟在上面筑了巢。$2",
+				"Indoor_Night_0": "晚上好，亲爱的。希望你不要介意家里的气味。#$b#我点上了香薰蜡烛，以防家里进虫子。",
+				"Indoor_Night_1": "真是美好的夏日夜晚。或许我们应该拿上一条毯子，出门看天上的星星。",
+				"Indoor_Night_2": "噢，在这种炎热的天气里，我的膝盖真是痒得生疼。虽然我很高兴自己又能行动了，但是……$5#$b#噢，抱歉，亲爱的。我不是故意要抱怨的。$2",
+				"Indoor_Night_3": "今晚真热啊，这个应该能让你凉快一点。[233]",
+				"Indoor_Night_4": "从前我父亲工作的时间很长，回家时总是满身煤灰。#$b#但他总能找出时间来陪伴我和母亲，还会不时给她带点小装饰品。比如有瑕疵的宝石，或者好玩的石头。#$b#我的儿时玩伴们都喜欢玩具卡车和玩偶……但我的童年世界是用石头和贝壳建造而成的。$3",
+				"Outdoor_1": "炎热的天气让我睡不着觉，所以我决定出门来迎接日出。#$b#这座农场真是美丽。$1",
+				"Outdoor_0": "我们的朋友森林精灵来拜访了！它们在门口留下了这个礼物。[402 259 398] ",
+				"Outdoor_2": "早上好，亲爱的！我在白天开始热起来之前绕着农场散了会步。$1#$b#一切看起来都井然有序。$3",
+				"Outdoor_3": "噢，我的脑海里充满了各种各样的点子，@！这里的寂静真能启发灵感。",
+				"Outdoor_4": "希望你不介意，@，我在靠下的田地里稍微挖掘了一下。#$b#然后我找到了这个。#$b#挺有意思的吧？以前住在这里的人们肯定很喜欢小鸡。[113]",
+				//"funLeave_Jasper": "Time to stretch my legs and visit a few friends, @. Do you have any messages for Gunther?#$b#I might pick up a few books while I'm at it.",
+				//"funReturn_Jasper": "Oh, my arms ache from carrying so many books!#$e#$c 0.5#Gunther snuck in one of his favorites. I'm not really sure it's quite my genre, but I shall try it.$1",
+				"TwoKids_0": "$1 TwoKids_Jasper#不用担心我们，@。我和孩子们相处得很愉快！$k#$e#我们能带孩子们去海滩上玩吗？是时候教%kid1学习沙堡的建造技巧了。",
+				"TwoKids_1": "虽然给%kid1吃冰激凌不是什么好主意……#$b#但是不用担心，我已经把家里的墙壁清理干净了！$3#$b#%kid1真是个冰激凌艺术家。",
+				"TwoKids_2": "孩子们一起玩得真开心。希望他们永远能当好朋友。$4",
+				"TwoKids_3": "孩子们给你画了几幅画，@。%kid2正在用色彩做实验。$1#$b#%kid1给你画了一只小鸡。也可能是只鳄鱼。这幅画，呃，很有个人风格。$1"
+			}
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"Season": "fall"
+			},
+			"Entries": {
+				"spouseRoom_Jasper": "早上好，美人儿。我日出的时候就行了，太多的灵感让我无心睡眠。$1#$b#为什么灵感总在凌晨时分到来？",
+				"Rainy_Day_0": "你今天一定要出门吗，亲爱的？我们可以一起在家做一些烘焙。#$b#我一直在看酱料女皇的节目。她提供了不少灵感。I$1",
+				"Rainy_Day_2": "秋天的雨相当沉闷，不过落在屋檐上依旧听起来很有韵律。#$b#我感觉今天很适合躲进一本好书里。$3",
+				"Rainy_Day_3": "亲爱的，请让自己保持温暖干燥。我不想看到你着凉。$2",
+				"Rainy_Day_4": "你今天不会要去矿洞吧，亲爱的？#$b#请一定要注意安全。这儿，拿着这个。[349]",
+				"patio_Jasper": "秋日的色彩真是美丽，这事后的温度也很完美。$1#$b#我可以整天站在这里享受大自然。$3",
+				"Rainy_Night_0": "晚上好，亲爱的！这是一点小礼物，能让你的一天变得甜蜜。[611]$1#$b#虽然你对我来说已经足够甜蜜了！$4",
+				"Rainy_Night_1": "恐怕家里有哪里漏水了。我打算明天去看看。$2",
+				"Rainy_Night_2": "亲爱的，你都冻坏了！这儿，它应该能让你从里到外暖和起来。[236]$2#$b#我们也可以蜷缩在温暖的毛毯下，一起读一本书。$3",
+				"Indoor_Day_0": "我听见了晚上的窸窣声响。或许凉爽的夜晚引来了啮齿动物。$2#$b#希望%pet会解决掉它们。$1",
+				"Indoor_Day_2": "早上好，@。希望这能帮助你度过忙碌的一天。[201 240 241 242]$3",
+				"Indoor_Day_3": "我今天的计划？嗯，我的确想要研究一个新的理论……#$b#这不会让我出名，不过或许能重建我的职业生涯。$3",
+				"Indoor_Day_4": "我今天想起了我的哥布林朋友。噢，不是你想的那个意思。别紧张，@！$2#$b#不知道她现在是不是已经成了酋长？她总是对外面的世界充满好奇。$1",
+				"Indoor_Night_0": "今天……不是个好日子，亲爱的。我感觉很沉重，而且不太吉利。$2#$b#要和我一起去床上吗？你的陪伴总能让我很安心。$2",
+				"Indoor_Night_1": "@，你回家了！已经这么晚了吗？我沉迷于研究之中，几乎忘了时间。$2#$b#请原谅我没有给你做晚餐。$2",
+				"Indoor_Night_2": "好消息，@！我最新的论文在{{random: 《当今神秘动物研究》, 《罕见理论杂志》, 《非正统观点》}}上发表了。$1#$b#是的，我知道，不是我希望的那本著名杂志……但至少这是个开始。$2#$b#而且我知道会有人读到我的文章！$3",
+				"Indoor_Night_3": "你知道，哥布林们也会庆祝万灵节。但他们的庆祝方式和我们不一样！$3#$b#他们会用木头和布料做成的玩偶传述祖先的故事，用骨头做成的乐器歌唱颂歌。#$b#对他们而言，万灵节是为了纪念，而不是躲避阴影。$1",
+				"Indoor_Night_4": "听着风吹动百叶窗和木板的吱嘎作响……$2#$b#很高兴你在这儿，@。可以让我远离心中的阴影。$4",
+				"Outdoor_1": "我还是个孩子的时候，我们会爬上悬崖，比赛谁能先装满自己的黑莓篮子。$3#$b#我妈妈是个很厉害的烘焙师。她能做出最美味的黑莓馅饼。$1",
+				"Outdoor_0": "今天早上动物们有些躁动不安。它们可以感觉到空气中的寒意，冬天就要到了。$2",
+				"Outdoor_2": "今天早上的风有点大。或许你该穿件外套再出门？$2",
+				"Outdoor_3": "早上好，@！我脑海里有太多的点子。在农场上漫步，以及拜访动物，能帮助我理清思绪。#$b#祝你今天收获满满，亲爱的。反正我知道我会收获很多！$3",
+				"Outdoor_4": "我实在睡不着，@。所以我决定出门，免得把你吵醒。#$b#凝视着太阳在你的农场那头升起……这幅景色真的很美丽。#$b#简直和你的笑容一样美丽。",
+				//"funLeave_Jasper": "I shall be visiting the library today, if you have any requests?",
+				//"funReturn_Jasper": "Oh @, the shadows lurk long, and the trees seem to whisper.$2#$b#I can sense the brush of the void. Winter is coming.$2",
+				"TwoKids_0": "%kid1今天在树叶里找到了一条蠕虫，告诉%kid2这是意大利面。$2#$b#别紧张，我把那条虫子没收了，并且安全释放了它。没有虫子受到伤害——当然，小朋友也没有！$3",
+				"TwoKids_1": "我和孩子们在给石头上色，把它们藏在村庄的各个角落。#$b#是的，这只是一点小进步。但我至少能鼓动其中的一个孩子成为地质学家！",
+				"TwoKids_2": "我把太多的人生贡献给了研究，但当我注视着我们可爱的家庭……#$b#很高兴你引导我走上了另一条路，@。"
+				//"TwoKids_3": ""
+			}
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"Season": "winter"
+			},
+			"Entries": {
+				"spouseRoom_Jasper": "寒冷的早晨唤醒了我的灵感！今天纸上谈兵，明天征服世界！$1",
+				"patio_Jasper": "冬日总是如此寂静，好像大自然也决定停下来喘口气。",
+				"Indoor_Day_0": "啊，亲爱的，外面真是太冷了。想要和我一起在壁炉前烤火吗？$1#$b#我们可以一起喝热巧克力，挤在一起取暖。$4",
+				"Indoor_Day_2": "早上好，亲爱的。恐怕我今天做不了什么事了。$2#$b#寒冷的天气对我这把老骨头不太友好。",
+				"Indoor_Day_3": "我感觉今天很适合沉思和感恩。谢谢你来到了我的生命，@。",
+				"Indoor_Day_4": "请把自己裹得暖和点，亲爱的。我不想看见你感冒。$2",
+				"Indoor_Night_0": "亲爱的，你都冻坏了！这儿，它应该能让你从里到外暖和起来。[236]$2#$b#我们也可以蜷缩在温暖的毛毯下，一起读一本书。$3",
+				"Indoor_Night_1": "呃……今晚可真冷啊！#$b#这个能让你暖和一点。[226]",
+				"Indoor_Night_2": "你不觉得冰在窗户上画出的图案都很神奇吗？#$b#杰克冻人和冬日老者的传说大概就来自于此。$1",
+				"Indoor_Night_3": "今晚应该会下雪。你觉得我们有可能会被大雪困在家里吗？$2#$b#如果我要被大雪困住的话，我只希望是和你一起。$4",
+				"Indoor_Night_4": "我的母亲奋斗了很多年，希望有关部门能重新挖掘那些矿洞。$2#$b#后来她再也没法忍受这里，搬到了很远的地方。我很想念她……但我经常给她打电话。",
+				"Outdoor_4": "我在畜棚附近的雪地上发现了脚印。#$b#我有种隐约的感觉，可能我们来客人了。#$b#是哥布林还是矮人？我说不好。$3",
+				"Outdoor_0": "我得承认，亲爱的，我喜欢听踩在雪地上咯吱作响的声音。",
+				"Outdoor_2": "不知道祝尼魔冬天会去哪里？他们会冬眠吗？还是去寻找更温暖的居住地？#$b#说不定这就是为什么他们会占领被人们遗忘的房屋。",
+				"Outdoor_3": "早上好，亲爱的。我今天早早起床，清扫了门廊上的雪。#$b#真希望我也能把屋顶清理干净。",
+				//"Outdoor_4": "",
+				//"funLeave_Jasper": "",
+				//"funReturn_Jasper": "",
+				"TwoKids_0": "我的头发里有雪吗？大概是的。%kid1和%kid2展开了一场激烈的雪球大战。#$b#唉，我在双方交火的时候不幸受到了波及。$1#$b#你明天想和我们一起打雪仗吗？$3",
+				"TwoKids_1": "抱歉这里都是闪粉。今天我和孩子们在进行艺术创作……结果弄得到处都是。$1",
+				"TwoKids_2": "%kid1花了一整天试着用舌头去接天上的雪花。#$b#至于%kid2，他在试着吃雪。$2#$b#啊，看着孩子们真让人高兴！$1",
+				"TwoKids_3": "我和孩子们在做小雪花！噢，亲爱的，是用纸做。而且不用担心，我会把家里清理干净的！$1"
+			}
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"HasSeenEvent": "5599017"
+			},
+			"Entries": {
+				"{{SeasonAnniversary}}_{{DayAnniversary}}": "结婚纪念日快乐，@。这份小礼物代表了我对你的感谢。[578 565 553 547 347]#$e#你在我的内心深处点燃了新的火花，让我重获生命。$3#$b#我爱你。$4",
+				//"{{TheMightyAmondee.CustomTokens/AnniversarySeason}}_{{TheMightyAmondee.CustomTokens/AnniversaryDay}}":"A test to see if this works."
+			}
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"HasSeenEvent": "5599017",
+				"Weather": "Sun, Wind"
+			},
+			"Entries": {
+				"{{SeasonAnniversary}}_{{DayAnniversary}}": "$1 Jasper_Anniversary#结婚纪念日快乐，亲爱的。你愿意今晚和我去海滩上走走吗？为了庆祝，我准备了一个小惊喜。$4$k#$e#结婚纪念日快乐，@。这份小礼物代表了我对你的感谢。[578 565 553 547 347]#$e#你在我的内心深处点燃了新的火花，让我重获生命。$3#$b#我爱你。$4"
+			}
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jasper",
+			"When": {
+				"Spouse": "Jasper"
+			},
+			"Entries": {
+				"Resort_Entering": "亲爱的！在这里看到你真高兴。希望你的姜岛农场也一切都好。",
+				"Resort_Entering": "亲爱的！没想到会在这里看见你。希望你的姜岛农场一切都好。",
+				"Resort_Leaving": "过会儿见，亲爱的。或许我会为今天的晚餐准备一些特别的东西。#$b#还是说你更想要……餐后甜点？$4",
+				"Resort_Shore": "噢，我在沙子里找到了一颗迷人的化石。这真是座了不起的小岛。",
+				"Resort_Umbrella": "你愿意和我一起乘凉吗？",
+				"Resort_Wander": "蜗牛教授告诉我，他在那座山里听到了奇怪的轰鸣声。#$b#我有点想去探索它……揭露它的谜团。#$b#但我的心里有另一个声音，让我依旧感觉充满了恐惧。$2",
+				"Resort_Bar": "麻烦了，格斯。给我的丈夫来一杯这里的美味鸡尾酒。^麻烦了，格斯。给我的妻子来一杯这里的美味鸡尾酒。#$b#你想要什么，亲爱的？格斯这里有清爽可口的椰林飘香。$1",
+				"Resort_Towel": "你好，亲爱的。如果你愿意的话，这里有供我们两个人享受的空间。$1"
+			}
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"TwoToddlers": true
+			},
+			"Entries": {
+				"winter_8":"说不好谁对今天的冰钓节比较激动，是孩子们还是我！$1#$b#我答应%kid1会一起堆雪人，但我觉得%kid2更想打雪仗……$2",
+				//"GILeave_Jasper": "I shall be visiting the island today, my love. I hope that you will be okay to watch the children?"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"HasMod": "atravita.GingerIslandMainlandAdjustments"
+			},
+			"Entries": { // You can use either $c or CP's random token to add multiple dialogue lines.
+				"GILeave_Jasper": "噢，亲爱的，我觉得今天应该去姜岛一趟。$1#$b#也许我会在那里找到能够支持我理论的新证据。那里真是个不可思议的地方。",
+                "GIReturn_Jasper": "我今天度过了绝妙的一天，亲爱的。#$b#噢，但你一定工作得很辛苦吧。要我帮你放松一下吗？$4",
+                "GIReturn_Talked_Jasper": "希望你前往姜岛的旅途和我一样收获满满。这儿，我带了点东西回家给你。$1 [791 827 852 848]"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"HasFlag": "Dwarf_Friend"
+			},
+			"entries": {
+				"Neutral_6": "我正在看报纸，@。看来星露谷里多了不少偷窃行为。$2#$b#也许只是我太乐观了，但你觉得这和矮人们有关系吗？#$b#看来我们那位喜欢小偷小摸的朋友并不如他所想的那么孤独。",
+			}
+		},
+		{
+			"LogName": "Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJasper",
+			"When": {
+				"DayEvent": "feast of the winter star"
+			},
+			"Entries": {
+				"spouseRoom_Jasper": "冬日星快乐，亲爱的。你问我今年最感谢的是什么？噢，有太多事情了！#$b#像是友谊……还有一本好书。当然还有你，亲爱的。冬日星快乐。我爱你。[578 565 553 547 347]$4",
+			}
+		},
+	/*	{
+			"Action": "EditData",
+			"Target": "Mods/monsoonsheep.CollapseOnFarmFix/PostPassoutDialogues",
+			"Entries": 
+			{
+			 
+			  "Jasper.rain.1": "{{i18n: PostPassoutDialogues.Abigail.rain.1}}",
+			}
+		  },
+		  {
+			"Action": "EditData",
+			"Target": "Mods/monsoonsheep.CollapseOnFarmFix/HospitalKilledEvent",
+			"Entries":
+			{
+			  "Jasper": "{{i18n: HospitalKilledEvent.Emily |name={{PlayerName}} }}"
+			}
+		  }*/
+	]
+}

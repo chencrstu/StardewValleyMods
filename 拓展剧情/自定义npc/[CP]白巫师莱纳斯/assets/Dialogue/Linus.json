@@ -1,0 +1,384 @@
+{
+  "Changes": [
+
+    /********Before the Event (154440)********/
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+
+        //1.6 New Dialogue Keys
+        "FlowerDance_Accept": "{{i18n:Dialogue.FlowerDance_Accept}}",
+        "FlowerDance_Accept_Spouse": "{{i18n:Dialogue.FlowerDance_Accept_Spouse}}",
+        "WipedMemory": "{{i18n:Dialogue.WipedMemory}}",
+        "RejectBouquet_Divorced": "{{i18n:Dialogue.RejectBouquet_Divorced}}",
+        "RejectGift_Divorced": "{{i18n:Dialogue.RejectGift_Divorced}}",
+        "RejectMovieTicket_Divorced": "{{i18n:Dialogue.RejectMovieTicket_Divorced}}",
+        "RejectMermaidPendant_Divorced": "{{i18n:Dialogue.RejectMermaidPendant_Divorced}}",
+        "SpouseGiftJealous": "{{i18n:Dialogue.SpouseGiftJealous}}",
+        "SpouseStardrop": "{{i18n:Dialogue.SpouseStardrop}}",
+        "AcceptBouquet": "{{i18n:Dialogue.AcceptBouquet}}",
+        //"AcceptBirthdayGift_Loved": "{{i18n:Dialogue.AcceptBirthdayGift_Loved}}",
+        //"AcceptBirthdayGift_Liked": "{{i18n:Dialogue.AcceptBirthdayGift_Liked}}",
+        //"AcceptBirthdayGift_Neutral": "{{i18n:Dialogue.AcceptBirthdayGift_Neutral}}",
+        //"AcceptBirthdayGift_Disliked": "{{i18n:Dialogue.AcceptBirthdayGift_Disliked}}",
+        //"AcceptBirthdayGift_Hated": "{{i18n:Dialogue.AcceptBirthdayGift_Disliked}}",
+        "AcceptGift_(0)88": "{{i18n:Dialogue.AcceptGift_(0)88}}",
+        "AcceptGift_(0)90": "{{i18n:Dialogue.AcceptGift_(0)90}}",
+        "GreenRain": "{{i18n:Dialogue.GreenRain}}",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "Mon": "{{i18n:Dialogue.Mon}}",
+        "Tue": "{{i18n:Dialogue.Tue}}",
+        "Wed": "{{i18n:Dialogue.Wed}}",
+        "Thu": "{{i18n:Dialogue.Thu}}",
+        "Fri": "{{i18n:Dialogue.Fri}}",
+        "Sat": "{{i18n:Dialogue.Sat}}",
+        "Sun": "{{i18n:Dialogue.Sun}}",
+        "Mon2": "{{i18n:Dialogue.Mon2}}",
+        "Tue2": "{{i18n:Dialogue.Tue2}}",
+        "Wed2": "{{i18n:Dialogue.Wed2}}",
+        "Thu2": "{{i18n:Dialogue.Thu2}}",
+        "Fri2": "{{i18n:Dialogue.Fri2}}",
+        "Sat2": "{{i18n:Dialogue.Sat2}}",
+        "Sun2": "{{i18n:Dialogue.Sun2}}",
+      }
+    },
+
+    /********After the Event (154440)********/
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "Mon4": "{{i18n:Dialogue.Mon4.1}}",
+        "Tue4": "{{i18n:Dialogue.Tue4.1}}",
+        "Wed4": "{{i18n:Dialogue.Wed4.1}}",
+        "Thu4": "{{i18n:Dialogue.Thu4.1}}",
+        "Fri4": "{{i18n:Dialogue.Fri4.1}}",
+        "Sat4": "{{i18n:Dialogue.Sat4.1}}",
+        "Sun4": "{{i18n:Dialogue.Sun4.1}}"
+      },
+      "When": {
+        "Hearts:Linus": "4",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "Mon4": "{{i18n:Dialogue.Mon4.2}}",
+        "Tue4": "{{i18n:Dialogue.Tue4.2}}",
+        "Wed4": "{{i18n:Dialogue.Wed4.2}}",
+        "Thu4": "{{i18n:Dialogue.Thu4.2}}",
+        "Fri4": "{{i18n:Dialogue.Fri4.2}}",
+        "Sat4": "{{i18n:Dialogue.Sat4.2}}",
+        "Sun4": "{{i18n:Dialogue.Sun4.2}}"
+      },
+      "When": {
+        "Hearts:Linus": "5",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+
+        "Mon6": "{{i18n:Dialogue.Mon6}}",
+        "Tue6": "{{i18n:Dialogue.Tue6}}",
+        "Wed6": "{{i18n:Dialogue.Wed6}}",
+        "Thu6": "{{i18n:Dialogue.Thu6}}",
+        "Fri6": "{{i18n:Dialogue.Fri6}}",
+        "Sat6": "{{i18n:Dialogue.Sat6}}",
+        "Sun6": "{{i18n:Dialogue.Sun6}}",
+        "summer_Mon6": "{{i18n:Dialogue.summer_Mon6}}",
+        "summer_Tue6": "{{i18n:Dialogue.summer_Tue6}}",
+        "summer_Wed6": "{{i18n:Dialogue.summer_Wed6}}",
+        "summer_Thu6": "{{i18n:Dialogue.summer_Thu6}}",
+        "summer_Fri6": "{{i18n:Dialogue.summer_Fri6}}",
+        "summer_Sat6": "{{i18n:Dialogue.summer_Sat6}}",
+        "summer_Sun6": "{{i18n:Dialogue.summer_Sun6}}",
+        "fall_Mon6": "{{i18n:Dialogue.fall_Mon6}}",
+        "fall_Tue6": "{{i18n:Dialogue.fall_Tue6}}",
+        "fall_Wed6": "{{i18n:Dialogue.fall_Wed6}}",
+        "fall_Thu6": "{{i18n:Dialogue.fall_Thu6}}",
+        "fall_Fri6": "{{i18n:Dialogue.fall_Fri6}}",
+        "fall_Sat6": "{{i18n:Dialogue.fall_Sat6}}",
+        "fall_Sun6": "{{i18n:Dialogue.fall_Sun6}}",
+        "winter_Mon6": "{{i18n:Dialogue.winter_Mon6}}",
+        "winter_Tue6": "{{i18n:Dialogue.winter_Tue6}}",
+        "winter_Wed6": "{{i18n:Dialogue.winter_Wed6}}",
+        "winter_Thu6": "{{i18n:Dialogue.winter_Thu6}}",
+        "winter_Fri6": "{{i18n:Dialogue.winter_Fri6}}",
+        "winter_Sat6": "{{i18n:Dialogue.winter_Sat6}}",
+        "winter_Sun6": "{{i18n:Dialogue.winter_Sun6}}"
+      },
+      "When": {
+        "Hearts:Linus": "{{Range: 6, 10}}",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "Mon8": "{{i18n:Dialogue.Mon8}}",
+        "Tue8": "{{i18n:Dialogue.Tue8}}",
+        "Wed8": "{{i18n:Dialogue.Wed8}}",
+        "Thu8": "{{i18n:Dialogue.Thu8}}",
+        "Fri8": "{{i18n:Dialogue.Fri8}}",
+        "Sat8": "{{i18n:Dialogue.Sat8}}",
+        "Sun8": "{{i18n:Dialogue.Sun8}}",
+        "Sun8_11": "{{i18n:Dialogue.Sun8_11}}",
+        "Sun8_12": "{{i18n:Dialogue.Sun8_12}}",
+        "summer_Mon8": "{{i18n:Dialogue.summer_Mon8}}",
+        "summer_Tue8": "{{i18n:Dialogue.summer_Tue8}}",
+        "summer_Wed8": "{{i18n:Dialogue.summer_Wed8}}",
+        "summer_Thu8": "{{i18n:Dialogue.summer_Thu8}}",
+        "summer_Fri8": "{{i18n:Dialogue.summer_Fri8}}",
+        "summer_Sat8": "{{i18n:Dialogue.summer_Sat8}}",
+        "summer_Sun8": "{{i18n:Dialogue.summer_Sun8}}",
+        "fall_Mon8": "{{i18n:Dialogue.fall_Mon8}}",
+        "fall_Tue8": "{{i18n:Dialogue.fall_Tue8}}",
+        "fall_Wed8": "{{i18n:Dialogue.fall_Wed8}}",
+        "fall_Thu8": "{{i18n:Dialogue.fall_Thu8}}",
+        "fall_Fri8": "{{i18n:Dialogue.fall_Fri8}}",
+        "fall_Sat8": "{{i18n:Dialogue.fall_Sat8}}",
+        "fall_Sun8": "{{i18n:Dialogue.fall_Sun8}}",
+        "winter_Mon8": "{{i18n:Dialogue.winter_Mon8}}",
+        "winter_Tue8": "{{i18n:Dialogue.winter_Tue8}}",
+        "winter_Wed8": "{{i18n:Dialogue.winter_Wed8}}",
+        "winter_Thu8": "{{i18n:Dialogue.winter_Thu8}}",
+        "winter_Fri8": "{{i18n:Dialogue.winter_Fri8}}",
+        "winter_Sat8": "{{i18n:Dialogue.winter_Sat8}}",
+        "winter_Sun8": "{{i18n:Dialogue.winter_Sun8}}",
+        "Mon10": "{{i18n:Dialogue.Mon10}}",
+        "Tue10": "{{i18n:Dialogue.Tue10}}",
+        "Wed10": "{{i18n:Dialogue.Wed10}}",
+        "Thu10": "{{i18n:Dialogue.Thu10}}",
+        "Fri10": "{{i18n:Dialogue.Fri10}}",
+        "Sat10": "{{i18n:Dialogue.Sat10}}",
+        "Sun10": "{{i18n:Dialogue.Sun10}}",
+        "summer_Mon10": "{{i18n:Dialogue.summer_Mon10}}",
+        "summer_Tue10": "{{i18n:Dialogue.summer_Tue10}}",
+        "summer_Wed10": "{{i18n:Dialogue.summer_Wed10}}",
+        "summer_Thu10": "{{i18n:Dialogue.summer_Thu10}}",
+        "summer_Fri10": "{{i18n:Dialogue.summer_Fri10}}",
+        "summer_Sat10": "{{i18n:Dialogue.summer_Sat10}}",
+        "summer_Sun10": "{{i18n:Dialogue.summer_Sun10}}",
+        "fall_Mon10": "{{i18n:Dialogue.fall_Mon10}}",
+        "fall_Tue10": "{{i18n:Dialogue.fall_Tue10}}",
+        "fall_Wed10": "{{i18n:Dialogue.fall_Wed10}}",
+        "fall_Thu10": "{{i18n:Dialogue.fall_Thu10}}",
+        "fall_Fri10": "{{i18n:Dialogue.fall_Fri10}}",
+        "fall_Sat10": "{{i18n:Dialogue.fall_Sat10}}",
+        "fall_Sun10": "{{i18n:Dialogue.fall_Sun10}}",
+        "winter_Mon10": "{{i18n:Dialogue.winter_Mon10}}",
+        "winter_Tue10": "{{i18n:Dialogue.winter_Tue10}}",
+        "winter_Wed10": "{{i18n:Dialogue.winter_Wed10}}",
+        "winter_Thu10": "{{i18n:Dialogue.winter_Thu10}}",
+        "winter_Fri10": "{{i18n:Dialogue.winter_Fri10}}",
+        "winter_Sat10": "{{i18n:Dialogue.winter_Sat10}}",
+        "winter_Sun10": "{{i18n:Dialogue.winter_Sun10}}"
+      },
+      "When": {
+        "Relationship:Linus": "Dating",
+        "HasSeenEvent": "154440"
+      }
+
+    },
+
+    /********Season_Day********/
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "spring_1": "{{i18n:Dialogue.spring_1.Heart0}}",
+        "spring_12": "{{i18n:Dialogue.spring_12.Heart0}}",
+        "spring_23": "{{i18n:Dialogue.spring_23.Heart0}}",
+        "summer_1": "{{i18n:Dialogue.summer_1.Heart0}}",
+        "summer_10": "{{i18n:Dialogue.summer_10.Heart0}}",
+        "summer_27": "{{i18n:Dialogue.summer_27.Heart0}}",
+        "fall_1": "{{i18n:Dialogue.fall_1.Heart0}}",
+        "fall_26": "{{i18n:Dialogue.fall_26.Heart0}}",
+        "winter_1": "{{i18n:Dialogue.winter_1.Heart0}}",
+        "winter_7": "{{i18n:Dialogue.winter_7.Heart0}}",
+        "winter_24": "{{i18n:Dialogue.winter_24.Heart0}}",
+        "winter_28": "{{i18n:Dialogue.winter_28.Heart0}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "spring_1": "{{i18n:Dialogue.spring_1.Heart4}}",
+        "spring_12": "{{i18n:Dialogue.spring_12.Heart4}}",
+        "spring_23": "{{i18n:Dialogue.spring_23.Heart4}}",
+        "summer_1": "{{i18n:Dialogue.summer_1.Heart4}}",
+        "summer_10": "{{i18n:Dialogue.summer_10.Heart4}}",
+        "fall_1": "{{i18n:Dialogue.fall_1.Heart4}}",
+        "fall_15": "{{i18n:Dialogue.fall_15.Heart4}}",
+        "fall_26": "{{i18n:Dialogue.fall_26.Heart4}}",
+        "winter_1": "{{i18n:Dialogue.winter_1.Heart4}}",
+        "winter_7": "{{i18n:Dialogue.winter_7.Heart4}}",
+        "winter_24": "{{i18n:Dialogue.winter_24.Heart4}}",
+        "winter_28": "{{i18n:Dialogue.winter_28.Heart4}}"
+      },
+      "When": {
+        "HasSeenEvent": "154440"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "spring_1": "{{i18n:Dialogue.spring_1.Heart6}}",
+        "spring_12": "{{i18n:Dialogue.spring_12.Heart6}}",
+        "spring_23": "{{i18n:Dialogue.spring_23.Heart6}}",
+        "summer_1": "{{i18n:Dialogue.summer_1.Heart6}}",
+        "summer_10": "{{i18n:Dialogue.summer_10.Heart6}}",
+        "summer_27": "{{i18n:Dialogue.summer_27.Heart6}}",
+        "fall_1": "{{i18n:Dialogue.fall_1.Heart6}}",
+        "fall_15": "{{i18n:Dialogue.fall_15.Heart6}}",
+        "fall_26": "{{i18n:Dialogue.fall_26.Heart6}}",
+        "winter_1": "{{i18n:Dialogue.winter_1.Heart6}}",
+        "winter_7": "{{i18n:Dialogue.winter_7.Heart6}}",
+        "winter_24": "{{i18n:Dialogue.winter_24.Heart6}}",
+        "winter_28": "{{i18n:Dialogue.winter_28.Heart6}}"
+      },
+      "When": {
+        "Hearts:Linus": "{{Range: 6, 10}}",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "spring_1": "{{i18n:Dialogue.spring_1.Dating}}",
+        "spring_12": "{{i18n:Dialogue.spring_12.Dating}}",
+        "spring_23": "{{i18n:Dialogue.spring_23.Dating}}",
+        "summer_1": "{{i18n:Dialogue.summer_1.Dating}}",
+        "summer_10": "{{i18n:Dialogue.summer_10.Dating}}",
+        "summer_27": "{{i18n:Dialogue.summer_27.Dating}}",
+        "fall_1": "{{i18n:Dialogue.fall_1.Dating}}",
+        "fall_15": "{{i18n:Dialogue.fall_15.Dating}}",
+        "fall_26": "{{i18n:Dialogue.fall_26.Dating}}",
+        "winter_1": "{{i18n:Dialogue.winter_1.Dating}}",
+        "winter_7": "{{i18n:Dialogue.winter_7.Dating}}",
+        "winter_24": "{{i18n:Dialogue.winter_24.Dating}}",
+        "winter_27": "{{i18n:Dialogue.winter_27.Dating}}",
+        "winter_28": "{{i18n:Dialogue.winter_28.Dating}}"
+      },
+      "When": {
+        "Relationship:Linus": "Dating",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+    /********Special Dialogue********/
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "Introduction": "{{i18n:Dialogue.Introduction}}",
+        "reject_869": "{{i18n:Dialogue.reject_869}}",
+        "cc_Boulder": "{{i18n:Dialogue.cc_Boulder}}",
+        "MovieInvitation": "{{i18n:Dialogue.MovieInvitation}}",
+        "danceRejection": "{{i18n:Dialogue.danceRejection}}",
+        "divorced": "{{i18n:Dialogue.divorced}}",
+        //"dumped_Guys": "{{i18n:Dialogue.dumped_Guys}}",
+        //"secondChance_Guys": "{{i18n:Dialogue.secondChance_Guys}}",
+        "breakUp": "{{i18n:Dialogue.breakUp}}",
+        "give_flowersA": "{{i18n:Dialogue.give_flowersA}}",
+        "give_flowersB": "{{i18n:Dialogue.give_flowersB}}",
+        "give_pendant": "{{i18n:Dialogue.give_pendant}}",
+        "reject_two_heartA": "{{i18n:Dialogue.reject_two_heartA}}",
+        "reject_two_heartB": "{{i18n:Dialogue.reject_two_heartB}}",
+        "reject_four_heartA": "{{i18n:Dialogue.reject_four_heartA}}",
+        "reject_four_heartB": "{{i18n:Dialogue.reject_four_heartB}}",
+        "refusal_knownA": "{{i18n:Dialogue.refusal_knownA}}",
+        "refusal_knownB": "{{i18n:Dialogue.refusal_knownB}}",
+        "refusal_botherA": "{{i18n:Dialogue.refusal_botherA}}",
+        "refusal_botherB": "{{i18n:Dialogue.refusal_botherB}}",
+        "refusal_no_heartsA": "{{i18n:Dialogue.refusal_no_heartsA}}",
+        "refusal_no_heartsB": "{{i18n:Dialogue.refusal_no_heartsB}}",
+        "birthdayLoveA": "{{i18n:BirthdayGift.Love.Heart0}}$1",
+        "birthdayLoveB": "{{i18n:BirthdayGift.Love.Heart0}}$1",
+        "birthdayLikeA": "{{i18n:BirthdayGift.Like.Heart0}}$1",
+        "birthdayLikeB": "{{i18n:BirthdayGift.Like.Heart0}}$1",
+        "birthdayDislikeA": "{{i18n:BirthdayGift.Dislike.Heart0}}$2",
+        "birthdayDislikeB": "{{i18n:BirthdayGift.Dislike.Heart0}}$2",
+        "birthdayNeutralA": "{{i18n:BirthdayGift.Neutral.Heart0}}$1",
+        "birthdayNeutralB": "{{i18n:BirthdayGift.Neutral.Heart0}}$1",
+
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "birthdayLoveA": "{{i18n:BirthdayGift.Love.Heart4}}$1",
+        "birthdayLoveB": "{{i18n:BirthdayGift.Love.Heart4}}$1",
+        "birthdayLikeA": "{{i18n:BirthdayGift.Like.Heart4}}$1",
+        "birthdayLikeB": "{{i18n:BirthdayGift.Like.Heart4}}$1",
+        "birthdayDislikeA": "{{i18n:BirthdayGift.Dislike.Heart4}}$2",
+        "birthdayDislikeB": "{{i18n:BirthdayGift.Dislike.Heart4}}$2",
+        "birthdayNeutralA": "{{i18n:BirthdayGift.Neutral.Heart4}}",
+        "birthdayNeutralB": "{{i18n:BirthdayGift.Neutral.Heart4}}",
+      },
+      "When": {
+        "Hearts:Linus": "4,5"
+      }
+    },
+
+        {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "birthdayLoveA": "{{i18n:BirthdayGift.Love.Married}}$1",
+        "birthdayLoveB": "{{i18n:BirthdayGift.Love.Married}}$1",
+        "birthdayLikeA": "{{i18n:BirthdayGift.Like.Married}}$1",
+        "birthdayLikeB": "{{i18n:BirthdayGift.Like.Married}}$1",
+        "birthdayDislikeA": "{{i18n:BirthdayGift.Dislike.Married}}$3",
+        "birthdayDislikeB": "{{i18n:BirthdayGift.Dislike.Married}}$3",
+        "birthdayNeutralA": "{{i18n:BirthdayGift.Neutral.Married}}$1",
+        "birthdayNeutralB": "{{i18n:BirthdayGift.Neutral.Married}}$1",
+      },
+      "When": {
+        "Relationship:Linus": "Married"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "dumped_Guys": null,
+        "secondChance_Guys": null
+      },
+      "When": {
+        "Relationship:Linus": "Married"
+      }
+    }
+
+  ]
+}

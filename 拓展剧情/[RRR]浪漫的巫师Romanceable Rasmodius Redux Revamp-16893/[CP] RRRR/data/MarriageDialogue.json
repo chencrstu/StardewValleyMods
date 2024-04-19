@@ -1,0 +1,499 @@
+//Marriage dialogue
+{
+  "Changes": [
+    // ***M A R R I A G E   D I A L O G U E***//
+
+    {
+      "LogName": "Load Marriage Dialogue",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "FromFile": "data/Blank.json",
+    },
+    {
+      "LogName": "Marriage Dialogue - Base",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "Entries": {
+
+        "Rainy_Day_Wizard": "{{i18n:Married.Wizard.Rainy_Day_Base_{{Random:{{Range: 0, 3}}}} {{expressionList}} }}",
+        "Rainy_Night_Wizard": "{{i18n:Married.Wizard.Rainy_Night_Base_{{Random:{{Range: 0, 3}}}} {{expressionList}} }}",
+        "Indoor_Day_Wizard": "{{i18n:Married.Wizard.Indoor_Day_Base_{{Random:{{Range: 0, 4}}}} {{expressionList}} }}",
+        "Indoor_Night_Wizard": "{{i18n:Married.Wizard.Indoor_Day_Base_{{Random:{{Range: 0, 4}}}} {{expressionList}} }}",
+        "spring_Wizard": "{{i18n:Married.Wizard.Spring_Base_{{Random:{{Range: 0, 7}}}} {{expressionList}} }}",
+        "summer_Wizard": "{{i18n:Married.Wizard.Summer_Base_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "fall_Wizard": "{{i18n:Married.Wizard.Fall_Base_{{Random:{{Range: 0, 10}}}} {{expressionList}} }}",
+        "winter_Wizard": "{{i18n:Married.Wizard.Winter_Base_{{Random:{{Range: 0, 8}},{{Hotspring}}_9}} {{expressionList}} }}",
+        "Rainy_Day_0": "{{i18n:Married.Wizard.Rainy_Day_0_{{Random:{{Range: 0, 2}},{{Alt}}_3}} {{expressionList}} }}",
+        "Rainy_Day_1": "{{i18n:Married.Wizard.Rainy_Day_1_{{Random:{{Range: 0, 4}}}} {{expressionList}} }}",
+        "Rainy_Day_2": "{{i18n:Married.Wizard.Rainy_Day_2_{{Random:{{Range: 0, 3}},{{Alt}}_4}} {{expressionList}} }}",
+        "Rainy_Day_3": "{{i18n:Married.Wizard.Rainy_Day_3_{{Random:{{Range: 0, 2}},{{Alt}}_3}} {{expressionList}} }}",
+        "Rainy_Day_4": "{{i18n:Married.Wizard.Rainy_Day_4_{{Random:{{Range: 0, 2}},{{CookingSkill}}_3}} {{expressionList}} }}",
+        "Rainy_Night_0": "{{i18n:Married.Wizard.Rainy_Night_0_{{Random:{{Range: 0, 3}},{{ChildCall}}_4}} {{expressionList}} }}",
+        "Rainy_Night_1": "{{i18n:Married.Wizard.Rainy_Night_1_{{Random:0, {{CookingSkill}}_1, {{CookingSkill}}_2, 3, 4, 5, 6}} {{expressionList}} }}",
+        "Rainy_Night_2": "{{i18n:Married.Wizard.Rainy_Night_2_{{Random:{{Range: 0, 4}}}} {{expressionList}} }}",
+        "Rainy_Night_3": "{{i18n:Married.Wizard.Rainy_Night_3_{{Random:{{Range: 0, 4}}}} {{expressionList}} }}",
+        "Rainy_Night_4": "{{i18n:Married.Wizard.Rainy_Night_4_{{Random:{{Range: 0, 4}}}} {{expressionList}} }}",
+        "Rainy_Night_5": "{{i18n:Married.Wizard.Rainy_Night_5_{{Random:{{Range: 0, 3}}, {{CookingSkill}}_4}} {{expressionList}} }}",
+        "Indoor_Day_0": "{{i18n:Married.Wizard.Indoor_Day_0_{{Random:{{Range: 0, 6}}}} {{expressionList}} }}",
+        "Indoor_Day_1": "{{i18n:Married.Wizard.Indoor_Day_1_{{Random:{{Range: 0, 5}}, {{CookingSkill}}_6, {{CookingSkill}}_7,}} {{expressionList}} }}",
+        "Indoor_Day_2": "{{i18n:Married.Wizard.Indoor_Day_2_{{Random:{{Range: 0, 6}}}} {{expressionList}} }}",
+        "Indoor_Day_3": "{{i18n:Married.Wizard.Indoor_Day_3_{{Random:{{Range: 1, 8}}, {{CookingSkill}}_0}} {{expressionList}} }}",
+        "Indoor_Day_4": "{{i18n:Married.Wizard.Indoor_Day_4_{{Random:{{Range: 1, 7}}, {{CookingSkill}}_0}} {{expressionList}} }}",
+        "Indoor_Night_0": "{{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_0_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Indoor_Night_1": "{{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_1_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Indoor_Night_2": "{{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_2_{{Random:{{Range: 2, 7}}, {{CookingSkill}}_0, {{CookingSkill}}_1}} {{expressionList}} }}",
+        "Indoor_Night_3": "{{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_3_{{Random:{{Range: 1, 7}}, {{ChildCall}}_8, {{MarriageStage}}_0}} {{expressionList}} }}",
+        "Indoor_Night_4": "{{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_4_{{Random:{{Range: 0, 6}}, {{MarriageStage}}_7, {{Artifact}}_8}} {{expressionList}} }}",
+        "Outdoor_Wizard": "{{i18n:Married.Wizard.Outdoor_Base_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Outdoor_0": "{{i18n:Married.Wizard.Outdoor_0_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Outdoor_1": "{{i18n:Married.Wizard.Outdoor_1_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Outdoor_2": "{{i18n:Married.Wizard.Outdoor_2_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Outdoor_3": "{{i18n:Married.Wizard.Outdoor_3_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Outdoor_4": "{{i18n:Married.Wizard.Outdoor_4_{{Random:{{Range: 1, 8}}, {{CookingSkill}}_0}} {{expressionList}} }}",
+        "OneKid_0": "{{Random: {{i18n:Married.Wizard.OneKid_0_1.1}} ${{e1}}#$e#{{i18n:Married.Wizard.OneKid_0_1.2}} ${{e7}} @@ {{i18n:Married.Wizard.OneKid_0_2.1}} ${{e3}}#$e#{{i18n:Married.Wizard.OneKid_0_2.2}} ${{e5}}#$b#{{i18n:Married.Wizard.OneKid_0_2.3}} ${{e10}} @@ {{i18n:Married.Wizard.OneKid_0_3.1}} ${{e1}}#$b#{{i18n:Married.Wizard.OneKid_0_3.2}} ${{e9}} @@ {{i18n:Married.Wizard.OneKid_0_4.1}} ${{e0}}#$e#{{i18n:Married.Wizard.OneKid_0_4.2}} ${{e1}}|inputSeparator=@@}}",
+        "OneKid_1": "{{Random: {{i18n:Married.Wizard.OneKid_1_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.OneKid_1_1.2}} ${{e10}}#$b#{{i18n:Married.Wizard.OneKid_1_1.3}} ${{e11}}#$e#{{i18n:Married.Wizard.OneKid_1_1.4}} ${{e10}}#$e#{{i18n:Married.Wizard.OneKid_1_1.5}} ${{e11}} @@ {{i18n:Married.Wizard.OneKid_1_2.1}} ${{e1}}#$e#{{i18n:Married.Wizard.OneKid_1_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.OneKid_1_3.1}} ${{e2}} @@ {{i18n:Married.Wizard.OneKid_1_4.1}} ${{e3}}#$b#{{i18n:Married.Wizard.{{Gender}}.OneKid_1_4.2}} ${{e5}} |inputSeparator=@@}}",
+        "OneKid_2": "{{Random: {{i18n:Married.Wizard.OneKid_2_1.1}} ${{e3}}#$e#{{i18n:Married.Wizard.OneKid_2_1.2}} ${{e3}} @@{{i18n:Married.Wizard.OneKid_2_2.1}} ${{e1}}#$e#{{i18n:Married.Wizard.OneKid_2_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.OneKid_2_2.3}} ${{e5}} @@ {{i18n:Married.Wizard.OneKid_2_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.OneKid_2_3.2}} ${{e5}} @@ {{i18n:Married.Wizard.{{TypeChildCallSingle}}.OneKid_2_4 {{expressionList}} }}|inputSeparator=@@}}",
+        "OneKid_3": "{{Random: {{i18n:Married.Wizard.OneKid_3_1.1}} ${{e5}}#$b#{{i18n:Married.Wizard.OneKid_3_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.OneKid_3_1.3}} ${{e2}}#$e#{{i18n:Married.Wizard.OneKid_3_1.4}} ${{e5}}#$b#{{i18n:Married.Wizard.OneKid_3_1.5}} ${{e5}}#$b#{{i18n:Married.Wizard.OneKid_3_1.6}} ${{e5}}#$b#{{i18n:Married.Wizard.OneKid_3_1.7}} ${{e5}}#$b#{{i18n:Married.Wizard.OneKid_3_1.8}} ${{e11}}#$b#{{i18n:Married.Wizard.OneKid_3_1.9}} ${{e5}}#$b#{{i18n:Married.Wizard.OneKid_3_1.10}} ${{e2}}#$b#{{i18n:Married.Wizard.OneKid_3_1.11}} ${{e5}}#$e#{{i18n:Married.Wizard.OneKid_3_1.12}} ${{e10}} @@ {{i18n:Married.Wizard.OneKid_3_2.1}} ${{e1}}#$e#{{i18n:Married.Wizard.OneKid_3_2.2}} ${{e7}} @@ {{i18n:Married.Wizard.{{TypeChildCallSingle}}.OneKid_3_3 {{expressionList}} }} @@ {{i18n:Married.Wizard.OneKid_3_4.1}} ${{e2}}#$b#{{i18n:Married.Wizard.OneKid_3_4.2}} ${{e2}}#$b#{{i18n:Married.Wizard.OneKid_3_4.3}} ${{e5}}|inputSeparator=@@}}",
+        "TwoKids_0": "{{Random: {{i18n:Married.Wizard.TwoKids_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.TwoKids_0_1.2}} ${{e3}}#$e#{{i18n:Married.Wizard.TwoKids_0_1.3}} ${{e1}} @@ {{i18n:Married.Wizard.{{TypeChildCallSingle}}.TwoKids_0_2}} @@ {{i18n:Married.Wizard.TwoKids_0_3.1}} ${{e1}}#$e#%{{i18n:Married.Wizard.TwoKids_0_3.2}} @@ {{i18n:Married.Wizard.TwoKids_0_4.1}} ${{e0}}#$e#{{i18n:Married.Wizard.TwoKids_0_4.2}} ${{e1}} |inputSeparator=@@}}",
+        "TwoKids_1": "{{Random:{{i18n:Married.Wizard.TwoKids_1_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.TwoKids_1_1.2}} ${{e5}} @@ {{i18n:Married.Wizard.TwoKids_1_2.1}} ${{e0}}#$b#{{i18n:Married.Wizard.TwoKids_1_2.2}} ${{e3}}#$e#{{i18n:Married.Wizard.TwoKids_1_2.3}} ${{e1}}#$e#{{i18n:Married.Wizard.TwoKids_1_2.4}} ${{e9}} @@{{i18n:Married.Wizard.TwoKids_1_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.TwoKids_1_3.2}} ${{e10}} @@ {{i18n:Married.Wizard.TwoKids_1_4.1}} ${{e3}} #$b#{{i18n:Married.Wizard.TwoKids_1_4.2}} ${{e3}}#$b#{{i18n:Married.Wizard.TwoKids_1_4.3}} ${{e5}} |inputSeparator=@@}}",
+        "TwoKids_2": "{{Random: {{i18n:Married.Wizard.TwoKids_2_1.1}} ${{e0}}#$b#{{i18n:Married.Wizard.TwoKids_2_1.2}} ${{e2}}#$e#{{i18n:Married.Wizard.TwoKids_2_1.3}} ${{e3}} @@ {{i18n:Married.Wizard.TwoKids_2_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.TwoKids_2_2.2}} ${{e2}}#$b#{{i18n:Married.Wizard.TwoKids_2_2.3}} ${{e3}} @@ {{i18n:Married.Wizard.TwoKids_2_3.1}} ${{e7}}#$e#{{i18n:Married.Wizard.TwoKids_2_3.2}} ${{e6}}#$b#{{i18n:Married.Wizard.TwoKids_2_3.3}} ${{e2}} |inputSeparator=@@}}",
+        "Twokids_3": "{{Random: {{i18n:Married.Wizard.{{TypeChildCall}}.TwoKids_3_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.{{TypeChildCall}}.TwoKids_3_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.TwoKids_3_1.3}} ${{e3}}#$e#{{i18n:Married.Wizard.TwoKids_3_1.4}} ${{e1}} @@ {{i18n:Married.Wizard.TwoKids_3_2.1}} ${{e4}}#$b#{{i18n:Married.Wizard.TwoKids_3_2.2}} ${{e1}}#$e#{{i18n:Married.Wizard.TwoKids_3_2.3}} ${{e6}} @@ {{i18n:Married.Wizard.TwoKids_3_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.{{TypeChildCall}}.TwoKids_3_3.2}} ${{e0}}#$b#{{i18n:Married.Wizard.{{TypeChildCall}}.{{Stripe}}.TwoKids_3_3.3 {{expressionList}} }} @@ {{i18n:Married.Wizard.TwoKids_3_4.1}} ${{e6}}#$b#{{i18n:Married.Wizard.TwoKids_3_4.2}} ${{e4}}#$b#{{i18n:Married.Wizard.TwoKids_3_4.3}} ${{e6}}#$e#{{i18n:Married.Wizard.TwoKids_3_4.4}} ${{e1}}|inputSeparator=@@}}",
+        "Good_0": "{{i18n:Married.Wizard.Good_0_{{Random:{{Range: 1, 4}}, {{MarriageStage}}_0, {{MarriageStage}}_5, {{MarriageStage}}_6, {{MarriageStage}}_7, {{MarriageStage}}_8}} {{expressionList}} }}",
+        "Good_1": "{{i18n:Married.Wizard.Good_1_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Good_2": "{{i18n:Married.Wizard.Good_2_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Good_3": "{{i18n:Married.Wizard.Good_3_{{Random:{{Range: 0, 7}}, {{MarriageStage}}_8}} {{expressionList}} }}",
+        "Good_4": "{{i18n:Married.Wizard.Good_4_{{Random:{{Range: 0, 5}}, {{MarriageStage}}_6, {{MarriageStage}}_7, {{MarriageStage}}_8}} {{expressionList}} }}",
+        "Good_5": "{{i18n:Married.Wizard.Good_5_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Good_6": "{{i18n:Married.Wizard.Good_6_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Good_7": "{{i18n:Married.Wizard.Good_7_{{Random:{{Range: 0, 6}}, {{MarriageStage}}_7, {{MarriageStage}}_8}} {{expressionList}} }}",
+        "Good_8": "{{i18n:Married.Wizard.Good_8_{{Random:{{Range: 0, 7}}, {{ChildCall}}_8}} {{expressionList}} }}",
+        "Good_9": "{{i18n:Married.Wizard.Good_9_{{Random:{{Range: 0, 9}}}} {{expressionList}} }}",
+        "Neutral_0": "{{i18n:Married.Wizard.Neutral_0_{{Random:{{Range: 0, 7}}, {{MarriageStage}}_8}} {{expressionList}} }}",
+        "Neutral_1": "{{i18n:Married.Wizard.Neutral_1_{{Random:{{Range: 0, 6}}, {{MarriageStage}}_7, {{MarriageStage}}_8}} {{expressionList}} }}",
+        "Neutral_2": "{{i18n:Married.Wizard.Neutral_2_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Neutral_3": "{{i18n:Married.Wizard.Neutral_3_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Neutral_4": "{{i18n:Married.Wizard.Neutral_4_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Neutral_5": "{{i18n:Married.Wizard.Neutral_5_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Neutral_6": "{{i18n:Married.Wizard.Neutral_6_{{Random:{{Range: 1, 8}},{{CookingSkill}}_0}} {{expressionList}} }}",
+        "Neutral_7": "{{i18n:Married.Wizard.Neutral_7_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Neutral_8": "{{i18n:Married.Wizard.Neutral_8_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Neutral_9": "{{i18n:Married.Wizard.Neutral_9_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "Bad_0": "{{Random: {{i18n:Married.Wizard.Bad_0_1.1}} ${{e2}}#$e#{{i18n:Married.Wizard.Bad_0_1.2}} ${{e29}} @@ {{i18n:Married.Wizard.Bad_0_2.1}} ${{e2}} @@ {{i18n:Married.Wizard.Bad_0_3.1}} ${{e2}}#$e#{{i18n:Married.Wizard.Bad_0_3.2}} ${{e0}} |inputSeparator=@@}}",
+        "Bad_1": "{{Random: {{i18n:Married.Wizard.Bad_1_1.1}}${{e3}}#$b#{{i18n:Married.Wizard.Bad_1_1.2}}${{e3}}#$e#{{i18n:Married.Wizard.Bad_1_1.3}}${{e10}} @@ {{i18n:Married.Wizard.Bad_1_2.1}}${{e11}} @@ {{i18n:Married.Wizard.Bad_1_3.1}}${{e3}} |inputSeparator=@@}}",
+        "Bad_2": "{{Random: {{i18n:Married.Wizard.Bad_2_1.1}} ${{e7}}#$e#{{i18n:Wizard.Eplise}}${{e3}} #$e#{{i18n:Married.Wizard.Bad_2_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.Bad_2_2.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Bad_2_2.2}} ${{e29}} @@ {{i18n:Married.Wizard.Bad_2_3.1}} ${{e11}} |inputSeparator=@@}}",
+        "Bad_3": "{{Random:{{i18n:Married.Wizard.Bad_3_1.1}} ${{e10}}#$b#{{i18n:Married.Wizard.Bad_3_1.2}} ${{e2}}#$e#{{i18n:Married.Wizard.Bad_3_1.3}} ${{e2}} @@ {{i18n:Married.Wizard.Bad_3_2.1}} ${{e2}} @@ {{i18n:Married.Wizard.Bad_3_3.1}} ${{e2}}#$e#{{i18n:Married.Wizard.Bad_3_3.2}} ${{e2}} |inputSeparator=@@}}",
+        "Bad_4": "{{Random: {{i18n:Married.Wizard.Bad_4_1.1}} ${{e10}} @@ {{i18n:Married.Wizard.Bad_4_2.1}} ${{e2}} @@ {{i18n:Married.Wizard.Bad_4_3.1}} ${{e10}}#$e#{{i18n:Married.Wizard.Bad_4_3.2}} ${{e10}}#$e#{{i18n:Married.Wizard.Bad_4_3.3}} ${{e10}}#$e#{{i18n:Wizard.Eplise}} ${{e11}}#$e#%{{i18n:Married.Wizard.Bad_4_3.4}}  |inputSeparator=@@}}",
+        "Bad_5": "{{Random: {{i18n:Married.Wizard.Bad_5_1.1}} ${{e10}}#$b#{{i18n:Married.Wizard.Bad_5_1.2}} ${{e2}} @@ {{i18n:Married.Wizard.Bad_5_2.1}} ${{e10}} |inputSeparator=@@}}",
+        "Bad_6": "{{Random: {{i18n:Married.Wizard.Bad_6_1.1}} ${{e10}} @@ {{i18n:Married.Wizard.Bad_6_2.1}} ${{e3}}#$e#{{i18n:Married.Wizard.Bad_6_2.2}} ${{e2}} |inputSeparator=@@}}",
+        "Bad_7": "{{Random: {{i18n:Married.Wizard.Bad_7_1.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Bad_7_1.2}} ${{e2}} @@ {{i18n:Married.Wizard.Bad_7_2.1}} ${{e10}}#$e#{{i18n:Married.Wizard.Bad_7_2.2}} ${{e11}} |inputSeparator=@@}}",
+        "Bad_8": "{{Random: {{i18n:Married.Wizard.Bad_8_1.1}} ${{e2}} @@ {{i18n:Married.Wizard.Bad_8_2.1}} ${{e3}} |inputSeparator=@@}}",
+        "Bad_9": "{{i18n:Married.Wizard.Bad_9_1}} ${{e2}}",
+        "funLeave_Wizard": "{{i18n:Married.Wizard.Funleave_{{Random:{{Range: 0, 133}}}} {{expressionList}} }}",
+        "funReturn_Wizard": "{{i18n:Married.Wizard.Funreturn_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}#$e#{{Random: {{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_0_{{Random:{{Range: 0, 8}}}} {{expressionList}} }} @@ {{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_1_{{Random:{{Range: 0, 8}}}} {{expressionList}} }} @@ {{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_2_{{Random:{{Range: 2, 7}}, {{CookingSkill}}_0, {{CookingSkill}}_1}} {{expressionList}} }} @@ {{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_3_{{Random:{{Range: 1, 7}}, {{ChildCall}}_8, {{MarriageStage}}_0}} {{expressionList}} }} @@ {{i18n:Married.Wizard.Indoor_Night_{{NightReturn}}_4_{{Random:{{Range: 0, 6}}, {{MarriageStage}}_7, {{Artifact}}_8}} {{expressionList}} }}|inputSeparator=@@}}",
+        //"funReturn_Wizard": "{{i18n:Married.Wizard.Funreturn_{{Random:{{Range: 0, 8}}}} {{expressionList}} }}",
+        "spring_1": "{{i18n:Married.Wizard.Spring_1_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "spring_8": "{{i18n:Married.Wizard.Spring_8_{{Random:{{Range: 0, 3}}, {{Bracelet}}_4}} {{expressionList}} }}",
+        "spring_12": "{{i18n:Married.Wizard.Spring_12_{{Random: 0, 1}} {{expressionList}} }}",
+        "spring_13": "{{i18n:Married.Wizard.Spring_13_{{Random:{{Range: 0,2}}, {{ChildCall}}_3}} {{expressionList}} }}",
+        "spring_14": "{{i18n:Married.Wizard.Spring_14_{{Random:{{Range: 0,2}}}}, {{expressionList}} }}",
+        "spring_16": "{{i18n:Married.Wizard.Spring_16_{{Random:{{Range: 0,2}}}} {{expressionList}} }}#$action AddItem CalicoEgg 50 0 ",
+        "spring_23": "{{i18n:Married.Wizard.Spring_23_{{Random: 0,1}} {{expressionList}} }}",
+        "spring_24": "{{i18n:Married.Wizard{{OutfitCheck}}.Spring_{{MarriageStage}}_24 {{expressionList}} }}",
+        "summer_1": "{{i18n:Married.Wizard.Summer_1_{{Random:{{Range: 0, 3}}}} {{expressionList}} }}",
+        "summer_8": "{{i18n:Married.Wizard.Summer_8_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "summer_11": "{{i18n:Married.Wizard.Summer_11_{{Random:{{Range: 0, 3}}}} {{expressionList}} }}",
+        "summer_15": "{{Random: {{i18n:Dating.Wizard.Summer_Tue1.1}} ${{e0}}#$b#{{i18n:Dating.Wizard.Summer_Tue1.2}} ${{e1}}#$e#{{i18n:Dating.Wizard.Summer_Tue1.3}} ${{e1}} @@ {{i18n:Dating.Wizard.Summer_Sat1.1}} ${{e0}}#$b#{{i18n:Dating.Wizard.Summer_Sat1.2}} ${{e2}}#$b#{{i18n:Dating.Wizard.Summer_Sat1.3}} ${{e0}}#$e#{{i18n:Dating.Wizard.Summer_Sat1.4}} ${{e1}} @@ {{i18n:Married.Wizard.Summer_15_0 {{expressionList}} }} |inputSeparator=@@}}",
+        "summer_28": "{{i18n:Married.Wizard.Summer_28_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "fall_1": "{{i18n:Married.Wizard.Fall_1_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "fall_8": "{{i18n:Married.Wizard.Fall_8_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "fall_15": "{{i18n:Married.Wizard.Fall_15_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "fall_16": "{{i18n:Married.Wizard.Fall_16_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "fall_25": "{{Random:{{i18n:Dating.Wizard.Fall_Fri1.1}} ${{e3}}#$b#{{i18n:Dating.Wizard.Fall_Fri1.2}} ${{e2}}#$e#{{i18n:Married.Wizard.Fall_25_1.3}} ${{e6}} @@ {{i18n:Premarriage.Wizard.Fall_Wed10.1}} ${{e3}}#$b#{{i18n:Premarriage.Wizard.Fall_Wed10.2}} ${{e2}}#$e#{{i18n:Premarriage.Wizard.Fall_Wed10.3}} ${{e3}} |inputSeparator=@@}}",
+        "fall_26": "{{i18n:Married.Wizard.Fall_26_1}} ${{e1}}#$e#{{i18n:Married.Wizard.Fall_26_2}} ${{e9}}#$e#{{i18n:Married.Wizard.Fall_26_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Fall_26_4}} ${{e9}}#$e#{{i18n:Married.Wizard.Fall_26_5}} ${{e3}}",
+        "fall_27": "{{i18n:Married.Wizard.Fall_27_1}} ${{e0}}#$b#{{i18n:Married.Wizard.Fall_27_2}} ${{e1}}#$e#{{i18n:Married.Wizard.Fall_27_3}} ${{e5}}#$e#{{i18n:Married.Wizard.Fall_27_4}} ${{e3}}#$b#{{i18n:Married.Wizard.Fall_27_5}} ${{e3}}#$b#{{i18n:Married.Wizard.Fall_27_6}} ${{e6}}",
+        "fall_28":  "{{i18n:Married.Wizard.Fall_28_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "winter_1": "{{i18n:Married.Wizard.Winter_1_{{Random:{{Range: 0, 3}}}} {{expressionList}} }}",
+        "winter_7": "{{i18n:Married.Wizard.Winter_7_{{Random:{{Range: 0, 2}}}} {{expressionList}} }}",
+        "winter_8": "{{i18n:Married.Wizard.Winter_8_{{Random:{{Range: 0, 1}}, {{ChildCall}}_2}} {{expressionList}} }}",
+        "winter_12": "{{i18n:Married.Wizard.Winter_12_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Winter_12_1.2}} ${{e9}}",
+        "winter_15": "{{i18n:Married.Wizard.Winter_15_1}} ${{e0}}#$b#{{i18n:Married.Wizard.Winter_15_2}} ${{e3}}#$b#{{i18n:Married.Wizard.Winter_15_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Winter_15_4}} ${{e5}}#$e#{{i18n:Married.Wizard.Winter_15_5}} ${{e1}}#$b#{{i18n:Married.Wizard.Winter_15_6}} ${{e9}}",
+        "winter_17": "{{i18n:Married.Wizard.Winter_17_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Winter_17_2}} ${{e10}}#$b#{{i18n:Married.Wizard.Winter_17_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Winter_17_4}} ${{e1}}#$e#{{i18n:Married.Wizard.Winter_17_5}} ${{e1}}#$b#{{i18n:Married.Wizard.Winter_17_6}} ${{e9}}",
+        "winter_25": "{{i18n:Married.Wizard.Winter_25_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Winter_25_2}} ${{e1}}#$e#{{i18n:Married.Wizard.Winter_25_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Winter_25_4}} ${{e9}}",
+        "winter_28": "{{i18n:Married.Wizard.Winter_28_1}} ${{e6}}#$b#{{i18n:Married.Wizard.Winter_28_2}} ${{e0}}#$b#{{i18n:Married.Wizard.Winter_28_3}} ${{e4}}#$b#{{i18n:Married.Wizard.Winter_28_4}} ${{e6}}#$b#{{i18n:Married.Wizard.Winter_28_5}} ${{e4}}",
+        "spouseRoom_Wizard": "{{i18n:Married.Wizard.spouseRoom_{{Random:{{Range: 0, 21}}}} {{expressionList}} }}",
+        "patio_Wizard": "{{i18n:Married.Wizard.Patio_{{Random:{{Range: 0, 11}}}} {{expressionList}} }}",
+        "NoBed_0": "{{i18n:Wizard.Married.NoBed.NoBed_0 {{expressionList}} }}",
+        "NoBed_1": "{{i18n:Wizard.Married.NoBed.NoBed_1 {{expressionList}} }}",
+        "NoBed_2": "{{i18n:Wizard.Married.NoBed.NoBed_2 {{expressionList}} }}",
+        "NoBed_3": "{{i18n:Wizard.Married.NoBed.NoBed_3 {{expressionList}} }}",
+      },
+    },
+    //CONDITONAL MARRIAGE DIALOGUE:
+
+    //Seasonal Unlock two Exclusive
+    {
+      "LogName": "Marriage Dialogue - Summer Alt Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "When": {
+        "Relationship:Wizard": "Married",
+        "HasMod": "Jellonip.EMagnusPort",
+        "Alt": "Alt, Base "
+      },
+      "Entries": {
+        "summer_Wizard": "{{i18n:Married.Wizard.Summer_Base_{{Random: 0, 2, 4, 6, 7, 8, Seasonal{{Alt}}_0, Seasonal{{Alt}}_1, Seasonal{{Alt}}_2, Seasonal{{Alt}}_3, Seasonal2{{Alt}}_4}} {{expressionList}} }}",
+      },
+    },
+
+
+    
+    //Check main json for strings.
+    // *** P R E G N A N C Y    D I A L O G U E *** //
+    //CUSTOM WIZARD PREG CONVERSATION for First child Only. Second child edition below.
+    {
+      "LogName": "Wizard Pregnancy Dialogue First Child  - MarriageDialogueWizard",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "Update": "OnLocationChange",
+      "When": {
+        "HasSeenEvent": "64780030",
+        "HavingChild": "@{{playerName}}",
+        "Relationship:Wizard": "Married"
+      },
+      "Entries": {
+        "funLeave_Wizard": "{{Random: {{i18n:Married.Wizard.PregC1_funLeave_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_1.3}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_funLeave_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_2.2}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_2.3}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_funLeave_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.3}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.4}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_funLeave_3.5}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.6}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_funLeave_4.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_4.2}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC1_funLeave_4.3}} ${{e29}}@@ {{i18n:Married.Wizard.PregC1_funLeave_5.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_5.2}} ${{e4}} |inputSeparator=@@}}",
+        "funReturn_Wizard": "{{Random:{{i18n:Married.Wizard.PregC1_funReturn_1.1}}${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_1.2}}${{e4}} @@ {{i18n:Married.Wizard.PregC1_funReturn_2.1}}${{e6}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_2.2}}${{e5}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_2.3}}${{e2}} @@ {{i18n:Married.Wizard.PregC1_funReturn_3.1}}${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_3.2}}${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_3.3}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_funReturn_4.1}}${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_4.2}}${{e9}}#$e#{{i18n:Married.Wizard.PregC1_funReturn_4.3}}${{e1}} @@ {{i18n:Married.Wizard.PregC1_funReturn_5.1}}${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_5.2}}${{e5}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_5.3}}${{e3}} @@ {{i18n:Married.Wizard.PregC1_funReturn_6.1}}${{e0}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_6.2}}${{e3}} @@{{i18n:Married.Wizard.PregC1_funReturn_7.1 {{expressionList}} }}#$b#{{i18n:Married.Wizard.PregC1_funReturn_7.2}}${{e5}}#$e# {{i18n:Married.Wizard.PregC1_funReturn_7.3}}${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_0_1.2}} ${{e9}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_0_2.1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_0_2.2}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_1_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_1.2}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_1.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_1_3.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_3.2}} ${{e8}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_3.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_2_1.1 {{expressionList}} }} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_1.2}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_2_2.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_2.2}} ${{e8}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_2.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_2_3.1}}  ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_3.2}} ${{e6}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_3.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.1}} ${{e7}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.2}} ${{e8}} @@{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.1}}  ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.3}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.1}} ${{e8}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.2}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.3}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.4}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_4_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.2}}  ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.3}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.4}} ${{e6}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.5}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.6}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.7}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.8}} ${{e1}}|inputSeparator=@@}}",
+        "Patio_Wizard": "{{i18n:Married.Wizard.PregC2_Patio_1.1}} ${{e2}} #$b#{{i18n:Married.Wizard.PregC2_Patio_1.2}} ${{e9}} ",
+        "Indoor_Day_0": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Day_0_1.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_0_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Day_0_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_0_2.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_0_2.3}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_0_2.4}} ${{e9}}|inputSeparator=@@}}",
+        "Indoor_Day_1": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Day_1_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_1_1.2}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Day_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_1_2.2}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Day_1_2.3}} ${{e1}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Day_1_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_1_3.2}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Day_1_3.3}} ${{e2}} |inputSeparator=@@}}",
+        "Indoor_Day_2": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Day_2_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_2_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_2_1.3}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Day_2_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_2_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_2_2.3}} ${{e2}}|inputSeparator=@@}}",
+        "Indoor_Day_3": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Day_3_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_3_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_3_1.3}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Day_3_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_3_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_3_2.3}} ${{e9}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_3_2.4}} ${{e6}}|inputSeparator=@@}}",
+        "Indoor_Day_4": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Day_4_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_4_1.2}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Day_4_2.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_4_2.2}} ${{e2}}|inputSeparator=@@}}",
+        "Indoor_Night_0": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Night_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_0_1.2}} ${{e9}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_0_2.1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_0_2.2}} ${{e4}}|inputSeparator=@@}}",
+        "Indoor_Night_1": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Night_1_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_1.2}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_1.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_1_3.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_3.2}} ${{e8}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_1_3.3}} ${{e4}}|inputSeparator=@@}}",
+        "Indoor_Night_2": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Night_2_1.1 {{expressionList}} }} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_1.2}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_2_2.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_2.2}} ${{e8}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_2.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_2_3.1}}  ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_3.2}} ${{e6}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_2_3.3}} ${{e4}}|inputSeparator=@@}}",
+        "Indoor_Night_3": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.1}} ${{e7}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.2}} ${{e8}} @@{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.1}}  ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.3}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.1}} ${{e8}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.2}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.3}} ${{e4}}|inputSeparator=@@}}",
+        "Indoor_Night_4": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.3}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_1.4}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_4_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.2}}  ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.3}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.4}} ${{e6}}#$e#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.5}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.6}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.7}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_4_3.8}} ${{e1}}|inputSeparator=@@}}",
+        "Rainy_Day_0": "{{Random:{{i18n:Married.Wizard.PregC1_Rainy_Day_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_1.3}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_1.4}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_1.5}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Day_0_2.1}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_2.2}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_2.3}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_2.4}}  ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_2.5}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_0_2.6}} ${{e6}} |inputSeparator=@@}}",
+        "Rainy_Day_1": "{{Random:{{i18n:Married.Wizard.PregC1_Rainy_Day_1_1.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_1_1.2}} ${{e1}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Day_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_1_2.2}} ${{e2}}|inputSeparator=@@}}",
+        "Rainy_Day_2": "{{Random:{{i18n:Married.Wizard.PregC1_Rainy_Day_2_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_2_1.2}} ${{e1}} @@{{i18n:Married.Wizard.PregC1_Rainy_Day_2_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_2_2.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_2_2.3}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_2_2.4}} ${{e6}}|inputSeparator=@@}}",
+        "Rainy_Day_3": "{{Random: {{i18n:Married.Wizard.PregC1_Rainy_Day_3_1.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_3_1.2}} [199 218 219 727 730]${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_3_1.3}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_3_1.4}} ${{e1}}#$e#{{i18n:Married.Wizard.PregC1_Rainy_Day_3_1.5}} ${{e5}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Day_3_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_3_2.2}} ${{e6}} |inputSeparator=@@}}",
+        "Rainy_Day_4": "{{Random:{{i18n:Married.Wizard.PregC1_Rainy_Day_4_1.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_1.3}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Day_4_2.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_2.3}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_2.4}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_2.5}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_2.6}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_4_2.7}} ${{e3}}|inputSeparator=@@}}",
+        "Rainy_Night_0": "{{Random:{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.3}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.4}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.2}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.3}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.4}} ${{e4}} |inputSeparator=@@}}",
+        "Rainy_Night_1": "{{Random:{{i18n:Married.Wizard.PregC1_Rainy_Night_1_1.1}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_1_1.2}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Night_1_2.1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_1_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_1_2.3}}${{e2}} |inputSeparator=@@}}",
+        "Rainy_Night_2": "{{i18n:Married.Wizard.PregC1_Rainy_Night_2_1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_2_2}} ${{e3}}",
+        "Rainy_Night_3": "{{i18n:Married.Wizard.PregC1_Rainy_Night_3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_3_2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_3_3}} ${{e9}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_3_4}} ${{e6}}",
+        "Rainy_Night_4": "{{i18n:Married.Wizard.PregC1_Rainy_Night_4_1}} ${{e8}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_4_2}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_Rainy_Night_4_3}} ${{e4}}",
+        "Rainy_Night_5": "{{i18n:Married.Wizard.PregC1_Rainy_Night_5_1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_5_2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_5_3}} ${{e3}}",
+        "Outdoor_0": "{{Random:{{i18n:Married.Wizard.PregC1_Outdoor_0_1.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_0_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_Outdoor_0_2.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_0_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_0_2.3}} ${{e2}}|inputSeparator=@@}}",
+        "Outdoor_1": "{{Random:{{i18n:Married.Wizard.PregC1_Outdoor_1_1.1}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC1_Outdoor_1_1.2}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_Outdoor_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_1_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_1_2.3}} ${{e1}}|inputSeparator=@@}}",
+        "Outdoor_2": "{{Random:{{i18n:Married.Wizard.PregC1_Outdoor_2_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_2_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_2_1.3}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_Outdoor_2_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_2_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_2_2.3 {{expressionList}} }}  #$e#{{i18n:Married.Wizard.PregC1_Outdoor_2_2.4}} ${{e4}}|inputSeparator=@@}}",
+        "Outdoor_3": "{{i18n:Married.Wizard.PregC1_Outdoor_3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_3_2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_3_3}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC1_Outdoor_3_4}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_3_5}} ${{e2}}",
+        "Outdoor_4": "{{i18n:Married.Wizard.PregC1_Outdoor_4_1}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC1_Outdoor_4_2}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_4_3}} ${{e10}}",
+        "spouseRoom_Wizard": "{{Random:{{i18n:Married.Wizard.PregC1_spouseRoom_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_1.2}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_1.3}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_1.4}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_1.5}} ${{e9}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_1.6}} ${{e3}} @@ {{i18n:Married.Wizard.PregC1_spouseRoom_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_2.3}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_spouseRoom_2.4}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_2.5}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC1_spouseRoom_2.6}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_spouseRoom_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_3.2}} ${{e11}}#$e#{{i18n:Married.Wizard.PregC1_spouseRoom_3.3}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_3.4}} ${{e2}}|inputSeparator=@@}}",
+        "spring_8": "{{i18n:Married.Wizard.PregC1_Spring8_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Spring8_2}} ${{e1}}",
+        "summer_5": "{{i18n:Married.Wizard.PregC1_Summer5_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Summer5_2}}${{e6}}",
+        "fall_19": "{{i18n:Married.Wizard.PregC1_Fall19_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Fall19_2}} ${{e4}}",
+        "winter_3": "{{i18n:Married.Wizard.PregC1_Winter3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Winter3_2}} ${{e3}}"
+      },
+    },
+    //CUSTOM WIZARD PREG CONVERSATION Second child edition .
+    {
+      "LogName": "Wizard Pregnancy Dialogue Second Child  - MarriageDialogueWizard",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "Update": "OnLocationChange",
+      "When": {
+        "HasSeenEvent": "647800302",
+        "HavingChild": "@{{playerName}}",
+        "Relationship:Wizard": "Married"
+      },
+      "Entries": {
+        "funLeave_Wizard": "{{Random: {{i18n:Married.Wizard.PregC1_funLeave_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_1.3}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_funLeave_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_2.2}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_2.3}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_funLeave_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.3}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.4}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_funLeave_3.5}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_3.6}} ${{e2}} @@ {{i18n:Married.Wizard.PregC1_funLeave_4.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_4.2}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC1_funLeave_4.3}} ${{e29}}@@ {{i18n:Married.Wizard.PregC1_funLeave_5.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funLeave_5.2}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_funLeave_1}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC2_funLeave_2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_funLeave_3}} ${{e2}} |inputSeparator=@@}}",
+        "funReturn_Wizard": "{{Random:{{i18n:Married.Wizard.PregC2_funReturn_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_funReturn_1.2}} ${{e3}} @@  {{i18n:Married.Wizard.PregC1_funReturn_2.1}}${{e6}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_2.2}}${{e5}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_2.3}}${{e2}} @@{{i18n:Married.Wizard.PregC1_funReturn_3.1}}${{e3}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_3.2}}${{e2}}#$b#{{i18n:Married.Wizard.PregC1_funReturn_3.3}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_funReturn_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_funReturn_2.2}}  ${{e1}}@@ {{i18n:Married.Wizard.PregC2_funReturn_3.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_funReturn_3.2}} ${{e1}}@@ {{i18n:Married.Wizard.PregC2_funReturn_4.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_funReturn_4.2}} ${{e10}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_0_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_0_1.3}} ${{e1}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_0_2.1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_0_2.2}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_1_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_1.2}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_1.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_1_2.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_2.2}} ${{e8}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_2.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_2_1.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_2_2.1}} ${{e4}}#$e#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_2.2}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_2.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_2_3.1}}  ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_3.2}} ${{e4}}#$e#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_3.3}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.1}} ${{e7}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.2}} ${{e8}} @@{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.1}}  ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_3_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_3_2.3}} ${{e9}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.1}} ${{e8}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.2}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_4_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_4_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_4_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_3.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_3.3}} ${{e6}}|inputSeparator=@@}}",
+        "Patio_Wizard": "{{Random:{{i18n:Married.Wizard.PregC2_Patio_1.1}} ${{e2}} #$b#{{i18n:Married.Wizard.PregC2_Patio_1.2}} ${{e9}} @@ {{i18n:Married.Wizard.PregC2_Patio_2.1}} ${{e2}}#$e# {{i18n:Married.Wizard.PregC2_Patio_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Patio_2.3}} ${{e9}} |inputSeparator=@@}}",
+        "Indoor_Day_0": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Day_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_0_1.2}} ${{e1}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Day_0_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_0_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Day_0_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_0_3.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_0_3.3}} ${{e5}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Day_0_4.1}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_0_4.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_0_4.3}} ${{e3}}|inputSeparator=@@}}",
+        "Indoor_Day_1": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Day_1_1.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_1_1.2}} ${{e9}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Day_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_1_2.2}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC2_Indoor_Day_1_2.3}} ${{e3}} |inputSeparator=@@}}",
+        "Indoor_Day_2": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Day_2_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_2_1.2}} ${{e1}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Day_2_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Day_2_2.2}}${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_2_2.3}} |inputSeparator=@@}}",
+        "Indoor_Day_3": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Day_3_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_3_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_3_1.3}} ${{e6}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Day_3_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_3_2.2}} ${{e9}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_3_2.3}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_3_2.4}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC2_Indoor_Day_3_2.5}} ${{e3}}|inputSeparator=@@}}",
+        "Indoor_Day_4": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Day_4_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_4_1.2}} ${{e6}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Day_4_2.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_4_2.2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Day_4_2.3}} ${{e3}}|inputSeparator=@@}}",
+        "Indoor_Night_0": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Night_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_0_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_0_1.3}} ${{e1}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_0_2.1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_0_2.2}} ${{e4}}|inputSeparator=@@}}",
+        "Indoor_Night_1": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Night_1_1.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_1.2}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_1.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_1_2.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_2.2}} ${{e8}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_1_2.3}} ${{e4}}|inputSeparator=@@}}",
+        "Indoor_Night_2": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Night_2_1.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_2_2.1}} ${{e4}}#$e#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_2.2}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_2.3}} ${{e4}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_2_3.1}}  ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_3.2}} ${{e4}}#$e#{{i18n:Married.Wizard.PregC2_Indoor_Night_2_3.3}} ${{e6}}|inputSeparator=@@}}",
+        "Indoor_Night_3": "{{Random:{{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.1}} ${{e7}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_1.2}} ${{e8}} @@{{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.1}}  ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_3_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_3_2.3}} ${{e9}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.1}} ${{e8}} #$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.2}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Indoor_Night_3_3.3}} ${{e4}}|inputSeparator=@@}}",
+        "Indoor_Night_4": "{{Random:{{i18n:Married.Wizard.PregC2_Indoor_Night_4_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_4_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_2.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Indoor_Night_4_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_3.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Indoor_Night_4_3.3}} ${{e6}}|inputSeparator=@@}}",
+        "Rainy_Day_0": "{{Random:{{i18n:Married.Wizard.PregC2_Rainy_Day_0_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_0_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_0_1.3}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC2_Rainy_Day_0_1.4}} ${{e1}} @@ {{i18n:Married.Wizard.PregC2_Rainy_Day_0_2.1}} ${{e5}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_0_2.2}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC2_Rainy_Day_0_2.3}} ${{e10}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_0_2.4}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC2_Rainy_Day_0_2.5}} ${{e10}} |inputSeparator=@@}}",
+        "Rainy_Day_1": "{{Random:{{i18n:Married.Wizard.PregC2_Rainy_Day_1_1.1}}  ${{e0}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_1_1.2}} ${{e1}} @@ {{i18n:Married.Wizard.PregC2_Rainy_Day_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_1_2.2}} ${{e2}}|inputSeparator=@@}}",
+        "Rainy_Day_2": "{{Random:{{i18n:Married.Wizard.PregC2_Rainy_Day_2_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_2_1.2}} ${{e1}} @@ {{i18n:Married.Wizard.PregC2_Rainy_Day_2_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_2_2.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_2_2.3}} ${{e1}}#$e#{{i18n:Married.Wizard.PregC2_Rainy_Day_2_2.4}} ${{e3}}|inputSeparator=@@}}",
+        "Rainy_Day_3": "{{Random:{{i18n:Married.Wizard.PregC2_Rainy_Day_3_1.1}} [199 218 219 727 730]${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_3_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_3_1.3}} ${{e1}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Day_3_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Day_3_2.2}} ${{e6}} |inputSeparator=@@}}",
+        "Rainy_Day_4": "{{Random:{{i18n:Married.Wizard.PregC2_Rainy_Day_4_1.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_4_1.2}} ${{e3}} @@ {{i18n:Married.Wizard.PregC2_Rainy_Day_4_2.1}} ${{e0}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_4_2.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_4_2.3}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_4_2.4}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Day_4_2.5}}  ${{e9}}|inputSeparator=@@}}",
+        "Rainy_Night_0": "{{Random:{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.1}} ${{e7}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.3}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_1.4}} ${{e4}} @@ {{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.2}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.3}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_0_2.4}} ${{e4}} |inputSeparator=@@}}",
+        "Rainy_Night_1": "{{Random:{{i18n:Married.Wizard.PregC2_Rainy_Night_1_1.1 {{expressionList}} }} #$b#{{i18n:Married.Wizard.PregC2_Rainy_Night_1_1.2}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Night_1_1.3}} ${{e6}}#$e#{{i18n:Married.Wizard.PregC2_Rainy_Night_1_1.4}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Night_1_1.5}} ${{e6}} @@ {{i18n:Married.Wizard.PregC1_Indoor_Night_3_2.1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Night_1_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Night_1_2.3}} ${{e4}} |inputSeparator=@@}}",
+        "Rainy_Night_2": "{{i18n:Married.Wizard.PregC1_Rainy_Night_2_1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_2_2}} ${{e3}}",
+        "Rainy_Night_3": "{{i18n:Married.Wizard.PregC1_Rainy_Night_3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_3_2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_3_3}} ${{e9}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_3_4}} ${{e6}}",
+        "Rainy_Night_4": "{{i18n:Married.Wizard.PregC2_Rainy_Night_4_1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Night_4_2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Rainy_Night_4_3}} ${{e4}}",
+        "Rainy_Night_5": "{{i18n:Married.Wizard.PregC1_Rainy_Night_5_1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_5_2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_Rainy_Night_5_3}} ${{e3}}",
+        "Outdoor_0": "{{Random:{{i18n:Married.Wizard.PregC2_Outdoor_0_1.1}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_0_1.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_0_1.3}} ${{e6}}@@ {{i18n:Married.Wizard.PregC2_Outdoor_0_2.1}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_0_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_0_2.3}} ${{e2}}|inputSeparator=@@}}",
+        "Outdoor_1": "{{Random:{{i18n:Married.Wizard.PregC2_Outdoor_1_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_1_1.2}} ${{e6}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_1_1.3}}  ${{e0}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_1_1.4}} ${{e9}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_1_1.5}} ${{e1}} @@ {{i18n:Married.Wizard.PregC2_Outdoor_1_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_1_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_1_2.3}} ${{e1}}|inputSeparator=@@}}",
+        "Outdoor_2": "{{Random:{{i18n:Married.Wizard.PregC1_Outdoor_2_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_2_1.2}} ${{e1}}#$b#{{i18n:Married.Wizard.PregC1_Outdoor_2_1.3}} ${{e2}} @@ {{i18n:Married.Wizard.PregC2_Outdoor_2_2.1}} ${{e4}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_2_2.2}} ${{e6}} |inputSeparator=@@}}",
+        "Outdoor_3": "{{i18n:Married.Wizard.PregC2_Outdoor_3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_3_2}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_3_3}} ${{e5}}",
+        "Outdoor_4": "{{Random:{{i18n:Married.Wizard.PregC2_Outdoor_4_1.1}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC2_Outdoor_4_1.2}} ${{e6}} @@ {{i18n:Married.Wizard.PregC2_Outdoor_4_2.1}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC2_Outdoor_4_2.2}} ${{e3}}#$e#{{i18n:Married.Wizard.PregC2_Outdoor_4_2.3}} ${{e3}}|inputSeparator=@@}}",
+        "spouseRoom_Wizard": "{{Random:{{i18n:Married.Wizard.PregC2_spouseRoom_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC2_spouseRoom_1.2}} @@ {{i18n:Married.Wizard.PregC1_spouseRoom_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_2.2}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_2.3}} ${{e5}}#$e#{{i18n:Married.Wizard.PregC1_spouseRoom_2.4}} ${{e2}}#$b#{{i18n:Married.Wizard.PregC1_spouseRoom_2.5}} ${{e2}}#$e#{{i18n:Married.Wizard.PregC1_spouseRoom_2.6}} ${{e2}}|inputSeparator=@@}}",
+        "spring_8": "{{i18n:Married.Wizard.PregC1_Spring8_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Spring8_2}} ${{e1}}",
+        "summer_5": "{{i18n:Married.Wizard.PregC1_Summer5_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Summer5_2}}${{e6}}",
+        "fall_19": "{{i18n:Married.Wizard.PregC1_Fall19_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Fall19_2}} ${{e4}}",
+        "winter_3": "{{i18n:Married.Wizard.PregC1_Winter3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.PregC1_Winter3_2}} ${{e3}}",
+      },
+    },
+    /*
+        {//Phone while pregnant
+        	"Action": "EditData",
+        	"Target": "Characters/Dialogue/Wizard",
+        	"When": {"Pregnant":"@{{playerName}}"},
+        	"Entries": {
+
+          "MobilePhoneGreeting": "{{Random:{{i18n:Wizard.PhoneGreet.{{Random:1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}} {{expressionList}} }} @@ {{i18n:Wizard.PhoneGreet.Preg.{{Random:1, 2, 3}} {{expressionList}} }} |inputSeparator=@@}}",
+
+        	},
+        	},
+
+*/
+    // *** PARANOID MAGNUS DIALOGUE ***//
+    //Jello: This specifically happens in year 4 after the first Qi event from SVE. While this dialogue is active, all dates are disabled and several events will play. After Magnus has his breakdown, his dialogue will largely revert back to normal, but with minor changes to dialogue about defense artifacts. After the player gets the defense artifact, the dialogue will change again. There is a big focus of this being in spring because... well, I mean can you avoid the forest for an entire season???
+    // No children
+    {
+      "LogName": "Post Qi Event Paranoid Magnus Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "When": {
+        "HasSeenEvent |contains=19251793": false,
+        "HasSeenEvent |contains=19251791": true,
+        "Spouse": "Wizard",
+        "Darker Plot Events(Y4)": "true"
+      },
+      "Entries": {
+        "funLeave_Wizard": "{{Random: {{i18n:Married.Wizard.Paranoid.funLeave_1.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_1.2}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_2.1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_2.2}} ${{e2}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_3.1}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.funLeave_3.2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_3.3}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_4.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_4.2}} ${{e2}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_5.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_5.2}} ${{e26}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_5.3}} ${{e2}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_6.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_6.2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_6.3}} ${{e2}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_7.1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_7.2}} ${{e2}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_8.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_8.2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_8.3}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.funLeave_9.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_9.2}} ${{e29}}#$e#{{i18n:Married.Wizard.Paranoid.funLeave_9.3}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_9.4}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funLeave_9.5}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.funLeave_9.6}} ${{e2}} |inputSeparator=@@}}",
+        "funReturn_Wizard": "{{Random:{{i18n:Married.Wizard.Paranoid.funReturn_1.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_1.2}} ${{e5}}#$e#{{i18n:Married.Wizard.Paranoid.funReturn_1.3}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_2.2}} ${{e2}} @@{{i18n:Married.Wizard.Paranoid.funReturn_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_3.2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_3.3}} ${{e3}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_4.1}} ${{e26}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_4.2}} ${{e29}}@@ {{i18n:Married.Wizard.Paranoid.funReturn_5.1}} ${{e29}}#$b#$%{{i18n:Married.Wizard.Paranoid.funReturn_5.2}} #$e#{{i18n:Married.Wizard.Paranoid.funReturn_5.3}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_5.4}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_6.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_6.2}} ${{e29}}#$b{{i18n:Married.Wizard.Paranoid.funReturn_6.3}} ${{e3}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_7.1}} ${{e29}} #$e# {{i18n:Married.Wizard.Paranoid.funReturn_7.1}} ${{e3}} @@ {{i18n:Married.Wizard.Paranoid.Indoor_Night_0_1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_0_2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_0_3}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.Indoor_Night_1_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_1_2}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.Indoor_Night_2_1}} ${{e10}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_2_2}} ${{e11}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_2_3}} ${{e11}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Night_2_4}} ${{e2}} @@ {{i18n:Married.Wizard.Paranoid.Indoor_Night_3_1}} ${{e2}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Night_3_2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_3_3}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.Indoor_Night_4_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_4_2}} ${{e3}}|inputSeparator=@@}}",
+        "Indoor_Day_0": "{{i18n:Married.Wizard.Paranoid.Indoor_Day_0_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_0_2}} ${{e1}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Day_0_3}} ${{e2}}",
+        "Indoor_Day_1": "{{i18n:Married.Wizard.Paranoid.Indoor_Day_1_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_1_2}} ${{e2}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Day_1_3}} ${{e29}}",
+        "Indoor_Day_2": "{{i18n:Married.Wizard.Paranoid.Indoor_Day_2_1}} ${{e10}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_2_2}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Day_2_3}} ${{e29}}",
+        "Indoor_Day_3": "{{i18n:Married.Wizard.Paranoid.Indoor_Day_3_1}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Day_3_2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_3_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_3_4}} ${{e1}}",
+        "Indoor_Day_4": "{{i18n:Married.Wizard.Paranoid.Indoor_Day_4_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_4_2}} ${{e2}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Day_4_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_4_4}} ${{e29}}",
+        "Indoor_Night_Wizard": "{{i18n:Married.Wizard.Paranoid.Indoor_Night_1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_2}} ${{e29}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Night_3}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_4}} ${{e29}}#$e#%{{i18n:Married.Wizard.Paranoid.Indoor_Night_5}} ${{e0}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_6}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_7}} ${{e29}}",
+        "Indoor_Night_0": "{{i18n:Married.Wizard.Paranoid.Indoor_Night_0_1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_0_2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_0_3}} ${{e29}}",
+        "Indoor_Night_1": "{{i18n:Married.Wizard.Paranoid.Indoor_Night_1_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_1_2}} ${{e29}}",
+        "Indoor_Night_2": "{{i18n:Married.Wizard.Paranoid.Indoor_Night_2_1}} ${{e10}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_2_2}} ${{e11}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_2_3}} ${{e11}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Night_2_4}} ${{e2}}",
+        "Indoor_Night_3": "{{i18n:Married.Wizard.Paranoid.Indoor_Night_3_1}} ${{e2}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Night_3_2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_3_3}} ${{e29}}",
+        "Indoor_Night_4": "{{i18n:Married.Wizard.Paranoid.Indoor_Night_4_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Night_4_2}} ${{e3}}",
+        "Rainy_Day_0": "{{i18n:Married.Wizard.Paranoid.Rainy_Day_0_1}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.Rainy_Day_0_2}} ${{e2}}",
+        "Rainy_Day_1": "{{i18n:Married.Wizard.Paranoid.Rainy_Day_1_1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Day_1_2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Day_1_3}} ${{e29}}",
+        "Rainy_Day_2": "{{i18n:Married.Wizard.Paranoid.Rainy_Day_2_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Day_2_2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Day_2_3}} ${{e29}}",
+        "Rainy_Day_3": "{{i18n:Married.Wizard.Paranoid.Rainy_Day_3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Day_3_2}} ${{e2}}",
+        "Rainy_Day_4": "{{i18n:Married.Wizard.Paranoid.Rainy_Day_4_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Day_4_2}}  ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Day_4_3}} ${{e3}}",
+        "Rainy_Night_0": "{{i18n:Married.Wizard.Paranoid.Rainy_Night_0_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_0_2}} ${{e2}}#$e#{{i18n:Married.Wizard.Paranoid.Rainy_Night_0_3}} ${{e29}}",
+        "Rainy_Night_1": "{{i18n:Married.Wizard.Paranoid.Rainy_Night_1_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_1_2}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_1_3}} ${{e29}}#$e#{{i18n:Wizard.Eplise}} ${{e29}}#$e#%{{i18n:Married.Wizard.Paranoid.Rainy_Night_1_4}} ",
+        "Rainy_Night_2": "{{i18n:Married.Wizard.Paranoid.Rainy_Night_2_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_2_2}} ${{e26}}#$e#{{i18n:Married.Wizard.Paranoid.Rainy_Night_2_3}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_2_4}} ${{e29}}",
+        "Rainy_Night_3": "{{i18n:Married.Wizard.Paranoid.Rainy_Night_3_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_3_2}} ${{e10}}",
+        "Rainy_Night_4": "{{i18n:Married.Wizard.Paranoid.Rainy_Night_4_1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_4_2}} ${{e29}}#$e#{{i18n:Married.Wizard.Paranoid.Rainy_Night_4_3}} ${{e9}}",
+        "Rainy_Night_5": "{{i18n:Married.Wizard.Paranoid.Rainy_Night_5_1}} ${{e26}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_5_2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_5_3}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.Rainy_Night_5_4}} ${{e29}}#$e#{{i18n:Wizard.Eplise}} ${{e29}}#$e#%{{i18n:Married.Wizard.Paranoid.Rainy_Night_5_5}} ",
+        "Outdoor_0": "{{i18n:Married.Wizard.Paranoid.Outdoor_0_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Outdoor_0_2}} ${{e2}}",
+        "Outdoor_1": "{{i18n:Married.Wizard.Paranoid.Outdoor_1_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.Outdoor_1_2}} ${{e3}}",
+        "Outdoor_2": "{{i18n:Married.Wizard.Paranoid.Outdoor_2_1}}  ${{e0}}#$b#{{i18n:Married.Wizard.Paranoid.Outdoor_2_2}} ${{e2}}",
+        "Outdoor_3": "{{i18n:Married.Wizard.Paranoid.Outdoor_3_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.Outdoor_3_2}} ${{e3}}",
+        "Outdoor_4": "{{i18n:Married.Wizard.Paranoid.Outdoor_4_1}} ${{e5}}#$b#{{i18n:Married.Wizard.Paranoid.Outdoor_4_2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Outdoor_4_3}} ${{e29}}",
+        "spouseRoom_Wizard": "{{i18n:Married.Wizard.Paranoid.spouseRoom_1}} ${{e10}}#$b#{{i18n:Married.Wizard.Paranoid.spouseRoom_2}} ${{e11}}#$e#{{i18n:Married.Wizard.Paranoid.spouseRoom_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.spouseRoom_4}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.spouseRoom_5}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.spouseRoom_6}} ${{e29}}",
+        "patio_Wizard": "{{i18n:Married.Wizard.Paranoid.patio_1}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.patio_2}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.patio_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.patio_4}} ${{e29}}#$e#{{i18n:Wizard.Eplise}} ${{e29}}",
+        "spring_8": "{{i18n:Married.Wizard.Paranoid.spring_8_1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.spring_8_2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.spring_8_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.spring_8_4}} ${{e5}}",
+        "spring_12": "{{i18n:Married.Wizard.Paranoid.spring_12_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.spring_12_2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.spring_12_3}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.spring_12_4}} ${{e2}}",
+        "spring_13": "{{i18n:Married.Wizard.Paranoid.spring_13_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.spring_13_2}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.spring_13_3}} ${{e3}}",
+        "spring_15": "{{i18n:Married.Wizard.Paranoid.spring_15_1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.spring_15_2}} ${{e3}}#$e#{{i18n:Married.Wizard.Paranoid.spring_15_3}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.spring_15_4}} ${{e3}}",
+        "spring_14": "{{i18n:Married.Wizard.Paranoid.spring_14 {{expressionList}} }}",
+        "spring_16": "{{i18n:Married.Wizard.Paranoid.spring_16 {{expressionList}} }}#$action AddItem CalicoEgg 50 0 ",
+        "spring_23": "{{i18n:Married.Wizard.Paranoid.spring_23_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.spring_23_2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.spring_23_3}} ${{e29}}",
+        "spring_24": "{{i18n:Married.Wizard.Paranoid.spring_24_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.spring_24_2}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.spring_24_3}} ${{e26}}#$e#{{i18n:Married.Wizard.Paranoid.spring_24_4}} ${{e2}}"
+      },
+    },
+    //Child patch
+    {
+      "LogName": "Post Qi Event Paranoid Magnus Dialogue - Child edition",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "When": {
+        "HasSeenEvent |contains=19251793": false,
+        "HasSeenEvent |contains=19251791": true,
+        "Spouse": "Wizard",
+        "HasSeenEvent": "64780033, 64780043",
+        "Darker Plot Events(Y4)": "true"
+      },
+      "Entries": {
+        "Indoor_Day_1": "{{Random: {{i18n:Married.Wizard.Paranoid.Indoor_Day_1_1}} ${{e29}}#$b#{{i18n:Married.Wizard.Paranoid.Indoor_Day_1_2}} ${{e2}}#$e#{{i18n:Married.Wizard.Paranoid.Indoor_Day_1_3}} ${{e29}}@@ {{i18n:Married.Wizard.Paranoid.Child_1.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Child_1.2}} ${{e2}}|inputSeparator=@@}}",
+        "funReturn_Wizard": "{{Random:{{i18n:Married.Wizard.Paranoid.funReturn_1.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_1.2}} ${{e5}}#$e#{{i18n:Married.Wizard.Paranoid.funReturn_1.3}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_2.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_2.2}} ${{e2}} @@{{i18n:Married.Wizard.Paranoid.funReturn_3.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_3.2}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_3.3}} ${{e3}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_4.1}} ${{e26}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_4.2}} ${{e29}}@@ {{i18n:Married.Wizard.Paranoid.funReturn_5.1}} ${{e29}}#$b#$%{{i18n:Married.Wizard.Paranoid.funReturn_5.2}} #$e#{{i18n:Married.Wizard.Paranoid.funReturn_5.3}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_5.4}} ${{e29}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_6.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.funReturn_6.2}} ${{e29}}#$b{{i18n:Married.Wizard.Paranoid.funReturn_6.3}} ${{e3}} @@ {{i18n:Married.Wizard.Paranoid.funReturn_7.1}} ${{e29}} #$e# {{i18n:Married.Wizard.Paranoid.funReturn_7.1}} ${{e3}}@@ {{i18n:Married.Wizard.Paranoid.Child_2.1}} ${{e2}}#$b#{{i18n:Married.Wizard.Paranoid.Child_2.2}} ${{e3}}|inputSeparator=@@}}",
+      },
+    },
+
+
+    {	"LogName": "Schedule - Bookseller",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/MarriageDialogueWizard",
+    "When": {
+      "spacechase0.SpaceCore/BooksellerInTown": true,
+      "Season |contains=Winter": false,
+      "Busyday": false
+    },
+    "Entries": {
+      "funLeave_Wizard": "{{i18n:Married.Wizard.BookSeller_Leave.{{Random:{{Range: 0, 5}}}} {{expressionList}} }}",
+
+    },
+  },
+    /*
+//Mobile phone edits when he's paranoid
+{
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Wizard",
+	"When": {"QiEvents": "true"},
+	"Entries": {
+    "MobilePhoneGreeting": "{{i18n:Wizard.PhoneGreet.Qi.{{Random:1, 2, 3, 4, 5}} {{expressionList}} }}",
+    "MobilePhoneReminisce": "{{i18n:Wizard.PhoneRemember.Qi.1 {{expressionList}} }}",
+    "MobilePhoneGoodBye": "{{i18n:Wizard.PhoneBye.Qi.{{Random:1, 2, 3, 4}} {{expressionList}} }}",
+
+	},
+	},
+*/
+    //Summit Dialogue Edit
+    {
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+        "SummitEvent_Dialogue3_Wizard": "{{i18n:Married.Wizard.Summit_5.1}} ${{e3}}#$b#{{i18n:Married.Wizard.Summit_5.2}} ${{e3}}#$b#{{i18n:Married.Wizard.Summit_5.3}} ${{e2}}#$b#{{i18n:Married.Wizard.Summit_5.4}} ${{e3}}#$b#{{i18n:Married.Wizard.Summit_5.5}} ${{e6}}#$b#{{i18n:Married.Wizard.Summit_5.6}} ${{e3}}#$b#{{i18n:Married.Wizard.Summit_5.7}} ${{e9}}#$b#{{i18n:Married.Wizard.Summit_5.8}} ${{e1}}#$b#{{i18n:Married.Wizard.Summit_5.9}} ${{e6}}\"/pause 200/speak Wizard \"{{i18n:Married.Wizard.Summit_5.10}} ${{e2}}#$b#{{i18n:Married.Wizard.Summit_5.11}} ${{e3}}#$b#{{i18n:Married.Wizard.Summit_5.12}} ${{e6}}#$b#{{i18n:Married.Wizard.Summit_5.13}} ${{e3}}#$b#{{i18n:Married.Wizard.Summit_5.14}} ${{e6}}#$b#{{i18n:Married.Wizard.Summit_5.15}} ${{e9}}#$b#{{i18n:Married.Wizard.Summit_5.16}} ${{e3}}#$b#{{i18n:Married.Wizard.Summit_5.17}} ${{e9}}\"/pause 500/faceDirection Wizard 3/pause 500/faceDirection farmer 1/pause 300/speak Wizard \"{{i18n:Married.Wizard.Summit_5.18}} ${{e1}}#$b#{{i18n:Married.Wizard.Summit_5.19}} ${{e6}}#$b#{{i18n:Married.Wizard.Summit_5.20}} ${{e9}}#$b#{{i18n:Married.Wizard.Summit_5.21}} ${{e4}}#$b#{{i18n:Married.Wizard.Summit_5.22}} ${{e6}}",
+      }
+    },
+    { // Force overwrite for wedding anniversary
+      "LogName": "Anniversary Dialogue",
+      "Action": "EditData",
+      "When": {
+        "Relationship:Wizard": "Married",
+      },
+      "Target": "Characters/Dialogue/MarriageDialogueWizard",
+      "Entries": {
+        "{{TheMightyAmondee.CustomTokens/AnniversarySeason}}_{{TheMightyAmondee.CustomTokens/AnniversaryDay}}": "{{i18n:Married.Wizard.WeddingAni_1}} ${{e4}}#$b#{{i18n:Married.Wizard.WeddingAni_2}} ${{e6}}#$e#{{i18n:Married.Wizard.WeddingAni_3}} ${{e4}}",
+      }
+    },
+    //W A L K I N G   D I A L O G U E
+    //Walking Dialogue (Abusing the custom gift responses mod)
+    {
+      "LogName": "Walking Dialogue - Base Morning",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Update": "OnLocationChange, OnTimeChange",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "Query: '{{Season}}' = 'fall' AND '{{Day}}' = 26": false,
+        "Time": "{{Range: 0600, 1100}}",
+        "Query: '{{BusyDay}}' = 'false' AND '{{spacechase0.SpaceCore/BooksellerInTown}}' = 'true'": false,
+      },
+      "Entries": {
+        //Morning walks
+        "Town": "$q 6549456 Married.WizardWalking.FallBack#{{i18n:Married.WizardWalking.Question}}#$r 6549456 0 Married.Wizard.TownMorning#{{i18n:Married.WizardWalking.Answer}}",
+        "Married.Wizard.ForestMorning": "{{i18n:Married.Wizard.ForestMorning.{{Random:{{Range: 1, 10}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+        "Married.Wizard.TownMorning": "{{i18n:Married.Wizard.TownMorning.{{Random:{{Range: 1, 10}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+        "Forest": "$p 6549456#{{i18n:Married.WizardWalking.FallBack.{{Random:{{Range: 1, 5}}}}}}|$q 6549456 Married.WizardWalking.FallBack#{{i18n:Married.WizardWalking.Question}}#$r 6549456 0 Married.Wizard.ForestMorning#{{i18n:Married.WizardWalking.Answer}}",
+        "Married.WizardWalking.FallBack": "{{i18n:Married.WizardWalking.FallBack.{{Random:{{Range: 1, 5}}}}}}",
+
+      },
+    },
+
+    {
+      "LogName": "Walking Dialogue - Base Evening",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Update": "OnLocationChange, OnTimeChange",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "Query: '{{Season}}' = 'fall' AND '{{Day}}' = 26": false,
+        "Time": "{{Range: 1730, 2600}}",
+        "Query: '{{BusyDay}}' = 'false' AND '{{spacechase0.SpaceCore/BooksellerInTown}}' = 'true'": false,
+      },
+      "Entries": {
+        "Town": "$q 6549458 Married.WizardWalking.FallBack#{{i18n:Married.WizardWalking.QuestionEvening}}#$r 6549458 0 Married.EveningWalkTown#{{i18n:Married.WizardWalking.Answer}}",
+        "Forest": "$q 6549458 Married.WizardWalking.FallBack#{{i18n:Married.WizardWalking.QuestionEvening}}#$r 6549458 0 Married.EveningWalkForest#{{i18n:Married.WizardWalking.Answer}}",
+        "Married.WizardWalking.FallBack": "{{i18n:Married.WizardWalking.FallBack.{{Random:{{Range: 1, 5}}}}}}",
+        "Married.EveningWalkTown": "{{i18n:Married.Wizard.TownEvening.{{Random:{{Range: 1, 9}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+        "Married.EveningWalkForest": " {{i18n:Married.Wizard.ForestEvening.{{Random:{{Range: 1, 11}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+      },
+    },
+
+    {
+      "LogName": "Walking Dialogue - Just Married",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "TheMightyAmondee.CustomTokens/YearsMarried": "0",
+        "Relationship: Wizard": "Married"
+      },
+      "Entries": {
+        //Morning walks
+        "Town": "{{i18n:Married.Wizard.Town.Early {{expressionList}} }}",
+        //Evening walks
+        "Married.EveningWalkTown": "{{i18n:Married.Wizard.Town.Early {{expressionList}} }}",
+      },
+    },
+    {
+      "LogName": "Walking Dialogue - Married Y1",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "TheMightyAmondee.CustomTokens/YearsMarried": "1"
+      },
+      "Entries": {
+        //Morning walks
+        "Married.Wizard.TownMorning": "{{i18n:Married.Wizard.TownMorning.Mid.{{Random:{{Range: 1, 4}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+        //Evening walks
+        "Married.EveningWalkTown": "{{i18n:Married.Wizard.TownEvening.Mid.{{Random:{{Range: 1, 4}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+      },
+    },
+    {
+      "LogName": "Walking Dialogue - Pregnant",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Update": "OnLocationChange",
+      "When": {
+        "Relationship:Wizard": "Married",
+        "HasSeenEvent": "647800302, 64780030",
+        "HavingChild": "@{{playerName}}"
+      },
+      "Entries": {
+        //Morning walks
+        "Married.Wizard.TownMorning": "{{i18n:Married.Wizard.TownMorning.Preg.{{Random:{{Range: 1, 4}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+        "Forest": "{{i18n:Married.Wizard.ForestMorning.Preg.{{Random:{{Range: 1, 4}}}} {{expressionList}} }}[Jellonip.RRRR_Fuzzy_Feelings]",
+        //Evening walks
+        "Married.EveningWalkTown": "{{i18n:Married.Wizard.TownEvening.Preg.{{Random:{{Range: 1, 4}}}} {{expressionList}} }}",
+        "Married.EveningWalkForest": "{{i18n:Married.Wizard.ForestEvening.Preg.{{Random:{{Range: 1, 4}}}} {{expressionList}} }}",
+      },
+    },
+    {
+      "LogName": "Walking Dialogue - During Qi Events",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasSeenEvent |contains=19251793": false,
+        "HasSeenEvent |contains=19251791": true,
+        "Spouse": "Wizard",
+        "Darker Plot Events(Y4)": "true"
+      },
+      "Entries": {
+        //Morning walks
+        "Town": "$q 6549456 Married.WizardWalking.FallBack#{{i18n:Married.WizardWalking.Question.Qi}}#$r 6549456 0 Married.Wizard.TownMorning#{{i18n:Married.WizardWalking.Answer}}",
+        "Forest": "$p 6549456#{{i18n:Married.WizardWalking.FallBack.Qi}}|$q 6549456 Married.WizardWalking.FallBack#{{i18n:Married.WizardWalking.Question.Qi}}#$r 6549456 0 Married.Wizard.ForestMorning#{{i18n:Married.WizardWalking.Answer}}",
+        "Married.Wizard.TownMorning": "{{i18n:Married.Wizard.TownMorning.Qi.{{Random: 1, 2}} {{expressionList}} }}",
+        "Married.Wizard.ForestMorning": "{{i18n:Married.Wizard.ForestMorning.Qi.{{Random:{{Range: 1, 3}}}} {{expressionList}} }}",
+        "Married.WizardWalking.FallBack": "{{i18n:Married.WizardWalking.FallBack.Qi}}",
+        //Evening walks
+        "Married.EveningWalkTownQ": "$q 6549456 Married.EveningWalkTown#{{i18n:Married.WizardWalking.QuestionEvening.Qi}}#$r 6549456 0 Married.EveningWalkTown#{{i18n:Married.WizardWalking.Answer}}",
+        "Married.EveningWalkForestQ": "$q 6549456 Married.EveningWalkForest#{{i18n:Married.WizardWalking.QuestionEvening.Qi}}#$r 6549456 0 Married.EveningWalkForest#{{i18n:Married.WizardWalking.Answer}}",
+        "Married.EveningWalkTown": "{{i18n:Married.Wizard.TownEvening.Qi.{{Random: 1, 2}} {{expressionList}} }}",
+        "Married.EveningWalkForest": " {{i18n:Married.Wizard.ForestEvening.Qi.{{Random: 1, 2, 3}} {{expressionList}} }}",
+      },
+    },
+  ],
+}

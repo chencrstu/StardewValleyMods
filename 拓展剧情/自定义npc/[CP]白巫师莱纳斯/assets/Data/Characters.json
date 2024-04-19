@@ -1,0 +1,162 @@
+{
+  "Changes": [
+    
+
+    /********Basic Info********/
+    
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Linus": {
+          "DisplayName": "[LocalizedText Strings\\NPCNames:Linus]",
+          "BirthSeason": "Winter",
+          "BirthDay": 3,
+          "HomeRegion": "Town",
+          "Language": "Default",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Neutral",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": true,
+          "LoveInterest": "",
+          "Calendar": "AlwaysShown",
+          "SocialTab": "UnknownUntilMet",
+          "CanSocialize": true,
+          "CanGreetNearbyCharacters": false,
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": false,
+          "ExcludeFromIntroductionsQuest": false,
+          "ExcludeFromPerfectionScore": false,
+          "EndSlideShow": "MainGroup",
+          "SpouseRoom": {
+            "MapAsset": "spouseRoomLinus",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "SpousePatioLinus",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            },
+          },
+          "DumpsterDiveFriendshipEffect": -25,
+          "DumpsterDiveEmote": null,
+          "FriendsAndFamily": {
+            "Wizard": "",
+            },
+          "FlowerDanceCanDance": null,
+          "WinterStarGifts": [
+            {
+              "Condition": null,
+              "Id": "FairyDust",
+              "ItemId": "(O)872",
+              "RandomItemId": null,
+              "MaxItems": null,
+              "MinStack": 5,
+              "MaxStack": 5,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+            },
+            {
+              "Condition": null,
+              "Id": "AncientFruit",
+              "ItemId": "(O)454",
+              "RandomItemId": null,
+              "MaxItems": null,
+              "MinStack": 1,
+              "MaxStack": 2,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+            },
+          ],
+          "WinterStarParticipant": null,
+          "UnlockConditions": null,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Sebbit.WhiteMageLinus_WhiteLinusRoom",
+              "Condition": null,
+              "Location": "Custom_WhiteLinusRoom",
+              "Tile": {
+                "X": 9,
+                "Y": 4
+              },
+              "Direction": "down"
+            }
+          ],
+          "Appearance": null,
+          "TextureName": null,
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+          "BreathChestRect": null,
+          "BreathChestPosition": null,
+          "Shadow": null,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "ShakePortraits": [],
+          "KissSpriteIndex": 28,
+          "KissSpriteFacingRight": true,
+          "HiddenProfileEmoteSound": null,
+          "HiddenProfileEmoteDuration": -1,
+          "HiddenProfileEmoteStartFrame": 19,
+          "HiddenProfileEmoteFrameCount": 1,
+          "HiddenProfileEmoteFrameDuration": 200.0,
+          "FormerCharacterNames": [],
+          "FestivalVanillaActorIndex": 18,
+          "CustomFields": null
+        },
+      },
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Elias": {
+          "FriendsAndFamily": {
+            "Wizard": "",
+            "Elias": "",
+          },
+        },
+      },
+      "When": 
+      {
+        "HasMod |contains=Sebbit.CustomNPCElias": true
+      },
+    },
+
+  ]
+}

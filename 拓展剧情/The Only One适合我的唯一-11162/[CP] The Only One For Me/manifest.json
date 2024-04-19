@@ -1,0 +1,11 @@
+{
+   "Name": "The Only One For Me",
+   "Author": "Solarian Chronicles",
+   "Description": "Dialogue expansion for focusing on building a relationship with Sebastian and watching everyone react as a story unfolds. Hundreds of new lines of dialogue.",
+   "Version": "1.0",
+   "UniqueID": "8105",
+   "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    },
+"UpdateKeys": [ "8105" ],
+}

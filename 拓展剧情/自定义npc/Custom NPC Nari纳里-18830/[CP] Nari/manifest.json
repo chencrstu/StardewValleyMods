@@ -1,0 +1,12 @@
+{
+  "Name": "Custom NPC Nari",
+  "Author": "reque",
+  "Version": "1.1.0",
+  "Description": "aRE yOu EnJOYiNg thE GAmE? COMe AnD SEe mE.",
+  "UniqueID": "reque.nari",
+  "MinimumApiVersion": "3.0",
+  "UpdateKeys": [ "" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

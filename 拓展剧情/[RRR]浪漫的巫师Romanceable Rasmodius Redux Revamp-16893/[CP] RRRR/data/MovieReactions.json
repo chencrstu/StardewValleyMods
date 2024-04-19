@@ -1,0 +1,468 @@
+//Premarriage dialogue
+{
+	"Changes": [
+		// ***M O V I E   D I A L O G U E***///
+		//Movie Acceptance
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"When": {
+				"QiEvents": "false"
+			},
+			"Entries": {
+				"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Wizard.TooSoon.{{Relation}} {{expressionList}} }}",
+				"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Wizard.AlreadyInvited {{expressionList}} }}",
+				"RejectMovieTicket_Divorced": "{{i18n:Wizard.Movie.Divorced{{expressionList}} }}",
+				"Characters_MovieInvite_Invited_Wizard": "{{i18n:Wizard.MovieInvite {{expressionList}} }} ",
+				"Characters_MovieInvite_Spouse_Wizard": "{{i18n:Wizard.MovieInvite.Married {{expressionList}} }}",
+			},
+		},
+		//Movie Acceptance
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"When": {
+				"QiEvents": "true"
+			},
+			"Entries": {
+				"Characters_MovieInvite_Spouse_Wizard": "{{i18n:Wizard.MovieInvite.Married.Qi {{expressionList}} }}",
+			},
+		},
+		//Movie Reactions - UNOFFICIAL DATING
+		{
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"When": {
+				"HasSeenEvent": "3073005",
+				"WizardDating": "true",
+				"Hidden Love Interest Mode": "true"
+			},
+			"Entries": {
+				"Wizard": {
+					"NPCName": "Wizard",
+					"Reactions": [
+						{
+							"Tag": "fall_movie_0",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.FallMovie.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Dating.FallMovie.Reaction {{expressionList}} }} \"",
+									"Text": "{{i18n:Wizard.Dating.FallMovie.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.FallMovie.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_1"
+						},
+						{
+							"Tag": "*",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.Confusion.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Dating.Confusion.Reaction {{expressionList}} }} \"",
+									"Text": "{{i18n:Wizard.Dating.Confusion.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.Confusion.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_0"
+						}
+					]
+				}
+			}
+		},
+		//Movie Reactions - DATING
+		{
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"When": {
+				"Relationship:Wizard": "Dating, Engaged"
+			},
+			"Entries": {
+				"Wizard": {
+					"NPCName": "Wizard",
+					"Reactions": [
+						{
+							"Tag": "fall_movie_0",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.FallMovie.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Dating.FallMovie.Reaction {{expressionList}} }} \"",
+									"Text": "{{i18n:Wizard.Dating.FallMovie.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.FallMovie.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_1"
+						},
+						{
+							"Tag": "*",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.Confusion.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Dating.Confusion.Reaction {{expressionList}} }} \"",
+									"Text": "{{i18n:Wizard.Dating.Confusion.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.Confusion.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_0"
+						}
+					]
+				}
+			}
+		},
+		//Movie Reactions - Married
+		{
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"When": {
+				"Relationship:Wizard": "Married",
+				"QiEvents": "false"
+			},
+			"Entries": {
+				"Wizard": {
+					"NPCName": "Wizard",
+					"Reactions": [
+						{
+							"Tag": "fall_movie_0",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Married.FallMovie.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Dating.Confusion.Reaction {{expressionList}} }}\"",
+									"Text": "{{i18n:Wizard.Dating.Confusion.ReactionTalk {{expressionList}} }}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Married.FallMovie.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_1"
+						},
+						{
+							"Tag": "*",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Dating.Confusion.Intro {{expressionList}} }}"
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Dating.Confusion.Reaction {{expressionList}} }}\"",
+									"Text": "{{i18n:Wizard.Dating.Confusion.ReactionTalk {{expressionList}} }}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Married.Confusion.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_0"
+						}
+					]
+				}
+			}
+		},
+		//Movie Reactions - Married Year Four and beyond
+		{
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"When": {
+				"Relationship:Wizard": "Married",
+				"Query: '{{TheMightyAmondee.CustomTokens/YearsMarried}}' >= 1": true,
+				"QiEvents": "false"
+			},
+			"Entries": {
+				"Wizard": {
+					"NPCName": "Wizard",
+					"Reactions": [
+						{
+							"Tag": "fall_movie_0",
+							"Response": "love",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.FallMovie.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Dating.Confusion.Reaction {{expressionList}} }}\"",
+									"Text": "{{i18n:Wizard.Dating.Confusion.ReactionTalk {{expressionList}} }}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.FallMovie.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_1"
+						},
+						{ //Winter star
+							"Tag": "winter_movie_0",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.WinterStar.Intro {{expressionList}} }}"
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.MarriageLate.WinterStar.Reaction}}\"",
+									"Text": "{{i18n:Wizard.MarriageLate.WinterStar.ReactionTalk {{expressionList}} }}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.WinterStar.End {{expressionList}} }}"
+								}
+							},
+							"ID": "reaction_0"
+						},
+						{ //Brave sapling
+							"Tag": "spring_movie_0",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Sapling.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.MarriageLate.Sapling.Reaction}}\"",
+									"Text": "{{i18n:Wizard.MarriageLate.Sapling.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Sapling.{{ChildCall}}.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_2"
+						},
+						{ //Western
+							"Tag": "summer_movie_0",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Western.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.MarriageLate.Western.Reaction}}\"",
+									"Text": "{{i18n:Wizard.MarriageLate.Western.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Western.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_3"
+						},
+						{ //documentary
+							"Tag": "spring_movie_1",
+							"Response": "like",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Docu.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Docu.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Docu.{{ChildCall}}.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_4"
+						},
+						{ //Wumbus
+							"Tag": "summer_movie_1",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Wumbus.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.MarriageLate.Wumbus.Reaction {{expressionList}} }} \"",
+									"Text": "{{i18n:Wizard.MarriageLate.Wumbus.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Wumbus.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_5"
+						},
+						{ //Howls in the rain I think horror?
+							"Tag": "fall_movie_1",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Horror.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.MarriageLate.Horror.Reaction {{expressionList}} }} \"",
+									"Text": "{{i18n:Wizard.MarriageLate.Horror.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Horror.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_6"
+						},
+						{ //Classic
+							"Tag": "winter_movie_2",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Romance.Intro {{expressionList}} }} "
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.MarriageLate.Romance.Reaction {{expressionList}} }} \"",
+									"Text": "{{i18n:Wizard.MarriageLate.Romance.ReactionTalk {{expressionList}} }} "
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.MarriageLate.Romance.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_7"
+						}
+					]
+				}
+			}
+		},
+		//Movie Reactions - Married
+		{
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"When": {
+				"Relationship:Wizard": "Married",
+				"QiEvents": "true"
+			},
+			"Entries": {
+				"Wizard": {
+					"NPCName": "Wizard",
+					"Reactions": [
+						{
+							"Tag": "*",
+							"Response": "dislike",
+							"Whitelist": [],
+							"SpecialResponses": {
+								"BeforeMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Qi.Intro {{expressionList}} }}"
+								},
+								"DuringMovie": null,
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "/message \"{{i18n:Wizard.Qi.Reaction {{expressionList}} }}\"",
+									"Text": "{{i18n:Wizard.Dating.Qi.Talk {{expressionList}} }}"
+								},
+								"AfterMovie": {
+									"ResponsePoint": null,
+									"Script": "",
+									"Text": "{{i18n:Wizard.Qi.End {{expressionList}} }} "
+								}
+							},
+							"ID": "reaction_0"
+						}
+					]
+				}
+			}
+		},
+	],
+}

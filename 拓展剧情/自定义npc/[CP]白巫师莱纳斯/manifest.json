@@ -1,0 +1,25 @@
+{
+   "Name": "[CP] Linus, the White Mage",
+   "Author": "Sebbit",
+   "Description": "백마법사 라이너스 전용 대사와 이벤트를 추가하고, 라이너스에게 결혼확장 기능을 추가합니다.",
+   "Version": "2.2.0",
+   "MinimumGameVersion": "1.6",
+   "UniqueID": "Sebbit.WhiteMageLinus",
+   "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    }, 
+       "Dependencies": [
+	
+        { "UniqueID": "misscoriel.courtship" ,
+           "IsRequired": false
+        },
+
+        {
+          "UniqueID": "misscoriel.UCRFix",
+          "IsRequired": false
+        },
+
+        ],
+
+   "UpdateKeys": [ "" ]
+}

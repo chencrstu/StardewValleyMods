@@ -1,0 +1,14 @@
+{
+  "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+      	"107": "{{i18n:Quests.107}}"
+
+      }
+    }
+
+  ]
+}

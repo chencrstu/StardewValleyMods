@@ -1,0 +1,13 @@
+{
+   "Name": "Yandere Alex Dialogue Expansion", 
+   "Author": "Kxgarashii",
+   "Version": "1.3",
+   "Description": "Makes Alex into a yandere, adding a total of 200+ new lines that include pre-marriage, post-marriage, and festival dialogue! Enjoy!",
+   "UniqueID": "Kxgarashii.YandereAlexDialogue",
+   "MinimumApiVersion": "2.0", 
+   "UpdateKeys": [ "Nexus:7713" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+	}
+}
+   

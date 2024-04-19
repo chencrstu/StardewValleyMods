@@ -1,0 +1,16 @@
+{
+  "Changes": [
+
+    { 
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries":
+        {
+        //Daily Animation
+        "Linus_Meditation": "19/24 24 24 24 24 24 24 24 24 24/19",
+        "Linus_Magic": "4/20 20 20 20 20 20 21 21 21 21 21 21/4",
+      }
+    },
+
+  ]
+}

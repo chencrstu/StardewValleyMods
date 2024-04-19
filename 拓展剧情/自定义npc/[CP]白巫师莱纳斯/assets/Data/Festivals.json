@@ -1,0 +1,544 @@
+{
+  "Changes": [
+
+
+//달걀축제
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "Entries":
+        {
+          "Linus": "{{i18n:EggFest.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:EggFest.Dialogue.Heart0}}"
+        }
+
+      },
+
+//"Linus_y2": ""
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "Entries":
+        {
+          "Linus": "{{i18n:EggFest.Dialogue.Heart4}}",
+          "Linus_y2": "{{i18n:EggFest.Dialogue.Heart4}}"
+        },
+
+        "When": {
+         "Hearts:Linus": "4,5",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+
+     {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "Entries":
+        {
+          "Linus": "{{i18n:EggFest.Dialogue.Heart6}}",
+          "Linus_y2": "{{i18n:EggFest.Dialogue.Heart6}}"
+        },
+
+        "When": {
+         "Hearts:Linus": "6,7,8",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+
+        {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "Entries":
+        {
+          "Linus": "{{i18n:EggFest.Dialogue.Dating}}",
+          "Linus_y2": "{{i18n:EggFest.Dialogue.Dating}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Dating,Engaged"
+         }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "Entries":
+        {
+          "Linus": "{{i18n:EggFest.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:EggFest.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      },
+
+
+  //봄꽃무도회
+     {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring24",
+        "Entries":
+          {
+          "Linus": "{{i18n:FlowerDance.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:FlowerDance.Dialogue.Heart0}}"
+          }
+      },
+
+
+     {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring24",
+        "Entries":
+          {
+          "Linus": "{{i18n:FlowerDance.Dialogue.Heart4}}",
+          "Linus_y2": "{{i18n:FlowerDance.Dialogue.Heart4}}"
+          
+          },   
+
+        "When": {
+         "Hearts:Linus": "4,5",
+         "HasSeenEvent": "154440"
+         }
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring24",
+        "Entries":
+          {
+          "Linus": "{{i18n:FlowerDance.Dialogue.Heart6}}",
+          "Linus_y2": "{{i18n:FlowerDance.Dialogue.Heart6}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "6,7,8",
+         "HasSeenEvent": "154440"
+         }
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring24",
+        "Entries":
+          {
+          "Linus": "{{i18n:FlowerDance.Dialogue.Dating}}",
+          "Linus_y2": "{{i18n:FlowerDance.Dialogue.Dating}}"
+          },   
+
+        "When": {
+         "Relationship:Linus": "Dating,Engaged"
+         }
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring24",
+        "Entries":
+        {
+          "Linus": "{{i18n:FlowerDance.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:FlowerDance.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      },
+
+
+  //루아우
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer11",
+        "Entries":
+          {
+          "Linus": "{{i18n:Luau.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:Luau.Dialogue.Heart0}}"
+          }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer11",
+        "Entries":
+          {
+          "Linus": "{{i18n:Luau.Dialogue.Heart4}}",
+          "Linus_y2": "{{i18n:Luau.Dialogue.Heart4}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "4,5",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+     {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer11",
+        "Entries":
+          {
+          "Linus": "{{i18n:Luau.Dialogue.Heart6}}",
+          "Linus_y2": "{{i18n:Luau.Dialogue.Heart6}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "6,7,8",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer11",
+        "Entries":
+          {
+          "Linus": "{{i18n:Luau.Dialogue.Dating}}",
+          "Linus_y2": "{{i18n:Luau.Dialogue.Dating}}"
+          },   
+
+        "When": {
+         "Relationship:Linus": "Dating,Engaged"
+         }
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer11",
+        "Entries":
+        {
+          "Linus": "{{i18n:Luau.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:Luau.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      },
+
+
+  //해파리축제
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer28",
+        "Entries":
+          {
+          "Linus": "{{i18n:MoonlightJellies.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:MoonlightJellies.Dialogue.Heart0}}"
+          }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer28",
+        "Entries":
+          {
+          "Linus": "{{i18n:MoonlightJellies.Dialogue.Heart4}}",
+          "Linus_y2": "{{i18n:MoonlightJellies.Dialogue.Heart4}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "4,5,6,7,8",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer28",
+        "Entries":
+          {
+          "Linus": "{{i18n:MoonlightJellies.Dialogue.Dating}}",
+          "Linus_y2": "{{i18n:MoonlightJellies.Dialogue.Dating}}"
+          },   
+
+        "When": {
+         "Relationship:Linus": "Dating,Engaged"
+         }
+
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/summer28",
+        "Entries":
+        {
+          "Linus": "{{i18n:MoonlightJellies.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:MoonlightJellies.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      },
+
+
+  //품평회
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall16",
+        "Entries":
+          {
+          "Linus": "{{i18n:StardewValleyFair.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:StardewValleyFair.Dialogue.Heart0}}"
+          }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall16",
+        "Entries":
+          {
+          "Linus": "{{i18n:StardewValleyFair.Dialogue.Heart4}}",
+          "Linus_y2": "{{i18n:StardewValleyFair.Dialogue.Heart4}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "4,5",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall16",
+        "Entries":
+          {
+          "Linus": "{{i18n:StardewValleyFair.Dialogue.Heart6}}",
+          "Linus_y2": "{{i18n:StardewValleyFair.Dialogue.Heart6}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "6,7,8",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall16",
+        "Entries":
+          {
+          "Linus": "{{i18n:StardewValleyFair.Dialogue.Dating}}",
+          "Linus_y2": "{{i18n:StardewValleyFair.Dialogue.Dating}}"
+          },   
+
+        "When": {
+         "Relationship:Linus": "Dating,Engaged"
+         }
+
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall16",
+        "Entries":
+        {
+          "Linus": "{{i18n:StardewValleyFair.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:StardewValleyFair.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      },
+
+
+  //영령의전야제
+       {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall27",
+        "Entries":
+          {
+          "Linus": "{{i18n:SpiritsEve.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:SpiritsEve.Dialogue.Heart0}}"
+          }
+
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall27",
+        "Entries":
+        {
+          "Linus": "{{i18n:SpiritsEve.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:SpiritsEve.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      },
+
+
+
+  //얼음축제
+         {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter8",
+        "Entries":
+          {
+          "Linus": "{{i18n:IceFest.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:IceFest.Dialogue.Heart0}}"
+          }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter8",
+        "Entries":
+          {
+          "Linus": "{{i18n:IceFest.Dialogue.Heart4}}",
+          "Linus_y2": "{{i18n:IceFest.Dialogue.Heart4}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "4,5",
+         "HasSeenEvent": "154440"
+           
+         }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter8",
+        "Entries":
+          {
+          "Linus": "{{i18n:IceFest.Dialogue.Heart6}}",
+          "Linus_y2": "{{i18n:IceFest.Dialogue.Heart6}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "6,7,8"
+         }
+
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter8",
+        "Entries":
+          {
+          "Linus": "{{i18n:IceFest.Dialogue.Dating}}",
+          "Linus_y2": "{{i18n:IceFest.Dialogue.Dating}}"
+          },   
+
+        "When": {
+         "Relationship:Linus": "Dating,Engaged"
+         }
+
+
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter8",
+        "Entries":
+        {
+          "Linus": "{{i18n:IceFest.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:IceFest.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      },
+
+
+
+
+
+  //겨울별만찬
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter25",
+        "Entries":
+          {
+          "Linus": "{{i18n:WinterStar.Dialogue.Heart0}}",
+          "Linus_y2": "{{i18n:WinterStar.Dialogue.Heart0}}"
+          }
+
+      },
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter25",
+        "Entries":
+          {
+          "Linus": "{{i18n:WinterStar.Dialogue.Heart4}}",
+          "Linus_y2": "{{i18n:WinterStar.Dialogue.Heart4}}"
+          },   
+
+        "When": {
+         "Hearts:Linus": "4,5",
+         "HasSeenEvent": "154440"
+         }
+
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter25",
+        "Entries":
+          {
+          "Linus": "{{i18n:WinterStar.Dialogue.Dating}}",
+          "Linus_y2": "{{i18n:WinterStar.Dialogue.Dating}}"
+          },   
+
+        "When": {
+         "Relationship:Linus": "Dating,Engaged"
+         }
+
+
+      },
+
+
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/winter25",
+        "Entries":
+        {
+          "Linus": "{{i18n:WinterStar.Dialogue.Married}}",
+          "Linus_y2": "{{i18n:WinterStar.Dialogue.Married}}"
+        },
+
+        "When": {
+         "Relationship:Linus": "Married"
+         }
+
+      }
+
+
+	
+  ]
+}

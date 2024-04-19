@@ -1,0 +1,59 @@
+{
+  "Changes": [
+
+
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries":
+        {
+          "Linus": "{{i18n:GiftTastes.Love.Heart0}}/-80 88 90 234 242 280 268 275 283 395 417 578 614 768 769 791/{{i18n:GiftTastes.Like.Heart0}}/-5 -6 -79 -81 393/{{i18n:GiftTastes.Dislike.Heart0}}/-2/{{i18n:GiftTastes.Hate.Heart0}}/2/{{i18n:GiftTastes.Neutral.Heart0}}/-4/ "
+        },   
+      "When": {
+        "Hearts:Linus": "{{Range : 0, 4}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries":
+        {
+          "Linus": "{{i18n:GiftTastes.Love.Heart0}}/-80 88 90 234 242 280 268 275 283 395 417 578 614 768 769 791/{{i18n:GiftTastes.Like.Heart0}}/-5 -6 -79 -81 393/{{i18n:GiftTastes.Dislike.Heart4}}/-2 330/{{i18n:GiftTastes.Hate.Heart4}}/2/{{i18n:GiftTastes.Neutral.Heart0}}/-4/ "
+        },   
+      "When": {
+        "Hearts:Linus": "{{Range : 4, 7}}",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries":
+        {
+          "Linus": "{{i18n:GiftTastes.Love.Heart0}}/-80 88 90 234 242 280 268 275 283 395 417 578 614 768 769 791/{{i18n:GiftTastes.Like.Heart0}}/-5 -6 -79 -81 393/{{i18n:GiftTastes.Dislike.Heart8}}/-2 330/{{i18n:GiftTastes.Hate.Heart8}}/2/{{i18n:GiftTastes.Neutral.Heart0}}/-4/ "
+        },   
+      "When": {
+        "Hearts:Linus": "{{Range : 8, 10}}",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries":
+        {
+          "Linus": "{{i18n:GiftTastes.Love.Married}}/-80 88 90 234 242 280 268 275 283 395 417 578 614 768 769 791/{{i18n:GiftTastes.Like.Married}}/-5 -6 -79 -81 393/{{i18n:GiftTastes.Dislike.Married}}/-2 330/{{i18n:GiftTastes.Hate.Married}}/2/{{i18n:GiftTastes.Neutral.Heart0}}/-4/ "
+        },   
+
+      "When": {
+        "Relationship:Linus": "Married"
+      }
+    },
+  	
+
+	
+  ]
+}

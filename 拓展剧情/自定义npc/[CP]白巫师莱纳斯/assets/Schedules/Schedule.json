@@ -1,0 +1,21 @@
+{
+  "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/Linus",
+      "Entries": {
+        "rain": "610 Custom_WhiteLinusRoom 9 4 2/800 Custom_WhiteLinusRoom 17 9 2 Linus_Meditation/1100 Custom_WhiteLinusRoom 4 9 1/1300 Mountain 17 7 2/1900 Custom_WhiteLinusRoom 15 5 1/2100 Custom_WhiteLinusRoom 17 5 1/2300 Custom_WhiteLinusRoom 2 8 3 linus_sleep",
+        "GreenRain": "610 Custom_WhiteLinusRoom 9 4 2/1200 Mountain 39 5 1/1700 Mountain 30 9 3/1900 Custom_WhiteLinusRoom 15 5 1/2100 Custom_WhiteLinusRoom 17 5 1/2200 bed",
+        "DesertFestival_2": "610 Custom_WhiteLinusRoom 9 4 2/700 Desert 6 24 1 \"Strings\\1_6_Strings:DesertFestival_Linus\"/2540 bed",
+        "spring": "610 Custom_WhiteLinusRoom 9 4 2/800 Custom_WhiteLinusRoom 17 9 2 Linus_Meditation/1100 Custom_WhiteLinusRoom 4 9 1/1300 Mountain 28 9 1/1600 Mountain 45 19 1/1700 Mountain 28 9 1/1900 Custom_WhiteLinusRoom 17 5 1/2100 Custom_WhiteLinusRoom 15 5 1/2300 Custom_WhiteLinusRoom9 7 2 linus_sleep",
+        "summer": "610 Custom_WhiteLinusRoom 9 4 2/800 Custom_WhiteLinusRoom 17 9 2 Linus_Meditation/1000 Custom_WhiteLinusRoom 4 5 0/1200 Mountain 35 8 1/1400 Mountain 47 27 1/1600 Mountain 48 35 2/1900 Custom_WhiteLinusRoom 15 5 1/2100 Custom_WhiteLinusRoom 17 5 1/2300 Custom_WhiteLinusRoom 2 8 3 linus_sleep",
+        "fall": "610 Custom_WhiteLinusRoom 9 4 2/800 Custom_WhiteLinusRoom 17 9 2 Linus_Meditation/1000 Custom_WhiteLinusRoom 4 9 1/1200 Mountain 28 9 1/1400 Railroad 29 49 0/1500 Mountain 43 24 1 Linus_Magic/1700 Mountain 14 7 1 Linus_Magic \"Strings\\schedules\\Linus:Magic\"/1900 Custom_WhiteLinusRoom 17 5 1/2100 Custom_WhiteLinusRoom 15 5 1/2300 Custom_WhiteLinusRoom9 7 2 linus_sleep",
+        "winter": "610 Custom_WhiteLinusRoom 9 4 2/800 Custom_WhiteLinusRoom 17 9 2 Linus_Meditation/1000 Custom_WhiteLinusRoom 4 5 0/1200 Mountain 28 9 1/1400 Mountain 63 21 2 Linus_Meditation/1600 Mountain 48 30 1/1900 Custom_WhiteLinusRoom 15 5 1/2100 Custom_WhiteLinusRoom 17 5 1/2300 Custom_WhiteLinusRoom 2 8 3 linus_sleep",
+        "winter_15": "610 Custom_WhiteLinusRoom 9 4 2/800 Custom_WhiteLinusRoom 17 9 2 Linus_Meditation/1000 Custom_WhiteLinusRoom 4 5 0/1300 Mountain 28 9 1/1600 Beach 19 4 2 \"Strings\\schedules\\Linus:winter_15.000\"/2000 Custom_WhiteLinusRoom 15 5 1/2300 Custom_WhiteLinusRoom 2 8 3 linus_sleep",
+        "marriage_Mon": "830 Mountain 45 19 1 \"Strings\\schedules\\Linus:marriage_Mon.000\"/1400 Custom_WhiteLinusRoom 15 5 0 \"Strings\\schedules\\Linus:marriage_Mon.001\"/1500 Mountain 28 9 1 \"Strings\\schedules\\Linus:marriage_Mon.002\"/1700 Mountain 35 9 1 Linus_Magic \"Strings\\schedules\\Linus:marriage_Mon.003\"/1900 bed"
+      }
+    },
+
+  ]
+}

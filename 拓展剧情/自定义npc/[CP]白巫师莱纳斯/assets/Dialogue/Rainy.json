@@ -1,0 +1,39 @@
+{
+  "Changes": [
+
+   {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Linus": "{{i18n:Rainy.Dialogue.Heart0}}"
+      }
+    },
+
+      {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Linus": "{{i18n:Rainy.Dialogue.Heart4}}"
+      },
+      "When": {
+        "Hearts:Linus": "{{Range: 4, 7}}",
+        "HasSeenEvent": "154440"
+      }
+    },
+
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Linus": "{{i18n:Rainy.Dialogue.Heart8}}"
+      },
+      "When": {
+        "Hearts:Linus": "{{Range: 8, 10}}",
+        "HasSeenEvent": "154440"
+      }
+    },
+    
+
+  ]
+}

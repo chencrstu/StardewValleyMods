@@ -1,0 +1,59 @@
+{
+  "Changes": [
+    
+
+
+    {
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+        "Mines_PlayerKilled_Linus": "{{i18n:ExtraDialogue.Mine_PlayerKilled_Linus.Heart0}}",
+        "Town_DumpsterDiveComment_Linus": "{{i18n:ExtraDialogue.Town_DumpsterDiveComment_Linus.Heart0}}",
+        
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+            "Mines_PlayerKilled_Linus": "{{i18n:ExtraDialogue.Mine_PlayerKilled_Linus.Dating}}"
+         },
+      "When": {"Relationship:Linus": "Dating,Engaged,Married"}
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+            "Mines_PlayerKilled_Spouse_PlayerFemale": "{{i18n:ExtraDialogue.Mines_PlayerKilled_Spouse}}",
+            "Mines_PlayerKilled_Spouse_PlayerMale": "{{i18n:ExtraDialogue.Mines_PlayerKilled_Spouse}}",
+            "NewChild_SecondChild1": "{{i18n:ExtraDialogue.NewChild_SecondChild1}}",
+            "NewChild_SecondChild2": "{{i18n:ExtraDialogue.NewChild_SecondChild2}}",
+            "NewChild_FirstChild": "{{i18n:ExtraDialogue.NewChild_FirstChild}}",
+            "NewChild_Adoption": "{{i18n:ExtraDialogue.NewChild_Adoption}}",
+            "NewChild_FirstChild": "{{i18n:ExtraDialogue.NewChild_FirstChild}}",
+            "Spouse_KitchenBlocked": "{{i18n:ExtraDialogue.Spouse_KitchenBlocked}}",
+            "Spouse_MonstersInHouse": "{{i18n:ExtraDialogue.Spouse_MonstersInHouse}}",
+            "Town_DumpsterDiveComment_Linus": "{{i18n:ExtraDialogue.Town_DumpsterDiveComment_Linus.Married}}"
+         },
+      "When": {"Relationship:Linus": "Married"}
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+        "SummitEvent_Intro_Spouse": "{{i18n:SummitEvent_Intro_Spouse}}",
+        "SummitEvent_Intro2_Spouse": "{{i18n:SummitEvent_Intro2_Spouse}}",
+        "SummitEvent_Intro2_Spouse_Gruff": "{{i18n:SummitEvent_Intro2_Spouse_Gruff}}",
+        "SummitEvent_Dialogue1_Spouse": "{{i18n:SummitEvent_Dialogue1_Spouse.1}}\"/pause 1000/speak spouse \"{{i18n:SummitEvent_Dialogue1_Spouse.2}}",
+        "SummitEvent_Dialogue2_Spouse": "{{i18n:SummitEvent_Dialogue2_Spouse}}",
+        "SummitEvent_Dialogue3_Linus": "{{i18n:SummitEvent_Dialogue3_Linus.1}}\"/faceDirection farmer 1/pause 500/faceDirection Linus 3/pause 500/speak Linus \"{{i18n:SummitEvent_Dialogue3_Linus.2}}\"/pause 1000/faceDirection Linus 0/pause 1000/speak Linus \"{{i18n:SummitEvent_Dialogue3_Linus.3}}",
+      },
+      "When": {"Spouse": "Linus"}
+    },
+      
+
+  ]
+}

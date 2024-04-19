@@ -1,0 +1,1157 @@
+{
+  "Changes": [
+    //Gift taste changes over time
+    {
+      "Logname": "Gift Taste: Base",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "When": {
+        "Relationship:Wizard": "Friendly"
+      },
+      "Fields": {
+        "Wizard": {
+          1: "155 422 769 768 337 386 -103 MysticTreeSeed MysticSyrup FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aegis_Elixir Book_Mystery", //Loved
+          3: "-12 72 82 84 851 852 872 454 114 499 896 FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Torpedo_Trout 795 156 161 158 162 FlashShifter.StardewValleyExpandedCP_Radioactive_BassFlashShifter.StardewValleyExpandedCP_Undeadfish 261 681 688 689 690 886 TreasureTotem FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog category_trinket Moss", //Liked
+          5: "-5 -6 -81 2 16 330 766 203 FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed", //Disliked
+          9: "-7 909 910 305 308 772 MossSoup Moss SkillBook_1 Book_Trash Book_Crabbing Book_Roe Book_AnimalCatalogue FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice" //Neutral
+        },
+      },
+    },
+    {
+      "Logname": "Gift Taste: Dating",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "When": {
+        "Query: ('{{Hidden Love Interest Mode}}' = 'true' AND '{{WizardDating}}' = 'true') OR ('{{Relationship:Wizard}}' IN ('Dating', 'Engaged'))": true
+      },
+      "Fields": {
+        "Wizard": {
+          0: "{{i18n:Dating.GiftReaction.Loved {{expressionList}} }}",
+          1: "155 422 769 768 337 386 -103 MysticTreeSeed MysticSyrup FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Daggerfish Book_Mystery", //Loved
+          2: "{{i18n:Dating.GiftReaction.Liked {{expressionList}} }}",
+          3: "-12 72 82 84 category_trinket 851 -7 852 872 454 114 499 896 FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Torpedo_Trout 795 156 161 158 162 FlashShifter.StardewValleyExpandedCP_Radioactive_BassFlashShifter.StardewValleyExpandedCP_Undeadfish 261 681 688 689 690 886 772 TreasureTotem FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Frog Moss", //Liked
+          4: "{{i18n:Dating.GiftReaction.Disliked {{expressionList}} }}",
+          5: "-5 -6 -81 2 16 330 766 203 FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed", //Disliked
+          6: "{{i18n:Dating.GiftReaction.Hated {{expressionList}} }}",
+          8: "{{i18n:Dating.GiftReaction.Neutral {{expressionList}} }}",
+          9: "909 910 305 308 MossSoup Moss SkillBook_1 Book_Trash Book_Crabbing Book_Roe Book_AnimalCatalogue FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine" //Neutral
+        },
+      },
+    },
+    {
+      "Logname": "Gift Taste: Married",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "When": {
+        "Relationship:Wizard": "Married"
+      },
+      "Fields": {
+        "Wizard": {
+          0:"{{i18n:Married.GiftReaction.Loved {{expressionList}} }}",
+          1: "155 422 769 768 -7 337 386 Jellonip.RRRR_Fuzzy_Feelings Jellonip.RRRR_Hair_Kit Jellonip.RRRR_Clothing_Ticket Jellonip.RRRR_Magnus_Wine Jellonip.RRRR_Handmade_LoungeWear -103 MysticTreeSeed MysticSyrup FlashShifter.StardewValleyExpandedCP_Void_Soul  FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Daggerfish Book_Mystery", //Loved
+          2: "{{i18n:Married.GiftReaction.Liked {{expressionList}} }}",
+          3: "-12 72 82 84 category_trinket 851 852 872 454 114 499 369 919 896 FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Torpedo_Trout 795 156 161 158 162 FlashShifter.StardewValleyExpandedCP_Radioactive_Bass FlashShifter.StardewValleyExpandedCP_Undeadfish 261 681 688 689 690 886 772 TreasureTotem MossSoup FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog Moss", //Liked
+          4: "{{i18n:Married.GiftReaction.Disliked {{expressionList}} }}",
+          5: "-5 -6 -81 2 16 330 766 FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed", //Disliked
+          6: "{{i18n:Married.GiftReaction.Hated {{expressionList}} }}",
+   
+          8: "{{i18n:Married.GiftReaction.Neutral {{expressionList}} }}",
+          9: "368 909 910 305 308 203 Moss SkillBook_1 Book_Trash Book_Crabbing Book_Roe Book_AnimalCatalogue FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine" //Neutral
+        },
+      },
+    },
+    {
+      "Logname": "Gift Taste: Married Preg",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "When": {
+        "HasSeenEvent": "64780030",
+        "HavingChild": "@{{playerName}}",
+        "Relationship:Wizard": "Married"
+      },
+      "Fields": {
+        "Wizard": {
+          1: "155 422 -7 337 386 Jellonip.RRRR_Fuzzy_Feelings Jellonip.RRRR_Hair_Kit Jellonip.RRRR_Clothing_Ticket Jellonip.RRRR_Handmade_LoungeWear MysticSyrup -103 FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aegis_Elixir Book_Mystery", //Loved
+          3: "-12 72 82 84 337 category_trinket 851 852 872 454 114 499 369 919 896 Jellonip.RRRR_Magnus_Wine FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Torpedo_Trout 795 156 161 158 162  261 681 688 689 690 886 TreasureTotem FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog Moss ", //Liked
+          5: "-5 -6 -81 2 16 330 766 203 FlashShifter.StardewValleyExpandedCP_Mushroom_Colony FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed", //Disliked
+          7: "FlashShifter.StardewValleyExpandedCP_Void_Shard  FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Undeadfish  909 910 FlashShifter.StardewValleyExpandedCP_Radioactive_Bass",    //Hated
+          9: "769 768 305 308 MossSoup SkillBook_1 Book_Trash Book_Crabbing Book_Roe Book_AnimalCatalogue FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine" //Neutral
+        },
+      },
+    },
+
+    {
+      "Logname": "Gift Taste: Qi Events",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "When": {
+        "Relationship:Wizard": "Married",
+        "QiEvents": "true"
+      },
+      "Fields": {
+        "Wizard": {
+          0: "{{i18n:MarriedQi.GiftReaction.Loved {{expressionList}} }}",
+          1: "155 422 769 768 -7 337 386 Jellonip.RRRR_Fuzzy_Feelings Jellonip.RRRR_Hair_Kit Jellonip.RRRR_Clothing_Ticket Jellonip.RRRR_Magnus_Wine Jellonip.RRRR_Handmade_LoungeWear -103 MysticTreeSeed MysticSyrup FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo FlashShifter.StardewValleyExpandedCP_Lightning_Elixir FlashShifter.StardewValleyExpandedCP_Hero_Elixir FlashShifter.StardewValleyExpandedCP_Haste_Elixir FlashShifter.StardewValleyExpandedCP_Gravity_Elixir FlashShifter.StardewValleyExpandedCP_Frog_Legs FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Ancient_Fiber FlashShifter.StardewValleyExpandedCP_Aegis_Elixir Book_Mystery", //Loved
+          2: "{{i18n:MarriedQi.GiftReaction.Liked {{expressionList}} }}",
+          3: "-12 72 82 84 337 category_trinket 851 852 872 454 114 499 369 919 896 FlashShifter.StardewValleyExpandedCP_Torpedo_Trout 795 156 161 158 162  261 681 688 689 690 886 TreasureTotem FlashShifter.StardewValleyExpandedCP_Water_Grub FlashShifter.StardewValleyExpandedCP_Smelly_Rafflesia FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Rusty_Blade FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Meteor_Carp FlashShifter.StardewValleyExpandedCP_Lunaloo FlashShifter.StardewValleyExpandedCP_Kittyfish FlashShifter.StardewValleyExpandedCP_Goldenfish FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower FlashShifter.StardewValleyExpandedCP_Gemfish FlashShifter.StardewValleyExpandedCP_Daggerfish FlashShifter.StardewValleyExpandedCP_Frog", //Liked
+          4: "{{i18n:MarriedQi.GiftReaction.Disliked {{expressionList}} }}",
+          6: "{{i18n:MarriedQi.GiftReaction.Hated {{expressionList}} }}",
+          7: "FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Swirl_Stone FlashShifter.StardewValleyExpandedCP_Void_Soul FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Undeadfish",    //Hated
+          8: "{{i18n:MarriedQi.GiftReaction.Neutral {{expressionList}} }}",
+        },
+      },
+    },
+
+    //GIFTS FROM MAGNUS
+    //Dating Gifts
+ /*   {
+      "LogName": "Gift: Potion Dating",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Query: ('{{Hidden Love Interest Mode}}' = 'true' AND '{{WizardDating}}' = 'true') OR ('{{Relationship:Wizard}}' IN ('Dating', 'Engaged'))": true,
+        "GiftType": "Potion",
+        "GiftChance": "Yes",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.1,
+          "Gifts": [
+            {
+              "Id": "DatingPotion",
+              "Items": "773",
+              "DialogueKey": "FarmerGift_DatingPotion",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Gemstone Dating",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Query: ('{{Hidden Love Interest Mode}}' = 'true' AND '{{WizardDating}}' = 'true') OR ('{{Relationship:Wizard}}' IN ('Dating', 'Engaged'))": true,
+        "GiftType": "Gem",
+        "GiftChance": "Yes",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.1,
+          "Gifts": [
+            {
+              "Id": "DatingGem",
+              "Items": "84, 80, 82, 536, 535, 537, 749",
+              "DialogueKey": "FarmerGift_DatingGem",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Totem Dating",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Query: ('{{Hidden Love Interest Mode}}' = 'true' AND '{{WizardDating}}' = 'true') OR ('{{Relationship:Wizard}}' IN ('Dating', 'Engaged'))": true,
+        "GiftType": "Totem",
+        "GiftChance": "Yes",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.1,
+          "Gifts": [
+            {
+              "Id": "DatingTotem",
+              "Items": "681, 688, 689, 690",
+              "DialogueKey": "FarmerGift_DatingTotem",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Seeds Dating Y1",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Query: ('{{Hidden Love Interest Mode}}' = 'true' AND '{{WizardDating}}' = 'true') OR ('{{Relationship:Wizard}}' IN ('Dating', 'Engaged'))": true,
+        "GiftType": "Seeds",
+        "Year": "1",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.08,
+          "Gifts": [
+            {
+              "Id": "DatingSeeds",
+              "Items": "499, 486, 347, 485, 433, 489, 476, 745, 478, 494, 833, FlashShifter.StardewValleyExpandedCP_Shrub_Seed, FlashShifter.StardewValleyExpandedCP_Ancient_Fern_Seed",
+              "DialogueKey": "FarmerGift_DatingSeeds",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Seeds Dating Later Years",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Query: ('{{Hidden Love Interest Mode}}' = 'true' AND '{{WizardDating}}' = 'true') OR ('{{Relationship:Wizard}}' IN ('Dating', 'Engaged'))": true,
+        "GiftType": "Seeds",
+        "GiftChance": "Yes",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.08,
+          "Gifts": [
+            {
+              "Id": "DatingSeeds",
+              "Items": "499, 486, 347, 433, FlashShifter.StardewValleyExpandedCP_Shrub_Seed, FlashShifter.StardewValleyExpandedCP_Ancient_Fern_Seed",
+              "DialogueKey": "FarmerGift_DatingSeeds",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    //Married Gifts
+    {
+      "LogName": "Gift: Potion",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "Potion",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "MarriedPotion",
+              "Items": "FlashShifter.StardewValleyExpandedCP_Armor_Elixir, FlashShifter.StardewValleyExpandedCP_Haste_Elixir, FlashShifter.StardewValleyExpandedCP_Hero_Elixir, 773, 772, 879,",
+              "DialogueKey": "FarmerGift_MarriedPotionQ",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Conjured Food",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "conFood",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "MarriedConFood",
+              "Items": "265, 907, 204, 921, 231, 905, FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal, FlashShifter.StardewValleyExpandedCP_Flower_Cookie, FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie, FlashShifter.StardewValleyExpandedCP_Void_Delight, FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi",
+              "DialogueKey": "FarmerGift_MarriedConFoodQ",
+              "Condition": "PLAYER_HEARTS Current @npc 12"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Summer",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "Summer",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "MarriedSummer",
+              "Items": "233, ",
+              "DialogueKey": "FarmerGift_MarriedSummerQ",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Gemstone",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "Gem",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "MarriedGem",
+              "Items": "64, 70, 62, 60, 66, 72, 68",
+              "DialogueKey": "FarmerGift_MarriedGemQ",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Totem",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "Totem",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "MarriedTotem",
+              "Items": "681, 688, 689, 690, 886, 261",
+              "DialogueKey": "FarmerGift_MarriedTotemQ",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Seeds",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "Seeds",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "MarriedSeeds",
+              "Items": "499, 486, 347, 433, FlashShifter.StardewValleyExpandedCP_Shrub_Seed, FlashShifter.StardewValleyExpandedCP_Ancient_Fern_Seed",
+              "DialogueKey": "FarmerGift_MarriedSeedsQ",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            },
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Advanced Potion",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "advPotion",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.1,
+          "Gifts": [
+            {
+              "Id": "MarriedAdvPotion",
+              "Items": "FlashShifter.StardewValleyExpandedCP_Gravity_Elixir, FlashShifter.StardewValleyExpandedCP_Aegis_Elixir, FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir, FlashShifter.StardewValleyExpandedCP_Lightning_Elixir",
+              "DialogueKey": "FarmerGift_MarriedAdvPotionQ",
+              "Condition": "PLAYER_HEARTS Current @npc 13"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Qi Seasoning",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "LocationName": "WizardHouse, Custom_WizardBasement",
+        "GiftType": "Seasoning",
+        "QiEvents": "false",
+        "GiftChance": "Yes"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.05,
+          "Gifts": [
+            {
+              "Id": "MarriedSeasoning",
+              "Items": "917",
+              "DialogueKey": "FarmerGift_MarriedSeasoningQ",
+              "Condition": "PLAYER_HEARTS Current @npc 13"
+            }
+          ]
+        }
+      }
+    },
+    //Razzy's Wine Gift
+    {
+      "LogName": "Gift: Razzy's Wine",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "Day": "14",
+        "TheMightyAmondee.CustomTokens/YearsMarried |contains=0": false,
+        "Pregnant |contains=@{{playerName}}": false,
+        "Hasflag": "RazzyWine"
+      },
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 1,
+          "Gifts": [
+            {
+              "Id": "MarriedWine",
+              "Items": "Jellonip.RRRR_Magnus_Wine",
+              "DialogueKey": "FarmerGift_MarriedWine",
+              "Condition": "PLAYER_HEARTS Current @npc 10, !SEASON Spring, DAY_OF_MONTH 14"
+            },
+          ]
+        }
+      }
+    },
+    //While Pregnant
+    {
+      "LogName": "Gift: Pregnant Food",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "Update": "OnTimeChange, OnLocationChange",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "Pregnant": "@{{playerName}}",
+        "GiftType": "Preg",
+        "Query: ('{{DayOfWeek}}' IN ('Friday','Saturday', 'Sunday') OR '{{Weather}}' IN ('Rain', 'Storm')) OR '{{LocationName}}' IN ('WizardHouse', 'Custom_WizardBasement')": true
+      },
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "PregRedPlate",
+              "Items": "230, 903, 610, 904, 212, 232 ",
+              "DialogueKey": "FarmerGift_PregRedPlateQ",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gift: Pregnant Totem",
+      "Action": "EditData",
+      "Target": "Mods/PurrplingCat.CustomGiftDialogue/NpcGiftData",
+      "When": {
+        "Relationship: Wizard": "Married",
+        "Pregnant": "@{{playerName}}",
+        "GiftType": "Totem",
+        "DayOfWeek": "Friday, Saturday, Sunday"
+      },
+      "Entries": {
+        "Wizard": {
+          "GiveChance": 0.4,
+          "Gifts": [
+            {
+              "Id": "PregTotem",
+              "Items": "688",
+              "DialogueKey": "FarmerGift_PregTotemQ",
+              "Condition": "PLAYER_HEARTS Current @npc 10"
+            }
+          ]
+        }
+      }
+    },
+*/
+    //Actual Dialogue
+    {
+      "LogName": "Gifts: Gifting Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        //Dating Gifts
+        "FarmerGift_DatingTotem": "{{i18n:FarmerGift_DatingTotem {{expressionList}} }}",
+        "FarmerGift_DatingGem": "{{i18n:FarmerGift_DatingGem {{expressionList}} }}",
+        "FarmerGift_DatingPotion": "{{i18n:FarmerGift_DatingPotion {{expressionList}} }}",
+        "FarmerGift_DatingSeeds": "{{i18n:FarmerGift_DatingSeeds {{expressionList}} }}",
+        "FarmerGift_DatingSeeds2": "{{i18n:FarmerGift_DatingSeeds2 {{expressionList}} }}",
+        //Married Gifts
+        "FarmerGift_MarriedWine": "{{i18n:FarmerGift_MarriedWine1 {{expressionList}} }}#$q 6549458 RazzyWine_Followup# {{i18n:FarmerGift_WineQuestion}}#$r 6549458 0 RazzyWine_FirstTime#{{i18n:FarmerGift_WineAnswer}}",
+        "FarmerGift_MarriedPotionQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedPotion#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedGemQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedGem#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedConFoodQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedConFood#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedTotemQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedTotem#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedAdvPotionQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedAdvPotion#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedSummerQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedSummer#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedBookQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedBook#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedSeedsQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedSeeds#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_MarriedSeasoningQ": "{{i18n:FarmerGift_Starter.{{Random: 1, 2, 3, 4 ,5 ,6}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question}}#$r 6549457 0 FarmerGift_MarriedSeasoning#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_PregRedPlateQ": "{{i18n:FarmerGift_Starter.Preg.{{InTower}}.{{Random: 1, 2}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question.Preg}}#$r 6549457 0 FarmerGift_PregRedPlate#{{i18n:FarmerGift_Answer}}",
+        "FarmerGift_PregTotemQ": "{{i18n:FarmerGift_Starter.Preg.{{InTower}}.{{Random: 1, 2}} {{expressionList}} }}#$q 6549457 null# {{i18n:FarmerGift_Question.Preg}}#$r 6549457 0 FarmerGift_PregTotem#{{i18n:FarmerGift_Answer}}",
+        //Actual item dialogue
+        "RazzyWine_Followup": "{{i18n:FarmerGift_MarriedWineFollowUp {{expressionList}} }}",
+        "RazzyWine_FirstTime": "{{i18n:FarmerGift_MarriedWine_First {{expressionList}} }}",
+        "FarmerGift_MarriedPotion": "{{i18n:FarmerGift_MarriedPotion {{expressionList}} }}",
+        "FarmerGift_MarriedBook": "{{i18n:FarmerGift_MarriedBook {{expressionList}} }}",
+        "FarmerGift_MarriedGem": "{{i18n:FarmerGift_MarriedGem {{expressionList}} }}",
+        "FarmerGift_MarriedConFood": "{{i18n:FarmerGift_MarriedConFood {{expressionList}} }}",
+        "FarmerGift_MarriedTotem": "{{i18n:FarmerGift_MarriedTotem {{expressionList}} }}",
+        "FarmerGift_MarriedAdvPotion": "{{i18n:FarmerGift_MarriedAdvPotion {{expressionList}} }}",
+        "FarmerGift_MarriedSummer": "{{i18n:FarmerGift_MarriedSummer {{expressionList}} }}",
+        "FarmerGift_MarriedSeeds": "{{i18n:FarmerGift_MarriedSeeds {{expressionList}} }}",
+        "FarmerGift_MarriedSeasoning": "{{i18n:FarmerGift_MarriedSeasoning {{expressionList}} }}",
+        "FarmerGift_PregRedPlate": "{{i18n:Married.FarmerGift_PregRedPlate {{expressionList}} }}",
+        "FarmerGift_PregTotem": "{{i18n:Married.FarmerGift_Totem {{expressionList}} }}",
+      },
+    },
+    //Not Dating
+    {
+      "LogName": "Gifts: Base Gift Reactions",
+      "Action": "EditData",
+      "When": {
+        "Relationship:Wizard": "Friendly"
+      },
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "AcceptGift_(O)422": "{{i18n:Base.GiftReaction_Purple_Mushroom {{expressionList}} }}",
+        "AcceptGift_(O)Moss": "{{i18n:Base.GiftReaction_Moss {{expressionList}} }}",
+        "AcceptGift_book_item": "{{i18n:Base.GiftReaction_Book {{expressionList}} }}",
+        "AcceptGift_(O)MossSoup":"{{i18n:Base.GiftReaction_MossSoup {{expressionList}} }}",
+        "AcceptGift_book_item": "{{i18n:Base.GiftReaction_Book {{expressionList}} }}",
+        "AcceptGift_(O)Moss": "{{i18n:Base.GiftReaction_Moss {{expressionList}} }}",
+        "AcceptGift_(O)MossSoup":"{{i18n:Base.GiftReaction_MossSoup {{expressionList}} }}",
+        "AcceptGift_(O)StardropTea": "{{i18n:Base.GiftReaction_StardropTea {{expressionList}} }}",
+        "AcceptGift_(O)203": "{{i18n:Base.GiftReaction_Strange_Bun {{expressionList}} }}",
+        "AcceptGift_(O)337": "{{i18n:Base.GiftReaction_Iridum_Bar {{expressionList}} }}",
+        "AcceptGift_(O)386": "{{i18n:Base.GiftReaction_Iridum_Ore {{expressionList}} }}",
+        "AcceptGift_(O)910": "{{i18n:Base.GiftReaction_Radioactive_Bar {{expressionList}} }}",
+        "AcceptGift_(O)909": "{{i18n:Base.GiftReaction_Radioactive_Ore{{expressionList}} }}",
+        "AcceptGift_(O)279": "{{i18n:Base.GiftReaction_Magic_Rock_Candy{{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Eel": "{{i18n:Base.GiftReaction_Void_Eel {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Torpedo_Trout": "{{i18n:Base.GiftReaction_Torpedo_Trout {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Lunaloo": "{{i18n:Base.GiftReaction_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo": "{{i18n:Base.GiftReaction_Shiny_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo": "{{i18n:Base.GiftReaction_Baby_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)156": "{{i18n:Base.GiftReaction_Ghostfish {{expressionList}} }}",
+        "AcceptGift_(O)158": "{{i18n:Base.GiftReaction_Stonefish {{expressionList}} }}",
+        "AcceptGift_(O)161": "{{i18n:Base.GiftReaction_Ice_pip {{expressionList}} }}",
+        "AcceptGift_(O)162": "{{i18n:Base.GiftReaction_Lava_Eel {{expressionList}} }}",
+        "AcceptGift_(O)795": "{{i18n:Base.GiftReaction_Void_Salmon {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Radioactive_Bass": "{{i18n:Base.GiftReaction_Radioactive_Bass {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Undeadfish": "{{i18n:Base.GiftReaction_Undeadfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Gemfish": "{{i18n:Base.GiftReaction_Gemfish {{expressionList}} }}",
+        "AcceptGift_(O)896": "{{i18n:Base.GiftReaction_Galaxy_Soul {{expressionList}} }}",
+        "AcceptGift_(O)688": "{{i18n:Base.GiftReaction_Warp_Totem:_Farm {{expressionList}} }}",
+        "AcceptGift_(O)261": "{{i18n:Base.GiftReaction_Warp_Totem:_Farm {{expressionList}} }}",
+        "AcceptGift_(O)886": "{{i18n:Base.GiftReaction_Warp_Totem:_Island {{expressionList}} }}",
+        "AcceptGift_(O)690": "{{i18n:Base.GiftReaction_Warp_Totem:_Farm {{expressionList}} }}",
+        "AcceptGift_(O)689": "{{i18n:Base.GiftReaction_Warp_Totem:_Farm {{expressionList}} }}",
+        "AcceptGift_(O)681": "{{i18n:Base.GiftReaction_Rain_Totem {{expressionList}} }}",
+        "AcceptGift_(O)305": "{{i18n:Base.GiftReaction_Void_Egg {{expressionList}} }}",
+        "AcceptGift_(O)308": "{{i18n:Base.GiftReaction_Void_Mayonnaise {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Goldenfish": "{{i18n:Base.GiftReaction_Goldenfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Slime_Berry": "{{i18n:Base.GiftReaction_Slime_Berry {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Root": "{{i18n:Base.GiftReaction_Void_Root {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Monster_Mushroom": "{{i18n:Base.GiftReaction_Monster_Mushroom {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Monster_Fruit": "{{i18n:Base.GiftReaction_Monster_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)772": "{{i18n:Base.GiftReaction_GarlicOil {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Soul": "{{i18n:Base.GiftReaction_Void_Soul {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Swirl_Stone": "{{i18n:Base.GiftReaction_Swirl_Stone {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry": "{{i18n:Base.GiftReaction_Dewdrop_Berry {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Frog_Legs": "{{i18n:Base.GiftReaction_Frog_Legs {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Delight": "{{i18n:Base.GiftReaction_Void_Delight {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi": "{{i18n:Base.GiftReaction_Void_Salmon_Sushi {{expressionList}} }}",
+        "AcceptGift_(O)155": "{{i18n:Base.GiftReaction_Super_Cucumber {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Frog": "{{i18n:Base.GiftReaction_Frog {{expressionList}} }}",
+        "AcceptGift_(O)80": "{{i18n:Base.GiftReaction_Quartz {{expressionList}} }}",
+        "AcceptGift_(O)769": "{{i18n:Base.GiftReaction_Void_Essence {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Shard": "{{i18n:Base.GiftReaction_Void_Shard {{expressionList}} }}",
+        "AcceptGift_(O)768": "{{i18n:Base.GiftReaction_Solar_Essence {{expressionList}} }}",
+        "AcceptGift_(O)454": "{{i18n:Base.GiftReaction_Ancient_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)499": "{{i18n:Base.GiftReaction_Ancient_Fruit_Seeds {{expressionList}} }}",
+        "AcceptGift_(O)114": "{{i18n:Base.GiftReaction_Ancient_Fruit_Seed {{expressionList}} }}",
+        "AcceptGift_category_cooking": "{{i18n:Base.GiftReactionCategory_-7 {{expressionList}} }} ",
+        
+      },
+    },
+    //Dating
+    {
+      "LogName": "Gifts: Dating Gift Reactions",
+      "Action": "EditData",
+      "When": {
+        "Query: ('{{Hidden Love Interest Mode}}' = 'true' AND '{{WizardDating}}' = 'true') OR ('{{Relationship:Wizard}}' IN ('Dating', 'Engaged'))": true,
+        "QiEvents": "false"
+      },
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "AcceptGift_(O)Moss": "{{i18n:Dating.GiftReaction_Moss {{expressionList}} }}",
+        "AcceptGift_book_item": "{{i18n:Dating.GiftReaction_Book {{expressionList}} }}",
+        "AcceptGift_(O)422": "{{i18n:Dating.GiftReaction_Purple_Mushroom {{expressionList}} }}",
+        "AcceptGift_(O)MossSoup":"{{i18n:Dating.GiftReaction_MossSoup {{expressionList}} }}",
+        "AcceptGift_(O)StardropTea": "{{i18n:Dating.GiftReaction_StardropTea {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Soul": "{{i18n:Dating.GiftReaction_Void_Soul {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Swirl_Stone": "{{i18n:Dating.GiftReaction_Swirl_Stone {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry": "{{i18n:Dating.GiftReaction_Dewdrop_Berry {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Frog_Legs": "{{i18n:Dating.GiftReaction_Frog_Legs {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Delight": "{{i18n:Dating.GiftReaction_Void_Delight {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi": "{{i18n:Dating.GiftReaction_Void_Salmon_Sushi {{expressionList}} }}",
+        "AcceptGift_(O)155": "{{i18n:Dating.GiftReaction_Super_Cucumber {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Frog": "{{i18n:Dating.GiftReaction_Frog {{expressionList}} }}",
+        "AcceptGift_(O)80": "{{i18n:Dating.GiftReaction_Quartz {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Shard": "{{i18n:Dating.GiftReaction_Void_Shard {{expressionList}} }}",
+        "AcceptGift_(O)769": "{{i18n:Dating.GiftReaction_Void_Essence {{expressionList}} }}",
+        "AcceptGift_(O)768": "{{i18n:Dating.GiftReaction_Solar_Essence {{expressionList}} }}",
+        "AcceptGift_(O)454": "{{i18n:Dating.GiftReaction_Ancient_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)499": "{{i18n:Dating.GiftReaction_Ancient_Fruit_Seeds {{expressionList}} }}",
+        "AcceptGift_(O)114": "{{i18n:Dating.GiftReaction_Ancient_Fruit_Seed {{expressionList}} }}",
+        "AcceptGift_category_cooking": "{{i18n:Dating.GiftReactionCategory_-7 {{expressionList}} }} ",
+        "AcceptGift_(O)203": "{{i18n:Dating.GiftReaction_Strange_Bun {{expressionList}} }}",
+        "AcceptGift_(O)337": "{{i18n:Dating.GiftReaction_Iridium_Bar {{expressionList}} }}",
+        "AcceptGift_(O)386": "{{i18n:Dating.GiftReaction_Iridium_Ore {{expressionList}} }}",
+        "AcceptGift_(O)910": "{{i18n:Dating.GiftReaction_Radioactive_Bar {{expressionList}} }}",
+        "AcceptGift_(O)909": "{{i18n:Dating.GiftReaction_Radioactive_Ore {{expressionList}} }}",
+        "AcceptGift_(O)279": "{{i18n:Dating.GiftReaction_Magic_Rock_Candy {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Eel": "{{i18n:Dating.GiftReaction_Void_Eel {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Torpedo_Trout": "{{i18n:Dating.GiftReaction_Torpedo_Trout {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Lunaloo": "{{i18n:Dating.GiftReaction_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo": "{{i18n:Dating.GiftReaction_Shiny_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo": "{{i18n:Dating.GiftReaction_Baby_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)156": "{{i18n:Dating.GiftReaction_Ghostfish {{expressionList}} }}",
+        "AcceptGift_(O)158": "{{i18n:Dating.GiftReaction_Stonefish {{expressionList}} }}",
+        "AcceptGift_(O)161": "{{i18n:Dating.GiftReaction_Ice_Pip {{expressionList}} }}",
+        "AcceptGift_(O)162": "{{i18n:Dating.GiftReaction_Lava_Eel {{expressionList}} }}",
+        "AcceptGift_(O)795": "{{i18n:Dating.GiftReaction_Void_Salmon {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Radioactive_Bass": "{{i18n:Dating.GiftReaction_Radioactive_Bass {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Undeadfish": "{{i18n:Dating.GiftReaction_Undeadfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Gemfish": "{{i18n:Dating.GiftReaction_Gemfish {{expressionList}} }}",
+        "AcceptGift_(O)896": "{{i18n:Dating.GiftReaction_Galaxy_Soul {{expressionList}} }}",
+        "AcceptGift_(O)688": "{{i18n:Dating.GiftReaction_Warp_Totem:_Farm {{expressionList}} }}",
+        "AcceptGift_(O)261": "{{i18n:Dating.GiftReaction_Warp_Totem:_Desert {{expressionList}} }}",
+        "AcceptGift_(O)886": "{{i18n:Dating.GiftReaction_Warp_Totem:_Island {{expressionList}} }}",
+        "AcceptGift_(O)690": "{{i18n:Dating.GiftReaction_Warp_Totem:_Beach {{expressionList}} }}",
+        "AcceptGift_(O)689": "{{i18n:Dating.GiftReaction_Warp_Totem:_Mountains {{expressionList}} }}",
+        "AcceptGift_(O)681": "{{i18n:Dating.GiftReaction_Rain_Totem {{expressionList}} }}",
+        "AcceptGift_(O)305": "{{i18n:Dating.GiftReaction_Void_Egg {{expressionList}} }}",
+        "AcceptGift_(O)308": "{{i18n:Dating.GiftReaction_Void_Mayonnaise {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Goldenfish": "{{i18n:Dating.GiftReaction_Goldenfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Slime_Berry": "{{i18n:Dating.GiftReaction_Slime_Berry {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Root": "{{i18n:Dating.GiftReaction_Void_Root {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Monster_Mushroom": "{{i18n:Dating.GiftReaction_Monster_Mushroom {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Monster_Fruit": "{{i18n:Dating.GiftReaction_Monster_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)772": "{{i18n:Dating.GiftReaction_GarlicOil {{expressionList}} }}",
+
+      },
+    },
+    //Married. No event only
+    {
+      "LogName": "Gifts: Married No events Gift Reactions",
+      "Action": "EditData",
+      "When": {
+        "Relationship:Wizard": "Married",
+        "QiEvents": "false",
+      },
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "AcceptGift_(O)422": "{{i18n:Married.GiftReaction_Purple_Mushroom {{expressionList}} }}",
+        "AcceptGift_(O)Moss": "{{i18n:Married.GiftReaction_Moss {{expressionList}} }}",
+        "AcceptGift_book_item": "{{i18n:Married.GiftReaction_Book {{expressionList}} }}",
+        "AcceptGift_(O)MossSoup":"{{i18n:Married.GiftReaction_MossSoup {{expressionList}} }}",
+        "AcceptGift_(O)SeaJelly": "{{i18n:Married.GiftReaction_SeaJelly {{expressionList}} }}",
+        "AcceptGift_(O)CaveJelly": "{{i18n:Married.GiftReaction_CaveJelly {{expressionList}} }}",
+        "AcceptGift_(O)RiverJelly": "{{i18n:Married.GiftReaction_RiverJelly {{expressionList}} }}",
+        "AcceptGift_(O)MysticTreeSeed": "{{i18n:Married.GiftReaction_MysticTreeSeed {{expressionList}} }}",
+        "AcceptGift_(O)MysticSyrup": "{{i18n:Married.GiftReaction_MysticSyrup {{expressionList}} }}",
+        "AcceptGift_(O)GoldCoin": "{{i18n:Married.GiftReaction_GoldCoin {{expressionList}} }}",
+        "AcceptGift_(O)TreasureTotem": "{{i18n:Married.GiftReaction_TreasureTotem {{expressionList}} }}",
+        "AcceptGift_(O)PurpleBook": "{{i18n:Married.GiftReaction_BookAll {{expressionList}} }}",//Book of Stars
+        "AcceptGift_(O)SkillBook_0": "{{i18n:Married.GiftReaction_BookFarming {{expressionList}} }}",// Farming book
+        "AcceptGift_(O)SkillBook_1": "{{i18n:Married.GiftReaction_BookFishing {{expressionList}} }}", //Fishing book
+        "AcceptGift_(O)SkillBook_2": "{{i18n:Married.GiftReaction_BookForage {{expressionList}} }}",//Forage Book
+        "AcceptGift_(O)SkillBook_3": "{{i18n:Married.GiftReaction_BookMining {{expressionList}} }}",//Mining Book 
+        "AcceptGift_(O)SkillBook_4": "{{i18n:Married.GiftReaction_BookCombat {{expressionList}} }}",//Combat Book
+        "AcceptGift_(O)Book_Trash": "{{i18n:Married.GiftReaction_BookGarbage {{expressionList}} }}",//Dumper Diving Book
+        "AcceptGift_(O)Book_Crabbing": "{{i18n:Married.GiftReaction_BookCrabbing {{expressionList}} }}",//Crab Pot book
+        "AcceptGift_(O)Book_Bombs": "{{i18n:Married.GiftReaction_BookBombs {{expressionList}} }}",//Bomb safety book
+        "AcceptGift_(O)Book_Roe": "{{i18n:Married.GiftReaction_BookRoe {{expressionList}} }}",//Fish Roe book
+        "AcceptGift_(O)Book_WildSeeds": "{{i18n:Married.GiftReaction_BookSeeds {{expressionList}} }}", //More Wild seeds
+        "AcceptGift_(O)Book_Woodcutting": "{{i18n:Married.GiftReaction_Book2Wood {{expressionList}} }}",//Gives more wood
+        "AcceptGift_(O)Book_Defense": "{{i18n:Married.GiftReaction_BookDefense {{expressionList}} }}",//+1 defense
+        "AcceptGift_(O)Book_Friendship": "{{i18n:Married.GiftReaction_BookFriendship {{expressionList}} }}",// Gives more friendship
+        "AcceptGift_(O)Book_Void": "{{i18n:Married.GiftReaction_BookMonster {{expressionList}} }}", //Monster compendium
+        "AcceptGift_(O)Book_Speed": "{{i18n:Married.GiftReaction_BookSpeed1  {{expressionList}} }}",//Walk faster
+        "AcceptGift_(O)Book_Speed2": "{{i18n:Married.GiftReaction_BookSpeed2 {{expressionList}} }}",//SPEED BOOK 
+        "AcceptGift_(O)Book_Marlon": "{{i18n:Married.GiftReaction_BookRecovery {{expressionList}} }}", //Cheaper item recovery
+        "AcceptGift_(O)Book_PriceCatalogue": "{{i18n:Married.GiftReaction_BookPrice {{expressionList}} }}",//Show sale prices
+        "AcceptGift_(O)Book_QueenOfSauce": "{{i18n:Married.GiftReaction_BookCooking {{expressionList}} }}", //Cooking book 
+        "AcceptGift_(O)Book_Diamonds": "{{i18n:Married.GiftReaction_BookDiamonds {{expressionList}} }}",//Randomized diamonds
+        "AcceptGift_(O)Book_Mystery": "{{i18n:Married.GiftReaction_BookMystery {{expressionList}} }}",//More mystery boxes
+        "AcceptGift_(O)Book_AnimalCatalogue": "{{i18n:Married.GiftReaction_BookAnimals {{expressionList}} }}",//Check Marine's catalogue
+        "AcceptGift_(O)Book_Artifact": "{{i18n:Married.GiftReaction_BookArtifact {{expressionList}} }}",//High price artifacts
+        "AcceptGift_(O)Book_Horse": "{{i18n:Married.GiftReaction_BookHorse {{expressionList}} }}",//Book about horses
+        "AcceptGift_(O)Book_Grass": "{{i18n:Married.GiftReaction_BookGrass {{expressionList}} }}",//Walk through grass faster
+        "AcceptGift_(O)GoldenAnimalCracker": "{{i18n:Married.GiftReaction_Crackers {{expressionList}} }}",//DOUBLE PRODUCTION
+        "AcceptGift_(O)928": "{{i18n:Married.GiftReaction_GoldEgg {{expressionList}} }}",
+
+
+        "AcceptGift_(O)StardropTea": "{{i18n:Married.GiftReaction_StardropTea {{expressionList}} }}",
+        "AcceptGift_(O)Jellonip.RRRR_Fuzzy_Feelings": "{{i18n:Married.GiftReaction_Fuzzy_Feelings {{expressionList}} }}",
+        "AcceptGift_(O)368": "{{i18n:Married.GiftReaction_Basic_Fert {{expressionList}} }}",
+        "AcceptGift_(O)369": "{{i18n:Married.GiftReaction_Quality_Fert {{expressionList}} }}",
+        "AcceptGift_(O)919": "{{i18n:Married.GiftReaction_Deluxe_Fert {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Soul": "{{i18n:Married.GiftReaction_Void_Soul {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Swirl_Stone": "{{i18n:Married.GiftReaction_Swirl_Stone {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry": "{{i18n:Married.GiftReaction_Dewdrop_Berry {{expressionList}} }}",
+        "AcceptGift_(O)155": "{{i18n:Married.GiftReaction_Super_Cucumber {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Frog": "{{i18n:Married.GiftReaction_Frog {{expressionList}} }}",
+        "AcceptGift_(O)80": "{{i18n:Dating.GiftReaction_Quartz {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Kittyfish": "{{i18n:Married.GiftReaction_Kittyfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine": "{{i18n:Married.GiftReaction_Blue_Moon_Wine {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Age_Blue_Moon_Wine": "{{i18n:Married.GiftReaction_Blue_Moon_Wine {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Shard": "{{i18n:Married.GiftReaction_Void_Shard {{expressionList}} }}",
+        "AcceptGift_(O)769": "{{i18n:Married.GiftReaction_Void_Essence {{expressionList}} }}",
+        "AcceptGift_(O)768": "{{i18n:Married.GiftReaction_Solar_Essence {{expressionList}} }}",
+        "AcceptGift_(O)454": "{{i18n:Married.GiftReaction_Ancient_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)499": "{{i18n:Married.GiftReaction_Ancient_Fruit_Seeds {{expressionList}} }}",
+        "AcceptGift_(O)114": "{{i18n:Married.GiftReaction_Ancient_Fruit_Seed {{expressionList}} }}",
+        "AcceptGift_wine_item": "{{i18n:Married.GiftReactionPreserved_Wine {{expressionList}} }}",
+        "AcceptGift_category_artisan_goods": "{{i18n:Married.GiftReactionPreserved_Any {{expressionList}} }}",
+        "AcceptGift_(O)337": "{{i18n:Married.GiftReaction_Iridium_Bar {{expressionList}} }}",
+        "AcceptGift_(O)386": "{{i18n:Married.GiftReaction_Iridium_Ore {{expressionList}} }}",
+        "AcceptGift_(O)910": "{{i18n:Married.GiftReaction_Radioactive_Bar {{expressionList}} }}",
+        "AcceptGift_(O)909": "{{i18n:Married.GiftReaction_Radioactive_Ore {{expressionList}} }}",
+        "AcceptGift_(O)279": "{{i18n:Married.GiftReaction_Magic_Rock_Candy {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo": "{{i18n:Married.GiftReaction_Baby_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)156": "{{i18n:Married.GiftReaction_Ghostfish {{expressionList}} }}",
+        "AcceptGift_(O)158": "{{i18n:Married.GiftReaction_Stonefish {{expressionList}} }}",
+        "AcceptGift_(O)161": "{{i18n:Married.GiftReaction_Ice_Pip {{expressionList}} }}",
+        "AcceptGift_(O)162": "{{i18n:Married.GiftReaction_Lava_Eel {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Undeadfish": "{{i18n:Married.GiftReaction_Undeadfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Gemfish": "{{i18n:Married.GiftReaction_Gemfish {{expressionList}} }}",
+        "AcceptGift_(O)896": "{{i18n:Married.GiftReaction_Galaxy_Soul {{expressionList}} }}",
+        "AcceptGift_(O)688": "{{i18n:Married.GiftReaction_Warp_Totem:_Farm {{expressionList}} }}",
+        "AcceptGift_(O)886": "{{i18n:Married.GiftReaction_Warp_Totem:_Island {{expressionList}} }}",
+        "AcceptGift_(O)690": "{{i18n:Married.GiftReaction_Warp_Totem:_Beach {{expressionList}} }}",
+        "AcceptGift_(O)689": "{{i18n:Married.GiftReaction_Warp_Totem:_Mountains {{expressionList}} }}",
+        "AcceptGift_(O)681": "{{i18n:Married.GiftReaction_Rain_Totem {{expressionList}} }}",
+        "AcceptGift_(O)305": "{{i18n:Married.GiftReaction_Void_Egg {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Goldenfish": "{{i18n:Married.GiftReaction_Goldenfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Monster_Fruit": "{{i18n:Married.GiftReaction_Monster_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)772": "{{i18n:Dating.GiftReaction_GarlicOil {{expressionList}} }}",
+
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Eel": "{{i18n:Dating.GiftReaction_Void_Eel {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Torpedo_Trout": "{{i18n:Dating.GiftReaction_Torpedo_Trout {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Lunaloo": "{{i18n:Dating.GiftReaction_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo": "{{i18n:Dating.GiftReaction_Shiny_Lunaloo {{expressionList}} }}",
+        "AcceptGift_(O)795": "{{i18n:Dating.GiftReaction_Void_Salmon {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Radioactive_Bass": "{{i18n:Dating.GiftReaction_Radioactive_Bass {{expressionList}} }}",
+        "AcceptGift_(O)261": "{{i18n:Dating.GiftReaction_Warp_Totem:_Desert {{expressionList}} }}",
+        "AcceptGift_(O)308": "{{i18n:Dating.GiftReaction_Void_Mayonnaise {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Slime_Berry": "{{i18n:Dating.GiftReaction_Slime_Berry {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Root": "{{i18n:Dating.GiftReaction_Void_Root {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Monster_Mushroom": "{{i18n:Dating.GiftReaction_Monster_Mushroom {{expressionList}} }}",
+        //Cooking
+        "AcceptGift_(O)607": "{{i18n:Married.GiftReaction_Roasted_Hazelnuts {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Frog_Legs": "{{i18n:Married.GiftReaction_Frog_Legs {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Delight": "{{i18n:Married.GiftReaction_Void_Delight {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi": "{{i18n:Married.GiftReaction_Void_Salmon_Sushi {{expressionList}} }}",
+        "AcceptGift_(O)194": "{{i18n:Married.GiftReaction_Fried_Egg {{expressionList}} }}",
+        "AcceptGift_(O)195": "{{i18n:Married.GiftReaction_Omelet {{expressionList}} }}",
+        "AcceptGift_(O)196": "{{i18n:Married.GiftReaction_Salad {{expressionList}} }}",
+        "AcceptGift_(O)197": "{{i18n:Married.GiftReaction_Cheese_Cauliflower {{expressionList}} }}",
+        "AcceptGift_(O)198": "{{i18n:Married.GiftReaction_Baked_Fish {{expressionList}} }}",
+        "AcceptGift_(O)199": "{{i18n:Married.GiftReaction_Parsnip_Soup {{expressionList}} }}",
+        "AcceptGift_(O)200": "{{i18n:Married.GiftReaction_Vegetable_Medley {{expressionList}} }}",
+        "AcceptGift_(O)201": "{{i18n:Married.GiftReaction_Complete_Breakfast {{expressionList}} }}",
+        "AcceptGift_(O)202": "{{i18n:Married.GiftReaction_Fried_Calamari {{expressionList}} }}",
+        "AcceptGift_(O)203": "{{i18n:Married.GiftReaction_Strange_Bun {{expressionList}} }}",
+        "AcceptGift_(O)204": "{{i18n:Married.GiftReaction_Lucky_Lunch {{expressionList}} }}",
+        "AcceptGift_(O)205": "{{i18n:Married.GiftReaction_Fried_Mushroom {{expressionList}} }}",
+        "AcceptGift_(O)206": "{{i18n:Married.GiftReaction_Pizza {{expressionList}} }}",
+        "AcceptGift_(O)207": "{{i18n:Married.GiftReaction_Bean_Hotpot {{expressionList}} }}",
+        "AcceptGift_(O)208": "{{i18n:Married.GiftReaction_Glazed_Yams {{expressionList}} }}",
+        "AcceptGift_(O)209": "{{i18n:Married.GiftReaction_Carp_Surprise {{expressionList}} }}",
+        "AcceptGift_(O)210": "{{i18n:Married.GiftReaction_Hashbrowns {{expressionList}} }}",
+        "AcceptGift_(O)211": "{{i18n:Married.GiftReaction_Pancakes {{expressionList}} }}",
+        "AcceptGift_(O)212": "{{i18n:Married.GiftReaction_Salmon_Dinner {{expressionList}} }}",
+        "AcceptGift_(O)213": "{{i18n:Married.GiftReaction_Fish_Taco {{expressionList}} }}",
+        "AcceptGift_(O)214": "{{i18n:Married.GiftReaction_Crispy_Bass {{expressionList}} }}",
+        "AcceptGift_(O)215": "{{i18n:Married.GiftReaction_Pepper_Poppers {{expressionList}} }}",
+        "AcceptGift_(O)216": "{{i18n:Married.GiftReaction_Bread {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken": "{{i18n:Married.GiftReaction_Grampleton_Orange_Chicken {{expressionList}} }}", //Not made by player
+        "AcceptGift_(O)218": "{{i18n:Married.GiftReaction_Tom_Kha_Soup {{expressionList}} }}",
+        "AcceptGift_(O)219": "{{i18n:Married.GiftReaction_Trout_Soup {{expressionList}} }}",
+        "AcceptGift_(O)220": "{{i18n:Married.GiftReaction_Chocolate_Cake {{expressionList}} }}",
+        "AcceptGift_(O)221": "{{i18n:Married.GiftReaction_Pink_Cake {{expressionList}} }}",
+        "AcceptGift_(O)222": "{{i18n:Married.GiftReaction_Rhubarb_Pie {{expressionList}} }}",
+        "AcceptGift_(O)223": "{{i18n:Married.GiftReaction_Cookie {{expressionList}} }}",
+        "AcceptGift_(O)224": "{{i18n:Married.GiftReaction_Spaghetti {{expressionList}} }}",
+        "AcceptGift_(O)225": "{{i18n:Married.GiftReaction_Fried_Eel {{expressionList}} }}",
+        "AcceptGift_(O)226": "{{i18n:Married.GiftReaction_Spicy_Eel {{expressionList}} }}",
+        "AcceptGift_(O)227": "{{i18n:Married.GiftReaction_Sashimi {{expressionList}} }}",
+        "AcceptGift_(O)228": "{{i18n:Married.GiftReaction_Maki_Roll {{expressionList}} }}",
+        "AcceptGift_(O)229": "{{i18n:Married.GiftReaction_Tortilla {{expressionList}} }}",
+        "AcceptGift_(O)230": "{{i18n:Married.GiftReaction_Red_Plate {{expressionList}} }}",
+        "AcceptGift_(O)231": "{{i18n:Married.GiftReaction_Eggplant_Parmesan {{expressionList}} }}",
+        "AcceptGift_(O)232": "{{i18n:Married.GiftReaction_Rice_Pudding {{expressionList}} }}",
+        "AcceptGift_(O)233": "{{i18n:Married.GiftReaction_Ice_Cream {{expressionList}} }}",
+        "AcceptGift_(O)234": "{{i18n:Married.GiftReaction_Blueberry_Tart {{expressionList}} }}",
+        "AcceptGift_(O)235": "{{i18n:Married.GiftReaction_Autumn's_Bounty {{expressionList}} }}",
+        "AcceptGift_(O)236": "{{i18n:Married.GiftReaction_Pumpkin_Soup {{expressionList}} }}",
+        "AcceptGift_(O)237": "{{i18n:Married.GiftReaction_Super_Meal {{expressionList}} }}",
+        "AcceptGift_(O)238": "{{i18n:Married.GiftReaction_Cranberry_Sauce {{expressionList}} }}",
+        "AcceptGift_(O)239": "{{i18n:Married.GiftReaction_Stuffing {{expressionList}} }}",
+        "AcceptGift_(O)240": "{{i18n:Married.GiftReaction_Farmer's_Lunch {{expressionList}} }}",
+        "AcceptGift_(O)241": "{{i18n:Married.GiftReaction_Survival_Burger {{expressionList}} }}",
+        "AcceptGift_(O)242": "{{i18n:Married.GiftReaction_Dish_O'_The_Sea {{expressionList}} }}",
+        "AcceptGift_(O)243": "{{i18n:Married.GiftReaction_Miner's_Treat {{expressionList}} }}",
+        "AcceptGift_(O)244": "{{i18n:Married.GiftReaction_Roots_Platter {{expressionList}} }}",
+        "AcceptGift_(O)395": "{{i18n:Married.GiftReaction_Coffee {{expressionList}} }}",
+        "AcceptGift_(O)253": "{{i18n:Married.GiftReaction_Triple_Shot_Espresso {{expressionList}} }}",
+        "AcceptGift_(O)265": "{{i18n:Married.GiftReaction_Seafoam_Pudding {{expressionList}} }}",
+        "AcceptGift_(O)456": "{{i18n:Married.GiftReaction_Algae_Soup {{expressionList}} }}",
+        "AcceptGift_(O)457": "{{i18n:Married.GiftReaction_Pale_Broth {{expressionList}} }}",
+        "AcceptGift_(O)604": "{{i18n:Married.GiftReaction_Plum_Pudding {{expressionList}} }}",
+        "AcceptGift_(O)605": "{{i18n:Married.GiftReaction_Artichoke_Dip {{expressionList}} }}",
+        "AcceptGift_(O)606": "{{i18n:Married.GiftReaction_Stir_Fry {{expressionList}} }}",
+        "AcceptGift_(O)608": "{{i18n:Married.GiftReaction_Pumpkin_Pie {{expressionList}} }}",
+        "AcceptGift_(O)609": "{{i18n:Married.GiftReaction_Radish_Salad {{expressionList}} }}",
+        "AcceptGift_(O)610": "{{i18n:Married.GiftReaction_Fruit_Salad {{expressionList}} }}",
+        "AcceptGift_(O)611": "{{i18n:Married.GiftReaction_Blackberry_Cobbler {{expressionList}} }}",
+        "AcceptGift_(O)729": "{{i18n:Married.GiftReaction_Escargot {{expressionList}} }}",
+        "AcceptGift_(O)612": "{{i18n:Married.GiftReaction_Cranberry_Candy {{expressionList}} }}",
+        "AcceptGift_(O)618": "{{i18n:Married.GiftReaction_Bruschetta {{expressionList}} }}",
+        "AcceptGift_(O)648": "{{i18n:Married.GiftReaction_Coleslaw {{expressionList}} }}",
+        "AcceptGift_(O)649": "{{i18n:Married.GiftReaction_Fiddlehead_Risotto {{expressionList}} }}",
+        "AcceptGift_(O)651": "{{i18n:Married.GiftReaction_Poppyseed_Muffin {{expressionList}} }}",
+        "AcceptGift_(O)727": "{{i18n:Married.GiftReaction_Chowder {{expressionList}} }}",
+        "AcceptGift_(O)728": "{{i18n:Married.GiftReaction_Fish_Stew {{expressionList}} }}",
+        "AcceptGift_(O)730": "{{i18n:Married.GiftReaction_Lobster_Bisque {{expressionList}} }}",
+        "AcceptGift_(O)731": "{{i18n:Married.GiftReaction_Maple_Bar {{expressionList}} }}",
+        "AcceptGift_(O)732": "{{i18n:Married.GiftReaction_Crab_Cakes {{expressionList}} }}",
+        "AcceptGift_(O)733": "{{i18n:Married.GiftReaction_Shrimp_Cocktail {{expressionList}} }}",
+        "AcceptGift_(O)903": "{{i18n:Married.GiftReaction_Ginger_Ale {{expressionList}} }}",
+        "AcceptGift_(O)904": "{{i18n:Married.GiftReaction_Banana_Pudding {{expressionList}} }}",
+        "AcceptGift_(O)905": "{{i18n:Married.GiftReaction_Mango_Sticky_Rice {{expressionList}} }}",
+        "AcceptGift_(O)906": "{{i18n:Married.GiftReaction_Poi {{expressionList}} }}",
+        "AcceptGift_(O)907": "{{i18n:Married.GiftReaction_Tropical_Curry {{expressionList}} }}",
+        "AcceptGift_(O)921": "{{i18n:Married.GiftReaction_Squid_Ink_Ravioli {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal": "{{i18n:Married.GiftReaction_Baked_Berry_Oatmeal {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger": "{{i18n:Married.GiftReaction_Big_Bark_Burger {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Flower_Cookie": "{{i18n:Married.GiftReaction_Flower_Cookie {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish": "{{i18n:Married.GiftReaction_Glazed_Butterfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie": "{{i18n:Married.GiftReaction_Mixed_Berry_Pie {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice": "{{i18n:Married.GiftReaction_Mushroom_Berry_Rice {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Seaweed_Salad": "{{i18n:Married.GiftReaction_Seaweed_Salad {{expressionList}} }}",
+        //Fall back
+        "AcceptGift_category_cooking": "{{i18n:Married.GiftReactionCategory_-7 {{expressionList}} }} ",
+      },
+    },
+    {
+      "LogName": "Gifts: Pregnant",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasSeenEvent": "64780030",
+        "HavingChild": "@{{playerName}}",
+        "Relationship:Wizard": "Married"
+      },
+      "Entries": {
+
+        "AcceptGift_(O)Jellonip.RRRR_Fuzzy_Feelings": "{{i18n:Preg.GiftReaction_Fuzzy_Feelings {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Soul": "{{i18n:Preg.GiftReaction_Void_Soul {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Swirl_Stone": "{{i18n:Preg.GiftReaction_Void_Soul {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Shard": "{{i18n:Preg.GiftReaction_Void_Shard {{expressionList}} }}",
+        "AcceptGift_(O)769": "{{i18n:Preg.GiftReaction_Void_Essence {{expressionList}} }}",
+        "AcceptGift_(O)768": "{{i18n:Preg.GiftReaction_Void_Essence {{expressionList}} }}",
+        "AcceptGift_(O)230": "{{i18n:Preg.GiftReaction_Red_Plate {{expressionList}} }}",
+        "AcceptGift_(O)232": "{{i18n:Preg.GiftReaction_Rice_Pudding {{expressionList}} }}",
+        "AcceptGift_(O)904": "{{i18n:Preg.GiftReaction_Banana_Pudding {{expressionList}} }}",
+        "AcceptGift_(O)903": "{{i18n:Preg.GiftReaction_Ginger_Ale {{expressionList}} }}",
+        "AcceptGift_(O)212": "{{i18n:GiftReaction_Salmon_Dinner {{expressionList}} }}",
+        "AcceptGift_category_cooking": "{{i18n:Preg.GiftReactionCategory_-7 {{expressionList}} }} ",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine": "{{i18n:Preg.GiftReaction_Blue_Moon_Wine {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Age_Blue_Moon_Wine": "{{i18n:Preg.GiftReaction_Blue_Moon_Wine {{expressionList}} }}",
+        "AcceptGift_wine_item": "{{i18n:Preg.GiftReaction_Blue_Moon_Wine {{expressionList}} }}",
+        "AcceptGift_(O)910": "{{i18n:Preg.GiftReaction_Radiation {{expressionList}} }}",
+        "AcceptGift_(O)909": "{{i18n:Preg.GiftReaction_Radiation {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Radioactive_Bass": "{{i18n:Preg.GiftReaction_Radiation {{expressionList}} }}",
+        "AcceptGift_(O)279": "{{i18n:Preg.GiftReaction_Magic_Rock_Candy {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Eel": "{{i18n:Preg.GiftReaction_Void_Eel {{expressionList}} }}",
+        "AcceptGift_(O)156": "{{i18n:Preg.GiftReaction_Ghostfish {{expressionList}} }}",
+        "AcceptGift_(O)162": "{{i18n:Preg.GiftReaction_Lava_Eel {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Undeadfish": "{{i18n:Preg.GiftReaction_Undeadfish {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Gemfish": "{{i18n:Preg.GiftReaction_Gemfish {{expressionList}} }}",
+        "AcceptGift_(O)688": "{{i18n:Preg.GiftReaction_Warp_Totem:_Farm {{expressionList}} }}",
+        "AcceptGift_(O)795": "{{i18n:Preg.GiftReaction_Void_Eel {{expressionList}} }}",
+        "AcceptGift_(O)158": "{{i18n:Preg.GiftReaction_Ghostfish {{expressionList}} }}",
+        "AcceptGift_(O)161": "{{i18n:Preg.GiftReaction_Ghostfish {{expressionList}} }}",
+ 
+      },
+    },
+
+    {
+      "LogName": "Gifts: Qi Gift Reactions",
+      "Action": "EditData",
+      "When": {
+        "Relationship:Wizard": "Married",
+        "QiEvents": "true"
+      },
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "AcceptGift_(O)422": "{{i18n:MarriedQi.GiftReaction_Purple_Mushroom {{expressionList}} }}",
+        "AcceptGift_(O)Moss": "{{i18n:MarriedQi.GiftReaction_Moss {{expressionList}} }}",
+        "AcceptGift_book_item": "{{i18n:MarriedQi.GiftReaction_Book {{expressionList}} }}",
+        "AcceptGift_(O)Jellonip.RRRR_Fuzzy_Feelings": "{{i18n:MarriedQi.GiftReaction_Fuzzy_Feelings {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Soul": "{{i18n:MarriedQi.GiftReaction_Void_Soul {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Swirl_Stone": "{{i18n:MarriedQi.GiftReaction_Void_Soul {{expressionList}} }}",
+        "AcceptGift_(O)454": "{{i18n:MarriedQi.GiftReaction_Ancient_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)499": "{{i18n:MarriedQi.GiftReaction_Ancient_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)114": "{{i18n:MarriedQi.GiftReaction_Ancient_Fruit {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Shard": "{{i18n:MarriedQi.GiftReaction_Void_Shard {{expressionList}} }}",
+        "AcceptGift_(O)155": "{{i18n:MarriedQi.GiftReaction_Super_Cucumber {{expressionList}} }}",
+        "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Frog": "{{i18n:MarriedQi.GiftReaction_Frog {{expressionList}} }}",
+        "AcceptGift_(O)80": "{{i18n:MarriedQi.GiftReaction_Quartz {{expressionList}} }}",
+        "AcceptGift_(O)769": "{{i18n:MarriedQi.GiftReaction_Void_Essence {{expressionList}} }}",
+        "AcceptGift_(O)768": "{{i18n:MarriedQi.GiftReaction_Solar_Essence {{expressionList}} }}",
+       
+        "AcceptGift_category_cooking": "{{i18n:MarriedQi.GiftReactionCategory_-7 {{expressionList}} }} ",
+      },
+    },
+
+
+
+		{ //While Qi Events
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Wizard",
+		"When": {
+			"QiEvents": "true"
+		},
+		"Entries": {
+      "RejectItem_(O)Jellonip.RRRR_Magnus_Wine": "{{i18n:MarriedQi.GiftReaction_RazzyWine {{expressionList}} }}",
+      "RejectItem_(O)Jellonip.RRRR_Hair_Kit": "{{i18n:MarriedQi.GiftReaction_Hair_Styling_Kit {{expressionList}} }}",
+      "RejectItem_(O)Jellonip.RRRR_Clothing_Ticket": "{{i18n:MarriedQi.GiftReaction_Clothing_Ticket {{expressionList}} }}",
+      "RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry": "{{i18n:MarriedQi.GiftReaction_Dewdrop_Berry {{expressionList}} }}",
+		}
+	},
+
+  {
+    "LogName": "Gifts: Not at home",
+    "Action": "EditData",
+    "Update": "OnLocationChange",
+    "Target": "Characters/Dialogue/Wizard",
+    "When": {
+      "HasMod": "Jellonip.EMagnusPort",
+      "LocationName |contains={{FarmHouse}}": false
+    },
+    "Entries": {
+      "RejectItem_(O)Jellonip.RRRR_Magnus_Wine": "{{i18n:Married.GiftReaction_RazzyWine {{expressionList}} }}",
+      "RejectItem_(O)Jellonip.RRRR_Hair_Kit": "{{i18n:HairKitGiftWizard {{expressionList}} }}",
+      "RejectItem_(O)Jellonip.RRRR_Clothing_Ticket": "{{i18n:ClothingTicketWizard {{expressionList}} }}",
+      "RejectItem_(O)Jellonip.RRRR_Handmade_LoungeWear": "{{i18n:Married.GiftReaction_LoungeWear}}"
+    },
+  },
+  {
+    "LogName": "Gifts: Wine, At Home but In the morning",
+    "Action": "EditData",
+    "Update": "OnLocationChange, OnTimeChange",
+    "Target": "Characters/Dialogue/Wizard",
+    "When": {
+      "LocationName |contains={{FarmHouse}}": true,
+      "Time |contains={{Range: 1730, 2600}}": false, 
+    },
+    "Entries": {
+      "RejectItem_(O)Jellonip.RRRR_Magnus_Wine": "{{i18n:Married.GiftReaction_RazzyWineMorning {{expressionList}} }}",
+    },
+  },
+  {
+    "LogName": "Gifts: Longwear at Home Fallback",
+    "Action": "EditData",
+    "Update": "OnLocationChange, OnTimeChange",
+    "Target": "Characters/Dialogue/Wizard",
+    "When": {
+      "HasMod": "Jellonip.EMagnusPort",
+      "LocationName |contains={{FarmHouse}}": true,
+      "HasSeenEvent": "1728499"
+    },
+    "Entries": {
+      "RejectItem_(O)Jellonip.RRRR_Handmade_LoungeWear": "{{i18n:Married.GiftReaction_LoungeWearRepeat}}"
+      
+    },
+  },
+
+  {
+    "LogName": "Gifts: Wine but Pregnant",
+    "Action": "EditData",
+    "Update": "OnLocationChange, OnTimeChange",
+    "Target": "Characters/Dialogue/Wizard",
+    "When": {
+      "HasSeenEvent": "64780030",
+      "HavingChild": "@{{playerName}}",
+      "Relationship:Wizard": "Married", 
+    },
+    "Entries": {
+      "RejectItem_(O)Jellonip.RRRR_Magnus_Wine": "{{i18n:Preg.GiftReaction_RazzyWine {{expressionList}} }}",
+    },
+  },
+    //Gift related events 
+    { //PLACEHOLDER FOR GIFTING EVENTS. This is basically "loading" the gift events for razzy. 
+      "LogName": "Patching placeholder",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "Entries": {
+        "Wizard": {
+          "GiftEventTriggers": {
+            "884999_Idontexist": "1116034/n TESTEST"
+          }
+        },
+      },
+    },
+    { //Razzy's Wine Intro Event
+      "LogName": "Gift Events: Sharing Razzy's Wine Intro",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "Pregnant |contains=@{{playerName}}": false,
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false",
+        "Time": "{{Range: 1730, 2600}}",
+        "Hasflag": "RazzyWine",
+        "Relationship: Wizard": "Married",
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Magnus_Wine": "$v 65494590 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Magnus_Wine": "$v 65494590 false false",
+      },
+    },
+    { //Razzy's Wine Repeat Event
+      "LogName": "Gift Events: Sharing Razzy's Wine Repeat",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "Pregnant |contains=@{{playerName}}": false,
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false",
+        "Time": "{{Range: 1730, 2600}}",
+        "Hasflag": "RazzyWine",
+        "HasSeenEvent": "65494590",
+        "Relationship: Wizard": "Married",
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Magnus_Wine": "$v 65494591 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Magnus_Wine": "$v 65494591 false false"
+      },
+    },
+
+    {
+      "LogName": "New Item Reject",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+          "Jellonip.RRRR_Hair_Kit": {
+              "GiftableToNpcAllowList": {
+                  "Wizard": true,
+
+              },
+              "GiftedToNotOnAllowListMessage": "{{i18n:HairKitGift}}",
+              "CanBeShipped": false,
+
+              
+          },
+          "Jellonip.RRRR_Fuzzy_Feelings": {
+            "GiftableToNpcAllowList": {
+                "Wizard": true,
+
+            },
+            "GiftedToNotOnAllowListMessage": "{{i18n:HairKitGift}}",
+            "CanBeShipped": false,
+
+            },
+            "Jellonip.RRRR_Clothing_Ticket": {
+              "GiftableToNpcAllowList": {
+                  "Wizard": true,
+
+              },
+              "GiftedToNotOnAllowListMessage": "{{i18n:HairKitGift}}",
+              "CanBeShipped": false,
+
+            },
+            "Jellonip.RRRR_Magnus_Wine": {
+              "GiftableToNpcAllowList": {
+                  "Wizard": true,
+
+              },
+              "GiftedToNotOnAllowListMessage": "{{i18n:HairKitGift}}",
+              "CanBeShipped": false,
+
+            },
+            "Jellonip.RRRR_Handmade_LoungeWear": {
+              "GiftableToNpcAllowList": {
+                  "Wizard": true,
+
+              },
+              "GiftedToNotOnAllowListMessage": "{{i18n:HairKitGift}}",
+              "CanBeTrashed": false,
+              "CanBeShipped": false,
+          },
+  
+      },
+      "When": {
+          "HasMod": "spacechase0.SpaceCore",
+      },
+  },
+  ],
+}

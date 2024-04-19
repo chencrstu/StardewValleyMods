@@ -1,0 +1,35 @@
+{
+  "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/schedules/Linus",
+      "Entries": {
+        "Magic": "{{i18n:ScheduleDialogue.Magic}}",
+        "winter_15.000": "{{i18n:ScheduleDialogue.winter_15.000}}",
+        "marriage_Mon.000": "{{i18n:ScheduleDialogue.marriage_Mon.000}}",
+        "marriage_Mon.001": "{{i18n:ScheduleDialogue.marriage_Mon.001}}",
+        "marriage_Mon.002": "{{i18n:ScheduleDialogue.marriage_Mon.002}}",
+        "marriage_Mon.003": "{{i18n:ScheduleDialogue.marriage_Mon.003}}",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/1_6_Strings",
+      "Entries": {
+        "DesertFestival_Linus": "{{i18n:ScheduleDialogue.DesertFestival_Linus}}",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/1_6_Strings",
+      "Entries": {
+        "DesertFestival_Linus": "{{i18n:ScheduleDialogue.DesertFestival_Linus_Elias}}",
+      },
+      "When": {"HasMod |contains=Sebbit.CustomNPCElias": true}
+    },
+
+  ]
+}

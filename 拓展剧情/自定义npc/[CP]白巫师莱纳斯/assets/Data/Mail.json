@@ -1,0 +1,30 @@
+{
+  "Changes": [
+
+  	{
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Linus": "{{i18n:Mail.Linus}}",
+        "LinusCooking": "{{i18n:Mail.LinusCooking}}",
+        "fall_8_1": "{{i18n:Mail.fall_8_1}}",
+        "passedOut2": "{{i18n:Mail.passedOut2}}",
+        "linusTrashCleanup": "{{i18n:Mail.linusTrashCleanup}}",
+        "LinusTenHeart": "{{i18n:Mail.LinusTenHeart}}",
+        "wizardLetterLinus1": "{{i18n:Mail.wizardLetterLinus1}}",
+        "wizardLetterLinus2": "{{i18n:Mail.wizardLetterLinus2}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "15444003/f Linus 2500/x LinusTenHeart": "null",
+        "502972/d Wed Thu Fri Sat Sun/e 502971/x wizardLetterLinus1": "null",
+        "502973/d Mon Tue Wed Thu Sun/n wizardLetterLinus1/x wizardLetterLinus2": "null"
+      }
+    }
+
+  ]
+}

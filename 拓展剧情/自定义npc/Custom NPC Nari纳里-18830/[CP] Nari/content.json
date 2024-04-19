@@ -1,0 +1,169 @@
+    /// 0 무표정, 1 웃음, 2 울음, 3 측은/쓴웃음, 4 눈웃음볼붉, 5 안광x, 6 시선왼쪽, 7 시선아래, 8 에러-역안, 9 에러-글리치, 10 노이즈, 11 노이즈-웃음
+    
+{
+  "Format": "1.19.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+		"Nari": "adult/neutral/neutral/neutral/female/not-datable//Other/spring 25//Mountain 57 20 2/娜莉"
+      } 
+    },
+    
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+		"Nari": "...！#$b#嗯...$6#$b#嗯...$7#$b#真是个不错的礼物！$4#$b#怎么会有人不喜欢这种礼物呢？$1#$b#这是回礼，@。[921 651 608 265 222 221 220 204]/74 373 797 446 770/谢谢你。#$b#这是个很好的礼物。$1#$e#%娜莉目不转睛的看着礼物。/-7/每个人的爱好都不一样。我不太喜欢这个。#$b#但还是谢谢你送给我礼物，那么我就收下这份礼物吧，这也是你的一番好心。$1#$b#嗯，不过我觉得这个对我来说才算一份好的礼物。 [725 266 417 433 ]#$e#%娜莉看着礼物，陷入了沉思。/172 171 170 169 168/...$5#$b#嗯，这好像不算是一个很好的礼物。/889 890/真是个不错的礼物。$1#$b#谢谢你。//"
+      },
+      
+    "When": {"HasSeenEvent |contains=9654908": false}
+    
+    },
+	
+    {
+      "LogName": "Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Nari",
+      "FromFile": "portraits/Nari.png",
+    },
+    
+    {
+      "LogName": "Sprites",
+      "Action": "Load",
+      "Target": "Characters/Nari",
+      "FromFile": "sprites/Nari.png",
+      "When": {"HasSeenEvent |contains=9654908": false},
+    },
+    
+    {
+      "LogName": "Sprites End",
+      "Action": "Load",
+      "Target": "Characters/Nari",
+      "FromFile": "sprites/NariEnd.png",
+      "When": {"HasSeenEvent": "9654908"},
+    },
+    
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Nari",
+      "FromFile": "dialogue/Nari.json",
+      "When": {"HasSeenEvent |contains=9654906": false},
+    },
+    
+    {
+      "LogName": "Dialogue 1",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Nari",
+      "FromFile": "dialogue/Nari1.json",
+      "When": {"HasSeenEvent": "9654906"},
+    },
+    
+    {
+      "LogName": "Dialogue End",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Nari",
+      "FromFile": "dialogue/NariEnd.json",
+      "When": {"HasSeenEvent": "9654908"},
+    },
+	
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Nari",
+      "FromFile": "schedules/Nari.json"
+    },
+ 
+	{
+		"LogName": "Heart 0 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Backwoods",
+		"Entries": {
+		"9654901/t 1400 2400": "playful/17 14/farmer 20 14 1 MrQi 24 9 1/skippable/move farmer 7 0 1/emote farmer 8/faceDirection farmer 3/pause 100/jump farmer 8/pause 500/speed farmer 10/move farmer 10 0 1/warp farmer 10 2/pause 2000/warp MrQi 23 11/pause 100/textAboveHead MrQi \"嗯...\"/pause 2500/speak MrQi \"一会，会发生什么有趣的事吗？\"/pause 200/emote MrQi 56/pause 1000/stopMusic/pause 7000/faceDirection MrQi 2/speak MrQi \"不是吧... 小朋友？\"/end"
+	    	},
+    },
+    	
+	{
+		"LogName": "Heart 4-1 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Mountain",
+		"Entries": {
+		"9654902/f Nari 1000/t 600 1100": "playful/50 20/Nari 57 20 2 farmer 57 25 0/skippable/move farmer 0 -4 0/pause 100/speak Nari \"@，你来了！$1\"/pause 100/emote Nari 20/pause 1000/speak Nari \"嗯... 你还记得我之前说过我喜欢做料理吗？\"/quickQuestion #嗯。#没有(break)pause 200\\emote Nari 20\\speak Nari \"很高兴你还记得！$4\"\\pause 500(break)pause 200\\emote Nari 32\\speak Nari \"我之前说过我很喜欢制作料理。#$b#或者说是能够亲自制造某种东西的行为...#$b#总之只要是这种需要自己动手的事情就算！$1\"pause 500/speak Nari \"@，我有个东西要给你。#$b#希望你喜欢。$4[201]\"/message \"从娜莉那里得到了完美的早晨！'\"/pause 100/emote farmer 20/pause 1000/emote Nari 56/pause 1000/speak Nari \"祝你度过愉快的一天！$1\"/end"
+	    	},
+    },
+    
+	{
+		"LogName": "Heart 4-2 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Mountain",
+		"Entries": {
+		"9654903/f Nari 1000/e 9654902/t 1200 1600": "playful/50 20/Nari 57 20 2 farmer 57 25 0/skippable/move farmer 0 -4 0/pause 100/speak Nari \"你好，@。$1#$b#这午饭真不错。$4\"/pause 100/emote farmer 32/pause 1000/speak Nari \"@，你喜欢料理吗？\"/quickQuestion #嗯。#不是。(break)pause 200\\speak Nari \"...$4#$b#@我很高兴你也喜欢料理！$1#$b#那你会经常做饭吗...？#$b#嗯... 但我可以很自豪地说这不是没用的技能！$1\"\\pause 300(break)pause 200\\speak Nari \"那你平常都吃什么啊？$3#$b#速食... 通常都吃那些明星代言的食物吗？#$b#...$7#$b#嗯...$6#$b#那么今天的礼物，应该会对你有帮助@！$1\"pause 300/speak Nari \"我刚才说过这是顿非常好午饭吧？#$b#不知为什么，看到这道菜的名字，觉得中午应该吃这个。$1[204][240]\"/message \"你从娜莉那里得到了《幸运午餐》和《农夫午餐》！\"/pause 100/emote farmer 20/pause 1000/emote Nari 56/pause 1000/speak Nari \"祝你今天过得好运，@！$1\"/end"
+	    	},
+    },
+    
+	{
+		"LogName": "Heart 4-3 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Mountain",
+		"Entries": {
+		"9654904/f Nari 1000/e 9654903/t 1700 2000": "playful/50 20/Nari 57 20 2 farmer 57 25 0/skippable/speak Nari \"你好，@。#$b#你从早上一直努力工作到晚上吗！$1\"/pause 100/move farmer 0 -4 0/pause 200/speak Nari \"你的样子... 光是看起来就感觉很累。$3#$b#没有想要冒犯你的意思... 不过@你能给我点时间吗？$1\"/pause 100/emote farmer 40/pause 1000/speak Nari \"我敢保证，@我不会占用你太多时间的！$1#$b#那个... 请相信我。\"/quickQuestion #好啊。(break)pause 100\\speak Nari \"谢谢你。$1#$b#那么,过会@打算要去做什么呢？#$b#嗯...\"/pause 100/emote Nari 28/pause 1000/speak Nari \"不知道要怎么说才好，我的情况让我有很多不能事情不能做。$3#$b#唉... 我根本无法摆脱限制。#$b#可恶，@，我感觉好遗憾。我明明有那么多事想做...$3\"/pause 100/move farmer -1 0 0/move farmer 0 -1 1/pause 100/faceDirection Nari 3/pause 100/speak Nari \"...#$b#*哇哦* 你真贴心。$4\"pause 500/speak Nari \"对不起，说了这么破坏气氛的话。#$b#其实我不是很想在喜欢的人面前，看到我这个样子...$7#$b#请忘记我刚才的样子。$3#$b#嗯... 其实从很久以前开始就有这么多想说的话了，终于可以不用一个人这么难熬了。#$b#@我最近，和你在一起很幸福。$1#$b#虽然在数字上看起来很少，但我对你的感情远比这个数字还要多。$4#$b#不过，这点你应该已经知道了。#$b#@，喜欢我吗。$1#$b#虽然我很想现在就说我爱你...#$b#现在好像还不是告诉你的时候。$1#$b#像我这种存在... 对@来说是什么呢。#$b#虽然我现在还有很多不足，但是总有一天我想站在@的身边。#$b#如果那一刻真的到来你能给我一个站在你身边的机会吗？$4\"/pause 3000/speak Nari \"...#$b#现在不想回答我这个问题也没关系。#$b#到时候，请你一定要回答我这个问题。即使是拒绝我也行，至少不要让我保留幻想。$4\"/pause 500/speak Nari \"最近，@做料理的技术变更好了吗。#$b#一想到处理食材时能得到@对我的好感，我怎么可能不喜欢做料理呢！$1\"/pause 200/speak Nari \"很可惜，这里没有适合当晚饭的食物。#$b#但我还是做了其他的食物。#$b#你要不要尝尝看？$1[242][230][212]\"/pause 200/farmerEat 212/pause 100/emote farmer 20/pause 1000/speak Nari \"*哇哦* @你怎么会这么可爱呢！$1#$b#@，我真的很喜欢你。$4\"/pause 200/end"
+	    	},
+    },
+
+    {
+    	"LogName": "Heart 6 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Mountain",
+		"Entries": {
+		"9654905/e 9654901/f Nari 1500": "breezy/53 34/Nari 56 34 3 MrQi 50 34 1/skippable/move Nari -3 0 3/pause 200/speak Nari \"真不知道你到底为什么来这里。$5#$b#怎么，您的赌场倒闭了吗？\"/pause 100/emote Nari 12/pause 900/speak MrQi \"怎么可能倒闭。反而越来越好呢。#$b#不过...#$b#就你这张臭嘴居然还会用敬语？\"/pause 100/speak Nari \"给我，闭上你的嘴。$5\"/pause 100/speak MrQi \"你的性格还是跟以前一样。#$b#那孩子应该来这里看看你现在这个样子。\"/pause 100/speak Nari \"@跟这事无关，不许你提起他！$8^@跟这事无关，不许你提起她！$8#$b#真是个说不通的人。\"/pause 100/faceDirection Nari 1/pause 500/speak MrQi \"不管怎样，我来这里是为了给你个警告。\"/pause 100/speak Nari \"警告？\"/pause 200/faceDirection Nari 3/pause 100/speak MrQi \"对，来警告你。#$b#你也知道，你的存在就是一种错误，是需要纠正的吧？#$b#我好不容易才拆开档案放你出来，为了救你我可是付出了很多...#$b#你也预想到了这个结果吧？\"/pause 700/speak Nari \"*哈哈* 是啊，怎么可能预想不到。$6#$b#不过你能还来警告我，真是个大好人啊。$7#$b#当事人居然会来告诉我拆开文件的办法，真是让人惶恐不安。\"/pause 100/speak MrQi \"真讽刺。#$b#总之所有东西和事情都是需要付出代价的...\"/pause 100/emote Nari 16/pause 300/speak Nari \"等一下，@要到这里了！\"/pause 100/speak MrQi \"什么？#$b#你怎么知道...\"/speak Nari \"我当然会用对@的爱感觉到的！$1#$b#总之你快走吧！！\"/speak MrQi \"但你得听从我的警告\"/speak Nari \"我现在很急！$5#$b#@你不能听到我们的谈话！\"/speak MrQi \"不用着急，只要@想知道我们的谈话，哪怕再努力阻止他也不可能成功。^不用着急，只要@想知道我们的谈话，哪怕再努力阻止她也不可能成功。\"/speak Nari \"这只是个npc游戏，你能判断什么？$5#$b#快走吧，你这个像是发霉了的家伙！！！\"/speak MrQi \"但是...#$b#好，我知道了。\"/pause 100/end dialogue Nari \"@，已经来了吗？$4#$b#嗯？#$b#还是别人？#$b#嗯...$6#$b#不太清楚。$7#$b#话说今天发生什么事了吗？$1#$b#我每次都很好奇你今天发生了什么？\""
+	    	},
+    },
+    
+    {
+		"LogName": "Heart 8-1 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Forest",
+		"Entries": {
+		"9654906/f Nari 2000/e 9654904/t 1600 2000": "playful/45 75/Nari 45 75 3 farmer 50 75 3/skippable/move farmer -3 0 3/pause 100/warp farmer 46 75/emote farmer 8/pause 100/faceDirection Nari 1/speak Nari \"...$5#$b#...$7#$b#啊，我吓到你了吗！ @...\"/pause 300/speak Nari \"至于我在这里做什么...$6#$b#虽然现在还不能告诉你，但是我有个好消息！$1#$b#这个好消息，跟我现在为什么在这里有关！$4#$b#你要不要跟我一起去村子那边看看？\"/quickQuestion #不要(break)pause 100\\speak Nari \"啊... 你很忙吗...\"/pause 100/emote Nari 40/pause 1000/speak Nari \"那我能下次再找你一起去吗？#$b#@只要是跟你在一起我什么都愿意！$4\"/quickQuestion #不要#不愿意(break)pause 100\\speak Nari \"啊...\"\\pause 1000(break)pause 100\\speak Nari \"@...？\"\\pause 1000/speak Nari \"那个，@今天的状态好像不太好。$3#$b#努力训练身体固然好，但注意身体健康也很重要。$4#$b#那么... 我先走了。$1\"/end"
+	    	},
+    },
+    
+    {
+		"LogName": "Heart 8-2 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Beach",
+		"Entries": {
+		"9654907/f Nari 2000/e 9654906/w sunny/t 800 1600": "playful/85 8/Nari 90 4 2 farmer 83 5 1/skippable/move farmer 5 0 1/pause 200/speak Nari \"啊...#$b#你好，@。$3#$b#@今天的心情不好吗...\"/faceDirection farmer 3/pause 100/speak Nari \"等一下...！#$b#我知道你最近对我很苛刻！#$b#也许，这不只是因为最近@的心情不好吧。所以...#$b#能告诉我，我做错了什么...$2\"/quickQuestion #我讨厌你。(break)pause 100\\speak Nari \"...$2\"/pause 500/speak Nari \"...我，我...$2#$b#我...$2\"/quickQuestion #我讨厌你。(break)pause 100\\speak Nari \"...$2\"/quickQuestion #我真的讨厌死你了，我希望你在我眼前永远消失。(break)pause 100\\speak Nari \"...$2#$b#%娜莉把脸埋在手里。\"/pause 200/textAboveHead Nari \"*哭泣*\"/pause 1000/speak Nari \"求求你，能给我一次机会吗，一次就好。$2#$b#我知道，我是一个骗子，不值得原谅$2#$b#所以你才会这么讨厌我吧...$2#$b#明明我马上就能把真相告诉你了。$2#$b#... 对不起。$2\"/quickQuestion #我讨厌你#那也不喜欢你(break)pause 100\\speak Nari \"...$2\"(break)pause 100\\speak Nari \"...$2\"/pause 300/speak Nari \"我理解。你一定很讨厌我吧。$2#$b#那么... 祝你以后的生活永远快乐，幸福。$2\"/end"
+	    	},
+    },
+    	
+    {
+		"LogName": "Heart 10 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Mountain",
+		"Entries": {
+		"9654908/e 9654905 9654907/f Nari 2500/i 245/t 2400 2600": "sadpiano/50 20/Nari 57 20 2 farmer 57 25 0/skippable/move farmer 0 -4 0/pause 200/speak Nari \"啊，@！$1#$b#我一直在等你。\"/pause 100/speak Nari \"嗯，我想您应该有很多问题想问我。$1#$b#我有很多事不能告诉你...$6#$b#还有一些故意隐瞒的。$7\"/pause 500/emote Nari 28/pause 1000/speak Nari \"对不起，在这段时间里隐瞒了这么多事。$3#$b#@如果你愿意的话，我想讲一讲我的故事。$4#$b#或许... 说出来并不会发生什么？\"/pause 100/message \"Error\"/pause 100/speak Nari \"嗯...？\"/message \"These mods could not be added to your game.\"/pause 100/emote Nari 16/pause 200/speak Nari \"等一下，不行！$5#$b#该死，那小子在警告我不能说出来...\"/pause 100/message \"Error preloading content pack 'Custom NPC Nari'. Technical details:Newtonsoft.Json.JsonReaderException\"/speak Nari \"我不想要这样！！$8#$b#...$9\"/message \"| ERROR	SMAPI | Skipped mods:These mods could not be added to your game.\"/speak Nari \"讨厌！我不要就这样离开！$8#$b#我...$9#$b#我是...$8#$b#这里的NPC...$9#$b#...$9#$b#@我...$9#$b#最喜...$9\"/pause 500/message \"娜莉没有了任何反应。\"/end newDay"
+	    	},
+    },
+    
+  {
+		"LogName": "Birthday event",
+		"Action": "EditData",
+		"Target": "Data/Events/Mountain",
+		"Entries": {
+		"9654900/u 25/z summer fall winter/i 651/k 9654908 9654907 9654906": "playful/50 20/Nari 57 20 0 farmer 57 25 0/skippable/move farmer 0 -4 0/move farmer -2 0 0/move farmer 0 1 1/pause 200/faceDirection Nari 3/speak Nari \"@，你好，今天也很高兴见到你。#$b#你今天过得怎么样？$1#$b#不过不管怎么样我都希望@每天都快快乐乐的。$4\"/quickQuestion #给你的礼物！(break)pause 700\\textAboveHead Nari \"啊...！\"\\removeItem 651\\pause 300\\speak Nari \"这是你送给我的礼物吗？！！\"/pause 100/quickQuestion #嗯。生日快乐！(break)pause 200\\speak Nari \"我不知道该说什么才好...$4#$b#虽然以前也收到过礼物，但这是我生平第一次收到这么令人开心的礼物！！$1#$b#你甚至还记得比起蛋糕，我更喜欢松糕？！$4\"/pause 200/emote Nari 20/pause 1000/speak Nari \"我都不知道该怎么形容我现在的心情了...$4#$b#谢谢你，@！$1\"/pause 100/emote Nari 40/pause 1000/speak Nari \"其实生日，对我来说并没有太大意义。#$b#我以为这只是一年里112天的其中一天。#$b#只是在几个数字里比它们大的关系。$7#$b#我一辈子都忘不了春天的第25日了，这一天是我的生日！$1#$b#如果你想到了我的生日，你也就会想起我了。$1#$b#只要这样一想... 就让我感到幸福！$4\"/end dialogue \"谢谢你的生日礼物，@。#$b#我一定是这世上最幸福的存在了！$4\""
+	    	},
+    },   
+    {
+		"LogName": "Heart 6-1 event",
+		"Action": "EditData",
+		"Target": "Data/Events/Forest",
+		"Entries": {
+		"9654909/f Nari 1500/e 9654905/r 0.1/F": "playful/45 75/Nari 45 75 2/skippable/speak Nari \"...#$b#快... 要深呼吸，要深呼吸。\"/pause 300/emote Nari 12/pause 1000/speak Nari \"这，没什么。#$b#我是人，我是... 对，人...#$b#人...$8#$b#人...？$9\"/pause 200/stopMusic/pause 1000/faceDirection 0/pause 100/speak Nari \"真烦...$9\"/globalFade/viewport –1000 –1000/speak Nari \"为什么我什么都做不了...$9#$b#人、玩家、NPC... 我都做不了啊...$9\"/pause 200/message \"你在远处听到抽泣的声音。\"/pause 200/end"
+	    	},
+    },
+    
+  ]
+}

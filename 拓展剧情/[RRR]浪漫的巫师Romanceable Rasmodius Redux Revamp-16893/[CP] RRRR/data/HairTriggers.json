@@ -1,0 +1,275 @@
+{
+  "Changes": [
+
+    { //Short hair trigger
+      "LogName": "Hair Mechanic Trigger: Short hair",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728400",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Hair_Kit": "$v 1728420 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Hair_Kit": "$v 1728420 false false"
+      },
+    },
+    { //Growing Hair trigger
+      "LogName": "Hair Mechanic Trigger: Growing hair",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728400",
+        "LocationName": "{{FarmHouse}}",
+        "HasActiveQuest": "1728429, 1728439",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Hair_Kit": "$v 1728419 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Hair_Kit": "$v 1728419 false false"
+      },
+    },
+    { //Has a Hairstyle trigger
+      "LogName": "Hair Mechanic Trigger: Already styled",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "LocationName": "{{FarmHouse}}",
+        "HasSeenEvent": "1728400",
+        "HasActiveQuest": "1728431, 1728432, 1728433, 1728441, 1728442, 1728443, 1728444, 1728445, 1728446",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Hair_Kit": "$v 1728430 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Hair_Kit": "$v 1728419 false false"
+      }
+    },
+    { //Seasonal Outfit Switch
+      "LogName": "Seasonals: Seasonal outfits switch",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728492",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false",
+        "HasSeenEvent |contains=1728496": false
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Clothing_Ticket": "$v 1728493 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Clothing_Ticket": "$v 1728493 false false"
+      },
+    },
+    { //Seasonal Outfit Switch 2
+      "LogName": "Seasonals: Seasonal outfits switch 2",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728496",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Clothing_Ticket": "$v 1728497 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Clothing_Ticket": "$v 1728493 false false"
+      },
+    },
+    { //Razzy's Loungewear Event
+      "LogName": "Gift Events: Loungewear Unlock",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false",
+        "Relationship: Wizard": "Married",
+        "HasSeenEvent": "1728498",
+        "HasSeenEvent |contains=1728499": false
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "AcceptGift_(O)Jellonip.RRRR_Handmade_LoungeWear": "$v 1728499 false false",
+        "AcceptBirthdayGift_(O)Jellonip.RRRR_Clothing_Ticket": "$v 1728493 false false"
+      },
+    },
+
+/*
+    { //Razzy's Wine Intro Event
+    "LogName": "Gift Events: Sharing Razzy's Wine Intro",
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/NpcExtensionData",
+    "TargetField": [
+      "Wizard",
+      "GiftEventTriggers"
+    ],
+    "When": {
+      "Pregnant |contains=@{{playerName}}": false,
+      "LocationName": "{{FarmHouse}}",
+      "QiEvents": "false",
+      "Time": "{{Range: 1730, 2600}}",
+      "Hasflag": "RazzyWine",
+      "Relationship: Wizard": "Married",
+    },
+    "Update": "OnLocationChange, OnTimeChange",
+    "Entries": {
+      "Jellonip.RRRR_Magnus_Wine": "65494590/n RAZZYWINEEVENT"
+    },
+  },
+  { //Razzy's Wine Repeat Event
+    "LogName": "Gift Events: Sharing Razzy's Wine Repeat",
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/NpcExtensionData",
+    "TargetField": [
+      "Wizard",
+      "GiftEventTriggers"
+    ],
+    "When": {
+      "Pregnant |contains=@{{playerName}}": false,
+      "LocationName": "{{FarmHouse}}",
+      "QiEvents": "false",
+      "Time": "{{Range: 1730, 2600}}",
+      "Hasflag": "RazzyWine",
+      "HasSeenEvent": "65494590",
+      "Relationship: Wizard": "Married",
+    },
+    "Update": "OnLocationChange, OnTimeChange",
+    "Entries": {
+      "Jellonip.RRRR_Magnus_Wine": "65494591/n RAZZYWINEEVENT"
+    },
+  },
+
+
+    //Triggers
+    //Hair triggers
+    { //Short hair trigger
+      "LogName": "Hair Mechanic Trigger: Short hair",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "TargetField": [
+        "Wizard",
+        "GiftEventTriggers"
+      ],
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728400",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Jellonip.RRRR_Hair_Kit": "1728420/e 1728400/n SHORT_HAIR_HUB"
+      },
+    },
+    { //Growing Hair trigger
+      "LogName": "Hair Mechanic Trigger: Growing hair",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "TargetField": [
+        "Wizard",
+        "GiftEventTriggers"
+      ],
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728400",
+        "LocationName": "{{FarmHouse}}",
+        "HasActiveQuest": "1728429, 1728439",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Jellonip.RRRR_Hair_Kit": "1728419/e 1728400/n HAIR_GROWING_ONGOING"
+      },
+    },
+    { //Has a Hairstyle trigger
+      "LogName": "Hair Mechanic Trigger: Already styled",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "TargetField": [
+        "Wizard",
+        "GiftEventTriggers"
+      ],
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "LocationName": "{{FarmHouse}}",
+        "HasSeenEvent": "1728400",
+        "HasActiveQuest": "1728431, 1728432, 1728433, 1728441, 1728442, 1728443, 1728444, 1728445, 1728446",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Jellonip.RRRR_Hair_Kit": "1728430/e 1728400/n HAIR_STYLED_EVENT_HUB"
+      }
+    },
+    { //Seasonal Outfit Switch
+      "LogName": "Seasonals: Seasonal outfits switch",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "TargetField": [
+        "Wizard",
+        "GiftEventTriggers"
+      ],
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728492",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false",
+        "HasSeenEvent |contains=1728496": false
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Jellonip.RRRR_Clothing_Ticket": "1728493/e 1728492/n CLOTHING_TICKET"
+      },
+    },
+    { //Seasonal Outfit Switch 2
+      "LogName": "Seasonals: Seasonal outfits switch 2",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "TargetField": [
+        "Wizard",
+        "GiftEventTriggers"
+      ],
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "HasSeenEvent": "1728496",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Jellonip.RRRR_Clothing_Ticket": "1728497/e 1728495/n CLOTHING_TICKET"
+      },
+    },
+    { //Razzy's Loungewear Event
+      "LogName": "Gift Events: Loungewear Unlock",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/NpcExtensionData",
+      "TargetField": [
+        "Wizard",
+        "GiftEventTriggers"
+      ],
+      "When": {
+        "HasMod": "Jellonip.EMagnusPort",
+        "LocationName": "{{FarmHouse}}",
+        "QiEvents": "false",
+        "Relationship: Wizard": "Married",
+        "HasSeenEvent": "1728498",
+        "HasSeenEvent |contains=1728499": false
+      },
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Jellonip.RRRR_Handmade_LoungeWear": "1728499/e 1728498/n RAZZYLOUNGEWEAR"
+      },
+    },
+    */
+  ],
+}

@@ -1,0 +1,22 @@
+{
+  "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/SpecialOrderStrings",
+      "Entries": {
+      	"Linus_Text": "{{i18n:SpecialOrder.Linus_Text}}"
+      }
+    },
+
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/emojis",
+      "FromFile": "assets/Characters/Linus.png",
+      "PatchMode": "Replace",
+      "FromArea": { "X": 3, "Y": 4, "Width": 9, "Height": 9 },
+      "ToArea": { "X": 63, "Y": 108, "Width": 9, "Height": 9 } 
+    }
+	
+  ]
+}

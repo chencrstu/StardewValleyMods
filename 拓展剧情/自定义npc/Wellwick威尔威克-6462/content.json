@@ -1,0 +1,424 @@
+﻿{
+ "Format": "1.18.0",
+  "Changes": [
+{
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+		"Wellwick": "adult/rude/outgoing/positive/female/datable//Town/winter 18//WizardHouse 10 15 2/威尔威克"
+      } 
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+		"Wellwick": "这是我最喜欢的!谢谢!/348 595 769 768/谢谢你， @. 我收到了好东西！/156 346 74 233 424 426 303 459/嗯......你为什么要给我这个?/18 376 593 22 591 421/啊!我不喜欢这个!/305 308 795/我会好好收下的， @.//"
+      }
+    },	 
+    	  {
+	"Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+		"Wellwick0": "我们会很开心的。不是吗?",
+		"Wellwick1": "我无法忍受看起来很有趣的事情。",
+      }
+	},	
+	{
+	  "Action": "EditData",
+	  "Target": "Data/animationDescriptions",
+	  "Entries": {
+	  "Wellwick_nausea": "16/16 16 17 17 17 17 17 16/16",
+	  }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/animationDescriptions",
+	  "Entries": {
+	  "Wellwick_huh": "18/18 18 19 19 19 19 19 18/18",
+	  }
+	},
+	{
+    "Action": "EditData",
+    "Target": "Data/ConcessionTastes",
+    "Entries": {
+	"Wellwick": {
+    "Name": "Wellwick",
+    "LovedTags": [
+      "Cotton Candy", "Star Cookie", "Stardrop Sorbet"
+    ],
+    "LikedTags": [
+      "Rock Candy", "Jawbreaker", "Apple Slices"
+    ],
+    "DislikedTags": [
+      "JojaCorn", "Joja Cola", "Sour Slimes"
+        ]
+      }
+	  }
+    },
+	{
+	 "Action": "EditData",
+	 "Target": "Data/MoviesReactions",
+	 "Entries": {
+	 "Wellwick": {
+     "NPCName": "Wellwick",
+     "Reactions": [
+      {
+        "Tag": "horror",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "family",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_1"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "电影真的很令人期待，@。你喜欢看这种东西吗?$9"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"威尔威克似乎很喜欢看电影..\"",
+            "Text": null,
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这场电影真的很棒!你下次会再叫我的吧?"
+          }
+        },
+        "ID": "reaction_4"
+      },
+      {
+        "Tag": "like",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "能跟我一起来看电影，一你是不是很开心呢?"
+          },
+		  "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "挺有趣的...",
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "好开心啊！就是有点意外。"
+          }
+        },
+        "ID": "reaction_5"
+      },
+      {
+        "Tag": "dislike",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "@你喜欢这样的电影吗？"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"威尔威克心不在焉地在看着别处。\"",
+            "Text": null,
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "下次看点别的怎么样？"
+          }
+        },
+        "ID": "reaction_6"
+       }
+     ]
+	}
+	}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"When": { "Hearts:Wizard": "10", "Day": "28" },
+		"Entries": {
+			"Wellwick": "突然收到我的信有吓了一跳吗，@?^我写信是因为我很感激你总是和拉莫玩。^大家都知道…他不是不太愿意跟别人在一起相处吗?^但我还是想对你说声谢谢。^那以后也请你多多关照啦！^ ^*附注：一起寄过来的是这个月当朋友的费用！^      -威尔威克%item object 72 1 %%"
+				   }
+	},
+	{	
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/rainy",
+		"Entries": {
+		"Wellwick": "下雨的话偶尔我的关节会酸痛..$3#$b#拉莫是怎么管理的呢?#$e#..还是应该少喝点酒呢..$2"
+					}
+	},
+    {
+      "Action": "Load",
+      "Target": "Characters/Wellwick",
+      "FromFile": "sprites/Wellwick.png",
+    },
+	 {  
+      "Action": "Load",
+      "Target": "Characters/Wellwick_Beach",
+      "FromFile": "sprites/Wellwick_Beach.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Wellwick",
+      "FromFile": "portraits/Wellwick.png",
+    },
+	{
+      "Action": "Load",
+      "Target": "Portraits/Wellwick_Beach",
+      "FromFile": "portraits/Wellwick_Beach.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Wellwick",
+      "FromFile": "dialogue/Wellwick.json",
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueWellwick",
+      "FromFile": "dialogue/MarriageDialogueWellwick.json",
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Wellwick",
+      "FromFile": "schedules/Wellwick.json",
+    },
+{	
+		"LogName": "Egg Festival",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring13",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 109 50 down",
+   				    "Delimiter": "/"
+				},
+				
+   				//MainEevent
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "Wellwick 109 50 down",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{
+  		"Action": "EditData",
+  		"Target": "Data/Festivals/spring13",
+		"Entries": 
+			{ "Wellwick": "你是怎么来到这里的，@?$6#$e#嗯...我啊，因为不能和很多人在一起，所以缺席了。$2#$b#但我还是会偷偷看着你的。一定要赢啊。$4"},
+
+},
+{	
+		"LogName": "Flower Dance",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 11 10 down",
+   				    "Delimiter": "/"
+				},
+				
+   				//MainEevent
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "Wellwick 11 10 down",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{	
+		"LogName": "Flower Dance",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"Entries": 
+			{ "Wellwick": "今天是这样热闹的日子啊。#$b#回去以后，我应该试着让拉莫和我一起凄凉地跳舞...$8", },
+},
+{	
+		"LogName": "Luau",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 14 39 right",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{	
+		"LogName": "Luau",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"Entries": 
+			{ "Wellwick": "你好@, 那个紫色的人是很厉害的吗？$6#$b#他看起来也太弱了，我想他会倒在那锅不好吃的汤里..." },
+},
+{	
+		"LogName": "Dance of the Moonlight Jellies",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer28",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 80 5 down",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{	
+		"LogName": "Dance of the Moonlight Jellies",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer28",
+		"Entries": 
+			{ "Wellwick": "那些水母…是不是有点像我？#$e#当然，这意味着像我一样可爱的意思！$1", },
+},
+{	
+		"LogName": "Stardew Valley Fair",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall16",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 34 32 left",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{	
+		"LogName": "Stardew Valley Fair",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall16",
+		"Entries": 
+			{ "Wellwick": "嗯？你为什么在这里？$6#$e#嗯...因为可以说是有点偏离轨道。所以拉莫给我制造了一个分身。$2#$b#总之!毕竟我预言的很准啊啊！让我稍微享受一下，如果拉莫叫我，我马上就会移动了!$7#$e#所以让我们再享受一下吧。", },
+},
+{	
+		"LogName": "Spirit's Eve",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall27",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 6 18 right",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{	
+		"LogName": "Spirit's Eve",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall27",
+		"Entries": 
+			{ "Wellwick": "嘘！他现在躲起来了！#$e#因为这里很暗。不是很适合享受节日吗？$9", },
+},
+{	
+		"LogName": "Festival of Ice",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter8",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 12 50 right",
+   				    "Delimiter": "/"
+				},
+				
+   				//MainEevent
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "Wellwick 12 50 right",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{	
+		"LogName": "Festival of Ice",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter8",
+		"Entries": 
+			{ "Wellwick": "好冷啊...！我想让拉莫给我来一个调温魔法...$7", },
+},
+{	
+		"LogName": "Feast of the Winter Star",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter25",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Wellwick 34 48 down",
+   				    "Delimiter": "/"
+				},
+			],
+},
+{	
+		"LogName": "Feast of the Winter Star",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter25",
+		"Entries": 
+			{ "Wellwick": "你知道...虽然是庆典，但是如果有礼物的话，酒应该会更好吧？#$b#所以，锵~我已经准备了！$4[348]#$b#好了!现在去享受快乐的庆典吧!你今天至少该喝醉吧!$4", },
+},
+	{
+		"Action": "EditData",
+		"Target": "Data/Events/WizardHouse",
+		"Entries": {
+			"136578/f Wellwick 750/t 0600 2200":"WizardSong/7 17/Wellwick 10 15 2 Wizard 3 17 2 farmer 8 24 0/skippable/viewport 7 17 TRUE/pause 2000/emote Wellwick 12/speak Wellwick \"嗨!$6\"/emote farmer 8/move farmer 0 -9 1/move Wellwick 0 0 3/speak Wellwick \"帮帮我，@! 再这样下去拉莫会把我赶出去的！$7\"/move Wizard 0 0 1/speak Wizard \"你忘了那都是因为你的错吗?$2\"/speak Wellwick \"但那是没办法的事!$5\"/move Wellwick 0 0 2/shake Wellwick 1000/pause 2000/move Wellwick 0 0 3/pause 500/speak Wellwick \"所以 @! 帮帮我吧!拉莫现在根本不听我的话!$7\"/speak Wellwick \"我只是...我打扫卫生的时候手滑了一下，把一本书撕碎了...$2#$b#我只是个失误了一下！但是拉莫生气地说要把我赶出去...$2\"/speak Wizard \"这不仅仅是一本普通的书，而是一本重要的书。#$b#还有，当一本写有重要魔法的书被撕掉了，生气不是理所当然的吗?\"/pause 500/emote Wellwick 12/move Wellwick 0 0 1/pause 500/showFrame Wellwick 18/speak Wellwick \"好了！因为你总是这样，所以你没有朋友！$5\"/speak Wizard \"没有朋友？我们彼此不都一样吗?$2\"/speak Wellwick \"我的至少比你多！$5\"/emote farmer 28/end"
+			},
+	},
+	{
+			"Action": "EditData",
+		"Target": "Data/Events/WizardHouse",
+		"Entries": {
+			"136579/e 136578/f Wellwick 1500/t 0600 2400":"WizardSong/7 17/Wellwick 4 17 2 Wizard 3 17 1 farmer 8 24 0/skippable/viewport 7 17 TRUE/showFrame Wellwick 22/pause 2000/emote Wellwick 40/speak Wellwick \"这可不容易啊...\"/pause 500/showFrame Wellwick 22/emote Wellwick 28/speak Wellwick \"拉莫，我们找别的办法怎么样?\"/speak Wellwick \"嗯...我的意思是说，我们可以用更有效率的方法啊...$2\"/speak Wizard \"..我想你要为破坏了它而负责。#$b#让我们试着把这个魔法完美地表现出来。\"/speak Wellwick \"救救我..$3\"/showFrame Wellwick 23/shake Wellwick 1000/pause 1000/showFrame Wellwick 22/emote farmer 8/move farmer 0 -7 3/move farmer -2 0 3/emote Wellwick 40/speak Wellwick \"抱歉@.. 我想我今天没有时间和你一起玩了..$3\"/speak Wellwick \"哦，呃...就是，在拉莫杀了我之前...我决定付钱买书..$2\"/speak Wellwick \"嗯，该怎么说呢?应该说是一对一的魔法可以把书中断裂的部分连接起来。#$b#但这种魔法对我来说很难...$2\"/speak Wizard \"你不觉得闲聊的时候多看一个字会比较好吗?$1\"/showFrame Wellwick 12/speak Wellwick \"呜...呜...$3#$b#再吐也不要拦我..$3\"/showFrame Wellwick 23/shake Wellwick 3000/emote farmer 28/end"
+			}
+	},
+	{
+			"Action": "EditData",
+		"Target": "Data/Events/WizardHouse",
+		"Entries": {
+			"136580/e 136579/f Wellwick 2500/t 2000 2400":"WizardSong/7 17/Wellwick 10 15 2 farmer 8 24 0 Wizard 8 5 2/skippable/viewport 7 17 TRUE/showFrame Wellwick 22/move farmer 0 -9 1/move Wellwick 0 0 3/pause 500/speak Wellwick \"...$6#$b#....$2\"/emote farmer 8/speak Wellwick \"..@.. 我该怎么办..$2\"/speak Wellwick \"我之前说要修的那本书，结果还是没修好..$2\"/pause 500/showFrame Wellwick 22/pause 500/emote Wellwick 28/showFrame Wellwick 25/pause 1000/speak Wellwick \"如果我被赶出来，今天可能是我最后一次跟@你见面了...$2\"/emote farmer 40/pause 500/speak Wellwick \"如果被拉莫发现...$2\"/pause 1000/question fork1 \"你觉得我该怎么办才好啊?..?#(照实说吧。)#(隐瞒这件事...)\"/pause 500/emote Wellwick 40/move Wizard 0 9 1/speak Wizard \"你们在说什么？\"/showFrame Wellwick 24/jump Wellwick 8/pause 1000/showFrame Wellwick 25/speak Wellwick \"没什么！$7\"/pause 1500/shake Wellwick 1000/pause 500/emote Wizard 40/pause 500/speak Wizard \"你可以直接说。我不会生气的。\"/pause 500/emote Wellwick 40/pause 500/showFrame Wellwick 26/pause 500/speak Wellwick \"...$2#$b#我...我最后还是没修好书..$2\"/pause 500/speak Wellwick \"我怕我会被赶出去...所以我就没告诉你...$2#$b#抱歉...$2\"/pause 500/emote Wizard 40/speak Wizard \"没事啊。反正我还有一本一模一样的。\"/speak Wellwick \"真的吗...$2\"/showFrame Wellwick 27/pause 1000/speak Wellwick \"..嗯?$6\"/speak Wizard \"她不小心把书撕了，我觉得有点可恶所以才想捉弄一下她...#$b#我像个傻瓜一样。$1\"/pause 1000/showFrame Wellwick 12/pause 1000/emote Wellwick 40/pause 1000/speak Wellwick \"..拉莫..\"/pause 1000/jump Wellwick 8/speak Wellwick \"跟我出来!今天是你真正的死期!$5\"/move Wellwick 0 -1 0/move Wellwick -1 0 3/pause 1000/shake Wellwick 500/pause 500/jump Wellwick 8/pause 1000/jump Wizard 8/pause 1000/jump Wellwick 8/emote farmer 28/move farmer 0 9 2/end"
+			}
+	}
+	]
+}

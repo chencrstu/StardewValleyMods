@@ -1,0 +1,128 @@
+{
+"Changes": [
+
+//Load items
+{
+    "Action": "Load",
+    "Target": "Mods/Jellonip.RRRR/Objects",
+    "FromFile": "assets/Items/Items.png" // assets/Crops.png, assets/Objects.png
+},
+
+//Adding items
+{           "LogName": "RRRR Items",
+           "Action": "EditData",
+           "Target": "Data/Objects",
+           "Entries": {
+               "Jellonip.RRRR_Fuzzy_Feelings": {
+                   "Name": "Fuzzy_Feelings",
+                   "Displayname": "{{i18n:object.FuzzyFeelings.name}}",
+                   "Description": "{{i18n:object.FuzzyFeelings.description}}",
+                   "Type": "Basic",
+                   "Category": 0,
+                   "Price": 0,
+
+                   "Texture": "Mods/Jellonip.RRRR/Objects",
+                   "SpriteIndex": 0,
+                   "Edibility": -300,
+                   "IsDrink": false,
+                   "Buffs": null,
+                   "GeodeDropsDefaultItems": false,
+                   "GeodeDrops": null,
+                   "ArtifactSpotChances": null,
+                   "ExcludeFromFishingCollection": true,
+                   "ExcludeFromShippingCollection": true,
+                   "ExcludeFromRandomSale": true,
+                 },
+               "Jellonip.RRRR_Hair_Kit": {
+                   "Name": "Hair_Styling_Kit",
+                   "Displayname": "{{i18n:object.HairStylingKit.name}}",
+                   "Description": "{{i18n:object.HairStylingKit.description}}",
+                   "Type": "Basic",
+                   "Category": 0,
+                   "Price": 0,
+
+                   "Texture": "Mods/Jellonip.RRRR/Objects",
+                   "SpriteIndex": 1,
+                   "ExcludeFromFishingCollection": true,
+                   "ExcludeFromShippingCollection": true,
+                   "ExcludeFromRandomSale": true,
+                },
+                "Jellonip.RRRR_Clothing_Ticket": {
+                    "Name": "Clothing_Ticket",
+                    "Displayname": "{{i18n:object.ClothingTicket.name}}",
+                    "Description": "{{i18n:object.ClothingTicket.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": 0,
+
+                    "Texture": "Mods/Jellonip.RRRR/Objects",
+                    "SpriteIndex": 2,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                  },
+                  "Jellonip.RRRR_Magnus_Wine": {
+                    "Name": "Magnus_Wine",
+                    "Displayname": "{{i18n:object.RazzyWine.name}}",
+                    "Description": "{{i18n:object.RazzyWine.{{WineStatus}}.description}}",
+                    "Type": "Basic",
+                    "Category": "-26",
+                    "Price": 0,
+                    "Edibility": "200",
+                    "IsDrink": true,
+                    "Buff": {
+                        "Duration": "860",
+                        "CustomAttributes": {
+                            "FarmingLevel": 3,
+                            "FishingLevel": 0,
+                            "ForagingLevel": 0,
+                            "LuckLevel": 2,
+                            "MiningLevel": 0,
+                            "Attack": 2,
+                            "Defense": 3,
+                            "MagneticRadius": 3,
+                            "MaxStamina": 0,
+                            "Speed": 2},
+                    },
+                    "Texture": "Mods/Jellonip.RRRR/Objects",
+                    "SpriteIndex": 3,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                      "alcohol_item",
+                      "color_dark_purple",
+                      "drink_item",
+                    ],
+                  },
+                  "Jellonip.RRRR_Handmade_LoungeWear": {
+                    "Name": "Handmade_LoungeWear",
+                    "Displayname": "{{i18n:object.LoungeWear.name}}",
+                    "Description": "{{i18n:object.LoungeWear.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": 0,
+ 
+                    "Texture": "Mods/Jellonip.RRRR/Objects",
+                    "SpriteIndex": 4,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                  }, 
+
+       },
+      },
+
+  {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+            "Hair_Styling_Kit": "388 1 335 1 428 1/Home/Jellonip.RRRR_Hair_Kit/false/null",
+            "Clothing_Ticket": "388 1/Home/Jellonip.RRRR_Clothing_Ticket/false/null",
+
+                  },
+                },
+
+
+  ],
+  }

@@ -1,0 +1,75 @@
+1.You made some choices on a Friday night       ！！！40%概率发生！！！
+时间：任意年 任意季节 周五 16:00~24:00
+地点：巴士站
+其他条件：Sebastian3心
+
+2.Surprise for the farmer
+时间：第一年 任意日期 6:00~8：00
+地点：农场
+其他要求：Sebastian4心
+
+3.Abigail's moves
+时间：第一年 任意日期 8:00~12:00
+地点：农场
+其他要求：Abigail5心
+
+4.Sebastian & Farmer talk
+时间：第一年春 20日 19:00~23:00
+地点：山区
+其他条件：无
+
+5.Sebastian & the sad anniversary
+时间：第一年夏 24日 12:00~17:00
+地点：海边
+其他条件：无
+
+6.Sam is NOT happy with his friends
+时间：第一年任意季节 任意日期 10:00~18:00
+地点：海边
+其他条件：需要已触发事件3
+
+7.Sam talks about Sebastian's music
+时间：第一年春 18日 10:00~19:00
+地点：山姆家
+其他条件：无
+
+8.Abigail comes to visit and finds something shocking
+时间：第一年 任意季节 任意日期 6:00~12:00
+地点：自己家 满足条件起床自动触发
+其他条件：Sebastian6心；Abigail6心；在这里请保持房屋在升级了一次的状态！！！！只能一次！
+
+9.Outside the Saloon on a Friday...
+时间：第一年夏 26日 20:00~23:00
+地点：城镇
+其他条件：无
+
+10.Your reward for 10 hearts
+时间：任意年 任意季节 任意日期 17:00~23:00
+地点：澡堂
+其他条件：Sebastian10心
+
+11.Robin notices your relationship with Sebastian
+时间：任意年 任意季节 任意日期 任意时间
+地点：木工店
+其他条件：Sebastian6心
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

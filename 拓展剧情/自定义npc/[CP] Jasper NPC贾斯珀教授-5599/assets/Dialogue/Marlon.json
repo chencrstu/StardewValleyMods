@@ -1,0 +1,162 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedALL, Yoshimax.BefriendMarlon, Wolf.Marlon": false
+            },
+            "Entries": {
+                "Mon": "嘿，祝你探索矿洞的时候好运，孩子。记得要带上足够的食物。那里的怪物能让你一击毙命。",
+                "Tue": "有时候克林特会来帮忙修理我们的剑。他是个多才多艺的家伙。#$b#只可惜他感觉不到自己的价值。",
+                "Wed": "嘿，孩子。如果你在矿洞里发现什么古老的工具装备的话，可以把它们带给我。#$b#不用担心它们的状态——我们会把它们修复如新，然后上架出售。#$b#你问怎么出售？我们有遍布共和国的邮递服务。",
+                "Thu": "你最近怪物斩杀得如何？吉尔一直在统计你的杀怪总数。#$b#你问我们是怎么知道的？其实冒险家公会有着神秘的运作方式。",
+                "Fri": "我是怎么丢掉眼睛的？这么说吧。在某次狭路相逢时，我本打算转身离去，但我的对手做出了相反的举动。#$b#要是你想听完整的故事……你得先证明自己。",
+                "Sat": "和大多数镇民不同，我不会被那些小礼物收买。#$b#只有在矿洞里证明自己，你才有可能得到我的认可。",
+                "Sun": "你大概已经注意到了，这些矿洞十分不可思议，@。#$b#我的好朋友，也就是加斯帕教授，他认为这些矿洞是有生命的。听起来的确像是幻想，但那里的能量能让我汗毛直竖。#$b#务必小心谨慎，并且心怀敬畏。",
+                "GreenRain": "这场雨太奇怪了，也让人非常不安。如果我是你的话，我一定会小心的，孩子。说不定它会把你变成别的什么东西。",
+                "GreenRain_2": "你没有出门淋到雨吧，孩子？你猜史莱姆是怎么产生的？$2#$b#啊，放轻松，@。我只是在和你开玩笑。$1",
+                "spring_12_1": "你期待彩蛋大寻宝吗，@？注意点阿比盖尔。她是地区彩蛋大寻宝的冠军！",
+                "spring_12_2": "希望你迄今为止的洞穴探险和猎杀怪物技巧都能在明天的彩蛋大寻宝里发挥作用。",
+                "spring_23_1": "花舞节就在明天。我会去的——希望你也会去！",
+                "spring_23_2": "明天的花舞节上见。#$b#年轻的时候，我也是个相当灵活的舞者。啊，不过也许有朝一日我也会有跳舞的机会。",
+                "summer_Mon": "啊，夏天。这里的空气简直让人窒息。有时候在夜间巡逻结束以后，我会去湖里游个小泳。#$b#噢，要是你想撞上我的话，你得起得特别早才行，@！",
+                "summer_Tue": "你想过为什么星露谷里有宵禁吗，@？因为怪物会在午夜以后出没。#$b#我和吉尔会在小镇上巡逻，努力在天亮之前解决掉那些怪物。",
+                "summer_Wed": "夜间巡逻能让老吉尔打起精神。要是不管他的话，他能睡上一整天。#$b#我吗？我一般只睡六个小时。再久就要做噩梦了。",
+                "summer_Thu": "尽管地底深处仍在燃烧，Joja公司还是希望再次开放矿洞。#$b#他们想榨干她的最后一丝价值。由巴啊，或许我应该放任那些人动手。真希望虚空会把他们吞噬。",
+                "summer_Fri": "当你进入岩浆层的时候要小心，@。那起大火燃烧了近三十年，而且徘徊其间的影子怪物可不是自然出现的。#$b#它们曾经是谁——或者曾经是什么？我们也说不清楚。但它们的袭击可以夺走你的性命。",
+                "summer_Sat": "我的一个朋友养过史莱姆当宠物，直到它吃了邻居家的狗。",
+                "summer_Sun": "今天真是美好的一天。我都不想呆在地下弄脏自己的衣服了。#$b#要是我再年轻个几岁，我就要去海滩上闲逛。先吃个冰激凌，再一头扎进海水里。",
+                "fall_Mon": "随着夜晚变得更加漫长，那些生物也越来越不谨慎了。昨天我抓住了一只傀儡，它想从山间的道路偷偷溜到镇上。#$b#它们是虚空的玩具。它们本来没有生命，却被赋予了生命。只有在死亡以后，它们才会回到原来的地方。",
+                "fall_Tue": "你知道拉斯莫迪斯吗？他保护着山谷不受超自然力量的威胁，而我和吉尔则对付现实中的怪物。",
+                "fall_Wed": "我的家族世世代代都保护着星露谷。有朝一日，我的侄子也会接过这份责任。如果他有这个意愿。#$b#要是他不愿意，我只能希望其他人能举起手中的剑，肩负起这份职责。",
+                "fall_Sat": "你有没有想象过和兄弟姐妹一起长大是什么感觉？#$b#哈，我搬来这里是为了寻找宁静。当然，是除了怪物以外。",
+                "fall_18_2": "今天我得去和某人谈谈。但我毕竟是个怪物猎杀者，所以我有点鼓不起勇气。#$b#我知道这很傻。我是说，我已经随时准备好举起手中的剑……但是在内心深处……#$b#这么说吧，只要有剑在手，我可以随时行动。",
+                "winter_Mon": "夜晚的巡逻开始让我有些力不从心。我想我终于感觉到了年岁的衰老。",
+                "winter_Tue": "冬天虚空更加躁动不安，有更多怪物试图突破地表。昨天我们竟然在海滩上发现了岩石蟹！#$b#想象一下，万一贾斯和文森特在那里怎么办？虽然是凌晨四点发生的事，但也足够可怕了！",
+                "winter_Wed": "虚空到底是真是存在的，还是只是一个比喻？这都取决于你，@。但毋庸置疑的是，星露谷里有什么东西正在污染野生的生命。#$b#我甚至还听说过虚空兔子的传言。不过我觉得那只是个玩笑——至少我希望是！",
+                "winter_Thu": "噢，你知道吗？我最近在考虑退休的事情。尤其是在冬天。我的腿让我想起了从前的回忆。#$b#不过很少有冒险者能安然退休颐养天年，@。我想总有一天，某只影子怪物会夺走我的呼吸。",
+                "winter_Fri": "我没有看起来这么老，孩子。要是你和我一样见过那么多怪物，你的头发也会变白的。",
+                "summer_Mon_inlaw_Jasper": "替我向我亲爱的朋友加斯帕问好。我和吉尔都很怀念他每周的拜访。#$b#但我也为他感到高兴。每个冒险者都应该有家可归。",
+                "summer_Mon_inlaw_Denver": "希望我的侄子对你很好，孩子。他是个不错的小伙子，很高兴他能找到属于自己的灵魂伴侣。",
+                "DwarfVisit": "我看到有人在午夜时分离开了你的农场。#$b#你最近有什么深夜的访客吗？#$b#没有吗？噢……那你最好注意着点，@。有什么人在鬼鬼祟祟……",
+                "JasperEngaged": "所以，我听说你订婚了——我们亲爱的教授一定会为了你成为一个忠诚的人。#$b#恭喜你，@。这是送你的订婚礼物。希望里面会有有用的东西！[275]"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+                "fall_Wed": "你见过我的侄子丹佛了，对吧？是啊，我知道他脾气很暴躁。不过俗话说得好，会咬人的狗不叫。#$b#他是个好孩子，真的。"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedALL": false,
+                "Hearts:Denver": "1,2"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+                "fall_Thu": "丹佛很擅长剑术。那孩子非常忠诚，像犬类一样意志坚定。说不定我很快会让他参与夜间巡逻。",
+                "winter_Thu": "丹佛是个好小子，我答应了我妹妹会照顾好他。是的，孩子，我有一个妹妹。#$b#她选择了城市的生活。不过丹佛嘛，我想他感受到了野性的召唤。",
+                "summer_Sat": "之前我找到了一卷旧录音样带——你知道丹佛还在乐队里表演过吗？#$b#听起来真不坏。那孩子还是有点天赋的。"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedALL": false,
+                "Hearts:Denver": "5,6,7,8"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+                "fall_Thu": "你知道狼的一生只有一个伴侣吗？他们是重视家庭的犬科动物。#$b#你问我为什么要跟你说这个？噢，没什么特别理由。",
+                "winter_Thu": "嘿，孩子，你能替我照看好丹佛吗？要是他出了什么事，他的妈妈会活活剥了我的皮。#$b#虽然我和很多怪物都战斗过，但她比它们全加起来还要吓人。",
+                "summer_Sat": "啊，要是丹佛一直这么前进下去的话，说不定我还真能退休。#$b#你对他产生了积极的影响，@。"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedALL": false,
+                "Relationship:Denver": "Dating"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+                "spring_Wed": "还在学校的时候，我和玛妮曾经是朋友。是的，我比她年长几岁——但我们从鹈鹕镇来的孩子总喜欢呆在一起。#$b#后来我们旧疏远了。不过能和她在花舞节聊上几句的感觉还是很好。",
+                "winter_Sat": "在那些漫长而寒冷的夜晚，我总会感觉到孤独，孩子。吉尔是个好同伴——在他还醒着的时候。不过你知道的吧，这不是一码事。",
+                "winter_Sun": "当一名怪物猎杀者的生活是孤独的。我不愿意安定下来，结婚生子，让自己的家人成天担心爸爸会不会哪天回不了家。#$b#对不起，孩子。在这些漫长的冬夜，虚空会让你的内心充满悔恨。#$b#有些事我早该说出口，但我已经错过了开口的机会。"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedALL": false,
+                "Hearts:Marnie": "6,7,8,9,10"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon, Characters/Dialogue/MarlonFay",
+            "Entries": {
+                "spring_Wed": "$1 Marl_Rumor#告诉我，@。有关玛妮女士和镇长的传言是真的吗？#$b#噢，没什么特别原因。我只是好奇。$k#$e#春天是重新开始的季节，对吗，@？不过要是她和刘易斯在一起过得开心，我又有什么立场破坏她的幸福呢？#$b#我只是一个充满悔恨的老家伙，后悔自己没有早点说出自己的心意。只是这样而已。"
+            },
+            "When": {
+                "Hearts:Marnie": "8,9,10"
+            }
+        },
+        //Compatibility with Added Dialogue for SVE, Needs to be checked through before releasing.
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarlonFay",
+            "Entries": {
+                "Mon4": "嘿，祝你探索矿洞的时候好运。记得要带上足够的食物。那里的怪物能让你一击毙命。",
+                "Tue4": "有时候克林特会来帮忙修理我们的剑。他是个多才多艺的家伙。#$b#只可惜他感觉不到自己的价值。",
+                "Wed2": "如果你在矿洞里发现什么古老的工具装备的话，可以把它们带给我。#$b#不用担心它们的状态——我们可以把它们修复如新。",
+                "Thu4": "你最近怪物斩杀得如何？吉尔一直在统计你的杀怪总数。#$b#你问我们是怎么知道的？其实冒险家公会有着神秘的运作方式。",
+                "Fri2": "我是怎么丢掉眼睛的？这么说吧。在某次狭路相逢时，我本打算转身离去，但我的对手做出了相反的举动。#$b#要是你想听完整的故事……你得先证明自己。",
+                "Sun4": "你大概已经注意到了，这些矿洞十分不可思议，@。#$b#我的好朋友，也就是加斯帕教授，他认为这些矿洞是有生命的。听起来的确像是幻想，但那里的能量能让我汗毛直竖。#$b#务必小心谨慎，并且心怀敬畏。",
+                "spring_23_1": "花舞节就在明天。我会去的——希望你也会去！",
+                "spring_23_2": "明天的花舞节上见。#$b#年轻的时候，我也是个相当灵活的舞者。#$b#现在我只擅长与剑共舞……$2",
+                "summer_Mon2": "啊，夏天。这里的空气简直让人窒息。有时候在夜间巡逻结束以后，我会去河里游个小泳。#$b#噢，要是你想撞上我的话，你得在黎明之前起床才行，@！",
+                "summer_Wed4": "夜间巡逻能让老吉尔打起精神。要是不管他的话，他能睡上一整天。#$b#我吗？我一般只睡六个小时。再久就要做噩梦了。",
+                "summer_Fri4": "当你进入岩浆层的时候要小心，@。那起大火燃烧了近三十年，而且徘徊其间的影子怪物可不是自然出现的。它们的袭击可以夺走你的性命。",
+                "summer_Sat4": "我的一个朋友养过史莱姆当宠物，直到它吃了邻居家的狗。",
+                "summer_Sun4": "今天真是美好的一天。我都不想呆在地下弄脏自己的衣服了。#$b#要是我再年轻个几岁，我就要去海滩上闲逛，再一头扎进海水里。",
+                "fall_18_2": "今天我得去和某人谈谈。但我毕竟是个怪物猎杀者，所以我有点鼓不起勇气。#$b#我知道这很傻。我是说，我已经随时准备好举起手中的剑……但是在内心深处……#$b#这么说吧，只要有剑在手，我可以随时行动。",
+                "winter_Mon4": "夜晚的巡逻开始让我有些力不从心。我想我终于感觉到了年岁的衰老。",
+                "winter_Tue4": "冬天虚空更加躁动不安，有更多怪物试图突破地表。昨天我们竟然在海滩上发现了岩石蟹！",
+                "winter_Thu4": "噢，你知道吗？我最近在考虑退休的事情。尤其是在冬天。我的腿让我想起了从前的回忆。#$b#不过很少有冒险者能安然退休颐养天年，@。我想总有一天，某只影子怪物会夺走我的呼吸。",
+                "winter_Fri4": "我没有看起来这么老，@。要是你和我一样见过那么多怪物，你的头发也会变白的。",
+                "winter_Sun8": "当一名怪物猎杀者的生活是孤独的。我不愿意安定下来，结婚生子，让自己的家人成天担心爸爸会不会哪天回不了家。#$b#对不起，@。在这些漫长的冬夜，虚空会让你的内心充满悔恨。",
+                "summer_Mon_inlaw_Jasper": "替我向我亲爱的朋友加斯帕问好。我和吉尔都很怀念他每周的拜访。#$b#但我也为他感到高兴。每个冒险者都应该有家可归。",
+                "summer_Mon_inlaw_Denver": "希望我的侄子对你很好，孩子。他是个不错的小伙子，很高兴他能找到属于自己的灵魂伴侣。",
+                "DwarfVisit": "我看到有人在午夜时分离开了你的农场。#$b#你最近有什么深夜的访客吗？#$b#没有吗？噢……那你最好注意着点，@。有什么人在鬼鬼祟祟……",
+                "JasperEngaged": "所以，我听说你订婚了——我们亲爱的教授一定会为了你成为一个忠诚的人。#$b#恭喜你，@。这是送你的订婚礼物。希望里面会有有用的东西！[275]"
+            },
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedALL"
+            }
+        },
+        {   //This patch was specifially added because one of my players didn't like to be called "kid". No need to translate!
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "When": {
+                "PlayerName": "Sunny, Sunshine"
+            },
+            "Entries": {
+                "Mon": "Good luck in the mines, lad. Remember, make sure you take in enough food. There's creatures in there that'll knock you down in a heartbeat.^Good luck in the mines, lass. Remember, make sure you take in enough food. There's creatures in there that'll knock you down in a heartbeat.",
+                "Wed": "Hey lad, if you find any old tools or equipment in the mines, bring them to me.^Hey lass, if you find any old tools or equipment in the mines, bring them to me.#$b#Don't worry too much about the state of them - we'll get them fixed up good as new and sell them.#$b#How? Well we've got a mail-order system going across the republic.",
+                "winter_Fri": "I'm not as old as I look, lad. You see as many monsters as I have? Your hair will turn white too.^I'm not as old as I look, lass. You see as many monsters as I have? Your hair will turn white too.",
+                "winter_Sat8": "On these long, cold nights, I can't help but feel a bit lonely, lad. Gil's decent company - when he's awake. But it ain't the same, you know?^On these long, cold nights, I can't help but feel a bit lonely, lass. Gil's decent company - when he's awake. But it ain't the same, you know?",
+                "winter_Sun8": "It's a lonely life, being a monster hunter. Don't wanna settle down, get married, have kids. Leave them wondering if dad's gonna come home.#$b#Sorry, lad. On these long winter nights, the void can fill your heart with regret.^Sorry, lass. On these long winter nights, the void can fill your heart with regret.#$b#There's something I should've said, once. But that ship has sailed.",
+            }
+        }
+    ]
+}

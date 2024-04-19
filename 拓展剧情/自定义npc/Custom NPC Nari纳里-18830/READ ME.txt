@@ -1,0 +1,25 @@
+*Use Translator*
+
+(-) / Event ID / heart / Location / Time / Prior event / Other
+
+¡ù In the (-) part, % is included in the part that requires attention, and # is included when conversations with characters and events are restricted.
+¡ù - means there is no such condition.
+
+
+(-) / 9654901 / 0 / Backwoods / 14:00 to 24:00 / - / -
+
+(-) / 9654902 / 4 / Mountain / 6:00 to 11:00 / - / - 
+
+(-) / 9654903 / 4 / Mountain / 12:00 to 16:00 / Event 9654902 / -
+
+(-) / 9654904 / 4 / Mountain / 17:00 to 20:00 / Event 9654903 / -
+
+(-) / 9654905 / 6 / Mountain / - / Event 9654901 / -
+
+#% / 9654906 / 8 / Forest / 16:00-20:00 / Event 9654904 / -
+
+% / 9654907 / 8 / Beach / 8:00¨C16:00 / Event 9654906 / Sunny Weather
+
+#% / 9654908 / 10 / Mountain / 24:00 to 26:00 (from 12:00 to 2:00 a.m.) / Event 9654905, 9654907 / Have 'Sugar' in your inventory
+
+(-) / 9654900 / ? - / Mountain / - / Event 9654906, 9654907, 9654908 'unseen' state / Spring 25th, has 'Pork Poppy Sea Muffin' in inventory

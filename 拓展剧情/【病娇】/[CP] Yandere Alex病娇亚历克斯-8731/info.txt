@@ -1,0 +1,22 @@
+
+Hello! 
+
+Installation:
+- Make sure you have "SMAPI", "Content Patcher", and "Unique Courtship" installed
+- Unzip the file
+- Open your "Stardew Valley\Mods" folder and drop the folder called "[CP] Yandere Alex Dialogue Expansion" there
+- That's it!
+
+NOTE: To see solely the yandere dialogue using "Unique Courtship", open the mod file and go to the config.json in "Unique Courtship" and change "enableAlex" from "enabled" to "disabled"
+
+
+
+欢迎！
+
+安装指南：
+- 确保您已经安装了SMAPI、Content Patcher以及Unique Courtship三个前置MOD。
+- 解压文件。
+- 打开"Stardew Valley\Mods"文件夹，将解压后名为"[CP] Yandere Alex Dialogue Expansion"的文件放入。
+- 完成！
+
+注意：若要看到全部使用"Unique Courtship"的对话，请打开"Unique Courtship"文件夹中的config.json，并将"enableAlex"的属性从"enabled"改成"disabled"。

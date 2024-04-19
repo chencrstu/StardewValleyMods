@@ -1,0 +1,186 @@
+{
+  "Format": "2.0.0",
+  "CustomLocations": [
+
+    {
+         "Name": "Custom_WhiteLinusRoom",
+         "FromMapFile": "assets/Maps/WhiteLinusRoom.tbin",
+         "MigrateLegacyNames": [ "LinusRoom" ]
+    },
+    {
+         "Name": "Custom_WhiteLinusRoom_Event",
+         "FromMapFile": "assets/Maps/WhiteLinusRoom_Event.tbin",
+         "MigrateLegacyNames": [ "LinusRoomEvent" ]
+    },
+  ],
+
+
+  "Changes": [
+
+
+  //Basic Info
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/Characters.json",
+    },
+
+  //Dialogue
+
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Linus, Characters/Dialogue/MarriageDialogueLinus",
+      "FromFile": "assets/Dialogue/EmptyJson.json"   
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/MarriageDialogueLinus.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/Linus.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/ExtraDialogue.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/Strings.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/Rainy.json",
+    },
+
+  //Data
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/Events.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/Mail.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/EngagementDialogue.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/MoviesReactions.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/Festivals.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/NPCGiftTastes.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/MapStrings.json",
+
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/SpecialOrderBoard.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Data/Quests.json",
+    },
+
+  //Schedule
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Schedules/Schedule.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Schedules/ScheduleDialogue.json",
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "assets/Schedules/Animation.json",
+    },
+
+  //Character Sprite
+
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Linus, Characters/Linus_Winter",
+      "FromFile": "assets/Characters/Linus.png"   
+    },
+
+  //Event Temp Sprite
+
+    {
+      "Action": "Load",
+      "Target": "Characters/WildRabbitFirst, Characters/WildRabbitSecond",
+      "FromFile": "assets/Characters/Temp/WildRabbit.png"
+    },
+
+  //Portrait
+
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/Linus",
+      "FromFile": "assets/Portraits/Linus.png",
+      "When": {"HasFile:assets/Portraits/Linus.png": "true"}   
+    },
+
+  //Tent Map
+
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Tent",
+      "AddWarps": ["2 1 Custom_WhiteLinusRoom 10 11"],
+      "MapTiles": [
+        {
+          "Position": { "X": 2, "Y": 2 },
+          "Layer": "Back",
+          "SetProperties": {"TouchAction": "MagicWarp Custom_WhiteLinusRoom 10 11"}
+        },
+        {
+          "Position": { "X": 3, "Y": 2 },
+          "Layer": "Back",
+          "SetProperties": {"TouchAction": "MagicWarp Custom_WhiteLinusRoom 10 11"}
+        }
+      ]
+    },
+
+  //Spouse Room Map
+
+    {
+      "Action": "Load",
+      "Target": "Maps/spouseRoomLinus",
+      "FromFile": "assets/Maps/spouseRoomLinus.tbin"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/spousePatioLinus",
+      "FromFile": "assets/Maps/spousePatioLinus.tbin"
+    },
+
+  ]
+}
+    

@@ -1,0 +1,58 @@
+{
+    "Name": "Romanceable Rasmodius Redux Revamped",
+    "Author": "Written by Jellonip, WerewolfMaster, haywrites, PaintedParrot",
+    "Version": "1.8.19",
+    "Description": "Revamped version of 'Romanceable Rasmodius' that adds many new events and dialogue for a full romance experience. Requires Stardew Valley Expanded.",
+
+    "UniqueID": "Jellonip.RRRR",
+    "UpdateKeys": ["Nexus:16893"],
+    "Dependencies": [
+        {
+		  "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+		  "IsRequired": true,
+        },
+        {
+            "UniqueID": "aedenthorn.CustomFixedDialogue",
+            "IsRequired": false,
+          },
+          {
+            "UniqueID": "datamancer.CustomFixedDialogue",
+            "IsRequired": false,
+          },
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "IsRequired": true,
+          },
+        {
+            "UniqueID": "TheMightyAmondee.CustomTokens",
+            "IsRequired": true,
+        },
+        {
+            "UniqueID": "PurrplingCat.CustomGiftDialogue",
+            "IsRequired": false,
+        },
+        {
+            "UniqueID": "Parrot.RomRas",
+            "IsRequired": false,
+        },
+        {
+            "UniqueID": "gizzymo.canonfriendlyexpansion",
+            "IsRequired": false,
+        },
+        {
+            "UniqueID": "Omegasis.HappyBirthday",
+            "IsRequired": false,
+        },
+        {
+            "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+            "IsRequired": false,
+        },
+        {
+            "UniqueID": "Poltergeister.SeasonalCuteSpritesSVE",
+            "IsRequired": false,
+        }
+     ],
+    "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    }
+ }

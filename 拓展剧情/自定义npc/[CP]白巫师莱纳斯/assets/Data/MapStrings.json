@@ -1,0 +1,36 @@
+{
+  "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "Linus.Room.1": "{{i18n:MapStrings.Linus.Room.1}}",
+        "Linus.Room.2": "{{i18n:MapStrings.Linus.Room.2}}",
+        "Linus.Room.3": "{{i18n:MapStrings.Linus.Room.3}}",
+        "Linus.Room.4": "{{i18n:MapStrings.Linus.Room.4}}",
+        "Linus.Room.5": "{{i18n:MapStrings.Linus.Room.5}}",
+        "Linus.Room.6": "{{i18n:MapStrings.Linus.Room.6}}",
+        "Linus.Room.7": "{{i18n:MapStrings.Linus.Room.7}}",
+        "Linus.Room.8": "{{i18n:MapStrings.Linus.Room.8.Random.{{Random: 1, 2, 3, 4, 5}}}}",
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Strings/Notes",
+      "Entries": {
+        "0": "{{PlayerName}}{{i18n:Note.0.0}} {{PlayerName}}. {{i18n:Note.0.1}} {{PlayerName}}, {{i18n:Note.0.2}}",
+        "1": "{{i18n:Note.1}}",
+        "2": "{{i18n:Note.2}}",
+        "3": "{{i18n:Note.3}}",
+        "Missing": "{{i18n:Note.Missing}}"
+      },
+      "When":{
+          "Relationship:Linus": "Married",
+          "LocationName": "FarmHouse",
+      },
+      "Update": "OnLocationChange"
+    },
+  ]
+}

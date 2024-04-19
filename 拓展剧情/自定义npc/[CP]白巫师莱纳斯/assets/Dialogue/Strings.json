@@ -1,0 +1,114 @@
+{
+  "Changes": [
+
+      {
+        "Action": "EditData",
+        "Target": "Strings/StringsFromCSFiles",
+        "Entries":
+          {
+
+          "Game1.cs.2782": "{{i18n:StringsFromCSFiles.Game1.cs.2782}}",
+          "NPC.cs.4406": "{{i18n:StringsFromCSFiles.NPC.cs.4406}}",
+          "NPC.cs.4439": "{{i18n:StringsFromCSFiles.NPC.cs.4439}}",
+          "NPC.cs.4440": "{{i18n:StringsFromCSFiles.NPC.cs.4440}}",
+          "NPC.cs.4441": "{{i18n:StringsFromCSFiles.NPC.cs.4441}}",
+          "NPC.cs.4444": "{{i18n:StringsFromCSFiles.NPC.cs.4444}}",
+          "NPC.cs.4447": "{{i18n:StringsFromCSFiles.NPC.cs.4447}}",
+          "NPC.cs.4448": "{{i18n:StringsFromCSFiles.NPC.cs.4448}}",
+          "NPC.cs.4449": "{{i18n:StringsFromCSFiles.NPC.cs.4449}}",
+          "NPC.cs.4452": "{{i18n:StringsFromCSFiles.NPC.cs.4452}}",
+          "NPC.cs.4455": "{{i18n:StringsFromCSFiles.NPC.cs.4455}}",
+          "NPC.cs.4462": "{{i18n:StringsFromCSFiles.NPC.cs.4462}}",
+          "NPC.cs.4463": "{{i18n:StringsFromCSFiles.NPC.cs.4463}}",
+          "NPC.cs.4474": "{{i18n:StringsFromCSFiles.NPC.cs.4474}}",
+          "NPC.cs.4481": "{{i18n:StringsFromCSFiles.NPC.cs.4481}}",
+          "NPC.cs.4486": "{{i18n:StringsFromCSFiles.NPC.cs.4486}}",
+          "NPC.cs.4488": "{{i18n:StringsFromCSFiles.NPC.cs.4488}}",
+          "NPC.cs.4489": "{{i18n:StringsFromCSFiles.NPC.cs.4489}}",
+          "NPC.cs.4490": "{{i18n:StringsFromCSFiles.NPC.cs.4490}}",
+          "NPC.cs.4496": "{{i18n:StringsFromCSFiles.NPC.cs.4496}}",
+          "NPC.cs.4497": "{{i18n:StringsFromCSFiles.NPC.cs.4497}}",
+          "NPC.cs.4498": "{{i18n:StringsFromCSFiles.NPC.cs.4498}}",
+          "NPC.cs.4499": "{{i18n:StringsFromCSFiles.NPC.cs.4499}}",
+          "NPC.cs.4500": "{{i18n:StringsFromCSFiles.NPC.cs.4500}}",
+          "PathFindController.cs.4579": "{{i18n:StringsFromCSFiles.PathFindController.cs.4579}}",
+
+          },  
+        "When": {
+           "Relationship:Linus": "Married"
+           }
+      },
+
+      {
+      "Action": "EditData",
+      "Target": "Strings/Events",
+      "Entries": {
+        "HaveBabyQuestion": "{{i18n:Events.HaveBabyQuestion}}",
+        "HaveBabyQuestion_Adoption": "{{i18n:Events.HaveBabyQuestion_Adoption}}"
+         },
+         "When": {
+          "Relationship:Linus": "Married"
+         }
+      },
+
+
+//Birthday Gift Reaction
+
+
+
+        {
+        "Action": "EditData",
+        "Target": "Strings/StringsFromCSFiles",
+        "Entries":
+          {
+
+           "NPC.cs.4275": "{{i18n:BirthdayGift.Love.Heart0}}",
+           "NPC.cs.4277": "{{i18n:BirthdayGift.Like.Heart0}}",
+           "NPC.cs.4279": "{{i18n:BirthdayGift.Dislike.Heart0}}",
+          "NPC.cs.4281": "{{i18n:BirthdayGift.Neutral.Heart0}}",
+          },   
+
+        "When": {
+        "Season": "Winter",
+        "Day": "3",
+           }
+        },
+
+        {
+        "Action": "EditData",
+        "Target": "Strings/StringsFromCSFiles",
+        "Entries":
+          {
+           "NPC.cs.4275": "{{i18n:BirthdayGift.Love.Heart4}}",
+           "NPC.cs.4277": "{{i18n:BirthdayGift.Like.Heart4}}",
+           "NPC.cs.4279": "{{i18n:BirthdayGift.Dislike.Heart4}}",
+           "NPC.cs.4281": "{{i18n:BirthdayGift.Neutral.Heart4}}",
+          },   
+
+        "When": {
+        "Season": "Winter",
+        "Day": "3",
+        "Hearts:Linus": "4,5"
+           }
+         },
+
+        {
+        "Action": "EditData",
+        "Target": "Strings/StringsFromCSFiles",
+        "Entries":
+          {
+           "NPC.cs.4275": "{{i18n:BirthdayGift.Love.Married}}",
+           "NPC.cs.4277": "{{i18n:BirthdayGift.Like.Married}}",
+           "NPC.cs.4279": "{{i18n:BirthdayGift.Dislike.Married}}",
+           "NPC.cs.4281": "{{i18n:BirthdayGift.Neutral.Married}}",
+          },   
+
+        "When": {
+        "Season": "Winter",
+        "Day": "3",
+        "Relationship:Linus": "Married"
+           }
+        },
+
+  ]
+}

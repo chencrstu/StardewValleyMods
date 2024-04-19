@@ -1,0 +1,12 @@
+{
+  "Name": "[CP] Wellwick",
+  "Author": "Jyangnam",
+  "Version": "1.0",
+  "Description": "add newcomers.",
+  "UniqueID": "Jyangnam.Wellwick",
+  "MinimumApiVersion": "2.9",
+  "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "1.6.1"
+  }
+}

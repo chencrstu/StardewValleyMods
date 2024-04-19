@@ -1,0 +1,1521 @@
+//Town comments after marriage
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Linus",
+			"Entries": {
+				"Mon4_inlaw_Wizard": "{{i18n:Mon4_inlaw_Wizard_Linus}}",
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Linus}}",
+				"summer_Tue10_inlaw_Wizard": "{{i18n:summer_Tue10_inlaw_Wizard_Linus}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Linus}}",
+				"winter_Fri10_inlaw_Wizard": "{{i18n:winter_Fri10_inlaw_Wizard_Linus}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Linus}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Linus}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Linus}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Linus}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Linus}}",
+			},
+			//Marlon
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarlonFay",
+			"Entries": {
+				"Sat4_inlaw_Wizard": "{{i18n:Sat4_inlaw_Wizard_Marlon}}",
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Marlon}}",
+				"summer_Mon10_inlaw_Wizard": "{{i18n:summer_Mon10_inlaw_Wizard_Marlon}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Marlon}}",
+				"winter_Tue10_inlaw_Wizard": "{{i18n:winter_Tue10_inlaw_Wizard_Marlon}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Marlon}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Marlon}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Marlon}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Marlon}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Marlon}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Marlon}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Marlon}}",
+				"engageA": "{{i18n:engageA_Marlon}}",
+				"engageB": "{{i18n:engageB_Marlon}}",
+				"marriedA": "{{i18n:marriedA_Marlon}}",
+				"marriedB": "{{i18n:marriedB_Marlon}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Marlon}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Marlon}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Marlon}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Marlon}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Marlon}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Marlon}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Marlon}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Marlon}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Marlon}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Marlon}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Marlon}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Marlon}}",
+			},
+		},
+		//Camilla Gossip
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Camilla",
+			"When": {
+				"Relationship:Wizard": "Married"
+			},
+			"Entries": {
+				"spring_16": "{{i18n:DesertFestival_Camilla.RRRR}}",
+				"Mon_inlaw_Wizard": "{{i18n:MondayGos_Camilla_{{Random: {{Range:1, 36}}}}}} ",
+				"Thu_inlaw_Wizard": " {{i18n:ThursdayGos_Camilla_{{Random:{{Range:1,5}}}}}}",
+				"paranoidMagnus": "I heard about what happened, dear.$2#$b#I'll lend Razzy my assistance, of course, so no need to worry your pretty little head.$1#$b#Now, if you can get him to calm down a bit, I would be grateful.$3#$e#I don't need him messaging me every hour to fish for an update.$3",
+			}
+		},
+
+		//Camilla Child Gossip (Have biological children with Magnus) Note: Repeats the above dialogue but also enables the ones specifically about having one child.
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Camilla",
+			"When": {
+				"HasSeenEvent": "64780031",
+				"Relationship:Wizard": "Married"
+			},
+			"Entries": {
+				"Mon_inlaw_Wizard": "{{Random: {{i18n:MondayGos_HasChild1_{{TypeChildCallSingle}}_Camilla_1}} @@ {{i18n:MondayGos_HasChild1_Camilla_2}} @@ {{i18n:MondayGos_HasChild1_Camilla_3}} @@ {{i18n:MondayGos_HasChild1_Camilla_4}} @@ {{i18n:MondayGos_Camilla_1}} @@ {{i18n:MondayGos_Camilla_2}} @@ {{i18n:MondayGos_Camilla_3}} @@ {{i18n:MondayGos_Camilla_4}} @@ {{i18n:MondayGos_Camilla_5}} @@ {{i18n:MondayGos_Camilla_6}} @@ {{i18n:MondayGos_Camilla_7}} @@ {{i18n:MondayGos_Camilla_8}} @@ {{i18n:MondayGos_Camilla_9}} @@ {{i18n:MondayGos_Camilla_10}} @@ {{i18n:MondayGos_Camilla_11}} @@ {{i18n:MondayGos_Camilla_12}} @@ {{i18n:MondayGos_Camilla_13}} @@ {{i18n:MondayGos_Camilla_14}} @@ {{i18n:MondayGos_Camilla_15}} @@ {{i18n:MondayGos_Camilla_16}} @@ {{i18n:MondayGos_Camilla_17}} @@ {{i18n:MondayGos_Camilla_18}} @@ {{i18n:MondayGos_Camilla_19}} @@ {{i18n:MondayGos_Camilla_20}} @@ {{i18n:MondayGos_Camilla_21}} @@ {{i18n:MondayGos_Camilla_22}} @@ {{i18n:MondayGos_Camilla_23}} @@ {{i18n:MondayGos_Camilla_24}} @@ {{i18n:MondayGos_Camilla_25}} @@ {{i18n:MondayGos_Camilla_26}} @@ {{i18n:MondayGos_Camilla_27}} @@ {{i18n:MondayGos_Camilla_28}} @@ {{i18n:MondayGos_Camilla_29}} @@ {{i18n:MondayGos_Camilla_30}} @@ {{i18n:MondayGos_Camilla_31}} @@ {{i18n:MondayGos_Camilla_32}} @@ {{i18n:MondayGos_Camilla_33}} @@ {{i18n:MondayGos_Camilla_34}} @@ {{i18n:MondayGos_Camilla_35}} @@ {{i18n:MondayGos_Camilla_36}}  |inputSeparator=@@}}",
+			}
+		},
+		//Camilla Child Gossip (Have biological children with Magnus) Note: Repeats the above dialogue but also enables the ones specifically about having two kids.
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Camilla",
+			"When": {
+				"HasSeenEvent": "64780033",
+				"Relationship:Wizard": "Married"
+			},
+			"Entries": {
+				"Mon_inlaw_Wizard": "{{Random:{{i18n:MondayGos_HasChild2_Camilla_1}} @@ {{i18n:MondayGos_HasChild2_Camilla_2}} @@ {{i18n:MondayGos_HasChild2_{{TypeChildCall}}_Camilla_3}} @@ {{i18n:MondayGos_HasChild2_{{TypeChildCall}}_Camilla_4}} @@ {{i18n:MondayGos_HasChild2_Camilla_5}} @@ {{i18n:MondayGos_HasChild2_Camilla_6}} @@ {{i18n:MondayGos_Camilla_1}} @@ {{i18n:MondayGos_Camilla_2}} @@ {{i18n:MondayGos_Camilla_3}} @@ {{i18n:MondayGos_Camilla_4}} @@ {{i18n:MondayGos_Camilla_5}} @@ {{i18n:MondayGos_Camilla_6}} @@ {{i18n:MondayGos_Camilla_7}} @@ {{i18n:MondayGos_Camilla_8}} @@ {{i18n:MondayGos_Camilla_9}} @@ {{i18n:MondayGos_Camilla_10}} @@ {{i18n:MondayGos_Camilla_11}} @@ {{i18n:MondayGos_Camilla_12}} @@ {{i18n:MondayGos_Camilla_13}} @@ {{i18n:MondayGos_Camilla_14}} @@ {{i18n:MondayGos_Camilla_15}} @@ {{i18n:MondayGos_Camilla_16}} @@ {{i18n:MondayGos_Camilla_17}} @@ {{i18n:MondayGos_Camilla_18}} @@ {{i18n:MondayGos_Camilla_19}} @@ {{i18n:MondayGos_Camilla_20}} @@ {{i18n:MondayGos_Camilla_21}} @@ {{i18n:MondayGos_Camilla_22}} @@ {{i18n:MondayGos_Camilla_23}} @@ {{i18n:MondayGos_Camilla_24}} @@ {{i18n:MondayGos_Camilla_25}} @@ {{i18n:MondayGos_Camilla_26}} @@ {{i18n:MondayGos_Camilla_27}} @@ {{i18n:MondayGos_Camilla_28}} @@ {{i18n:MondayGos_Camilla_29}} @@ {{i18n:MondayGos_Camilla_30}} @@ {{i18n:MondayGos_Camilla_31}} @@ {{i18n:MondayGos_Camilla_32}} @@ {{i18n:MondayGos_Camilla_33}} @@ {{i18n:MondayGos_Camilla_34}} @@ {{i18n:MondayGos_Camilla_35}} @@ {{i18n:MondayGos_Camilla_36}}  |inputSeparator=@@}}",
+			}
+		},
+
+		  {	"Log": "Camilla Desert Festival Strings",
+		  "Action": "EditData",
+		  "Target": "Strings/Schedules/Camilla",
+		  "Entries": {
+			"spring_16": "{{i18n:DesertFestival_Camilla.RRRR}}"
+		  }
+		},
+		//Abigail
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries": {
+				"summer_Tue8_inlaw_Wizard": "{{i18n:summer_Tue8_inlaw_Wizard_Abby_Base}}",
+				"fall_Mon8_inlaw_Wizard": "{{i18n:fall_Mon8_inlaw_Wizard_Abby_Base}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Abby}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Abby_Base}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Abby_Base}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Abby_Base}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Abby_Base}}",
+				"AbbySagaDone": "{{i18n:AbbySagaDone_Abby_Base}}",
+				"saloonStroll": "{{i18n:saloonStroll_Abby_Base}}",
+			}
+		},
+		//Abby, post mature event.
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"When": {
+				"HasSeenEvent": "10000281",
+			},
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Abby_Saga}}",
+				"summer_Mon8_inlaw_Wizard": "{{i18n:summer_Mon8_inlaw_Wizard_Abby_Saga}}",
+				"fall_Mon8_inlaw_Wizard": "{{i18n:fall_Mon8_inlaw_Wizard_Abby_Saga}}",
+				"winter_Thu8_inlaw_Wizard": "{{i18n:winter_Thu8_inlaw_Wizard_Abby_Saga}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Abby_Saga}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Abby_Saga}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Abby_Saga}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Abby_Saga}}",
+				"fall_Wed8_inlaw_Wizard": "{{i18n:fall_Wed8_inlaw_Wizard_Abby.{{TypeChildCall}}.{{Age}}}}",
+			}
+		},
+		//Abby, post mature event and has biological children
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"When": {
+				"HasSeenEvent": "10000281",
+				"HasSeenEvent": "64780033",
+			},
+			"Entries": {
+				"spring_Fri8_inlaw_Wizard": "{{i18n:spring_Fri8_inlaw_Wizard_Abby.{{Stripe}}}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Abby",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"When": {
+				"Spouse": "Wizard"
+			},
+			"Entries": {
+			"Sat6": "{{i18n:NoFlirtAbby.Sat6}}",
+			"Mon8": "{{i18n:NoFlirtAbby.Mon8}}",
+			"summer_Mon8": "{{i18n:NoFlirtAbby.summer_Mon8}}",
+			"fall_Mon8": "{{i18n:NoFlirtAbby.fall_Mon8}}",
+			"winter_Sat6": "{{i18n:NoFlirtAbby.winter_Sat6}}",
+			
+			}
+		},
+
+		//Alex
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries": {
+				"summer_Wed8_inlaw_Wizard": "{{i18n:summer_Tue8_inlaw_Wizard_Alex}}",
+				"summer_Friday8_inlaw_Wizard": "{{i18n:summer_Fri8_inlaw_Wizard_Alex}}",
+				"winter_Mon8_inlaw_Wizard": "{{i18n:winter_Mon8_inlaw_Wizard_Alex}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Alex}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Alex}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Alex}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Alex}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Alex}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Alex",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Alex",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"Tue6": "{{i18n:NoFlirtAlex.Tue6}}",
+			"Fri8": "{{i18n:NoFlirtAlex.Fri8}}",
+			"summer_Wed8": "{{i18n:NoFlirtAlex.summer_Wed8}}",
+			
+		}
+	},
+		//Elliott
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Elliot}}",
+				"fall_Fri8_inlaw_Wizard": "{{i18n:fall_Fri8_inlaw_Wizard_Elliot}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Elliot}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Elliot}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Elliot}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Elliot}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Elliot}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Elliott",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"fall_Tue8": "{{i18n:NoFlirtElliott.fall_Tue8}}",
+			"fall_Wed8": "{{i18n:NoFlirtElliott.fall_Wed8}}",
+			
+		}
+	},
+		//Harvey
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Harvey}}",
+				"summer_Mon8_inlaw_Wizard": "{{i18n:summer_Mon8_inlaw_Wizard_Harvey}}",
+				"fall_Fri8_inlaw_Wizard": "{{i18n:fall_Fri8_inlaw_Wizard_Harvey}}",
+				"winter_Thu8_inlaw_Wizard": "{{i18n:winter_Thu8_inlaw_Wizard_Harvey}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Harvey}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Harvey}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Harvey}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Harvey}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Harvey}}",
+				"paranoidMagnus": "{{i18n:paranoidMagnus_Harvey}}",
+			}
+		},
+		//Harvey Modded, after child birth.
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"When": {
+				"HasSeenEvent": "64780031",
+			},
+			"Entries": {
+				"summer_Thu8_inlaw_Wizard": "{{i18n:summer_Thu8_inlaw_Wizard_Harvey_Child1}}",
+			}
+		},
+		//Harvey after Second child
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"When": {
+				"HasSeenEvent": "64780033",
+			},
+			"Entries": {
+				"summer_Thu8_inlaw_Wizard": "{{i18n:summer_Thu8_inlaw_Wizard_Harvey_Child2}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Harvey",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Harvey",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"Tue8": "{{i18n:NoFlirtHarvey.Tue8}}",
+			"Thu8": "{{i18n:NoFlirtHarvey.Thu8}}",
+			"Sat8": "{{i18n:NoFlirtHarvey.Sat8}}",
+			
+		}
+	},
+		//Sam
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries": {
+				"Spring_Sun8_inlaw_Wizard": "{{i18n:Spring_Sun8_inlaw_Wizard_Sam}}",
+				"summer_Mon8_inlaw_Wizard": "{{i18n:summer_Mon8_inlaw_Wizard_Sam}}",
+				"fall_Sat8_inlaw_Wizard": "{{i18n:fall_Sat8_inlaw_Wizard_Sam}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Sam}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Sam}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Sam}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Sam}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Sam}}",
+				"VinceWindowMonster": "{{i18n:Sam.VinceWindowMonster}}",
+				"VinceWindowMonster2": "{{i18n:Sam.VinceWindowMonster2}}",
+
+
+			}
+		},
+		{	"Log": "Remove Flirting: Sam",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sam",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"fall_Sun8": "{{i18n:NoFlirtSam.fall_Sun8}}",
+
+		}
+	},
+		//Sebastian
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries": {
+				"spring_Sat8_inlaw_Wizard": "{{i18n:spring_Sat8_inlaw_Wizard_Seb}}",
+				"Summer_Thu8_inlaw_Wizard": "{{i18n:Summer_Thu8_inlaw_Wizard_Seb}}",
+				"fall_Wed8_inlaw_Wizard": "{{i18n:fall_Wed8_inlaw_Wizard_Seb}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Seb}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Seb}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Seb}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Seb}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Seb}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Seb",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sebastian",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"Thu8": "{{i18n:NoFlirtSeb.Thu8}}",
+			"summer_Wed8": "{{i18n:NoFlirtSeb.summer_Wed8}}",
+			"fall_Wed8": "{{i18n:NoFlirtSeb.fall_Wed8}}",
+			"fall_Fri6": "{{i18n:NoFlirtSeb.fall_Fri6}}",
+			
+		}
+	},
+		//Shane
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Shane}}",
+				"fall_Fri8_inlaw_Wizard": "{{i18n:fall_Fri8_inlaw_Wizard_Shane}}",
+				"Winter_Fri8_inlaw_Wizard": "{{i18n:Winter_Fri8_inlaw_Wizard_Shane}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Shane}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Shane}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Shane}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Shane}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Shane}}",
+			}
+		},
+		//Emily
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries": {
+				"spring_Thu8_inlaw_Wizard": "{{i18n:spring_Thu8_inlaw_Wizard_Emily}}",
+				"summer_Wed8_inlaw_Wizard": "{{i18n:summer_Wed8_inlaw_Wizard_Emily}}",
+				"fall_Mon8_inlaw_Wizard": "{{i18n:fall_Mon8_inlaw_Wizard_Emily}}",
+				"winter_Fri8_inlaw_Wizard": "{{i18n:winter_Fri8_inlaw_Wizard_Emily}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Emily}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Emily}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Emily}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Emily}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Emily}}",
+				"saloonStroll": "{{i18n:saloonStroll_Emily}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Emily",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Emily",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"Tue8": "{{i18n:NoFlirtEmily.Tue8}}",
+			"Wed8": "{{i18n:NoFlirtEmily.Wed8}}",
+			
+		}
+	},
+		//Haley
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries": {
+				"spring_Mon8_inlaw_Wizard": "{{i18n:spring_Mon8_inlaw_Wizard_Haley}}",
+				"summer_Sat8_inlaw_Wizard": "{{i18n:summer_Sat8_inlaw_Wizard_Haley}}",
+				"winter_Mon8_inlaw_Wizard": "{{i18n:winter_Mon8_inlaw_Wizard_Haley}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Haley}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Haley}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Haley}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Haley}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Haley}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Haley",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Haley",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"Wed8": "{{i18n:NoFlirtHaley.Wed8}}",
+			"fall_Tue8": "{{i18n:NoFlirtHaley.fall_Tue8}}",
+			"winter_Mon8": "{{i18n:NoFlirtHaley.winter_Mon8}}",
+			
+		}
+	},
+		//Leah
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries": {
+				"sping_Wed8_inlaw_Wizard": "{{i18n:sping_Wed8_inlaw_Wizard_Leah}}",
+				"summer_Thu8_inlaw_Wizard": "{{i18n:summer_Thu8_inlaw_Wizard_Leah}}",
+				"fall_Sat8_inlaw_Wizard": "{{i18n:fall_Sat8_inlaw_Wizard_Leah}}",
+				"winter_Mon8_inlaw_Wizard": "{{i18n:winter_Mon8_inlaw_Wizard_Leah}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Leah}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Leah}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Leah}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Leah}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Leah}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Leah",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Leah",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"Wed6": "{{i18n:NoFlirtLeah.Wed6}}",
+			"Wed8": "{{i18n:NoFlirtLeah.Wed8}}",
+			"Thu6": "{{i18n:NoFlirtLeah.Thu6}}",
+			"Sat8": "{{i18n:NoFlirtLeah.Sat8}}",
+			"Sun8": "{{i18n:NoFlirtLeah.Sun8}}",
+			"summer_Thu6": "{{i18n:NoFlirtLeah.summer_Thu6}}",
+			"summer_Fri6": "{{i18n:NoFlirtLeah.summer_Fri6}}",
+			
+		}
+	},
+		//Maru
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Maru}}",
+				"fall_Wed8_inlaw_Wizard": "{{i18n:fall_Wed8_inlaw_Wizard_Maru}}",
+				"winter_Wed8_inlaw_Wizard": "{{i18n:winter_Wed8_inlaw_Wizard_Maru}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Maru}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Maru}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Maru}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Maru}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Maru}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Maru",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Maru",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"Wed8": "{{i18n:NoFlirtMaru.Wed8}}",
+			"summer_Mon6": "{{i18n:NoFlirtMaru.summer_Mon6}}",
+			"summer_Tue8": "{{i18n:NoFlirtMaru.summer_Tue8}}",
+			"fall_Fri6": "{{i18n:NoFlirtMaru.fall_Fri6}}",
+			"winter_Mon8": "{{i18n:NoFlirtMaru.winter_Mon8}}",
+			
+		}
+	},
+		//Penny
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries": {
+				"spring_Mon8_inlaw_Wizard": "{{i18n:spring_Mon8_inlaw_Wizard_Penny}}",
+				"fall_Wed8_inlaw_Wizard": "{{i18n:fall_Wed8_inlaw_Wizard_Penny}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Penny}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Penny}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Penny}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Penny}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Penny}}",
+			}
+		},
+		//Penny First child born
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"When": {
+				"HasSeenEvent": "64780031, 64780041",
+			},
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Penny_Child1}}",
+				"summer_Wed8_inlaw_Wizard": "{{i18n:summer_Wed8_inlaw_Wizard_Penny_Child1}}",
+			}
+		},
+		//Penny second child born
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"When": {
+				"HasSeenEvent": "64780033, 64780043",
+			},
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Penny_Child2}}",
+			}
+		},
+		{	"Log": "Remove Flirting: Penny",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Penny",
+		"When": {
+			"Spouse": "Wizard"
+		},
+		"Entries": {
+			"fall_Sat8": "{{i18n:NoFlirtPenny.fall_Sat8}}",
+			"Thu6": "{{i18n:NoFlirtPenny.Thu6}}",
+			
+		}
+	},
+		//Caroline
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Caroline",
+			"Entries": {
+				"spring_Wed10_inlaw_Wizard": "{{i18n:spring_Wed10_inlaw_Wizard_Caroline}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Caroline}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Caroline}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Caroline}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Caroline}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Caroline}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Caroline}}",
+				"saloonStroll": "{{i18n:saloonStroll_Caroline}}",
+				"AbbySagaDone": "{{i18n:AbbySagaDone_Caroline}}",
+			}
+		},
+		//Caroline Modded, after mature event.
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Caroline",
+			"When": {
+				"HasSeenEvent": "10000281",
+			},
+			"Entries": {
+				"spring_Wed10_inlaw_Wizard": "{{i18n:spring_Wed10_inlaw_Wizard_Caroline_Saga}}",
+				"summer_Sat10_inlaw_Wizard": "{{i18n:summer_Sat10_inlaw_Wizard_Caroline_Saga}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Caroline_Saga}}",
+				"winter_Sat10_inlaw_Wizard": "{{i18n:winter_Sat10_inlaw_Wizard_Caroline_Saga}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Caroline_Saga}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Caroline_Saga}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Caroline_Saga}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Caroline_Saga}}",
+			}
+		},
+		//Clint
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Clint",
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Clint}}",
+				"summer_Wed10_inlaw_Wizard": "{{i18n:summer_Wed10_inlaw_Wizard_Clint}}",
+				"fall_Thu10_inlaw_Wizard": "{{i18n:fall_Thu10_inlaw_Wizard_Clint}}",
+				"winter_Thu10_inlaw_Wizard": "{{i18n:winter_Thu10_inlaw_Wizard_Clint}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Clint}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Clint}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Clint}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Clint}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Clint}}",
+				"saloonStroll": "{{i18n:saloonStroll_Clint}}",
+			}
+		},
+		//Demetrius
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Demetrius",
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Deme}}",
+				"winter_Fri10_inlaw_Wizard": "{{i18n:winter_Fri10_inlaw_Wizard_Deme}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Deme}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Deme}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Deme}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Deme}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Deme}}",
+			}
+		},
+		//Evelyn
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Evelyn",
+			"Entries": {
+				"spring_Wed10_inlaw_Wizard": "{{i18n:spring_Wed10_inlaw_Wizard_Evelyn}}",
+				"summer_Tue10_inlaw_Wizard": "{{i18n:summer_Tue10_inlaw_Wizard_Evelyn}}",
+				"fall_Thu10_inlaw_Wizard": "{{i18n:fall_Thu10_inlaw_Wizard_Evelyn}}",
+				"winter_Sun10_inlaw_Wizard": "{{i18n:winter_Sun10_inlaw_Wizard_Evelyn}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Evelyn}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Evelyn}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Evelyn}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Evelyn}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Evelyn}}",
+			}
+		},
+		//George
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/George",
+			"Entries": {
+				"spring_Mon10_inlaw_Wizard": "{{i18n:spring_Mon10_inlaw_Wizard_George}}",
+				"summer_Wed10_inlaw_Wizard": "{{i18n:summer_Wed10_inlaw_Wizard_George}}",
+				"fall_Wed10_inlaw_Wizard": "{{i18n:fall_Wed10_inlaw_Wizard_George}}",
+				"winter_Sun_inlaw_Wizard": "{{i18n:winter_Sun_inlaw_Wizard_George}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_George}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_George}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_George}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_George}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_George}}",
+			}
+		},
+		//Gus
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Gus",
+			"Entries": {
+				"spring_Fri10_inlaw_Wizard": "{{i18n:spring_Fri10_inlaw_Wizard_Gus}}",
+				"summer_Sun_inlaw_Wizard": "{{i18n:summer_Sun_inlaw_Wizard_Gus}}",
+				"summer_Mon10_inlaw_Wizard": "{{i18n:summer_Mon10_inlaw_Wizard_Gus}}",
+				"fall_Fri10_inlaw_Wizard": "{{i18n:fall_Fri10_inlaw_Wizard_Gus}}",
+				"winter_Wed10_inlaw_Wizard": "{{i18n:winter_Wed10_inlaw_Wizard_Gus}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Gus}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Gus}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Gus}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Gus}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Gus}}",
+				"saloonStroll": "{{i18n:saloonStroll_Gus}}",
+			}
+		},
+		//Jas
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jas",
+			"Entries": {
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Jas}}",
+				"summer_Mon10_inlaw_Wizard": "{{i18n:summer_Mon10_inlaw_Wizard_Jas}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Jas}}",
+				"winter_Sat10_inlaw_Wizard": "{{i18n:winter_Sat10_inlaw_Wizard_Jas}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Jas}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Jas}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Jas}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Jas}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Jas}}",
+			}
+		},
+		//Jodi
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries": {
+				"spring_Mon10_inlaw_Wizard": "{{i18n:spring_Mon10_inlaw_Wizard_Jodi}}",
+				"summer_Wed10_inlaw_Wizard": "{{i18n:summer_Wed10_inlaw_Wizard_Jodi}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Jodi}}",
+				"winter_Fri10_inlaw_Wizard": "{{i18n:winter_Fri10_inlaw_Wizard_Jodi}}",
+				"winter_Tue10_inlaw_Wizard": "{{i18n:winter_Tue10_inlaw_Wizard_Jodi}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Jodi}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Jodi}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Jodi}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Jodi}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Jodi}}",
+				"VinceWindowMonster": "{{i18n:Jodi.VinceWindowMonster}}",
+				"VinceWindowMonster2": "{{i18n:Jodi.VinceWindowMonster2}}",
+
+			}
+		},
+		//Kent
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries": {
+				"summer_Tue10_inlaw_Wizard": "{{i18n:summer_Tue10_inlaw_Wizard_Kent}}",
+				"fall_Fri10_inlaw_Wizard": "{{i18n:fall_Fri10_inlaw_Wizard_Kent}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Kent}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Kent}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Kent}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Kent}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Kent}}",
+				"VinceWindowMonster": "{{i18n:Kent.VinceWindowMonster}}",
+				"VinceWindowMonster2": "{{i18n:Kent.VinceWindowMonster2}}",
+
+			}
+		},
+		//Kent Adventurer
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"When": {
+				"HasSeenEvent |contains=46361083": true
+			},
+			"Entries": {
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Kent_Adv}}",
+				"fall_Thu10_inlaw_Wizard": "{{i18n:fall_Thu10_inlaw_Wizard_Kent_Adv}}",
+				"winter_Thu10_inlaw_Wizard": "{{i18n:winter_Thu10_inlaw_Wizard_Kent_Adv}}",
+			}
+		},
+		//Lewis
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lewis",
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Lewis}}",
+				"summer_Sun10_inlaw_Wizard": "{{i18n:summer_Sun10_inlaw_Wizard_Lewis}}",
+				"fall_Sat10_inlaw_Wizard": "{{i18n:fall_Sat10_inlaw_Wizard_Lewis}}",
+				"winter_Mon10_inlaw_Wizard": "{{i18n:winter_Mon10_inlaw_Wizard_Lewis}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Lewis}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Lewis}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Lewis}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Lewis}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Lewis}}",
+			}
+		},
+		//Marnie
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Marnie",
+			"Entries": {
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Marnie}}",
+				"summer_Tue10_inlaw_Wizard": "{{i18n:summer_Tue10_inlaw_Wizard_Marnie}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Marnie}}",
+				"winter_Fri10_inlaw_Wizard": "{{i18n:winter_Fri10_inlaw_Wizard_Marnie}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Marnie}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Marnie}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Marnie}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Marnie}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Marnie}}",
+			}
+		},
+		//Pam
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pam",
+			"Entries": {
+				"summer_Fri10_inlaw_Wizard": "{{i18n:summer_Fri10_inlaw_Wizard_Pam.{{Age}}}}",
+				"fall_tue10_inlaw_Wizard": "{{i18n:fall_tue10_inlaw_Wizard_Pam}}",
+				"winter_Wed10_inlaw_Wizard": "{{i18n:winter_Wed10_inlaw_Wizard_Pam}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Pam}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Pam}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Pam}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Pam}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Pam}}",
+			}
+		},
+		//Pierre
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"Entries": {
+				"summer_Tue10_inlaw_Wizard": "{{i18n:summer_Tue10_inlaw_Wizard_Pierre}}",
+				"winter_Fri10_inlaw_Wizard": "{{i18n:winter_Fri10_inlaw_Wizard_Pierre}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Pierre}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Pierre}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Pierre}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Pierre}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Pierre}}",
+			}
+		},
+		//Pierre MODDED. After mature pierre event.
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"When": {
+				"HasSeenEvent": "10000281",
+			},
+			"Entries": {
+				"fall_Tue10_inlaw_Wizard": "{{i18n:fall_Tue10_inlaw_Wizard_Pierre_Saga}}",
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Pierre_Saga}}",
+				"winter_Thu10_inlaw_Wizard": "{{i18n:winter_Thu10_inlaw_Wizard_Pierre_Saga}}",
+				"AbbySagaDone": "{{i18n:AbbySagaDone_Pierre_Saga}}",
+				"saloonStroll": "{{i18n:saloonStroll_Pierre_Saga}}",
+			}
+		},
+		//Robin
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Robin",
+			"Entries": {
+				"spring_Sat10_inlaw_Wizard": "{{i18n:spring_Sat10_inlaw_Wizard_Robin}}",
+				"summer_Fri10_inlaw_Wizard": "{{i18n:summer_Fri10_inlaw_Wizard_Robin}}",
+				"fall_Fri10_inlaw_Wizard": "{{i18n:fall_Fri10_inlaw_Wizard_Robin}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Robin}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Robin}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Robin}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Robin}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Robin}}",
+			}
+		},
+		//Vincent
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Vince}}",
+				"summer_Wed10_inlaw_Wizard": "{{i18n:summer_Wed10_inlaw_Wizard_Vince}}",
+				"fall_Mon10_inlaw_Wizard": "{{i18n:fall_Mon10_inlaw_Wizard_Vince}}",
+				"winter_Sun10_inlaw_Wizard": "{{i18n:winter_Sun10_inlaw_Wizard_Vince}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Vince}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Vince}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Vince}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Vince}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Vince}}",
+				"VincentWindowMonster2": "{{i18n:Vince.VinceWindowMonster2}}",
+			}
+		},
+		//Willy
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Willy",
+			"Entries": {
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Willy}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Willy}}",
+				"winter_Mon10_inlaw_Wizard": "{{i18n:winter_Mon10_inlaw_Wizard_Willy}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Willy}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Willy}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Willy}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Willy}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Willy}}",
+			}
+		},
+		//Sandy
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries": {
+				"summer_Thu10_inlaw_Wizard": "{{i18n:summer_Thu10_inlaw_Wizard_Sandy}}",
+				"fall_Tue10_inlaw_Wizard": "{{i18n:fall_Tue10_inlaw_Wizard_Sandy}}",
+				"winter_Fri10_inlaw_Wizard": "{{i18n:winter_Fri10_inlaw_Wizard_Sandy}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Sandy}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Sandy}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Sandy}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Sandy}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Sandy}}",
+			}
+		},
+		//Dwarf
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Dwarf",
+			"Entries": {
+				"spring_Wed10_inlaw_Wizard": "{{i18n:spring_Wed10_inlaw_Wizard_Dwarf}}",
+				"fall_Mon10_inlaw_Wizard": "{{i18n:fall_Mon10_inlaw_Wizard_Dwarf}}",
+				"winter_Tue10_inlaw_Wizard": "{{i18n:winter_Tue10_inlaw_Wizard_Dwarf}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Dwarf}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Dwarf}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Dwarf}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Dwarf}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Dwarf}}",
+			}
+		},
+		//Krobus
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Krobus",
+			"Entries": {
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Krobus}}",
+				"summer_Tue10_inlaw_Wizard": "{{i18n:summer_Tue10_inlaw_Wizard_Krobus}}",
+				"winter_Mon10_inlaw_Wizard": "{{i18n:winter_Mon10_inlaw_Wizard_Krobus}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Krobus}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Krobus}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Krobus}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Krobus}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Krobus}}",
+			}
+		},
+		//Apples
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Apples",
+			"Entries": {
+				"summer_Sun10_inlaw_Wizard": "{{i18n:summer_Sun10_inlaw_Wizard_Apples}}",
+				"Winter_Sun10_inlaw_Wizard": "{{i18n:Winter_Sun10_inlaw_Wizard_Apples}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Apples}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Apples}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Apples}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Apples}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Apples}}",
+				"give_flowersA": "{{i18n:give_flowersA_Apples}}",
+				"give_flowersB": "{{i18n:give_flowersB_Apples}}",
+				"give_pendant": "{{i18n:give_pendant_Apples}}",
+				"stardrop_gift": "{{i18n:stardrop_gift_Apples}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Apples}}",
+				"rejectNPCB": "{{i18n:rejectNPCA_Apples}}",
+				"reject_two_heartA": "{{i18n:rejectNPCA_Apples}}",
+				"reject_two_heartB": "{{i18n:rejectNPCA_Apples}}",
+				"reject_four_heartA": "{{i18n:rejectNPCA_Apples}}",
+				"reject_four_heartB": "{{i18n:rejectNPCA_Apples}}",
+				"engageA": "{{i18n:rejectNPCA_Apples}}",
+				"engageB": "{{i18n:rejectNPCA_Apples}}",
+				"marriedA": "{{i18n:rejectNPCA_Apples}}",
+				"marriedB": "{{i18n:rejectNPCA_Apples}}",
+				"refusal_no_heartsA": "{{i18n:rejectNPCA_Apples}}",
+				"refusal_no_heartsB": "{{i18n:rejectNPCA_Apples}}",
+				"refusal_knownA": "{{i18n:rejectNPCA_Apples}}",
+				"refusal_knownB": "{{i18n:rejectNPCA_Apples}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Apples}}",
+				"refusal_botherB": "{{i18n:refusal_botherA_Apples}}",
+			}
+		},
+		//Jolyne
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jolyne",
+			"Entries": {
+				//New
+				"Mon_inlaw_Wizard": "{{Random: {{i18n:Jolyne.Mon_inlaw_Wizard.0}} @@ {{i18n:Jolyne.Mon_inlaw_Wizard.1}} @@ {{i18n:Jolyne.Mon_inlaw_Wizard.2}} @@ {{i18n:Jolyne.Mon_inlaw_Wizard.3}} |inputSeparator=@@}}",
+				//Doesn't work atm because antisocial NPC
+				"paranoidMagnus": "{{i18n:Jolyne.paranoidMagnus}}",
+			}
+		},
+		//Jadu
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jadu",
+			"Entries": {
+				//New
+				"spring_Tue_inlaw_Wizard": "{{i18n:Jadu.spring_Tue_inlaw_Wizard}}",
+				"winter_Tue_inlaw_Wizard": "{{i18n:Jadu.winter_Tue_inlaw_Wizard}}",
+			}
+		},
+		//Andy
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Andy",
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Andy}}",
+				"Winter_Sun10_inlaw_Wizard": "{{i18n:Winter_Sun10_inlaw_Wizard_Andy}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Andy}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Andy}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Andy}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Andy}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Andy}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Andy}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Andy}}",
+				"reject_two_heartA": "{{i18n:reject_two_heartA_Andy}}",
+				"reject_two_heartB": "{{i18n:reject_two_heartB_Andy}}",
+				"reject_four_heartA": "{{i18n:reject_four_heartA_Andy}}",
+				"reject_four_heartB": "{{i18n:reject_four_heartB_Andy}}",
+				"engageA": "{{i18n:engageA_Andy}}",
+				"engageB": "{{i18n:engageB_Andy}}",
+				"marriedA": "{{i18n:marriedA_Andy}}",
+				"marriedB": "{{i18n:marriedB_Andy}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Andy}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Andy}}",
+				"refusal_knownA": "{{i18n:refusal_knownA_Andy}}",
+				"refusal_knownB": "{{i18n:refusal_knownB_Andy}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Andy}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Andy}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Andy}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Andy}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Andy}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Andy}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Andy}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Andy}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Andy}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Andy}}",
+			}
+		},
+		//Sophia
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries": {
+				"spring_Thu8_inlaw_Wizard": "{{i18n:spring_Thu8_inlaw_Wizard_Sophia}}",
+				"winter_Sun8_inlaw_Wizard": "{{i18n:winter_Sun8_inlaw_Wizard_Sophia}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Sophia}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Sophia}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Sophia}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Sophia}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Sophia}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Sophia}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Sophia}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Sophia}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Sophia}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Sophia}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Sophia}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Sophia}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Sophia}}",
+				"giftquestion_yes": "{{i18n:giftquestion_yes_Sophia}}",
+				"giftquestion_lie": "{{i18n:giftquestion_lie_Sophia}}",
+				"informPregnancyA": "{{i18n:informPregnancyA_Sophia}}",
+				"informPregnancyB": "{{i18n:informPregnancyB_Sophia}}",
+				"baby_anxiety": "{{i18n:baby_anxiety_Sophia}}",
+				"adopt_excited": "{{i18n:adopt_excited_Sophia}}",
+				"annoyedParent": "{{i18n:annoyedParent_Sophia}}",
+				"aloneTime": "{{i18n:aloneTime_Sophia}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"When": {
+				"HasSeenEvent": "1728499"
+			},
+			"Entries": {
+				"summer_Sat8_inlaw_Wizard": "{{i18n:summer_Sat8_inlaw_Wizard_Sophia}}",
+				"fall_Mon8_inlaw_Wizard": "{{i18n:fall_Mon8_inlaw_Wizard_Sophia}}",
+			}
+		},
+		//Susan
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Susan",
+			"Entries": {
+				"summer_Mon10_inlaw_Wizard": "{{i18n:summer_Mon10_inlaw_Wizard_Susan}}",
+				"fall_Fri10_inlaw_Wizard": "{{i18n:fall_Fri10_inlaw_Wizard_Susan}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Susan}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Susan}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Susan}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Susan}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Susan}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Susan}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Susan}}",
+				"reject_two_heartA": "{{i18n:reject_two_heartA_Susan}}",
+				"reject_two_heartB": "{{i18n:reject_two_heartB_Susan}}",
+				"reject_four_heartA": "{{i18n:reject_four_heartA_Susan}}",
+				"reject_four_heartB": "{{i18n:reject_four_heartB_Susan}}",
+				"engageA": "{{i18n:engageA_Susan}}",
+				"engageB": "{{i18n:engageB_Susan}}",
+				"marriedA": "{{i18n:marriedA_Susan}}",
+				"marriedB": "{{i18n:marriedB_Susan}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Susan}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Susan}}",
+				"refusal_knownA": "{{i18n:refusal_knownA_Susan}}",
+				"refusal_knownB": "{{i18n:refusal_knownB_Susan}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Susan}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Susan}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Susan}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Susan}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Susan}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Susan}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Susan}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Susan}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Susan}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Susan}}",
+			}
+		},
+		//Olivia
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries": {
+				"summer_Wed8_inlaw_Wizard": "{{i18n:summer_Wed8_inlaw_Wizard_Olivia}}",
+				"winter_Mon8_inlaw_Wizard": "{{i18n:winter_Mon8_inlaw_Wizard_Olivia}}",
+				"fall_Thu8_inlaw_Wizard": "{{i18n:fall_Thu8_inlaw_Wizard_Olivia}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Olivia}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Olivia}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Olivia}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Olivia}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Olivia}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Olivia}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Olivia}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Olivia}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Olivia}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Olivia}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Olivia}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Olivia}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Olivia}}",
+				"giftquestion_yes": "{{i18n:giftquestion_yes_Olivia}}",
+				"giftquestion_lie": "{{i18n:giftquestion_lie_Olivia}}",
+				"informPregnancyA": "{{i18n:informPregnancyA_Olivia}}",
+				"informPregnancyB": "{{i18n:informPregnancyB_Olivia}}",
+				"baby_anxiety": "{{i18n:baby_anxiety_Olivia}}",
+				"adopt_excited": "{{i18n:adopt_excited_Olivia}}",
+				"annoyedParent": "{{i18n:annoyedParent_Olivia}}",
+				"aloneTime": "{{i18n:aloneTime_Olivia}}",
+			}
+		},
+		//Victor
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"summer_Mon8_inlaw_Wizard": "{{i18n:summer_Mon8_inlaw_Wizard_Victor}}",
+				"fall_Sat8_inlaw_Wizard": "{{i18n:fall_Sat8_inlaw_Wizard_Victor}}",
+				"winter_Thu8_inlaw_Wizard": "{{i18n:winter_Thu8_inlaw_Wizard_Victor}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Victor}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Victor}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Victor}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Victor}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Victor}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Victor}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Victor}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Victor}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Victor}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Victor}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Victor}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Victor}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Victor}}",
+				"giftquestion_yes": "{{i18n:giftquestion_yes_Victor}}",
+				"giftquestion_lie": "{{i18n:giftquestion_lie_Victor}}",
+				"baby_anxiety": "{{i18n:baby_anxiety_Victor}}",
+				"adopt_excited": "{{i18n:adopt_excited_Victor}}",
+				"yourePregnantA": "{{i18n:yourePregnantA_Victor}}",
+				"yourePregnantB": "{{i18n:yourePregnantB_Victor}}",
+				"annoyedParent": "{{i18n:annoyedParent_Victor}}",
+				"aloneTime": "{{i18n:aloneTime_Victor}}",
+			}
+		},
+		//Claire
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"spring_Tue8_inlaw_Wizard": "{{i18n:spring_Tue8_inlaw_Wizard_Claire}}",
+				"fall_Fri8_inlaw_Wizard": "{{i18n:fall_Fri8_inlaw_Wizard_Claire}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Claire}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Claire}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Claire}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Claire}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Claire}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Claire}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Claire}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Claire}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Claire}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Claire}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Claire}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Claire}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Claire}}",
+				"giftquestion_yes": "{{i18n:giftquestion_yes_Claire}}",
+				"giftquestion_lie": "{{i18n:giftquestion_lie_Claire}}",
+				"baby_anxiety": "{{i18n:baby_anxiety_Claire}}",
+				"adopt_excited": "{{i18n:adopt_excited_Claire}}",
+				"informPregnancyA": "{{i18n:informPregnancyA_Claire}}",
+				"informPregnancyB": "{{i18n:informPregnancyB_Claire}}",
+				"annoyedParent": "{{i18n:annoyedParent_Claire}}",
+				"aloneTime": "{{i18n:aloneTime_Claire}}",
+			}
+		},
+		//Gunther
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/GuntherSilvian",
+			"Entries": {
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Gunther}}",
+				"summer_Tue10_inlaw_Wizard": "{{i18n:summer_Tue10_inlaw_Wizard_Gunther}}",
+				"fall_Fri10_inlaw_Wizard": "{{i18n:fall_Fri10_inlaw_Wizard_Gunther}}",
+				"winter_Sun10_inlaw_Wizard": "{{i18n:winter_Sun10_inlaw_Wizard_Gunther}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Gunther}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Gunther}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Gunther}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Gunther}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Gunther}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Gunther}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Gunther}}",
+				"reject_two_heartA": "{{i18n:reject_two_heartA_Gunther}}",
+				"reject_two_heartB": "{{i18n:reject_two_heartB_Gunther}}",
+				"reject_four_heartA": "{{i18n:reject_four_heartA_Gunther}}",
+				"reject_four_heartB": "{{i18n:reject_four_heartB_Gunther}}",
+				"engageA": "{{i18n:engageA_Gunther}}",
+				"engageB": "{{i18n:engageB_Gunther}}",
+				"marriedA": "{{i18n:marriedA_Gunther}}",
+				"marriedB": "{{i18n:marriedB_Gunther}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Gunther}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Gunther}}",
+				"refusal_knownA": "{{i18n:refusal_knownA_Gunther}}",
+				"refusal_knownB": "{{i18n:refusal_knownB_Gunther}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Gunther}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Gunther}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Gunther}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Gunther}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Gunther}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Gunther}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Gunther}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Gunther}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Gunther}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Gunther}}",
+			}
+		},
+		//Scarlett
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"Entries": {
+				"spring_Wed10_inlaw_Wizard": "{{i18n:spring_Wed10_inlaw_Wizard_Scarlett}}",
+				"summer_Thu10_inlaw_Wizard": "{{i18n:summer_Thu10_inlaw_Wizard_Scarlett}}",
+				"fall_Sat10_inlaw_Wizard": "{{i18n:fall_Sat10_inlaw_Wizard_Scarlett}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Scarlett}}",
+				"RazzyLoungeWear": "{{i18n: RazzyLoungeWear_Scarlett}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Scarlett}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Scarlett}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Scarlett}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Scarlett}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Scarlett}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Scarlett}}",
+				"engageA": "{{i18n:engageA_Scarlett}}",
+				"engageB": "{{i18n:engageB_Scarlett}}",
+				"marriedA": "{{i18n:marriedA_Scarlett}}",
+				"marriedB": "{{i18n:marriedB_Scarlett}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Scarlett}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Scarlett}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Scarlett}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Scarlett}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Scarlett}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Scarlett}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Scarlett}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Scarlett}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Scarlett}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Scarlett}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Scarlett}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Scarlett}}",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"When": {
+				"HasSeenEvent": "1728499"
+			},
+			"Entries": {
+				"winter_Sat10_inlaw_Wizard": "{{i18n:winter_Sat10_inlaw_Wizard_Scarlett}}",
+			}
+		},
+		//Martin
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Martin",
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Martin}}",
+				"summer_Sun10_inlaw_Wizard": "{{i18n:summer_Sun10_inlaw_Wizard_Martin}}",
+				"winter_Sun10_inlaw_Wizard": "{{i18n:winter_Sun10_inlaw_Wizard_Martin}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Martin}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Martin}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Martin}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Martin}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Martin}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Martin}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Martin}}",
+				"engageA": "{{i18n:engageA_Martin}}",
+				"engageB": "{{i18n:engageB_Martin}}",
+				"marriedA": "{{i18n:marriedA_Martin}}",
+				"marriedB": "{{i18n:marriedB_Martin}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Martin}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Martin}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Martin}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Martin}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Martin}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Martin}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Martin}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Martin}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Martin}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Martin}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Martin}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Martin}}",
+			}
+		},
+		//Morris
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MorrisTod",
+			"Entries": {
+				"rejectNPCA": "{{i18n:rejectNPCA_Morris}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Morris}}",
+				"engageA": "{{i18n:engageA_Morris}}",
+				"engageB": "{{i18n:engageB_Morris}}",
+				"marriedA": "{{i18n:marriedA_Morris}}",
+				"marriedB": "{{i18n:marriedB_Morris}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Morris}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Morris}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Morris}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Morris}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Morris}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Morris}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Morris}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Morris}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Morris}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Morris}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Morris}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Morris}}",
+			}
+		},
+		//Morgan  Jello: Dramatically expanded because this is pretty much your third child, let's be real LOL.
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"Entries": {
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Morgan}}",
+				"spring_Mon6_inlaw_Wizard": "{{i18n:spring_Mon6_inlaw_Wizard_Morgan}}",
+				"spring_Wed8_inlaw_Wizard": "{{i18n:spring_Wed8_inlaw_Wizard_Morgan}}",
+				"spring_Thu10_inlaw_Wizard": "{{i18n:spring_Thu10_inlaw_Wizard_Morgan}}",
+				"spring_Fri6_inlaw_Wizard": "{{i18n:spring_Fri6_inlaw_Wizard_Morgan}}",
+				"spring_Fri10_inlaw_Wizard": "{{i18n:spring_Fri10_inlaw_Wizard_Morgan}}",
+				"spring_Sat10_inlaw_Wizard": "{{i18n:spring_Sat10_inlaw_Wizard_Morgan}}",
+				"spring_Sun6_inlaw_Wizard": "{{i18n:spring_Sun6_inlaw_Wizard_Morgan}}",
+				"summer_Mon6_inlaw_Wizard": "{{i18n:summer_Mon6_inlaw_Wizard_Morgan}}",
+				"summer_Tue8_inlaw_Wizard": "{{i18n:summer_Tue8_inlaw_Wizard_Morgan}}",
+				"summer_Wed10_inlaw_Wizard": "{{i18n:summer_Wed10_inlaw_Wizard_Morgan}}",
+				"summer_Thu10_inlaw_Wizard": "{{i18n:summer_Thu10_inlaw_Wizard_Morgan}}",
+				"summer_Fri10_inlaw_Wizard": "{{i18n:summer_Fri10_inlaw_Wizard_Morgan}}",
+				"summer_Sat6_inlaw_Wizard": "{{i18n:summer_Sat6_inlaw_Wizard_Morgan}}",
+				"fall_Mon10_inlaw_Wizard": "{{i18n:fall_Mon10_inlaw_Wizard_Morgan}}",
+				"fall_Tue10_inlaw_Wizard": "{{i18n:fall_Tue10_inlaw_Wizard_Morgan}}",
+				"fall_Wed10_inlaw_Wizard": "{{i18n:fall_Wed10_inlaw_Wizard_Morgan}}",
+				"fall_Thu10_inlaw_Wizard": "{{Random: {{i18n:fall_Thu10_inlaw_Wizard_Morgan}} @@ {{i18n:fall_Thu10_inlaw_Wizard_Morgan.2}} |inputSeparator=@@}}",
+				"fall_Fri6_inlaw_Wizard": "{{i18n:fall_Fri6_inlaw_Wizard_Morgan}}",
+				"fall_Sat10_inlaw_Wizard": "{{i18n:fall_Sat10_inlaw_Wizard_Morgan}}",
+				"fall_Sun10_inlaw_Wizard": "{{i18n:fall_Sun10_inlaw_Wizard_Morgan}}",
+				"winter_Mon8_inlaw_Wizard": "{{i18n:winter_Mon8_inlaw_Wizard_Morgan}}",
+				"winter_Tue6_inlaw_Wizard": "{{i18n:winter_Tue6_inlaw_Wizard_Morgan}}",
+				"winter_Wed10_inlaw_Wizard": "{{i18n:winter_Wed10_inlaw_Wizard_Morgan}}",
+				"winter_Thu8_inlaw_Wizard": "{{i18n:winter_Thu8_inlaw_Wizard_Morgan}}",
+				"winter_Fri10_inlaw_Wizard": "{{i18n:winter_Fri10_inlaw_Wizard_Morgan}}",
+				"winter_Sat8_inlaw_Wizard": "{{i18n:winter_Sat8_inlaw_Wizard_Morgan}}",
+				"winter_Sun10_inlaw_Wizard": "{{i18n:winter_Sun10_inlaw_Wizard_Morgan}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Morgan}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Morgan}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Morgan}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Morgan}}",
+				"paranoidMagnus": "{{i18n:paranoidMagnus_Morgan}}",
+				"rejectNPCA": "{{i18n:rejectNPCA_Morgan}}",
+				"rejectNPCB": "{{i18n:rejectNPCB_Morgan}}",
+				"reject_two_heartA": "{{i18n:reject_two_heartA_Morgan}}",
+				"reject_two_heartB": "{{i18n:reject_two_heartB_Morgan}}",
+				"reject_four_heartA": "{{i18n:reject_four_heartA_Morgan}}",
+				"reject_four_heartB": "{{i18n:reject_four_heartB_Morgan}}",
+				"engageA": "{{i18n:engageA_Morgan}}",
+				"engageB": "{{i18n:engageB_Morgan}}",
+				"marriedA": "{{i18n:marriedA_Morgan}}",
+				"marriedB": "{{i18n:marriedB_Morgan}}",
+				"refusal_no_heartsA": "{{i18n:refusal_no_heartsA_Morgan}}",
+				"refusal_no_heartsB": "{{i18n:refusal_no_heartsB_Morgan}}",
+				"refusal_knownA": "{{i18n:refusal_knownA_Morgan}}",
+				"refusal_knownB": "{{i18n:refusal_knownB_Morgan}}",
+				"refusal_botherA": "{{i18n:refusal_botherA_Morgan}}",
+				"refusal_botherB": "{{i18n:refusal_botherB_Morgan}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Morgan}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Morgan}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Morgan}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Morgan}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Morgan}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Morgan}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Morgan}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Morgan}}",
+			}
+		},
+		//Morgan Comments Magnus Dad
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"When": {
+				"HasSeenEvent": "64780033",
+			},
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Morgan_HasChild}}",
+				"summer_Sun10_inlaw_Wizard": "{{i18n:summer_Sun10_inlaw_Wizard_Morgan_HasChild}}",
+			}
+		},
+		//Morgan is friends with your oldest child
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"When": {
+				//"TheMightyAmondee.CustomTokens/Child:player=local|childindex=0|daysold": "{{Range: 150, 5000}}",
+				"HasSeenEvent": "64780031, 64780041",
+			},
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Morgan_HasChildY4}}",
+			}
+		},
+		//Morgan is friends with both your kids
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"When": {
+				//"TheMightyAmondee.CustomTokens/Child:player=local|childindex=1|daysold": "{{Range: 150, 5000}}",
+				"HasSeenEvent": "64780033, 64780043"
+			},
+			"Entries": {
+				"spring_Tue10_inlaw_Wizard": "{{i18n:spring_Tue10_inlaw_Wizard_Morgan_HasChildY5}}",
+			}
+		},
+		//Lance
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries": {
+				"spring_Mon8_inlaw_Wizard": "{{i18n:spring_Mon8_inlaw_Wizard_Lance}}",
+				"summer_Tue8_inlaw_Wizard": "{{i18n:summer_Tue8_inlaw_Wizard_Lance}}",
+				"fall_Tue8_inlaw_Wizard": "{{i18n:fall_Tue8_inlaw_Wizard_Lance}}",
+				"Winter_Mon8_inlaw_Wizard": "{{i18n:Winter_Mon8_inlaw_Wizard_Lance}}",
+				"Winter_Tue8_inlaw_Wizard": "{{i18n:Winter_Tue8_inlaw_Wizard_Lance}}",
+				"Winter_Sun8_inlaw_Wizard": "{{i18n:Winter_Sun8_inlaw_Wizard_Lance}}",
+				"MagnusMarriage": "{{i18n:MagnusMarriage_Lance}}",
+				"FarmerPregnantWizard1Talk": "{{i18n:FarmerPregnantWizard1Talk_Lance}}",
+				"Wizard_BabyBorn1Talk": "{{i18n:Wizard_BabyBorn1Talk_Lance}}",
+				"FarmerPregnantWizard2Talk": "{{i18n:FarmerPregnantWizard2Talk_Lance}}",
+				"Wizard_BabyBorn2Talk": "{{i18n:Wizard_BabyBorn2Talk_Lance}}",
+				"paranoidMagnus": "{{i18n:paranoidMagnus_Lance}}",
+				"birthdayLoveA": "{{i18n:birthdayLoveA_Lance}}",
+				"birthdayLoveB": "{{i18n:birthdayLoveB_Lance}}",
+				"birthdayLikeA": "{{i18n:birthdayLikeA_Lance}}",
+				"birthdayLikeB": "{{i18n:birthdayLikeB_Lance}}",
+				"birthdayDislikeA": "{{i18n:birthdayDislikeA_Lance}}",
+				"birthdayDislikeB": "{{i18n:birthdayDislikeB_Lance}}",
+				"birthdayNeutralA": "{{i18n:birthdayNeutralA_Lance}}",
+				"birthdayNeutralB": "{{i18n:birthdayNeutralB_Lance}}",
+				"giftquestion_yes": "{{i18n:giftquestion_yes_Lance}}",
+				"giftquestion_lie": "{{i18n:giftquestion_lie_Lance}}",
+				"baby_anxiety": "{{i18n:baby_anxiety_Lance}}",
+				"adopt_excited": "{{i18n:adopt_excited_Lance}}",
+				"yourePregnantA": "{{i18n:yourePregnantA_Lance}}",
+				"yourePregnantB": "{{i18n:yourePregnantB_Lance}}",
+				"annoyedParent": "{{i18n:annoyedParent_Lance}}",
+				"aloneTime": "{{i18n:aloneTime_Lance}}",
+			}
+		},
+		//Not Children related conditional dialogue.
+		//BONUS MORGAN DIALOGUE Krobus 10 HEART EVENT:
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"When": {
+				"HasSeenEvent": "1090508"
+			},
+			"Entries": {
+				"winter_Tue8": "{{i18n:Morgan_ShadowPeople}}",
+			}
+		},
+		//BONUS MORGAN DIALOGUE VOID SHARD:
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"When": {
+				"HasSeenEvent": "1579123"
+			},
+			"Entries": {
+				"spring_Sat10": "{{i18n:Morgan_VoidShard}}",
+			}
+		},
+		//Antisocial NPC forced comments
+		//Forced dialogue for Nonsocial compatibility
+		{
+			"LogName": "Paranoid Magnus Jolyne Comments",
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_FirstSlashGuild",
+			"When": {
+				"HasSeenEvent |contains=19251793": false,
+				"HasSeenEvent |contains=19251791": true,
+				"Darker Plot Events(Y4)": "true",
+				"Spouse": "Wizard"
+			},
+			"Entries": {
+				"192517912/e 19251791/O Wizard": "none/500 500/farmer 100 100 0/end dialogue Jolyne \"{{i18n:Jolyne.paranoidMagnus}}\"",
+			},
+		},
+		//Forced dialogue for Nonsocial compatibility
+		{
+			"LogName": "Paranoid Magnus Camilla Comments",
+			"Action": "EditData",
+			"Target": "Data/Events/FarmHouse",
+			"When": {
+				"Day": "1, 4, 14, 15, 26",
+				"HasSeenEvent |contains=19251793": false,
+				"HasSeenEvent |contains=19251791": true,
+				"Darker Plot Events(Y4)": "true",
+				"Spouse": "Wizard"
+			},
+			"Entries": {
+				"192517911/e 19251791/O Wizard": "none/500 500/farmer 100 100 0/end dialogue Camilla \"{{i18n:Camilla_Paranoid.0}}\"",
+			},
+		},
+		//Camilla Memory Spell Comments
+		{
+			"LogName": "Memory Extraction Spell Camilla Comments",
+			"Action": "EditData",
+			"Target": "Data/Events/FarmHouse",
+			"When": {
+				"Day": "1, 4, 14, 15, 26",
+				"Darker Plot Events(Y4)": "true"
+			},
+			"Entries": {
+				"192517921/e 19251792/k 19251793/O Wizard": "none/500 500/farmer 100 100 0/end dialogue Camilla \"{{i18n:Camilla_MemorySpell.0}}\"",
+			},
+		},
+		//Camilla Post breakdown comments
+		{
+			"LogName": "Post Breakdown Camilla Comments",
+			"Action": "EditData",
+			"Target": "Data/Events/FarmHouse",
+			"When": {
+				"Day": "1, 4, 14, 15, 26",
+				"Darker Plot Events(Y4)": "true"
+			},
+			"Entries": {
+				"1925179231/e 19251793/O Wizard": "none/500 500/farmer 100 100 0/end dialogue Camilla \"{{i18n:Camilla_PostQi.0}}\"",
+			},
+		},
+		//Camilla Comments on the earrings
+		{
+			"LogName": "Wear Earrings Camilla Comments",
+			"Action": "EditData",
+			"Target": "Data/Events/FarmHouse",
+			"When": {
+				"Day": "1, 4, 14, 15, 26",
+				"Darker Plot Events(Y4)": "true"
+			},
+			"Entries": {
+				"1992732/e 1992731/n wearEarrings/O Wizard": "none/500 500/farmer 100 100 0/end dialogue Camilla \"{{i18n:Camilla_Earrings.0}}\"",
+			},
+		},
+		/*
+//Temp dialogue for kids
+{
+ "Action": "EditData",
+   "Target": "Characters/Dialogue/FirstLittleNPCGalen",
+   "Entries": {
+  "paranoidMagnus": "Did something happen to Dad?$3#$b#He's acting really strange...$2",
+	"solutionMagnus": "Dad seems really nervous all of the time...$3#$b#Did he get into a fight with another wizard or something?$3#$b#We read a story about it in school.#$e#...Is everything okay, Mom?$2",
+  }
+  },
+
+  {
+   "Action": "EditData",
+     "Target": "Characters/Dialogue/SecondLittleNPCVivi",
+     "Entries": {
+    "paranoidMagnus": "Mommy!$2#$b##Daddy's acting weird...$2",
+		"solutionMagnus": "Mommy, Daddy has been staying up all night.$3#$b#I saw him still digging through his books really early in the morning.$3#$b#Doesn't Daddy need to sleep too?$2",
+    }
+    },
+
+
+*/
+	],
+}

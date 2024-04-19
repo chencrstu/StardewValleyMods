@@ -1,0 +1,11 @@
+{
+   "Name": "[CP] preexistence lovers Harvey",
+   "Author": "luoli",
+   "Description": "前世恋人哈维.",
+   "Version": "1.5",
+   "UniqueID": "luoli.PreexistenceLoversHarvey",
+   "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    },
+   "UpdateKeys": [ "" ],
+}
