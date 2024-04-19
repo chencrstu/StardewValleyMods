@@ -1,0 +1,115 @@
+{
+  "Name": "00 lashes mask back",
+  "FrontAccessory": {
+    "ColorMasks": [
+		[ 255, 255, 255 ]
+    ],
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+	"DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Player"
+    },
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+		"LightTone": [ 255, 255, 255 ],
+		"MediumTone": [ 121, 121, 121 ],
+		"DarkTone": [ 73, 73, 73 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+    ]
+  },
+  "RightAccessory": {
+    "ColorMasks": [
+		[ 255, 255, 255 ]
+    ],
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+	"DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Player"
+    },
+    "DisableSkinGrayscale": true,
+    "SkinToneMasks": {
+		"LightTone": [ 255, 255, 255 ],
+		"MediumTone": [ 121, 121, 121 ],
+		"DarkTone": [ 73, 73, 73 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+    ]
+  },
+  "LeftAccessory": {
+    "Flipped": true,
+    "ColorMasks": [
+		[ 255, 255, 255 ]
+    ],
+    "DisableSkinGrayscale": true,
+	"DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Hair"
+    },
+	"DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Player"
+    },
+    "SkinToneMasks": {
+		"LightTone": [ 255, 255, 255 ],
+		"MediumTone": [ 121, 121, 121 ],
+		"DarkTone": [ 73, 73, 73 ]
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+    ]
+  }
+}

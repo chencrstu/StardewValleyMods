@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Charminging eyes",
+  "Author": "mio",
+  "Version": "1.0.0",
+  "Description": "charming eyes",
+  "UniqueID": "mio.charmingeyes",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "5.5.0"
+  }
+}

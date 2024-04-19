@@ -1,0 +1,10 @@
+{
+	//changed his positon on the ArchaeologyHouse to 19 5 0 from 20 5 0
+	"Mon": "600 AdventureGuild 7 16 1/700 ArchaeologyHouse 19 5 0/2000 AdventureGuild 7 16 1",
+	"Tue": "600 AdventureGuild 7 16 1/700 Town 46 32 2 Training/2000 AdventureGuild 7 16 1",
+	"Wed": "600 AdventureGuild 7 16 1",
+	"Thu": "600 AdventureGuild 7 16 1/700 Forest 43 12 2 Training Forest/2000 AdventureGuild 7 16 1",
+	"Fri": "600 AdventureGuild 7 16 1/700 Forest 43 12 2 Training Forest/2000 AdventureGuild 7 16 1",
+	"Sat": "600 AdventureGuild 7 16 1/700 ArchaeologyHouse 19 5 0/2000 AdventureGuild 7 16 1",
+	"Sun": "600 AdventureGuild 7 16 1/700 ArchaeologyHouse 19 5 0/2000 AdventureGuild 7 16 1"
+}

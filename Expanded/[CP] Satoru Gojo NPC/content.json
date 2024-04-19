@@ -1,0 +1,133 @@
+{
+  "Format": "1.30.0",
+  "Changes": [
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "Include",
+      "FromFile": "assets/disposition/Disposition.json",
+    },
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Satoru": "哇, @. 你知道用这样甜蜜的东西来打动我的心。$1#谢谢，非常感谢！$1/233 234 611 220 221 223 612 238 208 731 604 608 232 222/啊，不错.$8# 你很有品味 @, 我会给你的。$7/243 651 732 614 228 593/呃，不完全是我喜欢的茶...$2/346 265 733 348 303/嗯。。。谢谢？$5/682/啊，一份礼物！非常感谢。$6#这不是我通常的偏好，但我会找到它的用途。/400 398 410 414 417 418 421 591 595 597 613 635 634 636 637 638 "
+      }
+    },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Satoru": "Cursedcure.SatoruGojoNPC_SpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Cursedcure.SatoruGojoNPC_SpouseRoom",
+            "FromFile": "assets/maps/SatoruSpouseRoom.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/SatoruSpousePatio",
+      "FromFile": "assets/maps/SatoruSpousePatio.tmx"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/SatoruSpousePatio",
+      "FromFile": "assets/maps/SatoruSpousePatio.png"
+    },
+	{
+	"LogName": "Satoru's Flower Dance Dialogue",
+    "Action": "EditData",
+    "Target": "Data/Festivals/spring24",
+    "Entries": {
+        "Satoru": "跳舞？当然，为什么不呢！$7",
+		"Satoru_Spouse": "我当然会和你跳舞！$1",
+		"danceAcceptance": "跳舞？当然，为什么不呢！$7",
+		"danceRejection": "对不起，我不跳舞，甜心$7"
+	}},
+	{
+   "Action": "EditData",
+   "Target": "Characters/Dialogue/Haley",
+   "Entries": {
+      "give_flowersA": "是的, @酱, 我不得不说，我一直在期待你的告白。我非常想成为你的男朋友，让我们宣布恋情吧$7",
+      "give_flowersB": "这些花$6#$b#当然！我很高兴能成为你的男朋友！$1",
+      "give_pendant": "哇，没想到$6#$b#毫无疑问，亲爱的，我会和你结婚。$8"
+   }},
+    {
+      "LogName": "Animation Frames",
+      "Action": "Include",
+      "FromFile": "assets/animations/Animations.json"
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Satoru",
+      "FromFile": "assets/img/spritesheet.png"
+    },
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Satoru",
+      "FromFile": "assets/img/portrait.png"
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Satoru",
+      "FromFile": "assets/schedules/schedule.json"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Satoru",
+      "FromFile": "assets/dialogue/Dialogue.json"
+    },
+    {
+      "LogName": "Satoru's Character",
+      "Action": "Load",
+      "Target": "Characters/Satoru_Beach",
+      "FromFile": "assets/img/SatoruCharacter_Beach.png"
+    },
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueSatoru",
+      "FromFile": "assets/dialogue/MarriageDialogue.json"
+    },
+    {
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Satoru0": "嘿，亲爱的。只是想偷一点时间提醒你我有多爱你。$3",
+        "Satoru1": "你紧张吗?$7"
+    }
+    },
+    {
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Satoru",
+      "FromFile": "assets/schedules/scheduleDialogue.json"
+    },
+    {
+        "LogName": "Satoru's Festivals Data",
+        "Action": "Include",
+        "FromFile": "assets/festivals/Festivals.json"
+    },
+    {
+      "LogName": "Satoru's Wedding Dialogue",
+      "Action": "EditData",
+      "Target": "strings/StringsFromCSFiles",
+      "Entries": {
+      "Utility.cs.5371": "@...五条悟#$b#作为Pelican镇的市长和婚姻印章的地区持有者，我现在宣布你们为丈夫！$h",
+      "Utility.cs.5377": "@...五条悟#$b#作为Pelican镇的市长和婚姻印章的地区持有者，我现在宣布你们为丈夫！$h",
+      "Utility.cs.5367": "当@第一次来到鹈鹕镇时，没有人知道他是否适合我们的社区#$b#但从今天起，@将和我们任何人一样成为这个小镇的一部分$h#$b#在｛1｝的｛0｝这一天，我非常荣幸能将@五条悟缔结在婚姻的纽带中.",
+      "Utility.cs.5369": "当@第一次来到鹈鹕镇时，没有人知道他是否适合我们的社区#$b#但从今天起，@将和我们任何人一样成为这个小镇的一部分$h#$b#在｛1｝的｛0｝这一天，我非常荣幸能将@五条悟缔结在婚姻的纽带中."
+      },
+      "When": {
+        "Relationship:Satoru": "Engaged, Married"
+      }
+    }
+  ]
+}

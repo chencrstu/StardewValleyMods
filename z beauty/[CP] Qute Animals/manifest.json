@@ -1,0 +1,12 @@
+{
+   "Name": "[CP] Qute Animals",
+   "Author": "Cx330i",
+   "Version": "1.6",
+   "Description": "A CP replacement for all your barn animals!",
+   "UniqueID": "iFeng.CP.quteanimals",
+   "MinimumApiVersion": "2.5",
+   "UpdateKeys": [ "Nexus:6102" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

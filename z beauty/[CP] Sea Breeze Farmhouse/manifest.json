@@ -1,0 +1,10 @@
+{
+    "Name": "Sea Breeze Farmhouse",
+    "Author": "colling",
+    "Version": "1.0.7",
+    "Description": "new layout for farmhouse to give a beachside mansion aesthetic.",
+    "UniqueID": "colling.seafarmhouse",
+    "UpdateKeys":["Nexus:13752"],
+    "MinimumApiVersion": "3.15.1",
+	"ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher"}
+}

@@ -1,0 +1,11 @@
+{
+  "Name": "catmao leather shoes",
+  "Author": "catmao",
+  "Version": "1.1.0",
+  "Description": "Have lovely little leather shoes.",
+  "UniqueID": "catmao.catmaoleathershoes",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

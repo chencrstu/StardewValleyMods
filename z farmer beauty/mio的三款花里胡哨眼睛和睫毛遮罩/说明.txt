@@ -1,0 +1,11 @@
+三款眼睛和一个肤色睫毛遮罩
+请勿二传 存在很多bug，如果能帮忙解决从站姿到坐姿和骑马的切换延迟请联系我。眼睛需要和睫毛遮罩lashes mask一同使用。遮罩同步肤色，肤色切换会有小延迟，在fs里重新戴上就好。 
+lashes mask back是给charming eyes里标号带b，放在头发后面的眼睛用的。lashes mask的代码极大程度上参考了FS - SH's Animals and Mythological Creatures Stuff﻿  如果有任何侵权问题我会立刻删除模组。
+示例图片使用了Natural Color - ReShade 和 GH's peach body。﻿﻿
+
+*using google translate
+Three eye makeup looks and a skin tone lash mask.
+Please do not repost.
+There are many bugs. If you can help with solving the transition delay from standing to sitting and riding a horse, please contact me. The eye makeup needs to be used with the lashes mask simultaneously. The mask synchronizes with the skin color. There may be a slight delay in skin color switching, just put it back on in FS.
+'lashes mask back' is for charming eyes with the label 'b' in the 'charming eye' pack, used for eyes behind the hair.
+The code for 'lashes mask' is heavily inspired by FS - SH's Animals and Mythological Creatures Stuff. The sample images used  Natural Color - ReShade﻿ and  GH's peach body﻿.  If there are any copyright infringement issues, I will immediately delete the mod.

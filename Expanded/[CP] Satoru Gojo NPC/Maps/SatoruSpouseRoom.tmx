@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="36" nextobjectid="24">
+ <tileset firstgid="1" source="../../../../../../../../../Users/sabin/Desktop/townInterior.tsx"/>
+ <tileset firstgid="2177" source="../../../../../../../../../Users/sabin/Desktop/paths.tsx"/>
+ <tileset firstgid="2241" source="../../../../../../../../../Users/sabin/Desktop/SatoruSpouseRoom.tsx"/>
+ <tileset firstgid="4417" source="../../../../../../../../../Users/sabin/Desktop/walls_and_floors.tsx"/>
+ <tileset firstgid="5105" source="../../../../../../../../../Users/sabin/Desktop/furniture.tsx"/>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+1,1,35,1,1,1,
+1,1,67,1,1,1,
+99,99,99,99,99,99,
+1366,1366,1366,1366,1366,1366,
+4405,4405,3609,3610,4405,4405,
+4405,4405,4405,2163,4405,4405,
+4405,4405,4405,4405,4405,4405,
+4405,4405,4405,4405,4405,4405,
+4405,4405,4405,4405,4405,4405
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+4568,4568,7740,35,35,35,
+4584,4584,7772,67,67,67,
+4600,4600,7804,99,624,626,
+536,0,382,383,688,690,
+0,0,816,0,0,0,
+0,0,0,0,0,0,
+0,5566,5567,5567,5568,0,
+0,0,0,0,0,1180,
+1073,1074,1075,1073,1074,1075
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,2184,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,0,0,6710,1388,411,
+0,0,0,6742,567,568,
+370,0,350,351,676,335,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,5534,5535,5535,5536,0,
+0,0,0,0,0,0,
+1041,1042,1043,1041,1042,1043,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Paths">
+  <object id="20" name="TileData" x="64" y="112" width="16" height="16">
+   <properties>
+    <property name="direction" value="0"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="0" y="128" width="96" height="16">
+   <properties>
+    <property name="message" value="You browse through Satoru's book collection, finding a diverse array of titles. There are volumes on Eastern philosophy, martial arts, occult studies, literary classics, and historical texts. His shelves are a testament to his broad range of interests and depth of knowledge."/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="message" value="Maybe I should play with him someday"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="64" y="32" width="16" height="32">
+   <properties>
+    <property name="message" value="&quot;In the shadows of the night, where mortals fear to tread, lies the realm of the unseen. Seek not to gaze upon it unless you are prepared to face its mysteries.&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Front"/>
+</map>

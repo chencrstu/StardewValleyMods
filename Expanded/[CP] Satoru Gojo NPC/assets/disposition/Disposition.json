@@ -1,0 +1,11 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "data/NPCDispositions",
+      "Entries": {
+        "Satoru": "adult/polite/outgoing/positive/male/datable/null/Town/winter 7//AdventureGuild 7 16 3/五条悟"
+      }
+    }
+  ]
+}

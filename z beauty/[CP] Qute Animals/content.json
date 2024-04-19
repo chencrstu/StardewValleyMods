@@ -1,0 +1,128 @@
+{
+	"Format": "1.13.0",
+	
+			"ConfigSchema": 
+		{
+			"BabyBrownCow":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"BabyWhiteCow":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"BrownCow":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"WhiteCow":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"BabyPig":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Pig":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+		},
+
+	
+	
+	"Changes": [
+		{
+			"LogName": "Baby Brown Cow",
+			"Action": "EditImage",
+			"Target": "Animals/BabyBrown Cow",
+			"FromFile": "Assets/Cow/BabyBrown Cow.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"When":
+				{
+				"BabyBrownCow": "true"
+				},
+
+		},
+		{
+
+			"LogName": "Baby White Cow",
+			"Action": "EditImage",
+			"Target": "Animals/BabyWhite Cow",
+			"FromFile": "Assets/Cow/BabyWhite Cow.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"When":
+				{
+				"BabyWhiteCow": "true"
+				},
+
+		},
+		{
+			
+			"LogName": "Brown Cow",
+			"Action": "EditImage",
+			"Target": "Animals/Brown Cow",
+			"FromFile": "Assets/Cow/Brown Cow.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"When":
+				{
+				"BrownCow": "true"
+				},
+		},
+		{
+
+			"LogName": "White Cow",
+			"Action": "EditImage",
+			"Target": "Animals/White Cow",
+			"FromFile": "Assets/Cow/White Cow.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"When":
+				{
+				"WhiteCow": "true"
+				},
+		},
+		{
+			
+			"LogName": "Baby Pig",
+			"Action": "EditImage",
+			"Target": "Animals/BabyPig",
+			"FromFile": "Assets/Pig/BabyPig.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"When":
+				{
+				"BabyPig": "true"
+				},
+
+		},
+		{
+			
+			"LogName": "Pig",
+			"Action": "EditImage",
+			"Target": "Animals/Pig",
+			"FromFile": "Assets/Pig/Pig.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 160 },
+			"When":
+				{
+				"Pig": "true"
+				},
+		}
+	]
+}

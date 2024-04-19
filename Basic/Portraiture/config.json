@@ -1,5 +1,5 @@
 {
-  "changeKey": "P",
+  "changeKey": "L",
   "menuKey": "M",
   "fixPortraitKey": "O",
   "styleChangeKey": "I",
@@ -8,7 +8,7 @@
   "SideLoadHDPWhenNotInstalled": false,
   "SideLoadHDPWhenInstalled": false,
   "HPDOption": true,
-  "active": "Vanilla",
+  "active": "1",
   "presets": {
     "Presets": []
   }

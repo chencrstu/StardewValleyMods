@@ -1,0 +1,11 @@
+{
+	"Name": "Kitty Channels",
+	"Author": "Amaryn",
+	"Description": "Cats have taken over the world of television! How adorable!",
+	"Version": "1.0.3",
+	"UniqueID": "Amaryn.KittyChannels",
+   	"UpdateKeys": ["Nexus:9387"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+}

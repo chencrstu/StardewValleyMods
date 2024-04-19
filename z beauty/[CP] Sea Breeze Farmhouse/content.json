@@ -1,0 +1,146 @@
+{
+	"Format": "1.30.4",
+	"ConfigSchema": {
+				"Floating tile fix" : {
+					"AllowValues" : "true, false",
+					"Default": "false"
+				},
+				"Replace Ginger Island Farmhouse" : {
+					"AllowValues" : "true, false",
+					"Default": "false"
+				},
+				"Multiplayer" : {
+					"AllowValues" : "true, false",
+					"Default": "false"
+				}
+		
+			},
+	"CustomLocations": [
+
+
+		{
+			"Name": "Custom_Seabreeze_garden",
+			"FromMapFile": "Maps/garden.tmx"
+		},
+		{
+			"Name": "Custom_Seabreeze_roof",
+			"FromMapFile": "Maps/roof.tmx"
+		},
+		{
+			"Name": "Custom_Seabreeze_garden_Island",
+			"FromMapFile": "Island/garden_island.tmx"
+		},
+		{
+			"Name": "Custom_Seabreeze_roof_Island",
+			"FromMapFile": "Island/roof_island.tmx"
+		}
+     ],
+	"Changes": [
+
+		{
+			"Action": "Load",
+			"Target": "Maps/SeaBreeze_house",
+			"FromFile": "Tilesheets/house.png"
+				},
+		{
+			"Action": "Load",
+			"Target": "Maps/SeaBreeze_BG",
+			"FromFile": "Tilesheets/BG.png"
+				},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/SeaBreeze_BG",
+			"FromFile": "Tilesheets/BG_Night.png",
+			"When": {"Time": "{{Range: 1930, 2600}}"},
+			"Update": "OnTimeChange"
+			},
+        {
+            "Action": "EditImage",
+            "Target": "Maps/SeaBreeze_house",
+            "FromFile": "Tilesheets/house_night.png",
+            "When": {"Time": "{{Range: 1930, 2600}}"},
+			"Update": "OnTimeChange"
+            },       
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/ChairTiles",
+			"Entries": {
+			   "SeaBreeze_house/6/24": "1/1/down/chair/-1/-1/false",
+			   "SeaBreeze_house/7/24": "1/1/down/chair/-1/-1/false",
+			   "SeaBreeze_house/8/24": "1/1/down/chair/-1/-1/false",
+			   "SeaBreeze_house/6/35": "1/1/down/chair/-1/-1/false",
+			   "SeaBreeze_house/3/22": "1/1/down/chair/-1/-1/false"
+			}
+				},
+		{
+			"Action": "Load",
+			"Target": "Maps/FarmHouse_Cellar, Maps/FarmHouse_CornerRoom_Add, Maps/FarmHouse_CornerRoom_Remove, Maps/FarmHouse_Bedroom_Normal, Maps/FarmHouse_Bedroom_Open, Maps/FarmHouse_SouthernRoom_Add, Maps/FarmHouse_SouthernRoom_Remove, Maps/FarmHouse_Crib_0, Maps/FarmHouse_Cubby_Add, Maps/FarmHouse_Cubby_Remove, Maps/FarmHouse_FarUpperRoom_Remove, Maps/FarmHouse_FarUpperRoom_Add, Maps/FarmHouse_ExtendedCornerRoom_Remove, Maps/FarmHouse_ExtendedCornerRoom_Add, Maps/FarmHouse_DiningRoomWall_Remove, Maps/FarmHouse_DiningRoomWall_Add, Maps/FarmHouse_DiningRoom_Remove, Maps/FarmHouse_DiningRoom_Add",
+			"FromFile": "Mapfix/{{TargetWithoutPath}}.tbin",
+			"When" : {
+				"Multiplayer": "false"
+			}
+                },
+		{
+			"Action": "Load",
+			"Target": "Maps/FarmHouse_Crib_1,",
+			"FromFile": "Maps/FarmHouse_Crib_1.tbin",
+			"When" : {
+				"Multiplayer": "false"
+			}
+				},
+		{
+			"Action": "Load",
+			"Target": "Maps/FarmHouse",
+			"FromFile": "Maps/FarmHouse.tmx",
+			"When" : {
+				"Multiplayer": "false"
+			}
+                },
+		{
+			"Action": "Load",
+			"Target": "Maps/FarmHouse1, Maps/FarmHouse1_marriage",
+			"FromFile": "Maps/{{TargetWithoutPath}}.tmx",
+			"When" : {
+				"Multiplayer": "false"
+			}
+				},
+		{
+			
+			"Action": "Load",
+			"Target": "Maps/FarmHouse2_marriage, Maps/FarmHouse2",
+			"FromFile": "Maps/{{TargetWithoutPath}}.tbin",
+			"When" : {
+				"Multiplayer": "false"
+			}
+				},
+		{
+			"Action":"Load",
+			"Target":"Maps/IslandFarmHouse",
+			"FromFile":"Island/beachhouse.tbin",
+			"When" : {
+				"Replace Ginger Island Farmhouse": "true",
+			}
+		},
+		{
+			"Action":"Load",
+			"Target":"Maps/Island_House_Restored",
+			"FromFile":"Island/beachhouse_out.tbin",
+			"When" : {
+				"Replace Ginger Island Farmhouse": "true",
+			}
+		},
+		{
+			"Action":"EditImage",
+			"PatchMode": "Replace",
+			"Target":"Maps/farmhouse_tiles",
+			"FromFile":"Mapfix/farmhouse_tiles.png",
+			"FromArea": {"X":0, "Y":0, "Width":16, "Height":16},
+			"ToArea": {"X":48, "Y":112, "Width":16, "Height":16},
+			"When" : {
+				"Floating tile fix": "true"
+			}
+		}
+
+]
+}

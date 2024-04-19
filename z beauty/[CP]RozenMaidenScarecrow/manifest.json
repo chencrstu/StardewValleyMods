@@ -1,0 +1,12 @@
+{
+   "Name": "Rozen Maiden Scarecrow",
+   "Author": "M99",
+   "Version": "1.1.0",
+   "Description": "Replacing the scarecrow with the doll from Rozen Maiden.",
+   "UniqueID": "M99.RozenMaidenScarecrow",
+   "MinimumApiVersion": "3.0",
+   "UpdateKeys": [ "Nexus:10585" ],
+   "ContentPackFor": {
+     "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

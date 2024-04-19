@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Bright eyes",
+  "Author": "mio",
+  "Version": "1.0.0",
+  "Description": "Bright eyes",
+  "UniqueID": "mio.brighteyes",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "5.5.0"
+  }
+}

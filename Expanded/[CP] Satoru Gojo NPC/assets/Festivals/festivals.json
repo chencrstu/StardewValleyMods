@@ -1,0 +1,143 @@
+{
+    "Changes": [
+        {
+            "LogName": "Satoru's Egg Festival", 
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Satoru 38 55 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Main-Event_additionalCharacters"],
+                    "Value": "Satoru 25 62 3",
+                    "Delimiter": "/"
+                }]
+        },
+        {
+            "LogName": "Satoru's Luau Festival", 
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Satoru 32 15 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Main-Event_additionalCharacters"],
+                    "Value": "Satoru 32 15 3",
+                    "Delimiter": "/"
+                }]
+        },
+
+        {
+            "LogName": "Satoru's Dance of the Moonlight Jellies", 
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Satoru 31 36 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Main-Event_additionalCharacters"],
+                    "Value": "Satoru 31 36 2",
+                    "Delimiter": "/"
+                }]
+        },
+        {
+            "LogName": "Satoru's Spirit's Eve Y1", 
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Satoru 29 55 2",
+                    "Delimiter": "/"
+            }]
+        },
+        {
+            "LogName": "Satoru's Spirit's Eve Y2", 
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Satoru 30 61 2",
+                    "Delimiter": "/"
+            }]
+        },
+
+        {
+            "LogName": "Satoru's Feast of the Winter Star", 
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Satoru 31 78 2", 
+                    "Delimiter": "/"
+            }]
+        },
+
+        {
+            "LogName": "Satoru's Egg Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Satoru": "这是一个非常温馨的节日$1#你不同意吗？$3",
+                "Satoru_spouse": "我在想我是否应该参加找鸡蛋的活动。$6"
+            }
+        },
+
+        {
+            "LogName": "Satoru's Luau Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Satoru": "我希望汤真的很甜！你会在汤里加点什么吗？$1",
+                "Satoru_spouse": "你好，亲爱的。玩得开心吗$8#嗯？$3"
+            }
+        },
+        {
+            "LogName": "Satoru's Dance of the Moonlight Jellies Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Satoru": "看着水母跳舞真是令人着迷！$8",
+                "Satoru_spouse": "这个夜晚很奇妙, @. 也许是水母，也许只是和你在一起。$3"
+            }
+        },
+        {
+            "LogName": "Satoru's Spirit's Eve Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Satoru": "Are you scared?$3#Want me to protect you?$7#Hm?$8",
+                "Satoru_spouse": "如果你发现自己被吓坏了，亲爱的，你知道在哪里可以找到我$7#我会一直保护你的安全。$1"
+            }
+        },
+        {
+            "LogName": "Satoru's Feast of the Winter Star Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Satoru": "This year has gone by pretty fast.$6#Any new year wishes, @?$8",
+                "Satoru_spouse": "快乐的冬日之星，我的爱人。这个节日总是让我想起有你在我的生活中是多么的幸运$7#我爱你。$1"
+            }
+        }
+    ]
+}

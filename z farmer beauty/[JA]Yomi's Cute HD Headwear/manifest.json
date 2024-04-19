@@ -1,0 +1,10 @@
+{
+   "Name": "[JA]Yomi's Cute HD Headwear",
+   "Author": "Yomi",
+   "Version": "1.0.0",
+   "Description": "Adds to farmer's headwear.",
+   "UniqueID": "Yomi_Cute_HD_Headwear",
+   "ContentPackFor": {
+    	"UniqueID": "spacechase0.JsonAssets"
+    },
+}

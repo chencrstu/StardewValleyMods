@@ -1,0 +1,44 @@
+{
+	"Format": "1.23.0",
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/weatherfortune.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+			"ToArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/tenki.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 413, "Y": 333, "Width": 104, "Height": 52 },
+			"ToArea": { "X": 413, "Y": 333, "Width": 104, "Height": 52 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/landsauce.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 517, "Y": 361, "Width": 169, "Height": 28 },
+			"ToArea": { "X": 517, "Y": 361, "Width": 169, "Height": 28 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "assets/islandweather.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 148, "Y": 62, "Width": 42, "Height": 28 },
+			"ToArea": { "X": 148, "Y": 62, "Width": 42, "Height": 28 }
+		},
+		{
+      		"Action": "EditImage",
+     			"Target": "LooseSprites/Cursors2",
+      		"FromFile": "assets/islandweather.png",
+      		"FromArea": { "X": 172, "Y": 33, "Width": 84, "Height": 28 },
+      		"ToArea": { "X": 172, "Y": 33, "Width": 84, "Height": 28 }
+    		}
+]
+}

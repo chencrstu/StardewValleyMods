@@ -1,0 +1,12 @@
+{
+	"Name": "Solip's Coop Animals (Edited)",
+	"Author": "solippppp (original) edited by acearohippo",
+	"Version": "1.0.0",
+	"Description": "CP conversion of Solip's Coop Animals",
+	"UniqueID": "hippoedits.solipcoopanimal",
+	"MinimumApiVersion": "3.8",
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.20.0"
+	}
+}

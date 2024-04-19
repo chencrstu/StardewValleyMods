@@ -1,0 +1,155 @@
+{
+	"Format": "1.20.0",
+	"ConfigSchema": {
+		"White Chicken": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Brown Chicken": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Blue Chicken": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Void Chicken": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Golden Chicken": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Duck": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Rabbit": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Dinosaur": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		}
+	},
+	"Changes": [
+	//Baby
+		{	
+			"Action": "Load",
+			"Target": "Animals/BabyWhite Chicken",
+			"FromFile": "assets/BabyWhite Chicken.png",
+			"When": {
+				"White Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/BabyBrown Chicken",
+			"FromFile": "assets/BabyBrown Chicken.png",
+			"When": {
+				"Brown Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/BabyBlue Chicken",
+			"FromFile": "assets/BabyBlue Chicken.png",
+			"When": {
+				"Blue Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/BabyVoid Chicken",
+			"FromFile": "assets/BabyVoid Chicken.png",
+			"When": {
+				"Void Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/BabyGolden Chicken",
+			"FromFile": "assets/BabyGolden Chicken.png",
+			"When": {
+				"Golden Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/BabyRabbit",
+			"FromFile": "assets/BabyRabbit.png",
+			"When": {
+				"Rabbit": "true",
+			}
+		},
+		// Adult
+		{	
+			"Action": "Load",
+			"Target": "Animals/White Chicken",
+			"FromFile": "assets/White Chicken.png",
+			"When": {
+				"White Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/Brown Chicken",
+			"FromFile": "assets/Brown Chicken.png",
+			"When": {
+				"Brown Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/Blue Chicken",
+			"FromFile": "assets/Blue Chicken.png",
+			"When": {
+				"Blue Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/Void Chicken",
+			"FromFile": "assets/Void Chicken.png",
+			"When": {
+				"Void Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/Golden Chicken",
+			"FromFile": "assets/Golden Chicken.png",
+			"When": {
+				"Golden Chicken": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/Duck",
+			"FromFile": "assets/Duck.png",
+			"When": {
+				"Duck": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/Rabbit",
+			"FromFile": "assets/Rabbit.png",
+			"When": {
+				"Rabbit": "true",
+			}
+		},
+		{	
+			"Action": "Load",
+			"Target": "Animals/Dinosaur",
+			"FromFile": "assets/Dinosaur.png",
+			"When": {
+				"Dinosaur": "true",
+			}
+		}
+	]
+}
+	
+	
