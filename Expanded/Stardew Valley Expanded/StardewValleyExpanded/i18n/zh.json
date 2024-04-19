@@ -1,7 +1,7 @@
 {
     "installationchecker.installation.incorrect": "Stadew Valley Expanded似乎安装不正确。",
     "installationchecker.missing.mods": "没能检测到Stadew Valley Expanded所需要的模组……",
-    "installationchecker.missing.mods.cont": "请下载，或确保已正确安装以下内容：",
+    "installationchecker.missing.mods.cont": "请下载，或确保你已正确安装以下内容：",
     "installationchecker.outdated.mods": "检测到在Stadew Valley Expanded中使用的模组版本已过时……",
     "installationchecker.outdated.mods.cont": "请在进行游戏前，更新以下内容：",
     "installationchecker.orphaned.mods": "找不到以下这些需要的前置模组，或是它们",
