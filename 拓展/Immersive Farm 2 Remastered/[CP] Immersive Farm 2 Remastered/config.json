@@ -16,6 +16,6 @@
   "Remove_Fences_From_Backyard": "false",
   "Remove_Minecart_System": "false",
   "Remove_Objects_From_Greenhouse": "false",
-  "Disable_IF2R_Greenhouse": "true",
+  "Disable_IF2R_Greenhouse": "false",
   "Disable_Farm_Cave": "false"
 }
