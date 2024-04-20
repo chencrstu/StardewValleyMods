@@ -1,0 +1,12 @@
+{
+    "Name": "Milk of Myth",
+    "Author": "Solariaze and monmsky",
+    "Version": "1.1.2",
+    "Description": "1.6 Continuation of the Monster Girl Livestock.",
+    "UniqueID": "Solariaze.MGL",
+    "UpdateKeys":  [ "Nexus: 21999" ],
+    "MinimumApiVersion": "2.11.0",
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

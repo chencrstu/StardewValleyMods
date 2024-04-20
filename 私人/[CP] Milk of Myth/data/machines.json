@@ -1,0 +1,222 @@
+{
+	"Changes": [
+		{
+			"LogName": "Machines MAYO",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules" ],
+			"Entries": {
+				"{{ModId}}_SMayo": {
+					"Id": "{{ModId}}_SMayo",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"chickengirl_egg"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}_SMayo",
+							"StackModifierMode": "Stack",
+							"QualityModifierMode": "Stack",
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"MinutesUntilReady": 180,
+					"DaysUntilReady": -1,
+				},
+				"{{ModId}}_SVMayo": {
+					"Id": "{{ModId}}_SVMayo",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"voidgirl_egg"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}_SVMayo",
+							"StackModifierMode": "Stack",
+							"QualityModifierMode": "Stack",
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"MinutesUntilReady": 180,
+					"DaysUntilReady": -1,
+				},
+				"{{ModId}}_SDMayo": {
+					"Id": "{{ModId}}_SDMayo",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "{{ModId}}_SDEgg",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}_SDMayo",
+							"StackModifierMode": "Stack",
+							"QualityModifierMode": "Stack",
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"MinutesUntilReady": 180,
+					"DaysUntilReady": -1,
+				},
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}_SMayo",
+					"BeforeId": "Default_LargeEgg"
+				},
+				{
+					"ID": "{{ModId}}_SVMayo",
+					"BeforeId": "{{ModId}}_SMayo"
+				},
+				{
+					"ID": "{{ModId}}_SDMayo",
+					"BeforeId": "{{ModId}}_SVMayo"
+				}
+			]
+		},
+		{
+			"LogName": "Machines CHEESE",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules" ],
+			"Entries": {
+				"{{ModId}}_MCheese": {
+					"Id": "{{ModId}}_MCheese",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"cowgirl_milk"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}_MCheese",
+							"StackModifierMode": "Stack",
+							"QualityModifierMode": "Stack",
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+				"{{ModId}}_MGCheese": {
+					"Id": "{{ModId}}_MGCheese",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": [
+								"goatgirl_milk"
+							],
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}_MGCheese",
+							"StackModifierMode": "Stack",
+							"QualityModifierMode": "Stack",
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"MinutesUntilReady": 200,
+					"DaysUntilReady": -1,
+				},
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}_MCheese",
+					"BeforeId": "Default_GoatMilk"
+				},
+				{
+					"ID": "{{ModId}}_MGCheese",
+					"BeforeId": "{{ModId}}_MCheese"
+				},
+			]
+		},
+		{
+			"LogName": "Machines WOOL",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)17", "OutputRules" ],
+			"Entries": {
+				"{{ModId}}_Fabric": {
+					"Id": "{{ModId}}_Fabric",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}_Pelt",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}_Fabric",
+							"StackModifierMode": "Stack",
+							"QualityModifierMode": "Stack",
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"MinutesUntilReady": 240,
+					"DaysUntilReady": -1,
+				},
+			},
+		},
+		{
+			"LogName": "Machines TRUFFLE",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules" ],
+			"Entries": {
+				"{{ModId}}_FairyTruffle": {
+					"Id": "{{ModId}}_FairyTruffle",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O){{ModId}}_FairyTruffle",
+							"RequiredCount": 1,
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O){{ModId}}_FairyTruffleOil",
+							"StackModifierMode": "Stack",
+							"QualityModifierMode": "Stack",
+							"MinStack": 1,
+							"MaxStack": 1,
+						}
+					],
+					"UseFirstValidOutput": false,
+					"MinutesUntilReady": 360,
+					"DaysUntilReady": -1,
+				},
+			},
+		},
+    ],
+}

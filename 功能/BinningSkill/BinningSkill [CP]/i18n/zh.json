@@ -1,0 +1,28 @@
+﻿{
+    "item.CopperGarbageHat.name": "铜质垃圾帽",
+    "item.CopperGarbageHat.desc": "这顶垃圾帽很有光泽。",
+    "item.IronGarbageHat.name": "铁质垃圾帽",
+    "item.IronGarbageHat.desc": "一个特别结实的垃圾桶盖子，你可以把它当帽子戴着。",
+    "item.GoldGarbageHat.name": "金质垃圾帽",
+    "item.GoldGarbageHat.desc": "为什么有人用金子做垃圾桶？",
+    "item.IridiumGarbageHat.name": "铱质垃圾帽",
+    "item.IridiumGarbageHat.desc": "一顶用垃圾桶盖做成的漂亮的紫色帽子。",
+    "item.RadioactiveGarbageHat.name": "放射性垃圾帽",
+    "item.RadioactiveGarbageHat.desc": "也许最好不要穿这个……",
+    "item.PrismaticGarbageHat.name": "五彩垃圾帽",
+    "item.PrismaticGarbageHat.desc": "它闪烁着五彩碎片的能量…但它仍然是一个垃圾桶的盖子……",
+
+    "item.Composter.name": "堆肥器",
+    "item.Composter.desc": "把食物变成肥料的机器。",
+    "item.TrashBin.name": "垃圾桶",
+    "item.TrashBin.desc": "一个垃圾桶。把它们放在城里，人们就会把垃圾扔在里面。",
+    "item.RecyclingBin.name": "回收箱",
+    "item.RecyclingBin.desc": "垃圾桶的环保替代品。把它们放在城里，人们可能会扔掉一些好东西。",
+    "item.AdvancedRecyclingMachine.name": "先进的回收机",
+    "item.AdvancedRecyclingMachine.desc": "更先进的回收机器。将垃圾转化为资源，但需要更多的垃圾和更多的时间。",
+
+    "item.GrilledCheese.name": "烤奶酪三明治",
+    "item.GrilledCheese.desc": "一个简单的烤奶酪三明治。",
+    "item.FishCasserole.name": "砂锅鱼",
+    "item.FishCasserole.desc": "由冰箱里的任何东西制成……",
+}

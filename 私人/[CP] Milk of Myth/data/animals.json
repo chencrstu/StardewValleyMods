@@ -1,0 +1,995 @@
+{
+    "Changes": [
+        {
+			"LogName": "Calling Animal Assets",
+			"Action": "Load",
+			"Target": "assets/animals/BrownChicken, assets/animals/BrownCow, assets/animals/Dinosaur, assets/animals/Duck, assets/animals/Goat, assets/animals/Pig, assets/animals/Rabbit, assets/animals/ShearedSheep, assets/animals/Sheep, assets/animals/VoidChicken, assets/animals/WhiteCow, assets/animals/WhiteChicken",
+			"FromFile": "assets/animals/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Calling Animal Baby Assets",
+			"Action": "Load",
+			"Target": "assets/babyAnimals/chickenBrown, assets/babyAnimals/chickenWhite, assets/babyAnimals/chickenGold, assets/babyAnimals/chickenVoid, assets/babyAnimals/cowBrown, assets/babyAnimals/chickenBlue, assets/babyAnimals/cowWhite, assets/babyAnimals/chickenBrown, assets/babyAnimals/goat, assets/babyAnimals/pig, assets/babyAnimals/rabbit, assets/babyAnimals/sheep,",
+			"FromFile": "assets/babyAnimals/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Calling Shop Assets",
+			"Action": "Load",
+			"Target": "assets/shop/Chicken, assets/shop/Cow, assets/shop/Duck, assets/shop/Goat, assets/shop/Pig, assets/shop/Rabbit, assets/shop/Sheep",
+			"FromFile": "assets/shop/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Calling Sound Effects",
+			"Action": "EditData",
+			"When": { "Mute Monster Girls": "false" },
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"{{ModId}}.ChickenGirl.Sound": {
+					"ID": "{{ModId}}.ChickenGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/chicken1.wav}}", "{{AbsoluteFilePath: assets/sounds/chicken2.wav}}", "{{AbsoluteFilePath: assets/sounds/chicken3.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.CowGirl.Sound": {
+					"ID": "{{ModId}}.CowGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/cow1.wav}}", "{{AbsoluteFilePath: assets/sounds/cow2.wav}}", "{{AbsoluteFilePath: assets/sounds/cow3.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.DuckGirl.Sound": {
+					"ID": "{{ModId}}.DuckGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/duck.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.GoatGirl.Sound": {
+					"ID": "{{ModId}}.GoatGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/goat2.wav}}", "{{AbsoluteFilePath: assets/sounds/goat2.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.PigGirl.Sound": {
+					"ID": "{{ModId}}.PigGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/pig.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.RabbitGirl.Sound": {
+					"ID": "{{ModId}}.RabbitGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/rabbit.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.SheepGirl.Sound": {
+					"ID": "{{ModId}}.SheepGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/sheep.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+			}
+		},
+		{
+			"LogName": "Calling Sound Effects",
+			"Action": "EditData",
+			"When": { "Mute Monster Girls": "true", },
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"{{ModId}}.ChickenGirl.Sound": {
+					"ID": "{{ModId}}.ChickenGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.CowGirl.Sound": {
+					"ID": "{{ModId}}.CowGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.DuckGirl.Sound": {
+					"ID": "{{ModId}}.DuckGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.GoatGirl.Sound": {
+					"ID": "{{ModId}}.GoatGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.PigGirl.Sound": {
+					"ID": "{{ModId}}.PigGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.RabbitGirl.Sound": {
+					"ID": "{{ModId}}.RabbitGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+				"{{ModId}}.SheepGirl.Sound": {
+					"ID": "{{ModId}}.SheepGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+			}
+		},
+		{
+            "LogName": "Adding Animals to the Game",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.BrownChickenGirl": {
+                    "DisplayName": "{{i18n: BrownChickenGirl}}", 
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "PurchasePrice": 750,
+                    "SellPrice": 1750,
+					"ShopDisplayName": "{{i18n: ChickenGirl.Shop}}",
+					"ShopDescription": "{{i18n: ChickenGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11335]",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5940]",
+                    "ShopTexture": "assets/shop/Chicken",
+                    "ShopSourceRect":
+						{
+							"X": 0,
+							"Y": 0,
+							"Width": 32,
+							"Height": 16
+						},
+                    "RequiredBuilding": "Big Coop",
+                    "UnlockCondition": null,
+                    "AlternatePurchaseTypes": [
+                        {
+                          "Condition": "RANDOM 0.05",
+                          "AnimalIds": [
+                            "{{ModId}}.VoidChickenGirl"
+                          ]
+                        },
+                        {
+                          "Condition": null,
+                          "AnimalIds": [
+                            "{{ModId}}.WhiteChickenGirl",
+                            "{{ModId}}.BrownChickenGirl"
+                          ]
+                        }
+                    ],
+					"EggItemIds": [
+                        "{{ModId}}_SBEgg",
+                        "{{ModId}}_SLBEgg"
+						],
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{ModId}}.ChickenGirlHatch",
+                    "DaysToMature": "3",
+                    "CanGetPregnant": false,
+					"DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "MinimumFriendship": 0,
+                          "ItemId": "{{ModId}}_SBEgg"
+                        }
+                      ],
+                      "DeluxeProduceItemIds": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "MinimumFriendship": 0,
+                          "ItemId": "{{ModId}}_SLBEgg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "{{ModId}}.ChickenGirl.Sound",
+                    "BabySound": "{{ModId}}.ChickenGirl.Sound",
+
+                    "Texture": "assets/animals/BrownChicken",
+                    "BabyTexture": "assets/babyAnimals/chickenBrown",
+					"UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "ShowInSummitCredits": true,
+                },
+                "{{ModId}}.WhiteChickenGirl": {
+                    "DisplayName": "{{i18n: WhiteChickenGirl}}", 
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "SellPrice": 1750,
+					"ShopDisplayName": "{{i18n: ChickenGirl.Shop}}",
+					"ShopDescription": "{{i18n: ChickenGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11335]",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5940]",
+                    "RequiredBuilding": "Big Coop",
+                    "UnlockCondition": null,
+					"EggItemIds": [
+                        "{{ModId}}_SWEgg",
+                        "{{ModId}}_SLWEgg"
+						],
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{ModId}}.ChickenGirlHatch",
+                    "DaysToMature": "3",
+                    "CanGetPregnant": false,
+					"DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "MinimumFriendship": 0,
+                          "ItemId": "{{ModId}}_SWEgg"
+                        }
+                      ],
+                      "DeluxeProduceItemIds": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "MinimumFriendship": 0,
+                          "ItemId": "{{ModId}}_SLWEgg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "{{ModId}}.ChickenGirl.Sound",
+                    "BabySound": "{{ModId}}.ChickenGirl.Sound",
+
+                    "Texture": "assets/animals/WhiteChicken",
+                    "BabyTexture": "assets/babyAnimals/chickenWhite",
+					"UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "ShowInSummitCredits": true,
+                },
+                "{{ModId}}.VoidChickenGirl": {
+                    "DisplayName": "{{i18n: VoidChickenGirl}}", 
+                    "House": "Coop",
+                    "Gender": "Female",
+                    "SellPrice": 1750,
+					"ShopDisplayName": "{{i18n: ChickenGirl.Shop}}",
+					"ShopDescription": "{{i18n: ChickenGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11335]",
+                    "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5940]",
+                    "RequiredBuilding": "Big Coop",
+                    "UnlockCondition": null,
+					"EggItemIds": [
+                        "{{ModId}}_SVEgg",
+                        "{{ModId}}_SLVEgg"
+						],
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{ModId}}.ChickenGirlHatch",
+                    "DaysToMature": "3",
+                    "CanGetPregnant": false,
+					"DaysToProduce": "2",
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "MinimumFriendship": 0,
+                          "ItemId": "{{ModId}}_SVEgg"
+                        }
+                      ],
+                      "DeluxeProduceItemIds": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "MinimumFriendship": 0,
+                          "ItemId": "{{ModId}}_SLVEgg"
+                        }
+                    ],
+                    "ProduceOnMature": false,
+                    "FriendshipForFasterProduce": -1,
+                    "DeluxeProduceMinimumFriendship": 200,
+                    "DeluxeProduceCareDivisor": 1200.0,
+                    "DeluxeProduceLuckMultiplier": 0.0,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 2,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "{{ModId}}.ChickenGirl.Sound",
+                    "BabySound": "{{ModId}}.ChickenGirl.Sound",
+
+                    "Texture": "assets/animals/VoidChicken",
+                    "BabyTexture": "Animals\\BabyVoid Chicken",
+					"UseFlippedRightForLeft": true,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 16,
+                    "ShowInSummitCredits": true,
+                },
+				"{{ModId}}.WhiteCowGirl": {
+					"DisplayName": "{{i18n: WhiteCowGirl}}",
+					"House": "Barn",
+					"Gender": "Female",
+					"PurchasePrice": 1250,
+					"SellPrice": 3500,
+					"ShopTexture": "assets/shop/Cow",
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"ShopDisplayName": "{{i18n: CowGirl.Shop}}",
+					"ShopDescription": "{{i18n: CowGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+					"RequiredBuilding": "Big Barn",
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": [
+					  {
+						"Condition": null,
+						"AnimalIds": [
+						  "{{ModId}}.WhiteCowGirl",
+						  "{{ModId}}.BrownCowGirl"
+						]
+					  }
+					],
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": null,
+					"DaysToMature": 5,
+					"CanGetPregnant": true,
+					"DaysToProduce": 2,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Milk Pail",
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_MMilk"
+					  }
+					],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_MLMilk"
+					  }
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "{{ModId}}.CowGirl.Sound",
+					"BabySound": "{{ModId}}.CowGirl.Sound",
+					"Texture": "assets/animals/WhiteCow",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/babyAnimals/cowWhite",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 4,
+					"HappinessDrain": 6,
+					"UpDownPetHitboxTileSize": "1, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+				"{{ModId}}.BrownCowGirl": {
+					"DisplayName": "{{i18n: BrownCowGirl}}",
+					"House": "Barn",
+					"Gender": "Female",
+					"SellPrice": 3500,
+					"ShopDisplayName": "{{i18n: CowGirl.Shop}}",
+					"ShopDescription": "{{i18n: CowGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+					"RequiredBuilding": "Barn",
+					"UnlockCondition": null,
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": null,
+					"DaysToMature": 5,
+					"CanGetPregnant": true,
+					"DaysToProduce": 2,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Milk Pail",
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_MMilk"
+					  }
+					],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_MLMilk"
+					  }
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "{{ModId}}.CowGirl.Sound",
+					"BabySound": "{{ModId}}.CowGirl.Sound",
+					"Texture": "assets/babyAnimals/cowBrown",
+					"HarvestedTexture": null,
+					"BabyTexture": "Animals\\BabyBrown Cow",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 4,
+					"HappinessDrain": 6,
+					"UpDownPetHitboxTileSize": "1, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+				"{{ModId}}.DuckGirl": {
+					"DisplayName": "{{i18n: DuckGirl}}",
+					"House": "Coop",
+					"Gender": "Female",
+					"PurchasePrice": 2750,
+					"SellPrice": 7000,
+					"ShopTexture": "assets/shop/Duck",
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"ShopDisplayName": "{{i18n: DuckGirl}}",
+					"ShopDescription": "{{i18n: DuckGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11335]",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5940]",
+					"RequiredBuilding": "Big Coop",
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": [
+					  "{{ModId}}_SDEgg"
+					],
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n: DuckGirl.Hatch}}",
+					"DaysToMature": 5,
+					"CanGetPregnant": false,
+					"DaysToProduce": 2,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_SDEgg"
+					  }
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 4750.0,
+					"DeluxeProduceLuckMultiplier": 1.01,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "{{ModId}}.DuckGirl.Sound",
+					"BabySound": "{{ModId}}.DuckGirl.Sound",
+					"Texture": "assets/animals/Duck",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/animals/Duck",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -16
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": true,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 5,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": [
+					  {
+						"RequiredItemId": null,
+						"RequiredTags": [
+						  "egg_item"
+						],
+						"StatName": "DuckEggsLayed"
+					  }
+					],
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+				"{{ModId}}.RabbitGirl": {
+					"DisplayName": "{{i18n: RabbitGirl}}",
+					"House": "Coop",
+					"Gender": "MaleOrFemale",
+					"PurchasePrice": 4750,
+					"SellPrice": 12000,
+					"ShopTexture": "assets/shop/Rabbit",
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"ShopDisplayName": "{{i18n: RabbitGirl}}",
+					"ShopDescription": "{{i18n: RabbitGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11335]",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5947]",
+					"RequiredBuilding": "Deluxe Coop",
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": null,
+					"DaysToMature": 6,
+					"CanGetPregnant": false,
+					"DaysToProduce": 4,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_Pelt"
+					  }
+					],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "446"
+					  }
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 0,
+					"DeluxeProduceCareDivisor": 5000.0,
+					"DeluxeProduceLuckMultiplier": 1.02,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "{{ModId}}.RabbitGirl.Sound",
+					"BabySound": "{{ModId}}.RabbitGirl.Sound",
+					"Texture": "assets/animals/Rabbit",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/babyAnimals/rabbit",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -16
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 5,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": [
+					  {
+						"RequiredItemId": "(O)440",
+						"RequiredTags": null,
+						"StatName": "RabbitWoolProduced"
+					  }
+					],
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+				"{{ModId}}.DinosaurGirl": {
+					"DisplayName": "{{i18n: DinosaurGirl}}",
+					"House": "Coop",
+					"Gender": "Female",
+					"SellPrice": 1000,
+					"ShopDisplayName": null,
+					"ShopDescription": null,
+					"ShopMissingBuildingDescription": null,
+					"RequiredBuilding": null,
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": [
+					  "107"
+					],
+					"IncubationTime": 18000,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": "{{i18n: DinosaurGirl.Hatch}}",
+					"DaysToMature": 0,
+					"CanGetPregnant": false,
+					"DaysToProduce": 7,
+					"HarvestType": "DropOvernight",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "107"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 2,
+					"ProfessionForFasterProduce": -1,
+					"Sound": null,
+					"BabySound": null,
+					"Texture": "assets/animals/Dinosaur",
+					"HarvestedTexture": null,
+					"BabyTexture": null,
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": 16,
+					"SpriteHeight": 16,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": -16
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 2,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1, 1",
+					"LeftRightPetHitboxTileSize": "1, 1",
+					"BabyUpDownPetHitboxTileSize": "1, 1",
+					"BabyLeftRightPetHitboxTileSize": "1, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+				"{{ModId}}.GoatGirl": {
+					"DisplayName": "{{i18n: GoatGirl}}",
+					"House": "Barn",
+					"Gender": "Female",
+					"PurchasePrice": 4250,
+					"SellPrice": 12000,
+					"ShopTexture": "assets/shop/Goat",
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"ShopDisplayName": "{{i18n: GoatGirl}}",
+					"ShopDescription": "{{i18n: GoatGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5936]",
+					"RequiredBuilding": "Big Barn",
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": null,
+					"DaysToMature": 5,
+					"CanGetPregnant": true,
+					"DaysToProduce": 2,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Milk Pail",
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_MGMilk"
+					  }
+					],
+					"DeluxeProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_MLGMilk"
+					  }
+					],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "{{ModId}}.GoatGirl.Sound",
+					"BabySound": "{{ModId}}.GoatGirl.Sound",
+					"Texture": "assets/animals/Goat",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/babyAnimals/goat",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 4,
+					"HappinessDrain": 5,
+					"UpDownPetHitboxTileSize": "1, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+				  "{{ModId}}.SheepGirl": {
+					"DisplayName": "{{i18n: SheepGirl}}",
+					"House": "Barn",
+					"Gender": "Female",
+					"PurchasePrice": 5500,
+					"SellPrice": 16000,
+					"ShopTexture": "assets/shop/Sheep",
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"ShopDisplayName": "{{i18n: SheepGirl}}",
+					"ShopDescription": "{{i18n: SheepGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5944]",
+					"RequiredBuilding": "Deluxe Barn",
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": null,
+					"DaysToMature": 4,
+					"CanGetPregnant": true,
+					"DaysToProduce": 3,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_Pelt"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": true,
+					"FriendshipForFasterProduce": 900,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": 3,
+					"Sound": "{{ModId}}.SheepGirl.Sound",
+					"BabySound": "{{ModId}}.SheepGirl.Sound",
+					"Texture": "assets/animals/Sheep",
+					"HarvestedTexture": "assets/animals/ShearedSheep",
+					"BabyTexture": "assets/babyAnimals/sheep",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 4,
+					"HappinessDrain": 5,
+					"UpDownPetHitboxTileSize": "1.5, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+				  "{{ModId}}.PigGirl": {
+					"DisplayName": "{{i18n: PigGirl}}",
+					"House": "Barn",
+					"Gender": "Female",
+					"PurchasePrice": 10000,
+					"SellPrice": 30000,
+					"ShopTexture": "assets/shop/Pig",
+					"ShopSourceRect": {
+					  "X": 0,
+					  "Y": 0,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"ShopDisplayName": "{{i18n: PigGirl}}",
+					"ShopDescription": "{{i18n: PigGirl.Description}}\\n[LocalizedText Strings\\StringsFromCSFiles:PurchaseAnimalsMenu.cs.11344]",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5950]",
+					"RequiredBuilding": "Deluxe Barn",
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes": null,
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": null,
+					"DaysToMature": 10,
+					"CanGetPregnant": true,
+					"DaysToProduce": 1,
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"ProduceItemIds": [
+					  {
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_FairyTruffle"
+					  }
+					],
+					"DeluxeProduceItemIds": [],
+					"ProduceOnMature": false,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "{{ModId}}.PigGirl.Sound",
+					"BabySound": "{{ModId}}.PigGirl.Sound",
+					"Texture": "assets/animals/Pig",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/babyAnimals/pig",
+					"UseFlippedRightForLeft": false,
+					"SpriteWidth": 32,
+					"SpriteHeight": 32,
+					"EmoteOffset": {
+					  "X": 0,
+					  "Y": 0
+					},
+					"SwimOffset": {
+					  "X": 0,
+					  "Y": 112
+					},
+					"Skins": null,
+					"ShadowWhenBabySwims": null,
+					"ShadowWhenBaby": null,
+					"ShadowWhenAdultSwims": null,
+					"ShadowWhenAdult": null,
+					"CanSwim": false,
+					"BabiesFollowAdults": false,
+					"GrassEatAmount": 4,
+					"HappinessDrain": 4,
+					"UpDownPetHitboxTileSize": "1.5, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": null,
+					"ShowInSummitCredits": true,
+					"CustomFields": null
+				},
+            },
+    	},
+    ]
+}

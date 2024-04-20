@@ -1,0 +1,25 @@
+{
+	"Format": "2.0.0",
+    "ConfigSchema": {
+        "Mute Monster Girls": {"AllowValues": "true, false",
+        "Default": "false" }
+    },
+    "Changes": [
+		{
+            "Action": "Include",
+            "FromFile": "data/animals.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/pets.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/objects.json",
+        },
+		{
+            "Action": "Include",
+            "FromFile": "data/machines.json",
+        },
+    ]
+}

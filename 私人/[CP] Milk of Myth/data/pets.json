@@ -1,0 +1,97 @@
+{
+    "Changes": [
+        {
+			"LogName": "Calling Animal Assets",
+			"Action": "Load",
+			"Target": "assets/pets/dog, assets/pets/cat",
+			"FromFile": "assets/pets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Calling Shop Assets",
+			"Action": "Load",
+			"Target": "assets/shop/cat, assets/shop/dog",
+			"FromFile": "assets/shop/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Calling Sound Effects",
+			"Action": "EditData",
+			"When": { "Mute Monster Girls": "false" },
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"{{ModId}}.CatGirl.Sound": {
+					"ID": "{{ModId}}.CatGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/catGirl1.wav}}", "{{AbsoluteFilePath: assets/sounds/catGirl2.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				}
+			}
+		},
+		{
+			"LogName": "Calling Sound Effects",
+			"Action": "EditData",
+			"When": { "Mute Monster Girls": "true", },
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"{{ModId}}.CatGirl.Sound": {
+					"ID": "{{ModId}}.CatGirl.Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/sounds/silent.wav}}" ],
+					"StreamedVorbis": true,
+                    "Looped": false
+				},
+			}
+		},
+		{
+            "LogName": "Add Cat Girl",
+            "Action": "EditData",
+            "Target": "Data/Pets",
+            "TargetField": [
+                "Cat",
+                "Breeds"
+            ],
+            "Entries": {
+                "{{ModId}}.CatGirl": {
+                    "Id": "{{ModId}}.CatGirl",
+                    "Texture": "assets/pets/cat",
+                    "IconTexture": "assets/shop/cat",
+                    "IconSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "CanBeChosenAtStart": true,
+                    "CanBeAdoptedFromMarnie": true,
+                    "AdoptionPrice": 40000,
+                    "BarkOverride": "{{ModId}}.CatGirl.Sound",
+                }
+            }
+        },
+		{
+            "LogName": "Add Dog Girl",
+            "Action": "EditData",
+            "Target": "Data/Pets",
+            "TargetField": [
+                "Dog",
+                "Breeds"
+            ],
+            "Entries": {
+                "{{ModId}}.DogGirl": {
+                    "Id": "{{ModId}}.DogGirl",
+                    "Texture": "assets/pets/dog",
+                    "IconTexture": "assets/shop/dog",
+                    "IconSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "CanBeChosenAtStart": true,
+                    "CanBeAdoptedFromMarnie": true,
+                    "AdoptionPrice": 40000,
+                }
+            }
+        },
+    ]
+}
