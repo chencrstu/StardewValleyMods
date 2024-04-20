@@ -144,59 +144,173 @@
     *********/
     "warp.customized-warning": "These warps were edited by your mods. Please report warp issues to the mods which added them if applicable.",
 
-    // main areas
-    "warp-section.main": "Main Areas",
-    "warp.farm": "Farm",
-    "warp.carpenter": "Carpenter",
-    "warp.desert": "Desert",
-    "warp.mines": "Mines",
-    "warp.pierre-shop": "Pierre's Shop",
+    // Farm
+    "Farm":"Farm",
+	"Grandpa's Farm":"Grandpa's Farm",
+    "Immersive Farm 2 Remastered":"IF2R",
+    "Farmhouse": "Farm House",
+	"Farm Cave": "Farm Cave",
+	"Farm Greenhouse": "Greenhouse",
+	"Farm Hotspring":"Hotspring",
+	"Farm Quarry":"Quarry",
+	"Grandpa's Shed": "Grandpa's Shed",
+	"Hardwood Glade":"Hardwood Glade",
 
-    // town
+    // Common locations
+    "Common locations": "Common locations",
+    "Mine": "Mine",
+    "Skull Cave": "Skull Cave",
+    "Island Farm": "Island Farm",
+    "Community Center": "Community Center",
+
+    // Shops
+    "Shops": "Shops",
+    "Joja Mart": "Joja Mart",
+    "Pierre's Shop": "Pierre's Shop",
+    "Robin's Carpentry Shop": "Robin's Carpentry Shop",
+    "Marnie's Ranch": "Marnie's Ranch",
+    "Clint's Blacksmithing": "Clint's Blacksmithing",
+	"Willy's Shop": "Willy's Shop",
+	"Krobus' Shop": "Krobus' Shop",
+	"Travelling Merchant": "Travelling Merchant",
+	"Sandy's Shop": "Sandy's Shop",
+	"Dwarf's Shop": "Dwarf's Shop",
+	"Adventurer's Guild": "Adventurer's Guild",
+	"Stardrop Saloon": "Stardrop Saloon",
+	"Hat Mouse": "Hat Mouse",
+
+    // Additional Farms
+    "Additional Farms": "Additional Farms",
+    "Ridgeside Village Summit Farm": "Ridgeside Village Summit Farm",
+    "Ridgeside Village Phantom Farm": "Ridgeside Village Phantom Farm",
+    "Ridgeside Village Community Greenhouse": "Ridgeside Village Community Greenhouse",
+    "Ridgeside Village Cave Farm": "Ridgeside Village Cave Farm",
+    "Aurora Vineyard": "Aurora Vineyard",
+	"Grampleton Fields Entrance": "Grampleton Fields Entrance",
+	"Garden": "Garden",
+
+    // warp-section.town
     "warp-section.town": "Town",
-    "warp.blacksmith": "Blacksmith",
-    "warp.community-center": "Community Center",
-    "warp.jojamart": "JojaMart",
-    "warp.movie-theater": "Movie Theater",
-    "warp.museum": "Museum",
-    "warp.saloon": "Saloon",
-    "warp.sewer": "Sewers",
+    "Museum": "Museum",
+    "Shearwater Bridge": "Shearwater Bridge",
+	"Trailer": "Trailer",
+	"Jodi's Home": "Jodi's Home",
+	"Emily And Haley's Home": "Emily And Haley's Home",
+	"Clinic": "Clinic",
+	"Alex's Home": "Alex's Home",
+	"Jenkin's Home": "Jenkin's Home",
+	"Mayor's Manor": "Mayor's Manor",
 
-    // forest
+    // warp-section.forest
     "warp-section.forest": "Forest",
-    "warp.hats": "Hats",
-    "warp.mastery-cave": "Mastery Cave",
-    "warp.ranch": "Marnie's Ranch",
-    "warp.secret-woods": "Secret Woods",
-    "warp.wizard-tower": "Wizard Tower",
+    "MasteryCave": "Mastery Cave",
+    "Wizard's Tower": "Wizard's Tower",
+    "Friend Shed": "Friend Shed",
+    "Sophia's Vineyard": "Sophia's Vineyard",
+    "Andy's Farm": "Andy's Farm",
+	"Secret Woods": "Secret Woods",
+	"Junimo Village": "Junimo Village",
+	"Junimo Woods": "Junimo Woods",
+	"Sprite Spring": "Sprite Spring",
+	"Sprite Spring Cave": "Sprite Spring Cave",
+	"Apples' Room": "Apples' Room",
+	"Bear's Cave": "Bear's Cave",
+	"Sewer Outlet": "Sewer Outlet",
 
-    // mountain
+    // warp-section.mountain
     "warp-section.mountain": "Mountain",
-    "warp.adventurers-guild": "Adventurer's Guild",
-    "warp.bathhouse": "Bathhouse",
-    "warp.mutant-bug-lair": "Mutant Bug Lair",
-    "warp.quarry": "Quarry",
-    "warp.witch-swamp": "Witch's Swamp",
-
-    // beach
+    "Custom_SVESummit": "Summit",
+    "Quarry": "Quarry",
+    "SPA": "SPA",
+	"Susan's Farm": "Susan's Farm",
+	"Linus' Tent": "Linus' Tent",
+	"Golden Scythe": "Golden Scythe",
+	"Tunnel": "Tunnel",
+	"Train Platform": "Train Platform",
+	"Back Woods": "Back Woods",
+	"Highlands": "Highlands",
+	"Highlands Cavern": "Highlands Cavern",
+	
+	// warp-section.beach
     "warp-section.beach": "Beach",
-    "warp.tide-pools": "Tide Pools",
-    "warp.willy-shop": "Willy's Shop",
-
-    // island
-    "warp-section.island": "Ginger Island",
-    "warp.forge": "Forge",
-    "warp.island-farm": "Island Farm",
-    "warp.dwarf-shop": "Volcano Dwarf Shop",
-    "warp.field-office": "Field Office",
-    "warp.leo-house": "Leo's House",
-
-    // desert
+    "Elliot's Cabin": "Elliot's Cabin",
+    "Tide Pools": "Tide Pools",
+	
+	// warp-section.desert
     "warp-section.desert": "Desert",
-    "warp.casino": "Casino",
-    "warp.sandy-shop": "Sandy's Shop",
-    "warp.skull-cavern": "Skull Cavern",
-
+    "Casino": "Casino",
+    "Pillars": "Pillars",
+    "Sand Dragon": "Sand Dragon",
+	
+	// Ginger Island
+    "Ginger Island": "Ginger Island",
+    "Leo's Home": "Leo's Home",
+    "Fable Reef": "Fable Reef",
+    "Island Field Office": "Island Field Office",
+	"Island Dwarf Shop": "Island Dwarf Shop",
+	"Island Trader": "Island Trader",
+	"Volcano Caldera": "Volcano Caldera",
+	"Tide Pool": "Tide Pool",
+	"Pirate Cove": "Pirate Cove",
+	
+	// Ridgeside Village
+    "Ridgeside Village": "Ridgeside Village",
+    "Ridgeside Plaza": "Ridgeside Plaza",
+    "Odd Job Services": "Odd Job Services",
+    "Nightingale Orchard": "Nightingale Orchard",
+	"Log Cabin Hotel": "Log Cabin Hotel",
+	"Heaps Convenience Store": "Heaps Convenience Store",
+	"Faye's Clothing Shop": "Faye's Clothing Shop",
+	"Akina Residence": "Akina Residence",
+	"Amethyne Mansion": "Amethyne Mansion",
+	"Blooming Hill Farm": "Blooming Hill Farm",
+	"Kobayashi Residence": "Kobayashi Residence",
+	"Pickens Residence": "Pickens Residence",
+	"Ridgeside Clinic": "Ridgeside Clinic",
+	"Rivera Residence": "Rivera Residence",
+	"Liden Residence": "Liden Residence",
+	"Bladebane Residence": "Bladebane Residence",
+	"Daniels Residence": "Daniels Residence",
+	"Water Research Facility & Laboratory": "Water Research Facility & Laboratory",
+	
+	// Ridgeside Surroundings
+    "Ridgeside Surroundings": "Ridgeside Surroundings",
+    "Ridgeside": "Ridgeside",
+    "Ridge Forest": "Ridge Forest",
+    "Ridge Falls": "Ridge Falls",
+	"Ridge Pond": "Ridge Pond",
+	"Ninja House": "Ninja House",
+	"Cliff": "Cliff",
+	"Spirit Realm": "Spirit Realm",
+	"Cable Car": "Cable Car",
+	
+	// East Scarp
+    "East Scarp": "East Scarp",
+    "East Scarp Town": "East Scarp Town",
+    "Scarp Inn": "Scarp Inn",
+    "Mia's Home": "Mia's Home",
+	"Aidden's Home": "Aidden's Home",
+	"Yri's Home": "Yri's Home",
+	"Light House": "Light House",
+	"Rodney's House": "Rodney's House",
+	"Vet's House": "Vet's House",
+	
+	// East Scarp Surroundings
+    "East Scarp Surroundings": "East Scarp Surroundings",
+    "Meadow Farm": "Meadow Farm",
+    "Orchard": "Orchard",
+    "ES Sea Cave": "ES Sea Cave",
+	"Mine Entrance": "Mine Entrance",
+	"Deep Mountain": "Deep Mountain",
+	"Mouse Hole": "Mouse Hole",
+	
+	// Galdora
+    "Galdora": "Galdora",
+    "Castle Village Outpost": "Castle Village Outpost",
+    "Crimson Badlands": "Crimson Badlands",
+    "Treasure Cave": "Treasure Cave",
+	"Iridium Quarry": "Iridium Quarry",
+	"Enchanted Grove": "Enchanted Grove",
 
     /*********
     ** Time tab

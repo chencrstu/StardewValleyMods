@@ -142,60 +142,175 @@
     /*********
     ** Warps tab
     *********/
-    "warp.customized-warning": "These warps were edited by your mods. Please report warp issues to the mods which added them if applicable.", // TODO
+    //Farm
+	"Farm":"农场",
+	"Grandpa's Farm":"爷爷的农场",
+    "Immersive Farm 2 Remastered":"沉浸式农场2",
+    "Farmhouse": "农场",
+	"Farm Cave": "农场内部洞穴",
+	"Farm Greenhouse": "温室",
+	"Farm Hotspring":"温泉",
+	"Farm Quarry":"采石场",
+	"Grandpa's Shed": "爷爷的小屋",
+	"Hardwood Glade":"硬木区",
 
-    // main areas
-    "warp-section.main": "主要区域",
-    "warp.farm": "农场",
-    "warp.carpenter": "木匠的商店",
-    "warp.desert": "沙漠",
-    "warp.mines": "矿井",
-    "warp.pierre-shop": "皮埃尔的杂货店",
+	//Common locations
+	"Common locations":"常用地点",
+	"Mine": "矿井",
+	"Skull Cave": "骷髅洞穴",
+	"Island Farm": "姜岛农场",
+	"Community Center": "社区中心",
+
+    // Shops
+	"Shops": "商店",
+	"Joja Mart": "乔家超市",
+	"Pierre's Shop": "皮埃尔的商店",
+    "Robin's Carpentry Shop": "罗宾的木匠商店",
+    "Marnie's Ranch": "玛妮的牧场",
+	"Clint's Blacksmithing": "克林特的铁匠铺",
+	"Willy's Shop": "威利的商店",
+    "Krobus' Shop": "科罗布斯的商店",
+	"Travelling Merchant": "旅行货车",
+    "Sandy's Shop": "桑迪的商店",
+    "Dwarf's Shop": "矮人的商店",
+    "Adventurer's Guild": "冒险家公会",
+    "Stardrop Saloon": "星之果实餐吧",
+    "Hat Mouse": "帽子老鼠",
+	
+	// Additional Farms
+    "Additional Farms": "额外农场",
+	"Ridgeside Village Summit Farm": "山脊村山顶农场",
+    "Ridgeside Village Phantom Farm": "山脊村幻影农场",
+    "Ridgeside Village Community Greenhouse": "山脊村社区温室",
+	"Ridgeside Village Cave Farm": "山脊村洞穴农场",
+    "East Town Custom Garden": "鹈鹕镇东边农场",
+	"Aurora Vineyard": "极光葡萄园",
+    "Grampleton Fields Entrance": "格兰普顿平原入口",
+	"Garden": "花园",
 
     // town
     "warp-section.town": "镇上",
-    "warp.blacksmith": "铁匠铺",
-    "warp.community-center": "社区中心",
-    "warp.jojamart": "Joja超市",
-    "warp.movie-theater": "电影院",
-    "warp.museum": "博物馆",
-    "warp.saloon": "星之果实酒吧",
-    "warp.sewer": "下水道",
+    "Museum": "博物馆",
+	"Shearwater Bridge": "海鸥栈桥",
+	"Trailer": "潘妮家",
+    "Jodi's Home": "乔迪家",
+    "Emily And Haley's Home": "艾米丽和海莉的家",
+    "Clinic": "哈维的诊所",
+    "Alex's Home": "亚历克斯家",
+    "Jenkin's Home": "维克多和奥利维亚的家",
+    "Mayor's Manor": "刘易斯家",
 
     // forest
-    "warp-section.forest": "南部森林",
-    "warp.hats": "帽子店",
-    "warp.mastery-cave": "精通山洞",
-    "warp.ranch": "玛妮的牧场",
-    "warp.secret-woods": "秘密森林",
-    "warp.wizard-tower": "法师塔",
+    "warp-section.forest": "森林",
+	"MasteryCave":"精通洞穴",
+    "Wizard's Tower": "法师塔",
+	"Friend Shed": "友谊小屋",
+    "Sophia's Vineyard": "索菲娅的葡萄园",
+    "Leah's Cottage": "莉亚的家",
+    "Andy's Farm": "安迪的农场",
+    "Secret Woods": "秘密森林",
+    "Junimo Village": "祝尼魔小村",
+    "Junimo Woods": "祝尼魔森林",
+    "Sprite Spring": "精灵之泉",
+	"Sprite Spring Cave": "精灵洞穴",
+    "Apples' Room": "苹果的房间",
+    "Bear's Cave": "熊洞",
+    "Sewer Outlet": "下水道孔盖",
 
     // mountain
-    "warp-section.mountain": "北部山区",
-    "warp.adventurers-guild": "探险家公会",
-    "warp.bathhouse": "温泉",
-    "warp.mutant-bug-lair": "突变虫穴",
-    "warp.quarry": "采石场",
-    "warp.witch-swamp": "巫婆沼泽",
+    "warp-section.mountain": "山区",
+    "Custom_SVESummit": "山顶",
+	"Quarry": "采石场",
+	"SPA": "水疗中心",
+    "Susan's Farm": "苏珊的农场",
+	"Linus' Tent": "莱纳斯的帐篷",
+	"Golden Scythe": "金镰刀获取点",
+    "Tunnel": "隧道(齐先生的电池任务)",
+    "Train Platform": "火车站台(齐的彩虹贝壳任务)",
+	"Back Woods": "后山小路",
+    "Highlands": "高地",
+    "Highlands Cavern": "高地洞穴",
 
     // beach
     "warp-section.beach": "沙滩",
-    "warp.tide-pools": "沙滩",
-    "warp.willy-shop": "威利的鱼店",
-
-    // island
-    "warp-section.island": "姜岛",
-    "warp.forge": "锻造台",
-    "warp.island-farm": "姜岛农场",
-    "warp.dwarf-shop": "火山地牢矮人商店",
-    "warp.field-office": "岛屿办事处",
-    "warp.leo-house": "雷欧的房子",
+    "Elliot's Cabin": "艾利欧特的小屋",
+    "Tide Pools": "潮汐池",
 
     // desert
     "warp-section.desert": "沙漠",
-    "warp.casino": "赌场",
-    "warp.sandy-shop": "桑迪的商店",
-    "warp.skull-cavern": "骷髅洞穴",
+    "Casino": "赌场（没有会员卡进不去，还会被炸）",
+	"Pillars": "银河之剑获取地点",
+    "Sand Dragon": "骨架(齐的太阳精华任务)",
+
+    // Ginger Island
+    "Ginger Island": "姜岛",
+    "Leo's Home": "雷欧的房子",
+    "Fable Reef": "寓言礁",
+    "Island Field Office": "岛屿办事处",
+    "Island Dwarf Shop": "姜岛矮人商人",
+	"Island Trader" :"姜岛商店",
+    "Volcano Caldera": "锻造台",
+	"Tide Pool": "潮汐池",
+	"Pirate Cove": "海盗湾",
+	
+	// Ridgeside Village
+    "Ridgeside Village": "山脊村",
+	"Ridgeside Plaza": "山脊村广场",
+	"Odd Job Services": "零工服务",
+	"Nightingale Orchard": "夜莺果园",
+    "Log Cabin Hotel": "小木屋酒店",
+	"Heaps Convenience Store": "山坡便利店",
+	"Faye's Clothing Shop": "仙儿的服装店",
+	"Akina Residence": "阿基纳家",
+	"Amethyne Mansion": "艾墨森家",
+    "Blooming Hill Farm": "开花山农场",
+	"Kobayashi Residence": "小林家",
+    "Pickens Residence": "皮肯斯家",
+	"Ridgeside Clinic": "山脊诊所",
+	"Rivera Residence": "里维拉家",
+	"Liden Residence": "利登家",
+	"Bladebane Residence": "布拉德贝家",
+	"Daniels Residence": "丹尼尔家",
+	"Water Research Facility & Laboratory": "水体研究所",
+	
+    // Ridgeside Surroundings
+    "Ridgeside Surroundings": "山脊村周边",
+	"Ridge": "山脊",
+	"Ridge Forest": "山脊森林",
+	"Ridge Falls": "山脊瀑布",
+	"Ridge Pond": "山脊池塘",
+	"Ninja House": "忍者之家",
+	"Cliff": "悬崖",
+	"Spirit Realm": "精神领域",
+	"Cable Car": "缆车站",
+	
+	// East Scarp
+	"East Scarp": "东斯卡普",
+	"East Scarp Town": "东斯卡普小镇",
+	"Scarp Inn": "东斯卡普旅馆",
+	"Mia's Home": "米娅的家",
+	"Aidden's Home": "艾登的家",
+	"Yri's Home": "由莉的家",
+	"Light House": "灯塔",
+	"Rodney's House": "罗德尼家",
+	"Vet's House": "雅各布的家",
+	
+	// East Scarp Surroundings
+	"East Scarp Surroundings": "东斯卡普周边",
+	"Meadow Farm": "草间农场",
+	"Orchard": "果园",
+	"ES Sea Cave": "海洋洞穴",
+	"Mine Entrance": "矿洞入口",
+	"Deep Mountain": "深山",
+	"Mouse Hole" : "鼠洞",
+	
+	// Galdora
+    "Galdora": "加尔朵拉大陆",
+    "Castle Village Outpost": "城堡村哨站",
+    "Crimson Badlands": "猩红荒地",
+	"Treasure Cave": "宝藏洞穴",
+    "Iridium Quarry": "铱采石场",
+	"Enchanted Grove": "传送阵",
 
 
     /*********
@@ -246,19 +361,18 @@
     "controls.grow-radius": "生长范围（相对于玩家）",
     "controls.reset-controls": "重置按键",
     "controls.press-new-key": "绑定新按键...",
-
-
-    /*********
+	
+	
+	/*********
     ** Generic Mod Config Menu UI
     *********/
     // TODO
-    "config.open-menu.desc": "The keybind which opens the menu (when no other menu is open).",
-    "config.freeze-time.desc": "The keybind which freezes the game clock.",
-    "config.grow-tree.desc": "The keybind held to grow trees around the player.",
-    "config.grow-crops.desc": "The keybind held to grow crops around the player.",
-
-    "config.title.other-options": "Other options",
-    "config.default-tab.name": "Default tab",
-    "config.default-tab.desc": "The tab shown by default when you open the menu.",
-    "config.other-options": "To configure cheats, press the 'open menu' key shown above in-game. Make sure you press it after loading the save, when no other menu or dialogue is open."
+	"config.open menu.desc":"打开菜单的绑定键（当没有其他菜单打开时）",
+	"config.freeze time.desc":"冻结游戏时钟的绑定键。",
+	"config.grow-tree.desc":"用于在玩家周围种树的绑定键。",
+	"config.grows.desc":"玩家周围用来种植作物的绑定键。",
+	"config.title.other-options":"其他选项",
+	"config.default tab.name":"默认选项卡",
+	"config.default tab.desc":"打开菜单时默认显示的选项卡。",
+	"config.other-options":"要配置作弊,请在游戏中按下上面显示的“打开菜单”键。确保在加载保存后,当没有打开其他菜单或对话框时按下它。"
 }
