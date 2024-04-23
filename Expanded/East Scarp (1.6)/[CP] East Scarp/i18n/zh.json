@@ -49,6 +49,7 @@
     "EastScarp.Locations.SlimeBasement": "托丽的史莱姆小屋",
     "EastScarp.Locations.HenryWarp": "小镇之外",
     "EastScarp.Locations.underwater": "海洋深处",
+	
     //Location Names For NPC Map Locations
     //************************************
     "LocationName.EastScarp": "东斯卡普",
@@ -58,6 +59,9 @@
     //Obelisk
     "Obelisk.name": "东斯卡普图腾柱",
     "Obelisk.desc": "将你传送至东斯卡普。",
+    //CJB Cheats
+    "CJB.EastScarp_DeepMountains_DeepLake":"深山湖泊",
+    "CJB.EastScarp_DeepMountains_Pond":"深山池塘",
     //Locational Messages
     //*******************
     "Strings.GrampletonES.00": "格兰普顿原野 >",

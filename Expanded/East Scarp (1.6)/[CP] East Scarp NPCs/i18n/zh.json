@@ -4366,7 +4366,7 @@
     "Eloise_engageB": "噢，这个贝壳真漂亮！这是送给你订婚的人的吗？",
     "Eloise_marriedA": "噢，我猜%spouse一定很喜欢这个！",
     "Eloise_marriedB": "它真的好漂亮，是给%spouse的吗？",
-    "Eloise_winter_Tue2": "$q 5787001/5787002 winter_Tue#你的父母是什么样的人，农夫@？#$r 5787001 25 Parents_proud#他们为我接管农场而自豪。#$r 5787001 25 Parents_love#他们都是好人，我很爱他们。#$r 5787001 25 Parents_good#他们人挺好的，虽然我们不太处得来。#$r 5787002 0 Parents_personal#这是私人问题，你这么问不太礼貌。#$r 5787002 -25 Parents_rude#这是私人问题，你就别瞎打听了！",
+	"Eloise_winter_Tue2": "$q 5787001/5787002 winter_TueBack#你的父母是什么样的人，农夫@？#$r 5787001 25 Parents_proud#他们为我接管农场而自豪。#$r 5787001 25 Parents_love#他们都是好人，我很爱他们。#$r 5787001 25 Parents_good#他们人挺好的，虽然我们不太处得来。#$r 5787002 0 Parents_personal#这是私人问题，你这么问不太礼貌。#$r 5787002 -25 Parents_rude#这是私人问题，你就别瞎打听了！",
     "Eloise_Parents_proud": "他们当然会很骄傲的！你的农场一定非常美丽。$1",
     "Eloise_Parents_love": "这很好！我也很爱我爸爸！$1",
     "Eloise_Parents_good": "我和爸爸也不是一直都处得来，但我们都深爱着对方！我猜你也是这样的吧。$1",
@@ -5095,7 +5095,7 @@
     "Oliver_summer_Thu10": "和雅各布生活在一起的坏处之一就是我总会被科普关于鸟类的事情。",
     "Oliver_winter_Fri10": "有时候我想念我的父母。没那么多大惊小怪是件好事，但是……也许我应该写封信。不对，等等，万一他们因此决定要来看我呢？",
     //**************************
-    //ROSA Daily DIalogue
+    //ROSA Daily Dialogue
     "Rosa_Introduction": "嗨，我是罗莎，刚来镇上不久。$h#$b#如果你需要帮忙的话，就告诉我。我准备好接受各种奇怪的工作了！",
     "Rosa_GreenRain": "噢，你好呀，@！能一路来到这里，你真是勇敢啊。",
     "Rosa_GreenRain_2": "噢，你好呀，@。抱歉有这么多毛巾，但你能把鞋擦一擦吗？我在努力不让苔藓蔓延到地毯上。",
@@ -5191,13 +5191,13 @@
     //Rosa additional dialogue (with Juliet)
     "Rosa_Juliet_cc_Complete": "我看到Joja超市都被封起来了，发生什么事了？#$b#希望这不意味着朱丽叶要离开了。$2",
     "Rosa_Juliet_summer_Tue": "你和朱丽叶是朋友吗？她是个有自己主意的姑娘！$1",
-	"Rosa_Juliet_summer_Tue.RivalHearts":"$d joja#嘿，你认识朱丽叶吗？就是Joja超市的那个可爱的收银员？她可真是个小混蛋。#$b#你肯定没法相信她昨天跟我说了什么！没错，是关于甜瓜的。$1#$b#我买了两个。她非常，呃……善于劝说别人。$4|你最近有见过朱丽叶吗？她是个有自己主意的姑娘！$1",
+	"Rosa_Juliet_summer_Tue.RivalHearts": "$d joja#嘿，你认识朱丽叶吗？就是Joja超市的那个可爱的收银员？她可真是个小混蛋。#$b#你肯定没法相信她昨天跟我说了什么！没错，是关于甜瓜的。$1#$b#我买了两个。她非常，呃……善于劝说别人。$4|你最近有见过朱丽叶吗？她是个有自己主意的姑娘！$1",
     "Rosa_Juliet_Resort_Wander": "嘘，别告诉朱丽叶。我打算等会儿带她去看美人鱼。",
     "Rosa_Juliet_winter_Fri10": "朱丽叶昨晚来了我这里。她告诉我客栈一定闹鬼。#$b#说老实话，我不知道她到底是来这里看我的，还是想来抓鬼。#$b#不管是怎样，我都很感谢她的陪伴！$1",
     "Rosa_Juliet_fall_Fri6": "朱丽叶和我在讨论降神会的事，那真是一年中最可怕的时候了。#$b#你也想参加吗？",
     "Rosa_Juliet_Sun6": "哈，哪个周末你可以和我们一起来。朱丽叶和我会在星之果实打桌球。#$b#她可没自己想象中的那么厉害！$1#$e#不过每次她赢了以后，都会跳起那种可爱的小舞蹈……所以有时候我会故意输给她。#$e#这是我们之间的小秘密，好吗？$4",
     "Rosa_Juliet_fall_Fri10": "朱丽叶昨晚来了我这里。我们看了一部电影，她靠在我的肩上睡着了。#$b#她真的很可爱，虽然她流了点口水。$1",
-	"Juliet_Mon_IslandSouth":"我知道罗莎正在欣赏风景。不过我嘛，我正在享受眼前的这一幕。嘿嘿。$4#$b#有人想要裸泳吗？这里的海水一定很暖和。$1",
+	"Juliet_Mon_IslandSouth": "我知道罗莎正在欣赏风景。不过我嘛，我正在享受眼前的这一幕。嘿嘿。$4#$b#有人想要裸泳吗？这里的海水一定很暖和。$1",
     //************************
     //TORI Daily Dialogue
     "Tori_Introduction": "噢，嗯……你好，我叫维多利亚。或者托丽。我住在这里。我是说，在东斯卡普。#$b#希望我们还会见面，是吧？",
@@ -5697,4 +5697,14 @@
     "EastScarp.SpecialOrders.ZUCUBoneCollectorsMail.text": "祖祖大学古生物系感谢你的贡献。请收下附在其后的感谢。   ——卡梅伦·皮斯博迪教授",
     "EastScarp.SpecialOrders.AideenFlowersMail.invite.title": "鲜花配送致谢",
     "EastScarp.SpecialOrders.AideenFlowersMail.invite.text": "亲爱的@：^很感谢你送来的黄水仙。作为回报，希望你能来我家一趟。我这里收到了一些新的种子，如果你能帮我种下它们，我会很感激的。^向你致以问候，艾登",
+    //*************************************************************************************************
+    //Gender Neutral Dialogue adjustments (from here-on these will be included among original dialogue)
+    "genderneutral.Aideen_103": "为什么这么说，@！你是想要追求我吗？$7#$b#好吧，你身上的确有一种古雅的乡村魅力。$1#$b#而且我的确开始喜欢你了。不过爱情吗？好吧，也许我们的故事是那种缓慢燃烧的火焰，而非转瞬即逝的火花，对吧？$7",
+    "genderneutral.Ai1_2": "噢，你可真是愤世嫉俗啊。#$b#当然，你说得没错。鹈鹕镇远远算不上什么人间天堂。#$b#不过这里的宁静就已经足够吸引人了，你不觉得吗？",
+    "genderneutral.rejectNPCA.rosa": "话说得太早了，小太阳。我们还是再了解一下彼此比较好。$1",
+    "genderneutral.Mon.eyvind": "这里离你的老家很远，对吧，农夫？别迷路了。",
+    "genderneutral.fall_Tue.eyvind": "你就是忍不住要跑到这里来，是不是？#$b#这里有什么吸引你的？你最好别偷走我的山羊。$a#$e#要是你敢的话，我就把你当早饭吃了！$1",
+    "genderneutral.winter_Sun2.eyvind": "你家里有羊毛袜子吗，@？#$b#说起让双脚保持暖和，没有什么比得上山羊毛。$1",
+    "genderneutral.summer_Fri8.eyvind": "知道吗，@，我觉得我认识你爷爷。$1#$b#他是个脚踏实地的家伙，很靠得住，而且不怕辛苦。#$e#这个世界需要更多像他一样的人……还有像你一样的……能够真正办成事情，而不是只会吹嘘自己。",
+    "genderneutral.winter_Fri8.eyvind": "啊，很高兴见到你，@。#$e#你问我会不会觉得孤单？我可不会……虽然不得不承认——有人可以聊天的感觉也不错。"
 }

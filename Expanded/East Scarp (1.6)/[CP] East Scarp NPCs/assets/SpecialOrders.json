@@ -69,7 +69,7 @@
                     "RequiredTags": "",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:EastScarp.SpecialOrders.SlayCrabs_Text}}", 
+                    "Text": "{{i18n:EastScarp.SpecialOrders.SlayCrabs_Text}}",
                     "ItemToRemoveOnEnd": null,
                     "MailToRemoveOnEnd": null,
                     "RandomizedElements": null,
@@ -1001,91 +1001,94 @@
             "Action": "EditData",
             "Target": "Strings/SpecialOrderStrings",
             "Entries": {
+                //BELOW IS RELIC CODE LEFT IN TO AVOID ISSUES WITH ALREADY ACCEPTED SPECIAL ORDERS
+                //IT DOESN'T NEED TRANSLATING
+                //*********************************************************************************
                 //Catch Fish for the Cat
-                "EastScarp.SpecialOrders.LadySheba_Name": "喂猫",
-                "EastScarp.SpecialOrders.LadySheba_Text": "东斯卡普的海滩上有一只流浪猫，她饿极了！有人能给她带条鱼吗？她最喜欢的是{FishType:Text}！< 贾斯",
-                "EastScarp.SpecialOrders.LadySheba_Objective_0_Text": "捕捉5条{FishType:Text}。",
-                "EastScarp.SpecialOrders.LadySheba_Objective_1_Text": "把5条{FishType:Text}放在东斯卡普海滩上的板条箱里",
+                "EastScarp.SpecialOrders.LadySheba_Name": "Feeding the Cat",
+                "EastScarp.SpecialOrders.LadySheba_Text": "There's a stray cat on East Scarp beach and she's hungry! Can someone give her some fish please? {FishType:Text} are her favourite! < Jas",
+                "EastScarp.SpecialOrders.LadySheba_Objective_0_Text": "Catch 5 {FishType:Text}.",
+                "EastScarp.SpecialOrders.LadySheba_Objective_1_Text": "Place 5 {FishType:Text} in the crate by Scarp Beach",
                 //Bug Meat for the Cat (part 2)
-                "EastScarp.SpecialOrders.LadySheba2_Name": "给猫的更多食物",
-                "EastScarp.SpecialOrders.LadySheba2_Text": "那只流浪猫还是很饿！也许给她一些虫肉块的话，她会愿意和我们做朋友？ < 贾斯",
-                "EastScarp.SpecialOrders.LadySheba2_Objective_0_Text": "收集50份虫肉。",
-                "EastScarp.SpecialOrders.LadySheba2_Objective_1_Text": "制作5个虫肉块。",
-                "EastScarp.SpecialOrders.LadySheba2_Objective_2_Text": "把5个虫肉块放在东斯卡普海滩上的板条箱里。",
+                "EastScarp.SpecialOrders.LadySheba2_Name": "More food for the cat",
+                "EastScarp.SpecialOrders.LadySheba2_Text": "The stray cat's still hungry! Maybe some bug steak would help us make friends with her? < Jas",
+                "EastScarp.SpecialOrders.LadySheba2_Objective_0_Text": "Collect 50 wads of bug meat.",
+                "EastScarp.SpecialOrders.LadySheba2_Objective_1_Text": "Craft 5 Bug Meat Steaks",
+                "EastScarp.SpecialOrders.LadySheba2_Objective_2_Text": "Place 5 Bug Meat Steaks in the crate by Scarp Beach",
                 //Cheese for the Cat (part 2)
-                "EastScarp.SpecialOrders.LadySheba3_Name": "给猫的奶酪",
-                "EastScarp.SpecialOrders.LadySheba3_Text": "我差不多快和她成为朋友了！所有猫都喜欢奶酪。这次一定能成，我敢肯定。 < 贾斯",
-                "EastScarp.SpecialOrders.LadySheba3_Objective_0_Text": "收集3份牛奶。",
-                "EastScarp.SpecialOrders.LadySheba3_Objective_1_Text": "将牛奶制作成奶酪。",
-                "EastScarp.SpecialOrders.LadySheba3_Objective_2_Text": "把3份奶酪放在东斯卡普海滩上的板条箱里。",
+                "EastScarp.SpecialOrders.LadySheba3_Name": "Cheese for the cat",
+                "EastScarp.SpecialOrders.LadySheba3_Text": "She's almost ready to be my friend. And all cats love cheese! This time it's going to work, I'm sure of it. < Jas",
+                "EastScarp.SpecialOrders.LadySheba3_Objective_0_Text": "Collect 3 milk",
+                "EastScarp.SpecialOrders.LadySheba3_Objective_1_Text": "Churn milk into cheese",
+                "EastScarp.SpecialOrders.LadySheba3_Objective_2_Text": "Place 3 pieces of cheese in the crate by Scarp Beach",
                 //Daffodils Order
-                "EastScarp.SpecialOrders.AideenFlowers_Name": "春季鲜花",
-                "EastScarp.SpecialOrders.AideenFlowers_Text": "春天到了，我急需水仙花！如果有人能给我送来十五朵刚采摘的水仙花，我将永远感谢他。     —— 艾登  ",
-                "EastScarp.SpecialOrders.AideenFlowers_Objective_0_Text": "收集15朵黄水仙",
-                "EastScarp.SpecialOrders.AideenFlowers_Objective_1_Text": "把15朵黄水仙送到艾登厨房的花瓶里",
+                "EastScarp.SpecialOrders.AideenFlowers_Name": "Spring Flowers",
+                "EastScarp.SpecialOrders.AideenFlowers_Text": "Spring is here, and I am in dire need of daffodils! If someone could deliver thirty fresh-picked flowers, they would have my eternal gratitude.     - Aideen  ",
+                "EastScarp.SpecialOrders.AideenFlowers_Objective_0_Text": "Collect 15 Daffodils",
+                "EastScarp.SpecialOrders.AideenFlowers_Objective_1_Text": "Deliver 15 Daffodils to the Vase in Aideen's Kitchen",
                 // SweetPeas
-                "EastScarp.SpecialOrders.AideenFlowers2_Name": "夏季鲜花",
-                "EastScarp.SpecialOrders.AideenFlowers2_Text": "夏天到了，可爱的人们正需要甜豌豆。如果有人能给我送来十五朵刚采摘的甜豌豆花，我将会无比感激。   —— 艾登  ",
-                "EastScarp.SpecialOrders.AideenFlowers2_Objective_0_Text": "收集15朵甜豌豆",
-                "EastScarp.SpecialOrders.AideenFlowers2_Objective_1_Text": "把15朵甜豌豆送到艾登厨房的花瓶里",
+                "EastScarp.SpecialOrders.AideenFlowers2_Name": "Summer Flowers",
+                "EastScarp.SpecialOrders.AideenFlowers2_Text": "Now it is summer, sweet hearts are seeking sweet peas. I would be most grateful if someone could deliver thirty freshly picked blooms.   - Aideen  ",
+                "EastScarp.SpecialOrders.AideenFlowers2_Objective_0_Text": "Collect 15 Sweet Peas",
+                "EastScarp.SpecialOrders.AideenFlowers2_Objective_1_Text": "Deliver 15 Sweet Peas to the Vase in Aideen's Kitchen",
                 // Crocus
-                "EastScarp.SpecialOrders.AideenFlowers3_Name": "冬季鲜花",
-                "EastScarp.SpecialOrders.AideenFlowers3_Text": "冬天如此枯燥沉闷，但鲜花总能点亮最为忧郁的日子。请给我送来十五朵刚采摘的番红花，让顾客的生活明亮起来。    —— 艾登  ",
-                "EastScarp.SpecialOrders.AideenFlowers3_Objective_0_Text": "收集15朵番红花",
-                "EastScarp.SpecialOrders.AideenFlowers3_Objective_1_Text": "把15朵番红花送到艾登厨房的花瓶里",
+                "EastScarp.SpecialOrders.AideenFlowers3_Name": "Winter Flowers",
+                "EastScarp.SpecialOrders.AideenFlowers3_Text": "Winter is so dreary, but flowers brighten even the most maudlin day. Help me brighten the lives of my customers, by delivering thirty freshly picked crocuses.    - Aideen  ",
+                "EastScarp.SpecialOrders.AideenFlowers3_Objective_0_Text": "Collect 15 Crocuses",
+                "EastScarp.SpecialOrders.AideenFlowers3_Objective_1_Text": "Deliver 15 Crocuses to the Vase in Aideen's Kitchen",
                 //Slay Crabs
-                "EastScarp.SpecialOrders.SlayCrabs_Name": "减少螃蟹威胁",
-                "EastScarp.SpecialOrders.SlayCrabs_Text": "东斯卡普出现了大量有攻击性的螃蟹，威胁着这里的宠物和野生动物。请帮助我们消灭威胁，让东斯卡普重回和平。                     ——雅各布医生（流动兽医）",
-                "EastScarp.SpecialOrders.SlayCrabs_Objective_0_Text": "消灭50只螃蟹",
+                "EastScarp.SpecialOrders.SlayCrabs_Name": "Reducing the Crab Menace",
+                "EastScarp.SpecialOrders.SlayCrabs_Text": "Aggressive crabs are surfacing at night across East Scarp, threatening pets and wildlife. Please help us reduce this menace, and make East Scarp safe again.                     -Dr. Jacob (DVM)",
+                "EastScarp.SpecialOrders.SlayCrabs_Objective_0_Text": "Slay 50 crabs",
                 //Josephine's Jelly Order
-                "EastScarp.SpecialOrders.JosephineJelly_Name": "征集：果酱",
-                "EastScarp.SpecialOrders.JosephineJelly_Text": "我一直在和祖祖城的朋友们谈论本地的美味佳肴，现在她们都想尝尝！^我需要一打用本地水果做成的果酱，并且愿意支付报酬。   —— 约瑟芬",
-                "EastScarp.SpecialOrders.JosephineJelly_Objective_0_Text": "收集12个水果",
-                "EastScarp.SpecialOrders.JosephineJelly_Objective_1_Text": "制作12份果酱",
-                "EastScarp.SpecialOrders.JosephineJelly_Objective_2_Text": "把12份果酱放进东斯卡普客栈的冰箱里",
+                "EastScarp.SpecialOrders.JosephineJelly_Name": "Wanted: Jelly",
+                "EastScarp.SpecialOrders.JosephineJelly_Text": "I've been telling my friends back in Zuzu about the delicious local preserves, and now everyone wants some! I will pay generously for a dozen jars of jelly made from locally grown fruit   - Josephine.",
+                "EastScarp.SpecialOrders.JosephineJelly_Objective_0_Text": "Collect 12 fruit",
+                "EastScarp.SpecialOrders.JosephineJelly_Objective_1_Text": "Preserve 12 jellies",
+                "EastScarp.SpecialOrders.JosephineJelly_Objective_2_Text": "Donate 12 jellies to the Inn fridge",
                 //Beatrice Quartz
-                "EastScarp.SpecialOrders.BeatriceQuartz_Name": "需要石英",
-                "EastScarp.SpecialOrders.BeatriceQuartz_Text": "最近的暴风雨损坏了灯塔上的透镜，我们需要近期冶炼的精制石英用于维修。不知道有人能给我带一些吗？     —— 比阿特丽斯",
-                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_0_Text": "收集12个石英",
-                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_1_Text": "制作12个精制石英",
-                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_2_Text": "将12个精制石英送到灯塔",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Name": "Quartz Needed",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Text": "Recent storms have damaged the lighthouse lens, and we need freshly smelted refined quartz for the repairs. If anybody could drop some by, please?     - Beatrice",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_0_Text": "Collect 12 quartz",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_1_Text": "Collect 12 freshly processed bars of refined quartz",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_2_Text": "Deliver 12 refined quartz to the Lighthouse",
                 //JojaCola
-                "EastScarp.SpecialOrders.JojaCola_Name": "Joja可乐占领世界",
-                "EastScarp.SpecialOrders.JojaCola_Text": "Joja正在举办一场比赛，奖品是现金！你只需要将一箱Joja可乐分发给村民们（一共48罐，还有额外的2罐作为好运！）。“Joja可乐，给你的生活加油！”噢对了，然后你就能获得5000g……几个白眼也是值得的，对吧？",
-                "EastScarp.SpecialOrders.JojaCola_Objective_0_Text": "送出50罐Joja可乐作为礼物",
+                "EastScarp.SpecialOrders.JojaCola_Name": "Joja Cola Takeover",
+                "EastScarp.SpecialOrders.JojaCola_Text": "Joja are running a competition with a CASH PRIZE! All you've got to do is distribute one case (that's 48 cans + 2 for luck!) to unsuspecting villagers.    'Joja Cola, Fuel your life!'    On yeah, and you can win 5000g so... totes worth a few frowns, right?",
+                "EastScarp.SpecialOrders.JojaCola_Objective_0_Text": "Give 50 Joja Cola as gifts",
                 //Jacob requests corn for hens
-                "EastScarp.SpecialOrders.JacobCorn_Name": "让母鸡开心",
-                "EastScarp.SpecialOrders.JacobCorn_Text": "“快乐母鸡收容所”已经被救援下来的母鸡们淹没了，现在急需食物捐赠。如果有人能提供一些玉米的话，我就能用来喂它们了。    ——雅各布医生（流动兽医）",
-                "EastScarp.SpecialOrders.JacobCorn_Objective_0_Text": "把30个玉米放在雅各布家外的送货箱里",
-                "EastScarp.SpecialOrders.JacobHay_Name": "帮助“哞视感”收容所",
+                "EastScarp.SpecialOrders.JacobCorn_Name": "Help Make Hens Happy",
+                "EastScarp.SpecialOrders.JacobCorn_Text": "The Happy Hens' Sanctuary have been inundated with rescued chickens and are desperately in need of food donations. If anyone is able to supply me with corn, I'll pass it on to them.    - Dr. Jacob (DVM)",
+                "EastScarp.SpecialOrders.JacobCorn_Objective_0_Text": "Place 30 corncobs in the delivery crate outside Jacob's House",
+                "EastScarp.SpecialOrders.JacobHay_Name": "Help Deja Moo Sanctuary ",
                 //Jacob requests hay for cattle
-                "EastScarp.SpecialOrders.JacobHay_Text": "“哞视感”动物收容所急需干草以帮助家畜们度过冬天。我正在收集干草用于捐赠，请伸出援手吧！    ——雅各布医生（流动兽医）",
-                "EastScarp.SpecialOrders.JacobHay_Objective_0_Text": "把30份干草放在雅各布家外的送货箱里",
+                "EastScarp.SpecialOrders.JacobHay_Text": "The Deja Moo Animal Sanctuary are in desperate need of hay to keep their hoofstock fed over winter, and I am collecting hay to donate to them. Please help!    - Dr. Jacob (DVM)",
+                "EastScarp.SpecialOrders.JacobHay_Objective_0_Text": "Place 30 hay into the delivery crate outside Jacob's House",
                 //Oliver wants petrified slimes
-                "EastScarp.SpecialOrders.OliverSlime_Name": "寻找石化史莱姆",
-                "EastScarp.SpecialOrders.OliverSlime_Text": "嘿……我给祖祖城的RPG游戏同好们展示了一只石化史莱姆——现在他们都想要一只了！我需要五只，拜托了，有人能帮帮我吗？谢了！我会付钱的。",
-                "EastScarp.SpecialOrders.OliverSlime_Objective_0_Text": "把5只石化史莱姆带给奥利弗",
+                "EastScarp.SpecialOrders.OliverSlime_Name": "Seeking Petrified Slimes",
+                "EastScarp.SpecialOrders.OliverSlime_Text": "Hey... I showed a petrified slime to my RPG clan back in Zuzu  - and now they all want one! I need five, please. Can anyone help? Thanks! I'll pay you.",
+                "EastScarp.SpecialOrders.OliverSlime_Objective_0_Text": "Give five Petrified Slimes to Oliver.",
                 //Oliver is baking a cake 
-                "EastScarp.SpecialOrders.OliverLexiSurprise_Name": "需要蛋糕原料",
-                "EastScarp.SpecialOrders.OliverLexiSurprise_Text": "我想给一位特别的朋友烤一个蛋糕……罗莎说她会帮忙，但我得提供需要的蛋糕原料。有人能帮帮我吗？    - 奥利弗",
-                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_0_Text": "把1个鸡蛋放在东斯卡普客栈的冰箱里",
-                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_1_Text": "把1包小麦面粉放在东斯卡普客栈的冰箱里",
-                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_2_Text": "把1袋糖放在东斯卡普客栈的冰箱里",
-                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_3_Text": "把1个新鲜的甜瓜放在东斯卡普客栈的冰箱里",
+                "EastScarp.SpecialOrders.OliverLexiSurprise_Name": "Cake Ingredients Required",
+                "EastScarp.SpecialOrders.OliverLexiSurprise_Text": "I want to bake a treat for a special friend of mine...  Rosa's said she'd help, but I need to supply the ingredients. Can someone help, please?    - Oliver",
+                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_0_Text": "Place one egg in the ES Inn fridge",
+                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_1_Text": "Place one bag of wheat flour in the ES Inn fridge",
+                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_2_Text": "Place one bag of sugar in the ES Inn fridge",
+                "EastScarp.SpecialOrders.OliverLexiSurprise_Objective_3_Text": "Place one fresh melon in the ES Inn fridge",
                 //Eloise requesting sunflower seeds 
-                "EastScarp.SpecialOrders.EloiseJasJay_Name": "给冠蓝鸦的向日葵种子！",
-                "EastScarp.SpecialOrders.EloiseJasJay_Text": "贾斯有一个叫杰里米的冠蓝鸦朋友，我们想帮忙喂饱他们一家！冠蓝鸦喜欢新鲜的向日葵种子！如果你有的话，我愿意用零花钱买一些！                               ——爱你们的爱洛伊斯（还有贾斯）",
-                "EastScarp.SpecialOrders.EloiseJasJay_Objective_0_Text": "收集20个向日葵种子",
-                "EastScarp.SpecialOrders.EloiseJasJay_Objective_1_Text": "把20个向日葵种子带给爱洛伊斯",
+                "EastScarp.SpecialOrders.EloiseJasJay_Name": "Sunflower seeds for JAYS!",
+                "EastScarp.SpecialOrders.EloiseJasJay_Text": "Jas has a blue jay friend called Jeremy and we want to help him feed his family! Blue jays love fresh sunflower seeds! Have you got any? I'll give you my pocket money.                               love, Eloise (and Jas)",
+                "EastScarp.SpecialOrders.EloiseJasJay_Objective_0_Text": "Collect 20 sunflower seeds",
+                "EastScarp.SpecialOrders.EloiseJasJay_Objective_1_Text": "Give 20 sunflower seeds to Eloise",
                 //Hazelnuts for Richie the macaw
-                "EastScarp.SpecialOrders.EloiseRealMacaw_Name": "为里奇疯狂！",
-                "EastScarp.SpecialOrders.EloiseRealMacaw_Text": "金刚鹦鹉里奇最近有点忧郁，一些榛子能让它振作起来。那是他的最爱！请带一打榛子到我们家里，不过一定要新鲜的！ ^——爱你们的爱洛伊斯（还有里奇）",
-                "EastScarp.SpecialOrders.EloiseRealMacaw_Objective_0_Text": "收集12个榛子",
-                "EastScarp.SpecialOrders.EloiseRealMacaw_Objective_1_Text": "把12个榛子放在兽医诊所的捐赠箱里",
+                "EastScarp.SpecialOrders.EloiseRealMacaw_Name": "Go Nuts for Richie!",
+                "EastScarp.SpecialOrders.EloiseRealMacaw_Text": "Richie the Macaw's feeling a bit sad and hazlenuts will cheer him up. They're his favorite! Please bring a dozen to our house. But they've got to be fresh! ^Love, Eloise (and Richie)",
+                "EastScarp.SpecialOrders.EloiseRealMacaw_Objective_0_Text": "Collect 12 Hazelnuts",
+                "EastScarp.SpecialOrders.EloiseRealMacaw_Objective_1_Text": "Place 12 Hazelnuts in the vet clinic's donation bin.",
                 //ZuCU want BONES // NEED TO WRITE AN EVENT/Reward (Cameron comes to visit?)
-                "EastScarp.SpecialOrders.ZUCUBoneCollectors_Name": "祖祖大学：征集骨头",
-                "EastScarp.SpecialOrders.ZUCUBoneCollectors_Text": "祖祖大学古生物系的调查表明星露谷地区有着丰富的自然历史化石。我们正在附近社区收集样本，动物骨头和化石为佳。你做出的贡献会获得相应的回报。      ——卡梅伦·皮斯博迪教授",
-                "EastScarp.SpecialOrders.ZUCUBoneCollectors_Objective_0_Text": "运送50个骨制品",
+                "EastScarp.SpecialOrders.ZUCUBoneCollectors_Name": "ZUCU Request for Bones",
+                "EastScarp.SpecialOrders.ZUCUBoneCollectors_Text": "Research by the Zuzu City University Palentology Department indicates that the Stardew area is rich in natural history fossils. We are currently collecting samples from your neighborhood, with particular interest in animal bones and fossils. You will be compensated for your contribution.      - Prof. Cameron Peasbody",
+                "EastScarp.SpecialOrders.ZUCUBoneCollectors_Objective_0_Text": "Ship 50 Bone Items",
             }
         },
         {
@@ -1111,7 +1114,7 @@
                 "EastScarp.SpecialOrders.AideenFlowersMail.invite": "{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.invite.text}}[#]{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.invite.title}}"
             }
         },
-       /* {
+        /* {
             "Action": "EditData",
             "Target": "Data/Mail",
             "Entries": {
@@ -1211,19 +1214,19 @@
                     },
                     "Layer": "Back",
                     "SetProperties": {
-                        "CustomCompanions": "Spawn 2 LemurKat.EastScarpeCompanions.Fairy_Penguin"
+                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Fairy_Penguin"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 16,
+                        "Y": 117
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Fairy_Penguin"
                     }
                 }
-                /*  {
-                "Position": {
-                    "X": 16,
-                    "Y": 117
-                },
-                "Layer": "Back",
-                "SetProperties": {
-                    "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Fairy_Penguin_Chick"
-                }
-            }*/
             ]
         },
         {
