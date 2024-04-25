@@ -1,0 +1,48 @@
+{
+	"Changes": [
+	
+	{
+        "Action": "EditData",
+        "Target": "Strings/StringsFromMaps",
+		"Entries": {
+			"FilingCabinet.27": "一页从笔记本上撕下来的纸：^亲爱的冈瑟，^那些哥布林没有用过书面语言。The goblin folk of Bluemire have no written language, but they are skilled orators, and have preserved their cultural history through tales and interpretive dance. It has been my honor to attend several performances - something few outsiders are permitted. There is a recurring theme of a war: a collision between the shadows and a \"bright and fierce light\" that resulted in centuries of turmoil, and bears a striking resemblance to Rasmodia's tales of the Elemental Wars.^Alas, my time amongst their kind was cut abruptly short, after an unfortunate misunderstanding... - I shall spare you the details, my friend! - But needless to say, a hasty retreat was in order!^^Yours, M. Jasper.",
+		}
+	},
+	
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Marlon",
+        "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedALL, Yoshimax.BefriendMarlon, Wolf.Marlon": false },
+        "Entries": {
+			"fall_Tue": "你认识拉斯莫迪娅吗？她致力于抵御外来的魔法攻击，吉尔和我就负责帮她阻挡物理攻击。",
+            }
+    },
+	
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueJasper",
+        "Entries": {
+			"winter_15": "Ah yes, the travelers are in town! The perfect chance to indulge in some gift shopping.#$b#Who am I buying for? Oh, let's see... Gunther, Rasmodia... maybe Miss Penny...$3#$b#Oh there's someone I've forgotten? Now who could that be?$1",
+            }
+    },
+	
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"Entries": {
+				"Jasper": "你见过我的好朋友拉斯莫迪娅了吗？",
+			}
+	},
+	
+	{
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"When": { "HasSeenEvent |contains=5599014": false },
+		"Entries": {
+				"Jasper_spouse": "进来吧亲爱的，我和拉斯在讨论大海的神秘之处呢。"
+			}
+	},
+	
+	]
+	
+}

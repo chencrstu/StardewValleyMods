@@ -1,0 +1,35 @@
+{
+	"Format": "1.28.0",
+	
+	"DynamicTokens": [
+
+			{
+				"Name": "Version",
+				"Value": "_NonSVE"
+			},
+			{
+				"Name": "Version",
+				"Value": "_SVE",
+				"When":
+				{
+					"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+				}
+			}
+	],
+
+	"Changes": [	
+
+// WITCH PORTRAIT
+		{
+          "Action": "EditImage",
+          "Target": "Portraits/Wizard",
+          "FromFile": "assets/Witch_Portrait{{Version}}.png"
+		},
+		// Beach portrait, yeah.. it's the same
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard_Beach",
+			"FromFile": "assets/Witch_Portrait{{Version}}.png"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"Changes":[
+		{
+			"Action":"Load",
+			"Target":"Portraits/Rasmodia",
+			"When":{
+				"HasMod":"FlashShifter.StardewValleyExpandedCP"
+			},
+			"FromFile":"assets/ShrinePortrait.png"
+		},
+		{
+			"Action":"Load",
+			"Target":"Characters/Rasmodia",
+			"When":{
+				"HasMod":"FlashShifter.StardewValleyExpandedCP"
+			},
+			"FromFile":"assets/ShrineWitch.png"
+		},
+		{
+			"Action":"EditData",
+			"Target":"data/events/wizardhouse",
+			"When":{
+				"HasMod":"FlashShifter.StardewValleyExpandedCP"
+			},
+			"Entries":{
+				"1724095/g female/n ShrineOfIllusionsLetter":"WizardSong/-500 -500/farmer -100 -100 0 Wizard 7 29 0/addTemporaryActor Rasmodia 16 32 -105 -105 0/addTemporaryActor FemaleFarmer 16 32 -104 -104 0/pause 1000/showFrame Wizard 17/viewport 9 30 true/skippable/pause 1300/shake Wizard 250/playSound leafrustle/pause 1200/shake Wizard 250/playSound leafrustle/pause 1200/playSound doorClose/warp farmer 9 34/pause 1100/shake Wizard 250/playSound leafrustle/pause 300/move farmer 0 -5 3/pause 600/playSound leafrustle/shake Wizard 300/pause 1500/speak Wizard \"稍等...\"/pause 900/shake Wizard 250/playSound leafrustle/pause 1250/shake Wizard 250/playSound leafrustle/pause 1000/shake Wizard 250/playSound leafrustle/pause 500/emote farmer 8/pause 600/showFrame Wizard 8/pause 600/faceDirection Wizard 1 true/pause 500/speak Wizard \"唔？#$b#我正在为你的灵药收集药材。\"/pause 700/emote farmer 60/pause 100/speak Wizard \"呵。不用害怕，@。$1#$b#我向你保证，它不会像你喝的第一杯那样难喝。#$b#来。和我一起去大锅边吧。\"/pause 400/globalFade/viewport -1000 -1000 true/warp Wizard 3 19/warp farmer 6 19/faceDirection Wizard 2/viewport 6 20 true/pause 2000/playSound pullItemFromWater/shake Wizard 700/pause 1600/speak Wizard \"最后一步...\"/pause 600/showFrame Wizard 16/pause 800/screenFlash .5/playSound healSound/pause 400/screenFlash .5/playSound healSound/pause 700/showFrame Wizard 0/pause 700/faceDirection Wizard 1 true/pause 500/speak Wizard \"灵药完成了。#$b#有了这个，你可以从周围的世界吸取法力，让你能施展一些小魔法。#$b#给。喝了吧。\"/pause 600/move farmer -2 0 3/pause 600/faceDirection farmer 2 true/pause 300/playSound dwop/showFrame farmer 90/pause 1000/showFrame farmer 91/pause 200/showFrame farmer 93/playSound gulp/pause 200/showFrame farmer 92/pause 200/showFrame farmer 93/pause 200/showFrame farmer 92/pause 200/showFrame farmer 93/pause 200/showFrame farmer 92/showFrame farmer 91/pause 100/showFrame farmer 90/showFrame farmer 0/pause 900/glow 0 0 200/playSound coldSpell/pause 800/glow 0 0 255/pause 500/glow 0 0 140/pause 700/message \"灵药的味道就像棉花糖一样。\"/pause 800/faceDirection farmer 3 true/pause 400/emote farmer 32/pause 200/speak Wizard \"很好。现在，等你准备好了，请跟我到楼下的书房里来。\"/pause 400/globalFade/viewport -1000 -1000/changeLocation Custom_WizardBasement/warp Wizard 23 6/warp farmer 20 6/faceDirection Wizard 3 true/faceDirection farmer 1 true/viewport 16 6 true/pause 1200/speak Wizard \"首先，为你做次示范。\"/stopMusic/pause 700/faceDirection Wizard 0/pause 800/showFrame Wizard 17/pause 700/shake Wizard 800/pause 700/screenFlash 2/playSound healSound/playSound yoba/warp Wizard -300 -300/warp Rasmodia 23 6/pause 800/emote farmer 16/pause 400/faceDirection Rasmodia 3/pause 600/speak Rasmodia \"...$0\"/pause 600/faceDirection Rasmodia 0 true/pause 700/showFrame Rasmodia 17/pause 900/screenFlash 2/playSound healSound/playSound yoba/warp Rasmodia -300 -300/warp Wizard 23 6/pause 1000/faceDirection Wizard 3 true/pause 500/speak Wizard \"现在。你来试试。\"/pause 400/globalFade/viewport -1000 -1000 true/warp Wizard 20 6/warp farmer 23 6/faceDirection Wizard 1 true/faceDirection farmer 0 true/viewport 16 6 true/pause 2200/startJittering/pause 800/screenFlash 2/playSound healSound/playSound yoba/stopJittering/warp farmer -200 -200/warp FemaleFarmer 23 6/pause 1400/faceDirection FemaleFarmer 3 true/pause 1300/speak Wizard \"啊!作为你的第一次尝试，不错。真是奇妙！$1\"/pause 800/faceDirection FemaleFarmer 0/pause 1200/screenFlash 2/playSound healSound/playSound yoba/warp FemaleFarmer -195 -195/warp farmer 23 6/pause 1750/faceDirection farmer 3 true/pause 600/speak Wizard \"令我印象深刻@。#$b#也许将来，我会教你更多的咒语。$0#$b#如果你的能力真的像现在看起来那么高，我们甚至可以探索一些关于约束我们世界的管理法则的高阶理论。\"/pause 700/jump farmer/pause 700/speak Wizard \"很高兴看到这种前景能让你感到兴奋。\"/pause 700/globalFade/viewport -1000 -1000/pause 1000/playSound reward/message \"我现在可以使用“幻觉神龛”了！\"/pause 1000/end dialogue Wizard \"改变外表的能力同时背负着巨大的责任。#$b#不要太过分。#$e#把这看作是一个测试，以确定你是否有能力和我一起继续学习魔法。\""
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"data/events/wizardhouse",
+			"When":{
+				"HasMod":"FlashShifter.StardewValleyExpandedCP"
+			},
+			"Entries":{
+				"1724095/g male/n ShrineOfIllusionsLetter":"WizardSong/-500 -500/farmer -100 -100 0 Wizard 7 29 0/addTemporaryActor Rasmodia 16 32 -105 -105 0/addTemporaryActor MaleFarmer 16 32 -104 -104 0/pause 1000/showFrame Wizard 17/viewport 9 30 true/skippable/pause 1300/shake Wizard 250/playSound leafrustle/pause 1200/shake Wizard 250/playSound leafrustle/pause 1200/playSound doorClose/warp farmer 9 34/pause 1100/shake Wizard 250/playSound leafrustle/pause 300/move farmer 0 -5 3/pause 600/playSound leafrustle/shake Wizard 300/pause 1500/speak Wizard \"稍等...\"/pause 900/shake Wizard 250/playSound leafrustle/pause 1250/shake Wizard 250/playSound leafrustle/pause 1000/shake Wizard 250/playSound leafrustle/pause 500/emote farmer 8/pause 600/showFrame Wizard 8/pause 600/faceDirection Wizard 1 true/pause 500/speak Wizard \"唔？#$b#我正在为你的灵药收集药材。\"/pause 700/emote farmer 60/pause 100/speak Wizard \"呵。不用害怕，@。$1#$b#我向你保证，它不会像你喝的第一杯那样难喝。#$b#来。和我一起去大锅边吧。\"/pause 400/globalFade/viewport -1000 -1000 true/warp Wizard 3 19/warp farmer 6 19/faceDirection Wizard 2/viewport 6 20 true/pause 2000/playSound pullItemFromWater/shake Wizard 700/pause 1600/speak Wizard \"最后一步...\"/pause 600/showFrame Wizard 16/pause 800/screenFlash .5/playSound healSound/pause 400/screenFlash .5/playSound healSound/pause 700/showFrame Wizard 0/pause 700/faceDirection Wizard 1 true/pause 500/speak Wizard \"灵药完成了。#$b#有了这个，你可以从周围的世界吸取法力，让你能施展一些小魔法。#$b#给。喝了吧。\"/pause 600/move farmer -2 0 3/pause 600/faceDirection farmer 2 true/pause 300/playSound dwop/showFrame farmer 90/pause 1000/showFrame farmer 91/pause 200/showFrame farmer 93/playSound gulp/pause 200/showFrame farmer 92/pause 200/showFrame farmer 93/pause 200/showFrame farmer 92/pause 200/showFrame farmer 93/pause 200/showFrame farmer 92/showFrame farmer 91/pause 100/showFrame farmer 90/showFrame farmer 0/pause 900/glow 0 0 200/playSound coldSpell/pause 800/glow 0 0 255/pause 500/glow 0 0 140/pause 700/message \"灵药的味道就像棉花糖一样。\"/pause 800/faceDirection farmer 3 true/pause 400/emote farmer 32/pause 200/speak Wizard \"很好。现在，等你准备好了，请跟我到楼下的书房里来。\"/pause 400/globalFade/viewport -1000 -1000/changeLocation Custom_WizardBasement/warp Wizard 23 6/warp farmer 20 6/faceDirection Wizard 3 true/faceDirection farmer 1 true/viewport 16 6 true/pause 1200/speak Wizard \"首先，为你做次示范。\"/stopMusic/pause 700/faceDirection Wizard 0/pause 800/showFrame Wizard 17/pause 700/shake Wizard 800/pause 700/screenFlash 2/playSound healSound/playSound yoba/warp Wizard -300 -300/warp Rasmodia 23 6/pause 800/emote farmer 16/pause 400/faceDirection Rasmodia 3/pause 600/speak Rasmodia \"...$0\"/pause 600/faceDirection Rasmodia 0 true/pause 700/showFrame Rasmodia 17/pause 900/screenFlash 2/playSound healSound/playSound yoba/warp Rasmodia -300 -300/warp Wizard 23 6/pause 1000/faceDirection Wizard 3 true/pause 500/speak Wizard \"现在。你来试试。\"/pause 400/globalFade/viewport -1000 -1000 true/warp Wizard 20 6/warp farmer 23 6/faceDirection Wizard 1 true/faceDirection farmer 0 true/viewport 16 6 true/pause 2200/startJittering/pause 800/screenFlash 2/playSound healSound/playSound yoba/stopJittering/warp farmer -200 -200/warp MaleFarmer 23 6/pause 1400/faceDirection MaleFarmer 3 true/pause 1300/speak Wizard \"啊!作为你的第一次尝试，不错。真是奇妙！$1\"/pause 800/faceDirection MaleFarmer 0/pause 1200/screenFlash 2/playSound healSound/playSound yoba/warp MaleFarmer -195 -195/warp farmer 23 6/pause 1750/faceDirection farmer 3 true/pause 600/speak Wizard \"令我印象深刻@。#$b##也许将来，我会教你更多的咒语。$0#$b#如果你的能力真的像现在看起来那么高，我们甚至可以探索一些关于约束我们世界的管理法则的高阶理论。\"/pause 700/jump farmer/pause 700/speak Wizard \"很高兴看到这种前景能让你感到兴奋。\"/pause 700/globalFade/viewport -1000 -1000/pause 1000/playSound reward/message \"我现在可以使用“幻觉神龛”了！\"/pause 1000/end dialogue Wizard \"改变外表的能力同时背负着巨大的责任。#$b#不要太过分。#$e#把这看作是一个测试，以确定你是否有能力和我一起继续学习魔法。\""
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"Data/Events/Custom_Fostoria",
+			"Entries":{
+				"114780000/f Fisher 1000":"shaneTheme/36 22/farmer 40 16 3 Fisher 36 25 2 Wizard -1000 -1000 2/skippable/pause 1000/emote Fisher 44/playSound fishEscape/speak Fisher \"她做了什么？她是如何阻挠我的？\"/move Fisher -1 0 3/playSound cast/pause 900/emote Fisher 44/playSound fishEscape/pause 500/speak Fisher \"我不明白。\"/pause 500/speed farmer 2/move farmer -4 0 3/speed farmer 2/move farmer 0 4 2/faceDirection Fisher 1 true/jump Fisher/speak Fisher \"哦！你吓到我了。\"/emote farmer 8/speak Fisher \"不，我不是在钓鱼。我是……嗯……\"/pause 600/playSound wand/screenFlash 3/showFrame Wizard 16/warp Wizard 37 24/pause 500/showFrame Wizard 0/pause 500/faceDirection Wizard 3 true/pause 500/screenFlash .35/shake Wizard 500/faceDirection Wizard 0/speak Wizard \"没想到会在这里遇见你，@。\"/pause 500/faceDirection Wizard 3 true/speak Wizard \"我厌恶你对魔法不负责任的滥用，雷明顿。#$b#但议会拒绝取缔你。所以我无法采取行动。\"/jump Fisher/speak Fisher \"你在搞事情，拉斯莫迪娅。我知道是你。\"/emote Fisher 12/faceDirection Wizard 0 true/speak Wizard \"我遵循理事会的指示。\"/faceDirection Wizard 3 true/pause 500/speak Wizard \"我希望你也这样做，雷明顿。\"/pause 500/faceDirection Wizard 0 true/speak Wizard \"晚安，@。\"/playSound wand/screenFlash 3/warp Wizard -1000 -1000/pause 1000/faceDirection Fisher 0 true/pause 1000/emote Fisher 12/pause 500/speak Fisher \"我猜你也好奇那是关于什么的。\"/emote farmer 40/speak Fisher \"我还能说什么呢？我用魔法来储备我的商店。#$b#拉斯莫迪娅显然不愿苟同。\"/emote farmer 8/speak Fisher \"你听到她的话了... 我正在做的事情并没有被理事会禁止。#$b#说起来，也许你能找到一些特殊的试剂来帮助我。\"/emote farmer 32/speak Fisher \"当我弄清我需要什么时，我会让你知道。我会让它值得你花时间。\"/pause 800/end"
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"Data/Events/Custom_F_MagicShop",
+			"Entries":{
+				"114780004/f Witch 1000":"WizardSong/3 18/farmer 3 23 0 Witch 4 12 2 Wizard 3 13 1/skippable/pause 1000/speak Witch \"我爱你，但你是个白痴，拉兹。\"/emote farmer 8/speak Wizard \"你根本就没听我的故事，姐姐。\"/speak Witch \"我已经听过你的故事。我也听过她的。就我而言，这是你的孩子...\"/jump Witch/pause 500/speak Witch \"有人在吗？\"/emote farmer 40/move Witch 0 1 2/move Witch 1 0 2/speak Witch \"@！见到你真高兴！\"/speed Witch 3/move Witch 0 6 2/speed Wizard 3/move Wizard 3 0 1/speed Wizard 3/move Wizard 0 6 2/speak Witch \"你认识我的姐姐，拉斯莫迪娅吗？#$b#她并不经常来。现在，你想来看看我的新库存吗？\"/fade/end",
+				"114780005/f Witch 1500":"WizardSong/3 20/farmer 3 23 0 Witch 3 20 2 Abigail 6 20 3/skippable/pause 1000/faceDirection Witch 1 true/speak Witch \"很高兴见到你，阿比盖尔！\"/speak Abigail \"我想问你...\"/faceDirection Abigail 2 true/jump Abigail/jump Witch/faceDirection Witch 2 true/speak Witch \"哦，@！你来的正是时候。阿比盖尔和我正在叙旧。\"/pause 500/speak Witch \"你认识阿比盖尔，对吧？\"/emote farmer 40/speak Witch \"我正准备给咱们做点心，你为什么不来加入我们呢？\"/speed Witch 4/move Witch 0 -2 0/speed Witch 4/move Witch 3 0 1/speed Abigail 3/move Abigail 0 -5 0/speed farmer 3/move farmer 5 0 1/speed Witch 4/move Witch 0 -5 0/playSound wand/pause 1000/speed Abigail 3/move Abigail 3 0 1/speed farmer 3/move farmer 0 -6 0/speed Witch 4/move Witch 4 0 1/move Witch 0 1 2/speed farmer 3/move farmer 2 0 1/addObject 10 15 904 1/speak Abigail \"香蕉布丁！你怎么知道这是我最喜欢的？\"/speak Witch \"我的姐姐... 就是说，我希望你会喜欢，阿比盖尔。#$b#现在请自便，你们两个。然后我给@ 看看我的新库存。\"/playSound gulp/pause 500/playSound gulp/pause 500/addCookingRecipe Banana Pudding/playSound reward/message \"那太好吃了！艾瑞斯给了我“香蕉布丁”的食谱。\"/fade/end"
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"Data/Festivals/winter25",
+			"Entries":{
+				"Witch":"我鼓励我姐姐多出去走走。"
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Witch",
+			"Entries":{
+				"WizardHouse":"我尽量在周日去看望我的弟弟。$1"
+			}
+		}
+	]
+}
