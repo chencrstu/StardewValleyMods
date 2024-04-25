@@ -1,0 +1,137 @@
+{
+    "Format": "2.0.0",
+    "DynamicTokens": [
+
+		//Feltivais
+		
+		{
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When":
+            {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+            }
+        },
+	],
+		
+	"Changes": [
+		
+		//Portrait
+
+		{
+            "LogName": "Portrait - Seasonal",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",    		  
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+		},
+		{
+            "LogName": "Portraits - Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah_Beach",
+            "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",    		  
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+            "LogName": "Festival Character Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Leah",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+		{
+		   "LogName": "Portraits - Winter",
+		   "Action": "EditImage",
+		   "Target": "Portraits/Leah_Winter",
+		   "FromFile": "assets/Portraits/Leah/Leah_Winter.png",
+		   "Update": "OnLocationChange",
+		   "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		
+		//Sprite
+		
+		{
+            "LogName": "Characters - Seasonal",
+            "Action": "EditImage",
+            "Target": "Characters/Leah",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange", 
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+            "LogName": "Characters - Beach",
+            "Action": "EditImage",
+            "Target": "Characters/Leah_Beach",
+            "FromFile": "assets/Characters/Beach/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",    		  
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+            "LogName": "Festival Character Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Leah",
+            "FromFile": "assets/Characters/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+		   "LogName": "Characters - Winter",
+		   "Action": "EditImage",
+		   "Target": "Characters/Leah_Winter",
+		   "FromFile": "assets/Characters/Leah/Leah_Winter.png",
+		   "Update": "OnLocationChange",
+		   "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		//Other
+		 
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Random/Leah_Emoji.png",
+			"ToArea": {"X": 27, "Y": 99, "Width": 9, "Height": 9}
+		},
+		{
+		   "Action": "EditImage",
+		   "Target": "TileSheets/junimo_furniture",
+		   "FromFile": "assets/Random/junimo_Portraits.png",
+		   "ToArea": {"X": 48, "Y": 368, "Width": 32, "Height": 32}
+	    }
+	]
+}

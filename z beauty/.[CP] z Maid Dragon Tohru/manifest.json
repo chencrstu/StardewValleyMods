@@ -1,0 +1,11 @@
+{
+  "Name": "Maid dragon Tohru",
+  "Author": "lucasedu11",
+  "Version": "3.1.0",
+  "Description": "Replace skin of Leah by Tohru",
+  "UniqueID": "lucasedu11.Tohru",
+  "UpdateKeys": [ "Nexus: 4508" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

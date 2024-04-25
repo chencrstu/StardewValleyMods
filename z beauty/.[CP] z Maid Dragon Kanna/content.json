@@ -1,0 +1,137 @@
+{
+    "Format": "2.0.0",
+    "DynamicTokens": [
+
+		//Feltivais
+		
+		{
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When":
+            {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+            }
+        },
+	],
+		
+	"Changes": [
+		
+		//Portrait
+
+		{
+            "LogName": "Portrait - Seasonal",
+            "Action": "EditImage",
+            "Target": "Portraits/Jas",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",    		  
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+		},
+		{
+            "LogName": "Portraits - Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Jas_Beach",
+            "FromFile": "assets/Portraits/Beach/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",    		  
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+            "LogName": "Festival Character Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Jas,",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+		{
+		   "LogName": "Portraits - Winter",
+		   "Action": "EditImage",
+		   "Target": "Portraits/Jas_Winter",
+		   "FromFile": "assets/Portraits/Jas/Jas_Winter.png",
+		   "Update": "OnLocationChange",
+		   "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		
+		//Sprite
+		
+		{
+            "LogName": "Characters - Seasonal",
+            "Action": "EditImage",
+            "Target": "Characters/Jas",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange", 
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+            "LogName": "Characters - Beach",
+            "Action": "EditImage",
+            "Target": "Characters/Jas_Beach",
+            "FromFile": "assets/Characters/Beach/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",    		  
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+            "LogName": "Festival Character Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Jas,",
+            "FromFile": "assets/Characters/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		{
+		   "LogName": "Characters - Winter",
+		   "Action": "EditImage",
+		   "Target": "Characters/Jas_Winter",
+		   "FromFile": "assets/Characters/Jas/Jas_Winter.png",
+		   "Update": "OnLocationChange",
+		   "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		//Other
+		 
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "assets/Random/BundleSprites.png",
+			"ToArea": {"X": 0, "Y": 16, "Width": 16, "Height": 32}
+		},
+        {
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Random/Jas_Emoji.png",
+			"ToArea": {"X": 108, "Y": 108, "Width": 9, "Height": 9}
+		}
+	]
+}

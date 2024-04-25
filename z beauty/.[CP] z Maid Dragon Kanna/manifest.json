@@ -1,0 +1,11 @@
+{
+  "Name": "Maid dragon Kanna",
+  "Author": "lucasedu11",
+  "Version": "3.1.0",
+  "Description": "Replace skin of Jas by Kanna",
+  "UniqueID": "lucasedu11.Kanna",
+  "UpdateKeys": [ "Nexus: 4271" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
