@@ -1,4 +1,5 @@
 {
+  "Outdoors": "true",
   "Green Fall": "true",
   "Water Type": "opaque",
   "Blue Grass Type": "vanilla",
@@ -15,5 +16,9 @@
   "Bookseller Zone Shadow Fix": "true",
   "Underwater Tree Animation Fix": "true",
   "Seeds Spots Fix": "true",
+  "Lumisteria Outdoors": "auto",
+  "Lumisteria Outdoors Buildings": "true",
+  "Lumisteria Outdoors Decorations": "true",
+  "Lumisteria Outdoors Tiles": "true",
   "Force Replace Outdoors": "false"
 }

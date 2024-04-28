@@ -19,6 +19,7 @@
   "ui.fashion_sense.title.sleeves": "袖子",
   "ui.fashion_sense.title.sleevesAndShoes": "袖子&鞋子",
   "ui.fashion_sense.title.shoes": "鞋子",
+ "ui.fashion_sense.title.body": "体型",
   "ui.fashion_sense.title.mask_layer": "图层",
 
  // UI - Search
@@ -38,6 +39,7 @@
   "ui.fashion_sense.outfit_info.delete": "删除套装",
   "ui.fashion_sense.outfit_info.share.active": "这个套装将与其他存档共享",
   "ui.fashion_sense.outfit_info.share.inactive": "不和其他存档共享这个套装",
+  "ui.fashion_sense.outfit_info.shared": "已共享套装",
   "ui.fashion_sense.outfit_info.preset": "预设套装",
   "ui.fashion_sense.outfit_info.export": "将当前的套装分享码复制到剪贴板",
   "ui.fashion_sense.outfit_info.shared": "共享套装",
@@ -54,7 +56,8 @@
   // UI - Etc
   "ui.fashion_sense.start_with_hand_mirror": "开局自带镜子",
   "ui.fashion_sense.start_with_hand_mirror.description": "你会在第一天收到一个化妆镜",
-  "ui.fashion_sense.color_override.shoes": "覆盖鞋子的颜色",
+  "ui.fashion_sense.color_override.shoes": "修改鞋子的颜色",
+"ui.fashion_sense.color_override.body": "修改身体颜色",
   "ui.fashion_sense.search_button": "搜索FS内容包的名字",
   "ui.fashion_sense.outfit_button": "使用套装",
   "ui.fashion_sense.color_copy_button": "复制当前的颜色配比",
@@ -73,5 +76,6 @@
   "ui.fashion_sense.color_info.accessory": "这个饰品无法更改颜色。",
   "ui.fashion_sense.color_info.sleeves": "当前袖子无法更改颜色。",
   "ui.fashion_sense.color_info.shoes": "当前鞋子无法更改颜色。",
+  "ui.fashion_sense.color_info.body": "当前体型无法更改颜色",
  "ui.fashion_sense.warning.hiding_player_sprite": "该美化将影响玩家身体模型的显示"
 }

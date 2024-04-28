@@ -1,0 +1,21 @@
+{
+  "BabyClothing": "White",
+  "BabyPacifier": "Blue",
+  "BabySkin": "Light",
+  "BabyEyes": "Brown",
+  "BabyHair": "Brown",
+  "BoySkin": "Light",
+  "BoyEyes": "Brown",
+  "BoyClothing": "Basic",
+  "BoyClothingColor": "RedBlue",
+  "BoyShoes": "White",
+  "BoyHair": "Short",
+  "BoyHairColor": "Brown",
+  "GirlSkin": "Light",
+  "GirlEyes": "Brown",
+  "GirlClothing": "Basic",
+  "GirlClothingColor": "YellowBlue",
+  "GirlShoes": "White",
+  "GirlHair": "BangsShort",
+  "GirlHairColor": "Brown"
+}
