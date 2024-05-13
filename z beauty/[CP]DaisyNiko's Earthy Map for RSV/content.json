@@ -1,0 +1,55 @@
+{
+	"Format": "2.0",
+	"Changes": [
+		{
+			"LogName": "Load Village Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVMap",
+			"FromFile": "assets/RSVMap.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		{
+			"LogName": "Load RSV Icon",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVIcon",
+			"FromFile": "assets/RSVIcon.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		{
+			"LogName": "Load RSV Icon",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVIcon",
+			"FromFile": "assets/RSVIcon_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		{
+			"LogName": "Load RSV World Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVWorldMap",
+			"FromFile": "assets/RSVWorldMap.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+		{
+			"LogName": "Load RSV World Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVWorldMap",
+			"FromFile": "assets/RSVWorldMap_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+			},
+		},
+	]
+}

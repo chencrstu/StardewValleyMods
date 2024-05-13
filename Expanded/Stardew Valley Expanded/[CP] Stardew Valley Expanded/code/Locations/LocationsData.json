@@ -3364,9 +3364,6 @@
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "When": {
-                "HasMod |contains=MoreFish": false
-            },
             "TargetField": [
                 "Beach",
                 "Fish"
@@ -3382,9 +3379,6 @@
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "When": {
-                "HasMod |contains=MoreFish": false
-            },
             "TargetField": [
                 "IslandSouthEast",
                 "Fish"
@@ -3405,9 +3399,6 @@
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "When": {
-                "HasMod |contains=MoreFish": false
-            },
             "TargetField": [
                 "IslandWest",
                 "Fish"
@@ -3428,9 +3419,6 @@
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "When": {
-                "HasMod |contains=MoreFish": false
-            },
             "TargetField": [
                 "IslandSouth",
                 "Fish"
@@ -3451,9 +3439,6 @@
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "When": {
-                "HasMod |contains=MoreFish": false
-            },
             "TargetField": [
                 "Custom_FableReef",
                 "Fish"
